@@ -4,6 +4,7 @@ import axios from 'axios';
 Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
+        url: 'http://localhost:8000',
         location: '',
         coefficient: '',
         area: '',
@@ -151,7 +152,7 @@ export default new Vuex.Store({
             commit
         }) {
             axios
-                .get('http://localhost:8000/api/average', {
+                .get(state.url + '/api/average', {
                     params: {
                         location: state.location
                     }

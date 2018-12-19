@@ -71486,7 +71486,7 @@ var content = __webpack_require__(195);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("6bb8be94", content, false, {});
+var update = __webpack_require__(4)("5819ef61", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71603,7 +71603,7 @@ var content = __webpack_require__(199);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0e981e4a", content, false, {});
+var update = __webpack_require__(4)("87077530", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71735,7 +71735,7 @@ var content = __webpack_require__(203);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("37a8c66b", content, false, {});
+var update = __webpack_require__(4)("b55fea84", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71759,7 +71759,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n    margin-top: 20px;\n}\n.rain img[data-v-b456a7d8] {\n    margin-bottom: 20px;\n}\n\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n", ""]);
 
 // exports
 
@@ -71800,51 +71800,73 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            loc: "",
-            locations: []
-        };
-    },
+  data: function data() {
+    return {
+      loc: "",
+      locations: []
+    };
+  },
 
-    components: {
-        LMap: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LMap"],
-        LTileLayer: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LTileLayer"],
-        LMarker: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LMarker"],
-        LTooltip: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LTooltip"]
-    },
-    methods: {
-        next: function next() {
-            this.$store.commit("SET_LOCATION", this.loc);
-            this.$router.push("/roof-characteristics");
-        }
-    },
-    computed: {
-        currentPosition: function currentPosition() {
-            return this.$store.getters.currentPos;
-        },
-        zoom: function zoom() {
-            return 12;
-        }
-    },
-    mounted: function mounted() {
-        var _this = this;
-
-        axios.get("http://localhost:8000/api/locations").then(function (response) {
-            _this.locations = response.data;
-        }).catch(function (e) {
-            console.log(e);
-        });
-
-        navigator.geolocation.getCurrentPosition(function (position) {
-            _this.$store.commit('SET_LAT', position.coords.latitude);
-            _this.$store.commit('SET_LONG', position.coords.longitude);
-            console.log(position);
-        });
+  components: {
+    LMap: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LMap"],
+    LTileLayer: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LTileLayer"],
+    LMarker: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LMarker"],
+    LTooltip: __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__["LTooltip"]
+  },
+  methods: {
+    next: function next() {
+      this.$store.commit("SET_LOCATION", this.loc);
+      this.$router.push("/roof-characteristics");
     }
+  },
+  computed: {
+    currentPosition: function currentPosition() {
+      return this.$store.getters.currentPos;
+    },
+    zoom: function zoom() {
+      return 12;
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get(this.$store.state.url + "/api/locations").then(function (response) {
+      _this.locations = response.data;
+    }).catch(function (e) {
+      console.log(e);
+    });
+
+    navigator.geolocation.getCurrentPosition(function (position) {
+      _this.$store.commit("SET_LAT", position.coords.latitude);
+      _this.$store.commit("SET_LONG", position.coords.longitude);
+      console.log(position);
+    });
+  }
 });
 
 /***/ }),
@@ -71918,7 +71940,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.b068
 /* 212 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?acf3dcb7ff752b5296ca23ba2c7c2606";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?912ec66d7572ff821749319396470bde";
 
 /***/ }),
 /* 213 */
@@ -71942,7 +71964,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-reg
 /* 216 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?f721466883998665b87923b92dea655b";
+module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?89889688147bd7575d6327160d64e760";
 
 /***/ }),
 /* 217 */
@@ -72434,7 +72456,7 @@ var render = function() {
                   staticClass: "blink",
                   attrs: { latlng: _vm.currentPosition }
                 }),
-                _vm._v("/>\n            ")
+                _vm._v("/>\n      ")
               ],
               1
             )
@@ -72459,7 +72481,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "alert alert-primary text-center" }, [
               _vm._v(
-                "\n                Please select the nearest rainfall station to your rainwater harvesting tank.\n            "
+                "\n        Please select the nearest rainfall station to your rainwater harvesting tank.\n      "
               )
             ]),
             _vm._v(" "),
@@ -72503,7 +72525,7 @@ var render = function() {
                 staticStyle: { "margin-top": "20px", "font-weight": "bold" },
                 on: { click: _vm.next }
               },
-              [_vm._v("Roof\n                Characteristics")]
+              [_vm._v("Roof\n        Characteristics")]
             )
           ]
         )
@@ -72532,7 +72554,7 @@ var content = __webpack_require__(221);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("24f2ffb4", content, false, {});
+var update = __webpack_require__(4)("9d62569a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72923,7 +72945,7 @@ var content = __webpack_require__(225);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0c6fc27a", content, false, {});
+var update = __webpack_require__(4)("75d01590", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73414,7 +73436,7 @@ var content = __webpack_require__(229);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("70e5448e", content, false, {});
+var update = __webpack_require__(4)("11ccc021", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73585,6 +73607,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -73619,7 +73658,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         tanksizes: this.tanksize
       };
 
-      axios.post("http://localhost:8000/api/calc", data).then(function (response) {
+      axios.post(this.$store.state.url + "/api/calc", data).then(function (response) {
         //this.sButton = false;
         _this.results = response.data;
         //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
@@ -73692,7 +73731,7 @@ var render = function() {
                 staticStyle: { "margin-top": "20px", "font-weight": "bold" },
                 on: { click: _vm.simulate }
               },
-              [_vm._v("Run\n                Simulation")]
+              [_vm._v("Run\n        Simulation")]
             )
           : _vm._e(),
         _vm._v(" "),
@@ -73758,7 +73797,7 @@ var render = function() {
               _c("div", { staticClass: "input" }, [
                 _c("h5", [
                   _vm._v(
-                    "\n                            " +
+                    "\n              " +
                       _vm._s(_vm.results.total_delivered) +
                       " m"
                   ),
@@ -73769,7 +73808,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "pad" }, [
               _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v(" Average Rain Delivered Per Day:\n                    ")
+                _vm._v(" Average Rain Delivered Per Day:\n          ")
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "input" }, [
@@ -73972,6 +74011,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
+        url: 'http://localhost:8000',
         location: '',
         coefficient: '',
         area: '',
@@ -74118,7 +74158,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
             var state = _ref.state,
                 commit = _ref.commit;
 
-            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get('http://localhost:8000/api/average', {
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get(state.url + '/api/average', {
                 params: {
                     location: state.location
                 }
@@ -75263,7 +75303,7 @@ var content = __webpack_require__(238);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("02c32e92", content, false, {});
+var update = __webpack_require__(4)("7ecb255f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -75897,7 +75937,7 @@ var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("31fdff90", content, false, {});
+var update = __webpack_require__(4)("147357c6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76162,7 +76202,7 @@ var content = __webpack_require__(248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3a926d3c", content, false, {});
+var update = __webpack_require__(4)("29f80f6f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76393,7 +76433,7 @@ var content = __webpack_require__(253);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("cfcc64a4", content, false, {});
+var update = __webpack_require__(4)("3ae347c1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76654,7 +76694,7 @@ var content = __webpack_require__(258);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0214ebc5", content, false, {});
+var update = __webpack_require__(4)("15cb5ddc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76899,7 +76939,7 @@ var content = __webpack_require__(263);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("30e6b078", content, false, {});
+var update = __webpack_require__(4)("5c63a7ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77040,7 +77080,7 @@ var content = __webpack_require__(268);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("355522aa", content, false, {});
+var update = __webpack_require__(4)("615d6578", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77310,7 +77350,7 @@ var content = __webpack_require__(273);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3ee611b0", content, false, {});
+var update = __webpack_require__(4)("34f84c0a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77552,7 +77592,7 @@ var content = __webpack_require__(278);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7e85a284", content, false, {});
+var update = __webpack_require__(4)("214f1c97", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77775,7 +77815,7 @@ var content = __webpack_require__(283);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2724cd6d", content, false, {});
+var update = __webpack_require__(4)("4731eb00", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78179,7 +78219,7 @@ var content = __webpack_require__(288);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("a4c106a4", content, false, {});
+var update = __webpack_require__(4)("1b46c101", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78356,7 +78396,7 @@ var content = __webpack_require__(292);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("29e2bc3d", content, false, {});
+var update = __webpack_require__(4)("41b60d60", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78397,7 +78437,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Line */],
+  extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
   props: ["rain", "years"],
   mounted: function mounted() {
     var _this = this;
@@ -78423,10 +78463,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* unused harmony export VueCharts */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins_index_js__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BaseCharts__ = __webpack_require__(296);
-/* unused harmony reexport Bar */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["a"]; });
 /* unused harmony reexport HorizontalBar */
 /* unused harmony reexport Doughnut */
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__BaseCharts__["e"]; });
+/* unused harmony reexport Line */
 /* unused harmony reexport Pie */
 /* unused harmony reexport PolarArea */
 /* unused harmony reexport Radar */
