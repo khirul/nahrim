@@ -182,14 +182,11 @@ class RainfallsController extends Controller
                    // 'monthly_delivered' => $monthlyaveragedelivered
                 ];
 
-
-
-                
         //return $test;
         return response()->json($test);
         // return request()->all();
     }
-    
+
     public function average()
     {
         $loc = request()->location;
@@ -198,18 +195,15 @@ class RainfallsController extends Controller
         $alldata = Nahrim::where('location', $location)->get();
         $year = [];
         foreach ($alldata as $data) {
-
            $year[]= $data->year;
-            
         }
         $totalyears = count(array_unique($year));
-
         //$index = $data->first()->year;
         $day= 1;
         $total= [0,0,0,0,0,0,0,0,0,0,0,0];
-        
+
         // for(){
-        
+
             foreach ($alldata as $data) {
 
                 // if ($currentyear>$endyear) {
@@ -284,24 +278,13 @@ class RainfallsController extends Controller
                 } else {
                     // code...
                 }
-
-            
-
-                    
-            
-
                     for ($j = 1; $j <= $number_of_day; ++$j) {
                         $k = $data->month;
                         $day = 'day_'.$j;
 
                         $total[$i-1] = $total[$i-1] + $data->$day;
-                        
+
                     }
-
-            
-
-
-                
             }
         // }
         $data = [
@@ -314,4 +297,3 @@ class RainfallsController extends Controller
         //return response()->json($average);
     }
 }
-

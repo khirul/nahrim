@@ -71627,7 +71627,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.title[data-v-3ee370e9] {\n    margin-bottom: 20px;\n    color: rgba(11, 179, 101, .815);\n    font-family: \"Kreon\", serif;\n    font-size: 3em;\n}\n.main[data-v-3ee370e9] {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    text-align: center;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n}\n.circle[data-v-3ee370e9] {\n    overflow: hidden;\n    width: 150px;\n    height: 150px;\n    margin: 0 auto;\n    background: rgba(204, 204, 204, 0);\n    -webkit-box-shadow: 0 0 0 5px #4973ff;\n            box-shadow: 0 0 0 5px #4973ff;\n    border: 5px solid rgba(255, 255, 255, .596);\n    border-radius: 50%;\n}\n.wave[data-v-3ee370e9] {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background: #4973ff;\n    -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);\n            box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);\n    border-radius: 50%;\n}\n.wave[data-v-3ee370e9]:before,\n.wave[data-v-3ee370e9]:after {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 50%;\n    width: 200%;\n    height: 200%;\n    background: #000;\n    -webkit-transform: translate(-50%, -75%);\n            transform: translate(-50%, -75%);\n}\n.wave[data-v-3ee370e9]:before {\n    background: rgba(255, 255, 255, .74);\n    border-radius: 45%;\n    -webkit-animation: animate-data-v-3ee370e9 5s linear infinite;\n            animation: animate-data-v-3ee370e9 5s linear infinite;\n}\n.wave[data-v-3ee370e9]:after {\n    background: rgba(255, 255, 255, .295);\n    border-radius: 40%;\n    -webkit-animation: animate-data-v-3ee370e9 10s linear infinite;\n            animation: animate-data-v-3ee370e9 10s linear infinite;\n}\n@-webkit-keyframes animate-data-v-3ee370e9 {\n0% {\n        -webkit-transform: translate(-50%, -75%) rotate(0deg);\n                transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n        -webkit-transform: translate(-50%, -75%) rotate(360deg);\n                transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n@keyframes animate-data-v-3ee370e9 {\n0% {\n        -webkit-transform: translate(-50%, -75%) rotate(0deg);\n                transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n        -webkit-transform: translate(-50%, -75%) rotate(360deg);\n                transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.title[data-v-3ee370e9] {\n  margin-bottom: 20px;\n  color: rgba(11, 179, 101, 0.815);\n  font-family: \"Kreon\", serif;\n  font-size: 3em;\n}\n.main[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  text-align: center;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.circle[data-v-3ee370e9] {\n  overflow: hidden;\n  width: 150px;\n  height: 150px;\n  margin: 0 auto;\n  background: rgba(204, 204, 204, 0);\n  -webkit-box-shadow: 0 0 0 5px #4973ff;\n          box-shadow: 0 0 0 5px #4973ff;\n  border: 5px solid rgba(255, 255, 255, 0.596);\n  border-radius: 50%;\n}\n.wave[data-v-3ee370e9] {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  background: #4973ff;\n  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n  border-radius: 50%;\n}\n.wave[data-v-3ee370e9]:before,\n.wave[data-v-3ee370e9]:after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  width: 200%;\n  height: 200%;\n  background: #000;\n  -webkit-transform: translate(-50%, -75%);\n          transform: translate(-50%, -75%);\n}\n.wave[data-v-3ee370e9]:before {\n  background: rgba(255, 255, 255, 0.74);\n  border-radius: 45%;\n  -webkit-animation: animate-data-v-3ee370e9 5s linear infinite;\n          animation: animate-data-v-3ee370e9 5s linear infinite;\n}\n.wave[data-v-3ee370e9]:after {\n  background: rgba(255, 255, 255, 0.295);\n  border-radius: 40%;\n  -webkit-animation: animate-data-v-3ee370e9 10s linear infinite;\n          animation: animate-data-v-3ee370e9 10s linear infinite;\n}\n@-webkit-keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n@keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n", ""]);
 
 // exports
 
@@ -71638,6 +71638,11 @@ exports.push([module.i, "\n.title[data-v-3ee370e9] {\n    margin-bottom: 20px;\n
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -71699,7 +71704,7 @@ var render = function() {
           staticStyle: { "margin-top": "40px", "font-weight": "bold" },
           attrs: { to: { name: "menu" } }
         },
-        [_vm._v("Get\n        Started >")]
+        [_vm._v("\n    Get Start\n  ")]
       )
     ],
     1
@@ -77104,7 +77109,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\n  width: 80px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 20px;\n}\n", ""]);
 
 // exports
 
@@ -77146,30 +77151,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            radius: 0.15,
-            firstflush: this.$store.state.flush
-        };
-    },
+  data: function data() {
+    return {
+      radius: 0.15,
+      firstflush: this.$store.state.flush
+    };
+  },
 
-    computed: {
-        ffpipe: function ffpipe() {
-            var value = this.firstflush / (22 * Math.pow(this.radius, 2) / 7);
-            return value.toFixed(2);
-        }
-    },
-    methods: {
-        done: function done() {
-            this.$store.commit('SET_FF_LENGHT', this.ffpipe);
-            this.$store.commit('SET_FF_SHOW', true);
-            this.$router.push({
-                name: 'water-demand'
-            });
-        }
+  computed: {
+    ffpipe: function ffpipe() {
+      var value = this.firstflush / (22 * Math.pow(this.radius, 2) / 7);
+      return value.toFixed(2);
     }
+  },
+  methods: {
+    done: function done() {
+      this.$store.commit("SET_FF_LENGHT", this.ffpipe);
+      this.$store.commit("SET_FF_SHOW", true);
+      this.$router.push({
+        name: "water-demand"
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -77183,7 +77199,7 @@ var render = function() {
   return _c("div", [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row roof" }, [
-        _vm._v("\n            First Flush Diverter\n        ")
+        _vm._v("\n      First Flush Diverter\n    ")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row d-flex flex-column" }, [
