@@ -4,7 +4,7 @@ import axios from 'axios';
 Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
-        url: 'http://localhost:8000',
+        url: '178.128.122.196',
         location: '',
         coefficient: '',
         area: '',
