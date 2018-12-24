@@ -52,7 +52,12 @@
                 </td>
             </table>
 
-            <chart-component :rain="rain" :years="years"></chart-component>
+            <chart-component :rain="rain" :years="years" class="mb-5"></chart-component>
+            <chart-year-component :yearsInfo="yearsInfo" :yearsTotal="yearsTotal"></chart-year-component>
+            <div class="button d-flex justify-content-center mt-5">
+              <router-link class="btn btn-success" :to="{name: 'simulator'}">back</router-link>
+            </div>
+            <!-- /.button -->
         </div>
 
     </div>
@@ -60,8 +65,9 @@
 
 <script>
     import ChartComponent from "./ChartComponent";
+    import ChartYearComponent from "./ChartYearComponent";
     export default {
-      components: { ChartComponent },
+      components: { ChartComponent, ChartYearComponent },
       mounted() {
         this.$store.dispatch("get_info");
       },
@@ -71,6 +77,12 @@
         },
         years() {
           return this.$store.state.info.totalYears;
+        },
+        yearsInfo(){
+          return this.$store.state.info.years;
+        },
+        yearsTotal(){
+          return this.$store.state.info.byyear;
         }
       }
     };

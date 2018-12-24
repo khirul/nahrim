@@ -1,21 +1,22 @@
 <template>
   <div class="main">
     <div class="title">NAHRIM App 2018</div>
-    <p style="color:#4973ff">Interested in installing a rainwater harvesting system? How big should your tank be?</p>
+    <p
+      style="color:#4973ff"
+    >Interested in installing a rainwater harvesting system? How big should your tank be?</p>
     <p style="color:#4973ff">How to make the most of the rainfall in your area?</p>
-    <p style="color:#4973ff">Tangki NAHRIM can help you estimate your rainwater harvesting tank size. </p>
+    <p
+      style="color:#4973ff"
+    >Tangki NAHRIM can help you estimate your rainwater harvesting tank size.</p>
     <p style="color:#4973ff; font-weight:bold">Click on 'Get Start' to calculate.</p>
     <div class="circle">
-      <div class="wave">
-      </div>
+      <div class="wave"></div>
     </div>
     <router-link
       :to="{name: 'menu'}"
       class="btn btn-success"
       style="margin-top: 40px; font-weight:bold;"
-    >
-      Get Start
-    </router-link>
+    >Get Start</router-link>
   </div>
 </template>
 <script>
@@ -52,9 +53,11 @@ export default {};
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   background: #4973ff;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
 }
 
 .wave:before,

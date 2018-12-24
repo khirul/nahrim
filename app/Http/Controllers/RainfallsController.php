@@ -43,12 +43,13 @@ class RainfallsController extends Controller
         $total_day_volume_not_meet = 0;
         $total_no_rain_day = 0;
         $total_no_rain_tank_empty = 0;
-        $counter = 1;
+        $counter = 0;
         $currentyear=0;
         $endyear=0;
        // $monthlyaveragedelivered=[];
         //$users = nahrimapp::table('users')->where('votes', '=', 100)->get();
         foreach ($alldata as $data) {
+            $currentyear=$data->year;
             if ($currentyear>$endyear) {
                 $counter = $counter+1;
             }
@@ -198,13 +199,29 @@ class RainfallsController extends Controller
            $year[]= $data->year;
         }
         $totalyears = count(array_unique($year));
+        $yearname=[];
+        foreach(array_unique($year) as $y){
+            $yearname[]=$y;
+        }
         //$index = $data->first()->year;
+
+                                                $totalbyyear=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                                                $currentyear=0;
+                                                $endyear=0;
+                                                $counter=-1;
         $day= 1;
         $total= [0,0,0,0,0,0,0,0,0,0,0,0];
 
         // for(){
 
             foreach ($alldata as $data) {
+
+                                                $currentyear=$data->year;
+                                                if ($currentyear>$endyear) {
+                                                    $counter = $counter+1;
+                                                }
+                                                $endyear=$data->year;
+
 
                 // if ($currentyear>$endyear) {
                 //     $counter = $counter+1;
@@ -283,11 +300,14 @@ class RainfallsController extends Controller
                         $day = 'day_'.$j;
 
                         $total[$i-1] = $total[$i-1] + $data->$day;
+                        $totalbyyear[$counter] = $totalbyyear[$counter] + $data->$day;
 
                     }
             }
         // }
         $data = [
+            'years'=>$yearname,
+            'byyear' => $totalbyyear,
             'monthlyTotal' => $total,
             'totalYears' => $totalyears
         ];

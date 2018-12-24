@@ -71627,7 +71627,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.title[data-v-3ee370e9] {\n  margin-bottom: 20px;\n  color: rgba(11, 179, 101, 0.815);\n  font-family: \"Kreon\", serif;\n  font-size: 3em;\n}\n.main[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  text-align: center;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.circle[data-v-3ee370e9] {\n  overflow: hidden;\n  width: 150px;\n  height: 150px;\n  margin: 0 auto;\n  background: rgba(204, 204, 204, 0);\n  -webkit-box-shadow: 0 0 0 5px #4973ff;\n          box-shadow: 0 0 0 5px #4973ff;\n  border: 5px solid rgba(255, 255, 255, 0.596);\n  border-radius: 50%;\n}\n.wave[data-v-3ee370e9] {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  background: #4973ff;\n  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n  border-radius: 50%;\n}\n.wave[data-v-3ee370e9]:before,\n.wave[data-v-3ee370e9]:after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  width: 200%;\n  height: 200%;\n  background: #000;\n  -webkit-transform: translate(-50%, -75%);\n          transform: translate(-50%, -75%);\n}\n.wave[data-v-3ee370e9]:before {\n  background: rgba(255, 255, 255, 0.74);\n  border-radius: 45%;\n  -webkit-animation: animate-data-v-3ee370e9 5s linear infinite;\n          animation: animate-data-v-3ee370e9 5s linear infinite;\n}\n.wave[data-v-3ee370e9]:after {\n  background: rgba(255, 255, 255, 0.295);\n  border-radius: 40%;\n  -webkit-animation: animate-data-v-3ee370e9 10s linear infinite;\n          animation: animate-data-v-3ee370e9 10s linear infinite;\n}\n@-webkit-keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n@keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n", ""]);
+exports.push([module.i, "\n.title[data-v-3ee370e9] {\n  margin-bottom: 20px;\n  color: rgba(11, 179, 101, 0.815);\n  font-family: \"Kreon\", serif;\n  font-size: 3em;\n}\n.main[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  text-align: center;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n}\n.circle[data-v-3ee370e9] {\n  overflow: hidden;\n  width: 150px;\n  height: 150px;\n  margin: 0 auto;\n  background: rgba(204, 204, 204, 0);\n  -webkit-box-shadow: 0 0 0 5px #4973ff;\n          box-shadow: 0 0 0 5px #4973ff;\n  border: 5px solid rgba(255, 255, 255, 0.596);\n  border-radius: 50%;\n}\n.wave[data-v-3ee370e9] {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n  overflow: hidden;\n  -webkit-mask-image: -webkit-radial-gradient(white, black);\n  background: #4973ff;\n  -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n          box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);\n}\n.wave[data-v-3ee370e9]:before,\n.wave[data-v-3ee370e9]:after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 50%;\n  width: 200%;\n  height: 200%;\n  background: #000;\n  -webkit-transform: translate(-50%, -75%);\n          transform: translate(-50%, -75%);\n}\n.wave[data-v-3ee370e9]:before {\n  background: rgba(255, 255, 255, 0.74);\n  border-radius: 45%;\n  -webkit-animation: animate-data-v-3ee370e9 5s linear infinite;\n          animation: animate-data-v-3ee370e9 5s linear infinite;\n}\n.wave[data-v-3ee370e9]:after {\n  background: rgba(255, 255, 255, 0.295);\n  border-radius: 40%;\n  -webkit-animation: animate-data-v-3ee370e9 10s linear infinite;\n          animation: animate-data-v-3ee370e9 10s linear infinite;\n}\n@-webkit-keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n@keyframes animate-data-v-3ee370e9 {\n0% {\n    -webkit-transform: translate(-50%, -75%) rotate(0deg);\n            transform: translate(-50%, -75%) rotate(0deg);\n}\n100% {\n    -webkit-transform: translate(-50%, -75%) rotate(360deg);\n            transform: translate(-50%, -75%) rotate(360deg);\n}\n}\n", ""]);
 
 // exports
 
@@ -71638,6 +71638,7 @@ exports.push([module.i, "\n.title[data-v-3ee370e9] {\n  margin-bottom: 20px;\n  
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -71687,7 +71688,7 @@ var render = function() {
       _vm._v(" "),
       _c("p", { staticStyle: { color: "#4973ff" } }, [
         _vm._v(
-          "Tangki NAHRIM can help you estimate your rainwater harvesting tank size. "
+          "Tangki NAHRIM can help you estimate your rainwater harvesting tank size."
         )
       ]),
       _vm._v(" "),
@@ -71704,7 +71705,7 @@ var render = function() {
           staticStyle: { "margin-top": "40px", "font-weight": "bold" },
           attrs: { to: { name: "menu" } }
         },
-        [_vm._v("\n    Get Start\n  ")]
+        [_vm._v("Get Start")]
       )
     ],
     1
@@ -73629,6 +73630,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -73666,6 +73676,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       axios.post(this.$store.state.url + "/api/calc", data).then(function (response) {
         //this.sButton = false;
         _this.results = response.data;
+        console.log(response.data);
         //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
       }).catch(function (e) {
         return console.log(e);
@@ -73736,7 +73747,7 @@ var render = function() {
                 staticStyle: { "margin-top": "20px", "font-weight": "bold" },
                 on: { click: _vm.simulate }
               },
-              [_vm._v("Run\n        Simulation")]
+              [_vm._v("\n        Run\n        Simulation\n      ")]
             )
           : _vm._e(),
         _vm._v(" "),
@@ -73769,6 +73780,7 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
       _vm._v(" "),
       _c("div", { staticClass: "flush" }, [
@@ -73788,7 +73800,11 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "input" }, [
                 _c("h5", [
-                  _vm._v(_vm._s(_vm.results.total_captured) + " m"),
+                  _vm._v(
+                    "\n              " +
+                      _vm._s(_vm.results.total_captured) +
+                      " m\n              "
+                  ),
                   _c("sup", [_vm._v("3")])
                 ])
               ])
@@ -73804,7 +73820,7 @@ var render = function() {
                   _vm._v(
                     "\n              " +
                       _vm._s(_vm.results.total_delivered) +
-                      " m"
+                      " m\n              "
                   ),
                   _c("sup", [_vm._v("3")])
                 ])
@@ -73813,18 +73829,23 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "pad" }, [
               _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v(" Average Rain Delivered Per Day:\n          ")
+                _vm._v("Average Rain Delivered Per Day:")
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "input" }, [
                 _c("h5", [
-                  _vm._v(_vm._s(_vm.results.daily_average_delivered) + " m"),
+                  _vm._v(
+                    "\n              " +
+                      _vm._s(_vm.results.daily_average_delivered) +
+                      " m\n              "
+                  ),
                   _c("sup", [_vm._v("3")])
                 ])
               ])
             ])
           ]
         ),
+        _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c(
@@ -73903,6 +73924,7 @@ var render = function() {
               ])
             ]
           ),
+          _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c(
@@ -73949,7 +73971,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "input-group-append" }, [
       _c("span", { staticClass: "input-group-text" }, [
-        _vm._v("m"),
+        _vm._v("\n              m\n              "),
         _c("sup", [_vm._v("3")])
       ])
     ])
@@ -74016,7 +74038,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'http://178.128.122.196',
+        url: 'http://localhost:8000',
         location: '',
         coefficient: '',
         area: '',
@@ -78259,7 +78281,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -78272,6 +78294,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ChartComponent__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ChartComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ChartComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ChartYearComponent__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ChartYearComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ChartYearComponent__);
 //
 //
 //
@@ -78332,10 +78356,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: { ChartComponent: __WEBPACK_IMPORTED_MODULE_0__ChartComponent___default.a },
+  components: { ChartComponent: __WEBPACK_IMPORTED_MODULE_0__ChartComponent___default.a, ChartYearComponent: __WEBPACK_IMPORTED_MODULE_1__ChartYearComponent___default.a },
   mounted: function mounted() {
     this.$store.dispatch("get_info");
   },
@@ -78346,6 +78376,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     years: function years() {
       return this.$store.state.info.totalYears;
+    },
+    yearsInfo: function yearsInfo() {
+      return this.$store.state.info.years;
+    },
+    yearsTotal: function yearsTotal() {
+      return this.$store.state.info.byyear;
     }
   }
 });
@@ -78463,7 +78499,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
         datasets: [{
           label: "Average Rainfall",
-          backgroundColor: "#f87979",
+          backgroundColor: "red",
           data: [(_this.rain[0] / _this.years).toFixed(2), (_this.rain[1] / _this.years).toFixed(2), (_this.rain[2] / _this.years).toFixed(2), (_this.rain[3] / _this.years).toFixed(2), (_this.rain[4] / _this.years).toFixed(2), (_this.rain[5] / _this.years).toFixed(2), (_this.rain[6] / _this.years).toFixed(2), (_this.rain[7] / _this.years).toFixed(2), (_this.rain[8] / _this.years).toFixed(2), (_this.rain[9] / _this.years).toFixed(2), (_this.rain[10] / _this.years).toFixed(2), (_this.rain[11] / _this.years).toFixed(2)]
         }]
       }, { responsive: true, maintainAspectRatio: false });
@@ -89328,7 +89364,30 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("chart-component", { attrs: { rain: _vm.rain, years: _vm.years } })
+        _c("chart-component", {
+          staticClass: "mb-5",
+          attrs: { rain: _vm.rain, years: _vm.years }
+        }),
+        _vm._v(" "),
+        _c("chart-year-component", {
+          attrs: { yearsInfo: _vm.yearsInfo, yearsTotal: _vm.yearsTotal }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "button d-flex justify-content-center mt-5" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "btn btn-success",
+                attrs: { to: { name: "simulator" } }
+              },
+              [_vm._v("back")]
+            )
+          ],
+          1
+        )
       ],
       1
     )
@@ -89349,6 +89408,134 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 342 */,
+/* 343 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(344)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(346)
+/* template */
+var __vue_template__ = null
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-5f1a52ad"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/ChartYearComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5f1a52ad", Component.options)
+  } else {
+    hotAPI.reload("data-v-5f1a52ad", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 344 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(345);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("e38f8f0c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f1a52ad\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChartYearComponent.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-5f1a52ad\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./ChartYearComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 345 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 346 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(294);
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  extends: __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__["a" /* Bar */],
+  props: ["yearsInfo", "yearsTotal"],
+  data: function data() {
+    return {
+      years: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    setTimeout(function () {
+      _this.renderChart({
+        labels: _this.yearsInfo,
+        datasets: [{
+          label: "Total Rainfall By Year",
+          backgroundColor: "blue",
+          data: _this.yearsTotal
+        }]
+      }, { responsive: true, maintainAspectRatio: false });
+      console.log(_this.yearsInfo);
+    }, 1000);
+  }
+});
 
 /***/ })
 /******/ ]);

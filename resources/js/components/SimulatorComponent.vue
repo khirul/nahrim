@@ -2,20 +2,20 @@
   <div>
     <div class="container">
       <br>
-      <div class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper">
+      <div
+        class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
+      >
         <div class="changeForm">
           <h4 style="text-align:center">Tank Size</h4>
           <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control text-right"
-              v-model="tanksize"
-            >
+            <input type="text" class="form-control text-right" v-model="tanksize">
             <div class="input-group-append">
-              <span class="input-group-text">m<sup>3</sup></span>
+              <span class="input-group-text">
+                m
+                <sup>3</sup>
+              </span>
             </div>
           </div>
-
         </div>
       </div>
       <div class="row d-flex justify-content-center">
@@ -24,10 +24,12 @@
           class="btn btn-success mr-2"
           style="margin-top: 20px; font-weight:bold;"
           v-if="sButton"
-        >Run
-          Simulation</button>
+        >
+          Run
+          Simulation
+        </button>
         <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
-                    v-if="!sButton">Start Over?</router-link> -->
+        v-if="!sButton">Start Over?</router-link>-->
         <button
           @click="next"
           class="btn btn-success"
@@ -41,9 +43,10 @@
           style="margin-top: 20px; font-weight:bold;"
         >More Info</router-link>
         <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
-                    v-if="!sButton">Start Over?</router-link> -->
+        v-if="!sButton">Start Over?</router-link>-->
       </div>
-      <br><br>
+      <br>
+      <br>
       <div class="flush">
         <div style="text-align: center">
           <h4>Simulation Results</h4>
@@ -52,7 +55,10 @@
           <div class="pad">
             <div style="text-align:center">Rainwater Captured:</div>
             <div class="input">
-              <h5>{{results.total_captured}} m<sup>3</sup></h5>
+              <h5>
+                {{results.total_captured}} m
+                <sup>3</sup>
+              </h5>
             </div>
           </div>
           <!-- <span class="equal">x</span> -->
@@ -60,18 +66,23 @@
             <div style="text-align:center">Total Rain Volume Delivered:</div>
             <div class="input">
               <h5>
-                {{results.total_delivered}} m<sup>3</sup></h5>
+                {{results.total_delivered}} m
+                <sup>3</sup>
+              </h5>
             </div>
           </div>
           <!-- <span class="equal">=</span> -->
           <div class="pad">
-            <div style="text-align:center"> Average Rain Delivered Per Day:
-            </div>
+            <div style="text-align:center">Average Rain Delivered Per Day:</div>
             <div class="input">
-              <h5>{{results.daily_average_delivered}} m<sup>3</sup></h5>
+              <h5>
+                {{results.daily_average_delivered}} m
+                <sup>3</sup>
+              </h5>
             </div>
           </div>
-        </div><br>
+        </div>
+        <br>
         <div class="d-flex flex-row justify-content-center align-items-center wrapper">
           <div class="pad">
             <div style="text-align:center">No. of Days Usage Volume Not Meet:</div>
@@ -93,7 +104,6 @@
               <h5>{{results.norain_tankempty}} days</h5>
             </div>
           </div>
-
         </div>
         <div class="flush">
           <div style="text-align: center">
@@ -120,8 +130,9 @@
                             <div class="input">
                                 <h5>{{results.daily_average_delivered}} m<sup>3</sup></h5>
                             </div>
-                        </div> -->
-          </div><br>
+            </div>-->
+          </div>
+          <br>
           <div class="d-flex flex-row justify-content-center align-items-center wrapper">
             <div class="pad">
               <div style="text-align:center">Storage Efficiency:</div>
@@ -142,12 +153,10 @@
                             <div class="input">
                                 <h5>{{results.norain_tankempty}} m<sup>3</sup></h5>
                             </div>
-                        </div> -->
-
+            </div>-->
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -187,6 +196,7 @@ export default {
         .then(response => {
           //this.sButton = false;
           this.results = response.data;
+          console.log(response.data);
           //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
         })
         .catch(e => console.log(e));
