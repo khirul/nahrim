@@ -26,7 +26,7 @@ export default {
         { responsive: true, maintainAspectRatio: false }
       );
       console.log(this.yearsInfo);
-    }, 1000);
+    }, 1500);
   }
 };
 </script>
