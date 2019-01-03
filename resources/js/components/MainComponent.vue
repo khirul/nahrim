@@ -1,96 +1,177 @@
 <template>
-  <div class="main">
-    <div class="title">NAHRIM App 2018</div>
-    <p
-      style="color:#4973ff"
-    >Interested in installing a rainwater harvesting system? How big should your tank be?</p>
-    <p style="color:#4973ff">How to make the most of the rainfall in your area?</p>
-    <p
-      style="color:#4973ff"
-    >Tangki NAHRIM can help you estimate your rainwater harvesting tank size.</p>
-    <p style="color:#4973ff; font-weight:bold">Click on 'Get Start' to calculate.</p>
-    <div class="circle">
-      <div class="wave"></div>
+  <div>
+    <div class="bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 logo-container d-flex justify-content-center align-items-center">
+            <img src="/images/nahrimlogo.png" height="50" alt>
+            <div class="logo text-center pl-3">TANGKI NAHRIM APP</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <router-link
-      :to="{name: 'menu'}"
-      class="btn btn-success"
-      style="margin-top: 40px; font-weight:bold;"
-    >Get Start</router-link>
+    <!-- /.bar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 a ayaq"></div>
+        <div
+          class="col-md-4 a tangki d-flex flex-column justify-content-center align-items-center"
+          @click="module1"
+        >
+          <h3>Tank Simulation</h3>
+          <p
+            class="para text-center"
+          >The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system.</p>
+        </div>
+        <div class="m col-md-3 a d-flex flex-column justify-content-center align-items-center">
+          <img src="/images/jata01.png" height="250" alt>
+          <span class="jata text-center pl-3 pr-3">National Hydraulic Research Institute of Malaysia</span>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-md-4 a d-flex align-items-center">
+          <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="3000"
+          >
+            <div class="carousel-inner cor text-center">
+              <div class="carousel-item active">
+                <span>Interested in installing a rainwater harvesting system?</span>
+              </div>
+              <div class="carousel-item">
+                <span>How big should your tank be?</span>
+              </div>
+              <div class="carousel-item">
+                <span>How to make the most of the rainfall in your area?</span>
+              </div>
+              <div class="carousel-item">
+                <span>
+                  <span class="nahrim">TANGKI NAHRIM APP</span>
+                  <br>help you estimate your rainwater harvesting tank size.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="n col-md-4 a p-5 d-flex flex-column justify-content-center align-items-center">
+          <span class="para01 text-center mb-3">Rain Water Harvesting System</span>
+          <carousel-component></carousel-component>
+        </div>
+        <div class="col-md-4 a"></div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
   </div>
 </template>
+
 <script>
-export default {};
+import CarouselComponent from "./CarouselComponent";
+export default {
+  components: {
+    CarouselComponent
+  },
+  methods: {
+    module1() {
+      this.$router.push({
+        name: "station"
+      });
+    },
+    module2() {
+      this.show = true;
+    },
+    mouseout() {
+      this.show = false;
+    },
+    gravity() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "gravity");
+    },
+    direct() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "direct");
+    },
+    indirect() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "indirect");
+    }
+  }
+};
 </script>
+
 <style scoped>
-.title {
-  margin-bottom: 20px;
-  color: rgba(11, 179, 101, 0.815);
-  font-family: "Kreon", serif;
-  font-size: 3em;
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body {
+  background: white !important;
 }
-
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+.bar {
+  border: 2px solid black;
+  border-top: 4px solid black;
+  margin-top: 20px;
 }
-
-.circle {
-  overflow: hidden;
-  width: 150px;
+.cor span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+.carousel-item {
+  width: 600px;
   height: 150px;
-  margin: 0 auto;
-  background: rgba(204, 204, 204, 0);
-  box-shadow: 0 0 0 5px #4973ff;
-  border: 5px solid rgba(255, 255, 255, 0.596);
-  border-radius: 50%;
 }
-
-.wave {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
-  background: #4973ff;
-  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+.logo-container {
+  background: rgb(110, 106, 106);
+  line-height: 80px;
+  border-right: 4px solid black;
 }
-
-.wave:before,
-.wave:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 200%;
-  height: 200%;
-  background: #000;
-  transform: translate(-50%, -75%);
+.logo {
+  font-size: 32px;
+  color: azure;
 }
-
-.wave:before {
-  background: rgba(255, 255, 255, 0.74);
-  border-radius: 45%;
-  animation: animate 5s linear infinite;
+.n {
+  background: rgb(172, 172, 172);
 }
-
-.wave:after {
-  background: rgba(255, 255, 255, 0.295);
-  border-radius: 40%;
-  animation: animate 10s linear infinite;
+.m {
+  background: lightgrey;
 }
-
-@keyframes animate {
-  0% {
-    transform: translate(-50%, -75%) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(-50%, -75%) rotate(360deg);
-  }
+.a {
+  border: 2px solid black;
+  padding: 0;
+  min-height: 500px;
+}
+.ayaq {
+  background: url("/images/ayaq001.gif");
+  background-size: cover;
+}
+.nahrim {
+  color: lightgrey;
+  font-weight: bolder;
+  background-color: black;
+}
+.para {
+  padding: 0 150px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+.para01 {
+  padding: 0 50px;
+  color: azure;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+.jata {
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+.tangki {
+  cursor: pointer;
 }
 </style>

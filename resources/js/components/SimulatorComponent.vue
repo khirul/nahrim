@@ -5,8 +5,12 @@
       <div
         class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
       >
-        <div class="changeForm">
-          <h4 style="text-align:center">Tank Size</h4>
+        <div class="info text-center">
+          <h3>Location: {{ this.$store.state.location}}</h3>
+          <h3>Data dari tahun {{yearsInfo[0]}} hingga {{yearsInfo[years-1]}}</h3>
+        </div>
+        <div class="changeForm mt-4">
+          <h4 style="text-align:center">Proposed Tank Size</h4>
           <div class="input-group mb-3">
             <input type="text" class="form-control text-right" v-model="tanksize">
             <div class="input-group-append">
@@ -30,18 +34,8 @@
         </button>
         <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
         v-if="!sButton">Start Over?</router-link>-->
-        <button
-          @click="next"
-          class="btn btn-success"
-          style="margin-top: 20px; font-weight:bold;"
-        >Continue</button>
       </div>
       <div class="row d-flex justify-content-center">
-        <router-link
-          :to="{name: 'average'}"
-          class="btn btn-success mr-2"
-          style="margin-top: 20px; font-weight:bold;"
-        >More Info</router-link>
         <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
         v-if="!sButton">Start Over?</router-link>-->
       </div>
@@ -158,6 +152,18 @@
         </div>
       </div>
     </div>
+    <div class="d-flex justify-content-center">
+      <button
+        @click="next"
+        class="btn btn-success"
+        style="margin-top: 20px; font-weight:bold;"
+      >Continue</button>
+      <router-link
+        :to="{name: 'average'}"
+        class="btn btn-success mr-2 ml-3"
+        style="margin-top: 20px; font-weight:bold;"
+      >More Info</router-link>
+    </div>
   </div>
 </template>
 <script>
@@ -171,10 +177,27 @@ export default {
       //captured: results.total_captured
     };
   },
+  mounted() {
+    this.$store.dispatch("get_info");
+  },
+  computed: {
+    rain() {
+      return this.$store.state.info.monthlyTotal;
+    },
+    years() {
+      return this.$store.state.info.totalYears;
+    },
+    yearsInfo() {
+      return this.$store.state.info.years;
+    },
+    yearsTotal() {
+      return this.$store.state.info.byyear;
+    }
+  },
   methods: {
     next() {
       this.$router.push({
-        name: "menu"
+        name: "root"
       });
     },
     simulate() {
@@ -208,7 +231,7 @@ export default {
 .flush {
   padding: 20px 70px;
   margin-top: 20px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 10px;
 }
 
