@@ -3,18 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Nahrim;
+use App\Coordinate;
 
 class RainfallsController extends Controller
 {
     public function location()
     {
-        $city = [];
-        $location = Nahrim::all();
-        foreach ($location as $l) {
-            $city[] = $l->location;
-        }
+        // $city = [];
+        // $location = Nahrim::all();
+        // foreach ($location as $l) {
+        //     $city[] = $l->location;
+        // }
 
-        return response()->json(array_unique($city), 200);
+        // return response()->json(array_unique($city), 200);
+        $location = Coordinate::all();
+        return $location;
+        return response()->json($location, 200);
     }
 
     public function calculation()

@@ -72295,7 +72295,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n", ""]);
 
 // exports
 
@@ -72307,18 +72307,6 @@ exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__ = __webpack_require__(29);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -72378,6 +72366,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     next: function next() {
       this.$store.commit("SET_LOCATION", this.loc);
       this.$router.push("/roof-characteristics");
+    },
+    clicked_location: function clicked_location(loc) {
+      this.loc = loc;
     }
   },
   computed: {
@@ -72385,7 +72376,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.$store.getters.currentPos;
     },
     zoom: function zoom() {
-      return 12;
+      return 10;
     }
   },
   mounted: function mounted() {
@@ -72980,7 +72971,7 @@ var render = function() {
               "LMap",
               {
                 ref: "map",
-                staticStyle: { height: "400px", width: "640px" },
+                staticStyle: { height: "50vh", width: "50vw" },
                 attrs: { center: _vm.currentPosition, zoom: _vm.zoom }
               },
               [
@@ -72988,10 +72979,50 @@ var render = function() {
                   attrs: { url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png" }
                 }),
                 _vm._v(" "),
-                _c("LMarker", {
-                  staticClass: "blink",
-                  attrs: { latlng: _vm.currentPosition }
-                }),
+                _c(
+                  "LMarker",
+                  {
+                    staticClass: "blink",
+                    attrs: { latlng: _vm.currentPosition }
+                  },
+                  [
+                    _c(
+                      "LTooltip",
+                      {
+                        attrs: {
+                          options: { interactive: true, permanent: true }
+                        }
+                      },
+                      [_c("strong", [_vm._v("You are HERE!")])]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v("/>\n        "),
+                _c(
+                  "LMarker",
+                  {
+                    staticClass: "blink",
+                    attrs: { latlng: [2.7375, 101.955556] },
+                    on: {
+                      click: function($event) {
+                        _vm.clicked_location("SEREMBAN")
+                      }
+                    }
+                  },
+                  [
+                    _c(
+                      "LTooltip",
+                      {
+                        attrs: {
+                          options: { interactive: true, permanent: true }
+                        }
+                      },
+                      [_c("strong", [_vm._v("SEREMBAN")])]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v("/>\n      ")
               ],
               1
@@ -73017,7 +73048,7 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "alert alert-primary text-center" }, [
               _vm._v(
-                "\n        Please select the nearest rainfall station to your rainwater harvesting tank.\n      "
+                "Please select the nearest rainfall station to your rainwater harvesting tank."
               )
             ]),
             _vm._v(" "),
@@ -73050,7 +73081,9 @@ var render = function() {
                 }
               },
               _vm._l(_vm.locations, function(value, key) {
-                return _c("option", { key: key }, [_vm._v(_vm._s(value))])
+                return _c("option", { key: key }, [
+                  _vm._v(_vm._s(value.stn_name))
+                ])
               })
             ),
             _vm._v(" "),
@@ -73061,7 +73094,7 @@ var render = function() {
                 staticStyle: { "margin-top": "20px", "font-weight": "bold" },
                 on: { click: _vm.next }
               },
-              [_vm._v("Roof\n        Characteristics")]
+              [_vm._v("\n        Roof\n        Characteristics\n      ")]
             )
           ]
         )
@@ -74621,7 +74654,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'http://localhost:8000',
+        url: 'https://nahrimapp.test',
         location: '',
         coefficient: '',
         area: '',
