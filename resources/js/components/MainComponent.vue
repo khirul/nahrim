@@ -3,9 +3,9 @@
     <div class="bar">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3 logo-container d-flex justify-content-center align-items-center">
+          <div class="col-md-6 logo-container d-flex justify-content-center align-items-center">
             <img src="/images/nahrimlogo.png" height="50" alt>
-            <div class="logo text-center pl-3">TANGKI NAHRIM APP</div>
+            <div class="logo text-center pl-3">NAHRIM RAINWATER HARVESTING SYSTEM APPLICATION</div>
           </div>
         </div>
       </div>
@@ -18,18 +18,28 @@
           class="col-md-4 a tangki d-flex flex-column justify-content-center align-items-center"
           @click="module1"
         >
-          <h3>Tank Simulation</h3>
+          <h3>Tangki NAHRIM Simulation</h3>
           <p
             class="para text-center"
           >The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system.</p>
+          <p class="para1 text-center">Revised version of previous Tangki NAHRIM</p>
         </div>
         <div class="m col-md-3 a d-flex flex-column justify-content-center align-items-center">
-          <img src="/images/jata01.png" height="250" alt>
+          <img src="/images/jata01.png" class="img-fluid" alt>
           <span class="jata text-center pl-3 pr-3">National Hydraulic Research Institute of Malaysia</span>
         </div>
       </div>
       <!-- /.row -->
       <div class="row">
+        <div class="col-md-4 a tangki d-flex flex-column justify-content-center align-items-center">
+          <h3>Rainwater Harvesting System Design</h3>
+          <p class="para text-center">Based on NAHRIM Technical Guide No 2:</p>
+          <p class="para text-center">The Design Guide for Rainwater Harvesting Systems</p>
+        </div>
+        <div class="n col-md-4 a p-5 d-flex flex-column justify-content-center align-items-center">
+          <span class="para01 text-center mb-3">Rain Water Harvesting System</span>
+          <carousel-component></carousel-component>
+        </div>
         <div class="col-md-4 a d-flex align-items-center">
           <div
             id="carouselExampleSlidesOnly"
@@ -39,28 +49,23 @@
           >
             <div class="carousel-inner cor text-center">
               <div class="carousel-item active">
-                <span>Interested in installing a rainwater harvesting system?</span>
+                <span>Rainwater Harvesting System in just one click?</span>
               </div>
               <div class="carousel-item">
-                <span>How big should your tank be?</span>
+                <span>How big rainwater harvesting tank?</span>
               </div>
               <div class="carousel-item">
-                <span>How to make the most of the rainfall in your area?</span>
+                <span>Design your Rainwater Harvesting System</span>
               </div>
-              <div class="carousel-item">
+              <!-- <div class="carousel-item">
                 <span>
                   <span class="nahrim">TANGKI NAHRIM APP</span>
                   <br>help you estimate your rainwater harvesting tank size.
                 </span>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
-        <div class="n col-md-4 a p-5 d-flex flex-column justify-content-center align-items-center">
-          <span class="para01 text-center mb-3">Rain Water Harvesting System</span>
-          <carousel-component></carousel-component>
-        </div>
-        <div class="col-md-4 a"></div>
       </div>
       <!-- /.row -->
     </div>
@@ -167,11 +172,17 @@ body {
   font-size: 24px;
   font-weight: bold;
 }
+.para1 {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
 .jata {
   font-family: "Quicksand", sans-serif;
   font-size: 30px;
 }
 .tangki {
   cursor: pointer;
+  position: relative;
 }
 </style>

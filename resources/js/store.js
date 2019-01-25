@@ -37,7 +37,8 @@ export default new Vuex.Store({
         menu_type: '',
         pumppow: '',
         pumpShow: false,
-        info: ''
+        info: '',
+        coords: []
     },
     getters: {
         currentPos(state) {
@@ -144,6 +145,9 @@ export default new Vuex.Store({
         },
         SET_INFO(state, payload) {
             state.info = payload
+        },
+        SET_COORDS(state, payload) {
+            state.coords = payload
         }
     },
     actions: {
@@ -161,6 +165,19 @@ export default new Vuex.Store({
                 .then(response => {
                     commit('SET_INFO', response.data)
                     console.log(response.data)
+                })
+                .catch(e => {
+                    console.log(e)
+                })
+        },
+        get_all_latlong({
+            state,
+            commit
+        }, payload) {
+            axios
+                .get(state.url + '/api/coords')
+                .then(response => {
+                    commit('SET_COORDS', response.data)
                 })
                 .catch(e => {
                     console.log(e)

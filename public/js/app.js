@@ -71664,7 +71664,7 @@ exports = module.exports = __webpack_require__(3)(false);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand);", ""]);
 
 // module
-exports.push([module.i, "\nbody[data-v-3ee370e9] {\n  background: white !important;\n}\n.bar[data-v-3ee370e9] {\n  border: 2px solid black;\n  border-top: 4px solid black;\n  margin-top: 20px;\n}\n.cor span[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.carousel-item[data-v-3ee370e9] {\n  width: 600px;\n  height: 150px;\n}\n.logo-container[data-v-3ee370e9] {\n  background: rgb(110, 106, 106);\n  line-height: 80px;\n  border-right: 4px solid black;\n}\n.logo[data-v-3ee370e9] {\n  font-size: 32px;\n  color: azure;\n}\n.n[data-v-3ee370e9] {\n  background: rgb(172, 172, 172);\n}\n.m[data-v-3ee370e9] {\n  background: lightgrey;\n}\n.a[data-v-3ee370e9] {\n  border: 2px solid black;\n  padding: 0;\n  min-height: 500px;\n}\n.ayaq[data-v-3ee370e9] {\n  background: url(\"/images/ayaq001.gif\");\n  background-size: cover;\n}\n.nahrim[data-v-3ee370e9] {\n  color: lightgrey;\n  font-weight: bolder;\n  background-color: black;\n}\n.para[data-v-3ee370e9] {\n  padding: 0 150px;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 20px;\n}\n.para01[data-v-3ee370e9] {\n  padding: 0 50px;\n  color: azure;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 24px;\n  font-weight: bold;\n}\n.jata[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.tangki[data-v-3ee370e9] {\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\nbody[data-v-3ee370e9] {\n  background: white !important;\n}\n.bar[data-v-3ee370e9] {\n  border: 2px solid black;\n  border-top: 4px solid black;\n  margin-top: 20px;\n}\n.cor span[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.carousel-item[data-v-3ee370e9] {\n  width: 600px;\n  height: 150px;\n}\n.logo-container[data-v-3ee370e9] {\n  background: rgb(110, 106, 106);\n  line-height: 80px;\n  border-right: 4px solid black;\n}\n.logo[data-v-3ee370e9] {\n  font-size: 32px;\n  color: azure;\n}\n.n[data-v-3ee370e9] {\n  background: rgb(172, 172, 172);\n}\n.m[data-v-3ee370e9] {\n  background: lightgrey;\n}\n.a[data-v-3ee370e9] {\n  border: 2px solid black;\n  padding: 0;\n  min-height: 500px;\n}\n.ayaq[data-v-3ee370e9] {\n  background: url(\"/images/ayaq001.gif\");\n  background-size: cover;\n}\n.nahrim[data-v-3ee370e9] {\n  color: lightgrey;\n  font-weight: bolder;\n  background-color: black;\n}\n.para[data-v-3ee370e9] {\n  padding: 0 150px;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 20px;\n}\n.para01[data-v-3ee370e9] {\n  padding: 0 50px;\n  color: azure;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 24px;\n  font-weight: bold;\n}\n.para1[data-v-3ee370e9] {\n  position: absolute;\n  bottom: 0;\n  font-size: 20px;\n}\n.jata[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.tangki[data-v-3ee370e9] {\n  cursor: pointer;\n  position: relative;\n}\n", ""]);
 
 // exports
 
@@ -71677,6 +71677,11 @@ exports.push([module.i, "\nbody[data-v-3ee370e9] {\n  background: white !importa
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CarouselComponent__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -72112,12 +72117,16 @@ var render = function() {
             on: { click: _vm.module1 }
           },
           [
-            _c("h3", [_vm._v("Tank Simulation")]),
+            _c("h3", [_vm._v("Tangki NAHRIM Simulation")]),
             _vm._v(" "),
             _c("p", { staticClass: "para text-center" }, [
               _vm._v(
                 "The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system."
               )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "para1 text-center" }, [
+              _vm._v("Revised version of previous Tangki NAHRIM")
             ])
           ]
         ),
@@ -72144,7 +72153,7 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-4 a" })
+        _vm._m(3)
       ])
     ])
   ])
@@ -72161,7 +72170,7 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "col-md-3 logo-container d-flex justify-content-center align-items-center"
+                "col-md-6 logo-container d-flex justify-content-center align-items-center"
             },
             [
               _c("img", {
@@ -72169,7 +72178,7 @@ var staticRenderFns = [
               }),
               _vm._v(" "),
               _c("div", { staticClass: "logo text-center pl-3" }, [
-                _vm._v("TANGKI NAHRIM APP")
+                _vm._v("NAHRIM RAINWATER HARVESTING SYSTEM APPLICATION")
               ])
             ]
           )
@@ -72189,11 +72198,35 @@ var staticRenderFns = [
       },
       [
         _c("img", {
-          attrs: { src: "/images/jata01.png", height: "250", alt: "" }
+          staticClass: "img-fluid",
+          attrs: { src: "/images/jata01.png", alt: "" }
         }),
         _vm._v(" "),
         _c("span", { staticClass: "jata text-center pl-3 pr-3" }, [
           _vm._v("National Hydraulic Research Institute of Malaysia")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "col-md-4 a tangki d-flex flex-column justify-content-center align-items-center"
+      },
+      [
+        _c("h3", [_vm._v("Rainwater Harvesting System Design")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "para text-center" }, [
+          _vm._v("Based on NAHRIM Technical Guide No 2:")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "para text-center" }, [
+          _vm._v("The Design Guide for Rainwater Harvesting Systems")
         ])
       ]
     )
@@ -72217,33 +72250,16 @@ var staticRenderFns = [
           _c("div", { staticClass: "carousel-inner cor text-center" }, [
             _c("div", { staticClass: "carousel-item active" }, [
               _c("span", [
-                _vm._v(
-                  "Interested in installing a rainwater harvesting system?"
-                )
+                _vm._v("Rainwater Harvesting System in just one click?")
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "carousel-item" }, [
-              _c("span", [_vm._v("How big should your tank be?")])
+              _c("span", [_vm._v("How big rainwater harvesting tank?")])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "carousel-item" }, [
-              _c("span", [
-                _vm._v("How to make the most of the rainfall in your area?")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "carousel-item" }, [
-              _c("span", [
-                _c("span", { staticClass: "nahrim" }, [
-                  _vm._v("TANGKI NAHRIM APP")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "help you estimate your rainwater harvesting tank size.\n              "
-                )
-              ])
+              _c("span", [_vm._v("Design your Rainwater Harvesting System")])
             ])
           ])
         ]
@@ -72295,7 +72311,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\n  position: relative;\n  z-index: 1;\n}\n.leaflet-tooltip[data-v-b456a7d8] {\n  background: red !important;\n  color: white !important;\n}\n.dd-container[data-v-b456a7d8] {\n  background: rgba(87, 84, 84, 0.397);\n  z-index: 2;\n  top: 0;\n  right: 0;\n  position: fixed;\n  width: 400px;\n\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\n  z-index: 3;\n}\n", ""]);
 
 // exports
 
@@ -72376,7 +72392,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.$store.getters.currentPos;
     },
     zoom: function zoom() {
-      return 10;
+      return 12;
     }
   },
   mounted: function mounted() {
@@ -72393,6 +72409,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       _this.$store.commit("SET_LONG", position.coords.longitude);
       console.log(position);
     });
+
+    this.$store.dispatch("get_all_latlong");
   }
 });
 
@@ -72960,18 +72978,18 @@ var render = function() {
       "div",
       {
         staticClass:
-          "row h-100 d-flex align-items-center justify-content-center pt-5"
+          "row h-100 d-flex align-items-center justify-content-center"
       },
       [
         _c(
           "div",
-          { staticClass: "col-md-8" },
+          { staticClass: "map" },
           [
             _c(
               "LMap",
               {
                 ref: "map",
-                staticStyle: { height: "50vh", width: "50vw" },
+                staticStyle: { height: "100vh", width: "100vw" },
                 attrs: { center: _vm.currentPosition, zoom: _vm.zoom }
               },
               [
@@ -72989,6 +73007,7 @@ var render = function() {
                     _c(
                       "LTooltip",
                       {
+                        staticClass: "yah",
                         attrs: {
                           options: { interactive: true, permanent: true }
                         }
@@ -72998,106 +73017,121 @@ var render = function() {
                   ],
                   1
                 ),
-                _vm._v("/>\n        "),
-                _c(
-                  "LMarker",
-                  {
-                    staticClass: "blink",
-                    attrs: { latlng: [2.7375, 101.955556] },
-                    on: {
-                      click: function($event) {
-                        _vm.clicked_location("SEREMBAN")
-                      }
-                    }
-                  },
-                  [
-                    _c(
-                      "LTooltip",
-                      {
-                        attrs: {
-                          options: { interactive: true, permanent: true }
-                        }
-                      },
-                      [_c("strong", [_vm._v("SEREMBAN")])]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v("/>\n      ")
+                _vm._v(" "),
+                _vm._l(this.$store.state.coords, function(c) {
+                  return _c(
+                    "span",
+                    { key: c.id },
+                    [
+                      _c(
+                        "LMarker",
+                        {
+                          staticClass: "blink",
+                          attrs: { latlng: [c.lat, c.lon] },
+                          on: {
+                            click: function($event) {
+                              _vm.clicked_location(c.stn_name)
+                            }
+                          }
+                        },
+                        [
+                          _c(
+                            "LTooltip",
+                            {
+                              attrs: {
+                                options: { interactive: true, permanent: true }
+                              }
+                            },
+                            [_c("strong", [_vm._v(_vm._s(c.stn_name))])]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                })
               ],
-              1
+              2
             )
           ],
           1
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "col-md-4 d-flex flex-column align-items-center justify-content-center rain"
-          },
-          [
-            _c("img", {
-              attrs: { src: "images/rain.png", height: "100", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("h1", { staticStyle: { color: "rgba(11, 179, 101, 0.815)" } }, [
-              _vm._v("Rainfall Station")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "alert alert-primary text-center" }, [
-              _vm._v(
-                "Please select the nearest rainfall station to your rainwater harvesting tank."
+        _c("div", { staticClass: "dd-container" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "dd d-flex flex-column align-items-center justify-content-center rain"
+            },
+            [
+              _c("img", {
+                attrs: { src: "images/rain.png", height: "100", alt: "" }
+              }),
+              _vm._v(" "),
+              _c(
+                "h1",
+                { staticStyle: { color: "rgba(11, 179, 101, 0.815)" } },
+                [_vm._v("Rainfall Station")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "alert alert-primary text-center" }, [
+                _vm._v(
+                  "Please select the nearest rainfall station to your rainwater harvesting tank."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.loc,
+                      expression: "loc"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.loc = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                _vm._l(_vm.locations, function(value, key) {
+                  return _c("option", { key: key }, [
+                    _vm._v(_vm._s(value.stn_name))
+                  ])
+                })
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success",
+                  staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+                  on: { click: _vm.next }
+                },
+                [
+                  _vm._v("\n          Next\n          "),
+                  _c("i", { staticClass: "fas fa-chevron-circle-right" })
+                ]
               )
-            ]),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.loc,
-                    expression: "loc"
-                  }
-                ],
-                staticClass: "form-control",
-                on: {
-                  change: function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.loc = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  }
-                }
-              },
-              _vm._l(_vm.locations, function(value, key) {
-                return _c("option", { key: key }, [
-                  _vm._v(_vm._s(value.stn_name))
-                ])
-              })
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-success",
-                staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-                on: { click: _vm.next }
-              },
-              [_vm._v("\n        Roof\n        Characteristics\n      ")]
-            )
-          ]
-        )
+            ]
+          )
+        ])
       ]
     )
   ])
@@ -73147,7 +73181,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-346519ae] {\n  margin-top: 20px;\n}\nlabel[data-v-346519ae] {\n  display: block;\n  padding-left: 10px;\n  margin-bottom: 0;\n  font-size: small;\n}\ninput[data-v-346519ae] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n}\n.equal[data-v-346519ae] {\n  margin-top: 20px;\n  margin-right: 10px;\n  margin-left: 10px;\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  padding-left: 30px;\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\n  width: 130px;\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\n  width: 50px;\n  text-align: center;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  padding-left: 130px;\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n", ""]);
 
 // exports
 
@@ -73158,6 +73192,146 @@ exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73278,144 +73452,164 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container h-100 w-100" }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
-      },
-      [
-        _c("img", {
-          attrs: { src: "/images/roof.png", height: "100", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("h1", { staticClass: "text-center text-success" }, [
-          _vm._v("Roof Characteristics")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "hr w-100" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "d-flex flex-row form" }, [
-          _c("div", [
-            _c("label", { attrs: { for: "length" } }, [_vm._v("Length")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.length,
-                  expression: "length"
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.length },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.length = $event.target.value
-                }
-              }
-            }),
-            _vm._v("m\n      ")
-          ]),
-          _vm._v(" "),
-          _c("span", { staticClass: "equal" }, [_vm._v("x")]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "width" } }, [_vm._v("Width")]),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.width,
-                  expression: "width"
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.width },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.width = $event.target.value
-                }
-              }
-            }),
-            _vm._v("m\n      ")
-          ]),
-          _vm._v(" "),
-          _c("span", { staticClass: "equal" }, [_vm._v("=")]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "area" } }, [_vm._v("Area")]),
-            _vm._v(" "),
-            _c("input", {
-              attrs: { type: "text", disabled: "" },
-              domProps: { value: _vm.area }
-            }),
-            _vm._v("m\n        "),
-            _c("sup", [_vm._v("2")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flush d-flex flex-row" }, [
-          _c("div", [
-            _c("div", [
-              _vm._m(0),
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("h1", { staticClass: "text-center text-success" }, [
+        _vm._v("Roof Characteristics")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "hr w-100" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-7" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "d-flex flex-column align-items-around justify-content-center form"
+            },
+            [
+              _vm._m(1),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.depth,
-                    expression: "depth"
-                  }
-                ],
-                attrs: { type: "text" },
-                domProps: { value: _vm.depth },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+              _c(
+                "div",
+                { staticClass: "input-group d-flex align-items-center" },
+                [
+                  _c("label", { attrs: { for: "length" } }, [_vm._v("Length")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.length,
+                        expression: "length"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", "aria-describedby": "basic-addon2" },
+                    domProps: { value: _vm.length },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.length = $event.target.value
+                      }
                     }
-                    _vm.depth = $event.target.value
-                  }
-                }
-              }),
-              _vm._v("mm\n        ")
-            ]),
-            _vm._v(" "),
-            _vm._m(1)
-          ]),
+                  }),
+                  _vm._v(" "),
+                  _vm._m(2)
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "input-group d-flex align-items-center" },
+                [
+                  _c("label", { attrs: { for: "width" } }, [_vm._v("Width")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.width,
+                        expression: "width"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", "aria-describedby": "basic-addon2" },
+                    domProps: { value: _vm.width },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.width = $event.target.value
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _vm._m(3)
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "input-group d-flex align-items-center" },
+                [
+                  _c("label", { attrs: { for: "width" } }, [_vm._v("Area")]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      type: "text",
+                      disabled: "",
+                      "aria-describedby": "basic-addon2"
+                    },
+                    domProps: { value: _vm.area }
+                  }),
+                  _vm._v(" "),
+                  _vm._m(4)
+                ]
+              )
+            ]
+          ),
           _vm._v(" "),
-          _c("span", { staticClass: "equal" }),
+          _vm._m(5),
           _vm._v(" "),
-          _c("div", [
-            _vm._m(2),
+          _c("div", { staticClass: "input-group d-flex align-items-center" }, [
+            _vm._m(6),
             _vm._v(" "),
             _c("input", {
-              attrs: { type: "text", disabled: "" },
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.depth,
+                  expression: "depth"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", "aria-describedby": "basic-addon2" },
+              domProps: { value: _vm.depth },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.depth = $event.target.value
+                }
+              }
+            }),
+            _vm._v(" "),
+            _vm._m(7)
+          ]),
+          _vm._v(" "),
+          _vm._m(8),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group d-flex align-items-center" }, [
+            _vm._m(9),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: {
+                type: "text",
+                disabled: "",
+                "aria-describedby": "basic-addon2"
+              },
               domProps: { value: _vm.flush }
             }),
-            _vm._v("m\n        "),
-            _c("sup", [_vm._v("3")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "type text-center" }, [
-          _c("h4", [_vm._v("Type of Roof Surface")]),
+            _vm._v(" "),
+            _vm._m(10)
+          ]),
           _vm._v(" "),
-          _vm._m(3),
+          _vm._m(11),
           _vm._v(" "),
-          _c("div", { staticClass: "d-flex flex-row sel" }, [
+          _c("div", { staticClass: "d-flex flex-row" }, [
             _c(
               "select",
               {
@@ -73427,6 +73621,7 @@ var render = function() {
                     expression: "coefficient"
                   }
                 ],
+                staticClass: "form-control mr-1",
                 on: {
                   change: [
                     function($event) {
@@ -73465,6 +73660,7 @@ var render = function() {
             _vm._v(" "),
             _vm.others
               ? _c("input", {
+                  staticClass: "form-control",
                   attrs: { type: "text", disabled: "" },
                   domProps: { value: _vm.coefficient }
                 })
@@ -73477,6 +73673,7 @@ var render = function() {
                       expression: "coefficient"
                     }
                   ],
+                  staticClass: "form-control",
                   attrs: { type: "number", min: "0", max: "1", step: ".1" },
                   domProps: { value: _vm.coefficient },
                   on: {
@@ -73493,15 +73690,17 @@ var render = function() {
           _c(
             "button",
             {
-              staticClass: "btn btn-success",
+              staticClass: "btn btn-lg btn-success",
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               on: { click: _vm.next }
             },
-            [_vm._v("Continue")]
+            [_vm._v("Next")]
           )
-        ])
-      ]
-    )
+        ]),
+        _vm._v(" "),
+        _vm._m(12)
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -73509,10 +73708,87 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex justify-content-center" }, [
+      _c("img", { attrs: { src: "/images/roof.png", height: "100", alt: "" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [_vm._v("Roof Area Calculation")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("m")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("m")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [
+          _vm._v("\n                m\n                "),
+          _c("sup", [_vm._v("2")])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [
+        _vm._v("First Flush Volume Calculation")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "length" } }, [
       _vm._v("\n            1\n            "),
       _c("sup", [_vm._v("st")]),
-      _vm._v(" flush depth\n          ")
+      _vm._v(" Flush Depth\n          ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("mm")]
+      )
     ])
   },
   function() {
@@ -73527,19 +73803,49 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "volume" } }, [
-      _vm._v("\n          1\n          "),
+    return _c("label", { attrs: { for: "length" } }, [
+      _vm._v("\n            1\n            "),
       _c("sup", [_vm._v("st")]),
-      _vm._v(" flush volume\n        ")
+      _vm._v(" Flush Volume\n          ")
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-right co" }, [
-      _c("span", { staticClass: "small" }, [_vm._v("Run-off Coefficient")])
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("\n              mm\n              "), _c("sup", [_vm._v("3")])]
+      )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [_vm._v("Run-off Coefficient")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "col-md-5 d-flex align-items-center justify-content-center"
+      },
+      [
+        _c("img", {
+          staticClass:
+            "img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}",
+          attrs: { src: "/images/roof.jpg", alt: "" }
+        })
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -74687,7 +74993,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         menu_type: '',
         pumppow: '',
         pumpShow: false,
-        info: ''
+        info: '',
+        coords: []
     },
     getters: {
         currentPos: function currentPos(state) {
@@ -74794,6 +75101,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         },
         SET_INFO: function SET_INFO(state, payload) {
             state.info = payload;
+        },
+        SET_COORDS: function SET_COORDS(state, payload) {
+            state.coords = payload;
         }
     },
     actions: {
@@ -74809,6 +75119,16 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
             }).then(function (response) {
                 commit('SET_INFO', response.data);
                 console.log(response.data);
+            }).catch(function (e) {
+                console.log(e);
+            });
+        },
+        get_all_latlong: function get_all_latlong(_ref2, payload) {
+            var state = _ref2.state,
+                commit = _ref2.commit;
+
+            __WEBPACK_IMPORTED_MODULE_2_axios___default.a.get(state.url + '/api/coords').then(function (response) {
+                commit('SET_COORDS', response.data);
             }).catch(function (e) {
                 console.log(e);
             });

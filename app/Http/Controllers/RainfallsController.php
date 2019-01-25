@@ -209,10 +209,10 @@ class RainfallsController extends Controller
         }
         //$index = $data->first()->year;
 
-                                                $totalbyyear=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-                                                $currentyear=0;
-                                                $endyear=0;
-                                                $counter=-1;
+        $totalbyyear=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        $currentyear=0;
+        $endyear=0;
+        $counter=-1;
         $day= 1;
         $total= [0,0,0,0,0,0,0,0,0,0,0,0];
 

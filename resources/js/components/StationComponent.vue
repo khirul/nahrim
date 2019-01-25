@@ -1,38 +1,38 @@
 <template>
   <div class="container h-100">
-    <div class="row h-100 d-flex align-items-center justify-content-center pt-5">
-      <div class="col-md-8">
-        <LMap ref="map" style="height:50vh; width: 50vw" :center="currentPosition" :zoom="zoom">
+    <div class="row h-100 d-flex align-items-center justify-content-center">
+      <div class="map">
+        <LMap ref="map" style="height:100vh; width: 100vw" :center="currentPosition" :zoom="zoom">
           <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
           <LMarker :latlng="currentPosition" class="blink">
-            <LTooltip :options="{interactive: true,permanent: true}">
+            <LTooltip class="yah" :options="{interactive: true,permanent: true}">
               <strong>You are HERE!</strong>
             </LTooltip>
-          </LMarker>/>
-          <LMarker
-            :latlng="[2.7375, 101.955556]"
-            class="blink"
-            @click="clicked_location('SEREMBAN')"
-          >
-            <LTooltip :options="{interactive: true,permanent: true}">
-              <strong>SEREMBAN</strong>
-            </LTooltip>
-          </LMarker>/>
+          </LMarker>
+          <span v-for="c in this.$store.state.coords" :key="c.id">
+            <LMarker :latlng="[c.lat, c.lon]" class="blink" @click="clicked_location(c.stn_name)">
+              <LTooltip :options="{interactive: true,permanent: true}">
+                <strong>{{ c.stn_name }}</strong>
+              </LTooltip>
+            </LMarker>
+          </span>
         </LMap>
       </div>
-      <div class="col-md-4 d-flex flex-column align-items-center justify-content-center rain">
-        <img src="images/rain.png" height="100" alt>
-        <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
-        <div
-          class="alert alert-primary text-center"
-        >Please select the nearest rainfall station to your rainwater harvesting tank.</div>
-        <select class="form-control" v-model="loc">
-          <option v-for="(value, key) in locations" :key="key">{{ value.stn_name }}</option>
-        </select>
-        <button @click="next" class="btn btn-success" style="margin-top: 20px; font-weight:bold;">
-          Roof
-          Characteristics
-        </button>
+      <div class="dd-container">
+        <div class="dd d-flex flex-column align-items-center justify-content-center rain">
+          <img src="images/rain.png" height="100" alt>
+          <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
+          <div
+            class="alert alert-primary text-center"
+          >Please select the nearest rainfall station to your rainwater harvesting tank.</div>
+          <select class="form-control" v-model="loc">
+            <option v-for="(value, key) in locations" :key="key">{{ value.stn_name }}</option>
+          </select>
+          <button @click="next" class="btn btn-success" style="margin-top: 20px; font-weight:bold;">
+            Next
+            <i class="fas fa-chevron-circle-right"></i>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +66,7 @@ export default {
       return this.$store.getters.currentPos;
     },
     zoom() {
-      return 10;
+      return 12;
     }
   },
   mounted() {
@@ -84,6 +84,8 @@ export default {
       this.$store.commit("SET_LONG", position.coords.longitude);
       console.log(position);
     });
+
+    this.$store.dispatch("get_all_latlong");
   }
 };
 </script>
@@ -96,5 +98,26 @@ export default {
 }
 .rain img {
   margin-bottom: 20px;
+}
+.map {
+  position: relative;
+  z-index: 1;
+}
+.leaflet-tooltip {
+  background: red !important;
+  color: white !important;
+}
+.dd-container {
+  background: rgba(87, 84, 84, 0.397);
+  z-index: 2;
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 400px;
+
+  padding: 50px 50px;
+}
+.dd {
+  z-index: 3;
 }
 </style>
