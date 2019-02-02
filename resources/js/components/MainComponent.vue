@@ -1,16 +1,30 @@
 <template>
   <div>
-    <div class="bar">
+    <div class="wrapper">
+      <div class="container d-flex flex-column justify-content-center">
+        <div class="title animated zoomIn delay-1s">
+          <span class="tag">N</span>ahrim <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting <span class="tag">S</span>ystem <span class="tag">A</span>pplication
+        </div>
+        <div class="slide-box p-1 animated zoomIn delay-2s">
+          <div class="box box02"></div>
+          <div class="box box03"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="bar">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 logo-container d-flex justify-content-center align-items-center">
-            <img src="/images/nahrimlogo.png" height="50" alt>
+            <img
+              src="/images/nahrimlogo.png"
+              height="50"
+              alt
+            >
             <div class="logo text-center pl-3">NAHRIM RAINWATER HARVESTING SYSTEM APPLICATION</div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.bar -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-5 a ayaq"></div>
@@ -19,17 +33,18 @@
           @click="module1"
         >
           <h3>Tangki NAHRIM Simulation</h3>
-          <p
-            class="para text-center"
-          >The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system.</p>
+          <p class="para text-center">The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system.</p>
           <p class="para1 text-center">Revised version of previous Tangki NAHRIM</p>
         </div>
         <div class="m col-md-3 a d-flex flex-column justify-content-center align-items-center">
-          <img src="/images/jata01.png" class="img-fluid" alt>
+          <img
+            src="/images/jata01.png"
+            class="img-fluid"
+            alt
+          >
           <span class="jata text-center pl-3 pr-3">National Hydraulic Research Institute of Malaysia</span>
         </div>
       </div>
-      <!-- /.row -->
       <div class="row">
         <div class="col-md-4 a tangki d-flex flex-column justify-content-center align-items-center">
           <h3>Rainwater Harvesting System Design</h3>
@@ -57,19 +72,13 @@
               <div class="carousel-item">
                 <span>Design your Rainwater Harvesting System</span>
               </div>
-              <!-- <div class="carousel-item">
-                <span>
-                  <span class="nahrim">TANGKI NAHRIM APP</span>
-                  <br>help you estimate your rainwater harvesting tank size.
-                </span>
-              </div>-->
+
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container-fluid -->
+
+    </div> -->
   </div>
 </template>
 
@@ -78,6 +87,22 @@ import CarouselComponent from "./CarouselComponent";
 export default {
   components: {
     CarouselComponent
+  },
+  mounted() {
+    $(document).ready(function() {
+      $(".box02").on("mouseover", function() {
+        $(".box02").addClass("sliding");
+      });
+      $(".box02").on("mouseout", function() {
+        $(".box02").removeClass("sliding");
+      });
+      $(".box03").on("mouseover", function() {
+        $(".box03").addClass("sliding");
+      });
+      $(".box03").on("mouseout", function() {
+        $(".box03").removeClass("sliding");
+      });
+    });
   },
   methods: {
     module1() {
@@ -114,11 +139,41 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Khand");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
 body {
   background: white !important;
 }
-.bar {
+.wrapper {
+  height: 100vh;
+}
+.title {
+  font-family: "Khand", sans-serif;
+  font-size: 32px;
+  color: gray;
+}
+.tag {
+  color: rgba(220, 20, 60, 0.596);
+  font-size: 50px;
+  font-family: "Audiowide", cursive;
+}
+.slide-box {
+  border: 1px solid gray;
+  height: 300px;
+}
+.box {
+  width: 150px;
+  border: 1px solid red;
+  height: 100%;
+  float: right;
+  transition: 0.5s;
+  margin-left: 5px;
+}
+.sliding {
+  width: 450px;
+  transition: 0.5s;
+}
+/* .bar {
   border: 2px solid black;
   border-top: 4px solid black;
   margin-top: 20px;
@@ -184,5 +239,5 @@ body {
 .tangki {
   cursor: pointer;
   position: relative;
-}
+} */
 </style>

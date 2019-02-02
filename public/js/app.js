@@ -71526,7 +71526,7 @@ var content = __webpack_require__(196);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("5819ef61", content, false, {});
+var update = __webpack_require__(4)("6bb8be94", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71551,7 +71551,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Kre
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
 
 // module
-exports.push([module.i, "\nhtml,\nbody,\n.container,\n.row {\n  height: 100%;\n}\nbody {\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\n  min-height: 100vh;\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Kreon\", serif;\n}\n.roof {\n  margin-top: 20px;\n  font-size: 30px;\n  color: orange;\n  font-weight: bold;\n  border-bottom: 2px solid orange;\n  margin-bottom: 30px;\n}\n", ""]);
+exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  margin-top: 20px;\r\n  font-size: 30px;\r\n  color: orange;\r\n  font-weight: bold;\r\n  border-bottom: 2px solid orange;\r\n  margin-bottom: 30px;\n}\r\n", ""]);
 
 // exports
 
@@ -71640,7 +71640,7 @@ var content = __webpack_require__(200);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("87077530", content, false, {});
+var update = __webpack_require__(4)("0e981e4a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71661,10 +71661,11 @@ if(false) {
 
 exports = module.exports = __webpack_require__(3)(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Quicksand);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Audiowide);", ""]);
 
 // module
-exports.push([module.i, "\nbody[data-v-3ee370e9] {\n  background: white !important;\n}\n.bar[data-v-3ee370e9] {\n  border: 2px solid black;\n  border-top: 4px solid black;\n  margin-top: 20px;\n}\n.cor span[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.carousel-item[data-v-3ee370e9] {\n  width: 600px;\n  height: 150px;\n}\n.logo-container[data-v-3ee370e9] {\n  background: rgb(110, 106, 106);\n  line-height: 80px;\n  border-right: 4px solid black;\n}\n.logo[data-v-3ee370e9] {\n  font-size: 32px;\n  color: azure;\n}\n.n[data-v-3ee370e9] {\n  background: rgb(172, 172, 172);\n}\n.m[data-v-3ee370e9] {\n  background: lightgrey;\n}\n.a[data-v-3ee370e9] {\n  border: 2px solid black;\n  padding: 0;\n  min-height: 500px;\n}\n.ayaq[data-v-3ee370e9] {\n  background: url(\"/images/ayaq001.gif\");\n  background-size: cover;\n}\n.nahrim[data-v-3ee370e9] {\n  color: lightgrey;\n  font-weight: bolder;\n  background-color: black;\n}\n.para[data-v-3ee370e9] {\n  padding: 0 150px;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 20px;\n}\n.para01[data-v-3ee370e9] {\n  padding: 0 50px;\n  color: azure;\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 24px;\n  font-weight: bold;\n}\n.para1[data-v-3ee370e9] {\n  position: absolute;\n  bottom: 0;\n  font-size: 20px;\n}\n.jata[data-v-3ee370e9] {\n  font-family: \"Quicksand\", sans-serif;\n  font-size: 30px;\n}\n.tangki[data-v-3ee370e9] {\n  cursor: pointer;\n  position: relative;\n}\n", ""]);
+exports.push([module.i, "\nbody[data-v-3ee370e9] {\r\n  background: white !important;\n}\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(220, 20, 60, 0.596);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  border: 1px solid gray;\r\n  height: 300px;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  border: 1px solid red;\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  margin-left: 5px;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n/* .bar {\r\n  border: 2px solid black;\r\n  border-top: 4px solid black;\r\n  margin-top: 20px;\r\n}\r\n.cor span {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.carousel-item {\r\n  width: 600px;\r\n  height: 150px;\r\n}\r\n.logo-container {\r\n  background: rgb(110, 106, 106);\r\n  line-height: 80px;\r\n  border-right: 4px solid black;\r\n}\r\n.logo {\r\n  font-size: 32px;\r\n  color: azure;\r\n}\r\n.n {\r\n  background: rgb(172, 172, 172);\r\n}\r\n.m {\r\n  background: lightgrey;\r\n}\r\n.a {\r\n  border: 2px solid black;\r\n  padding: 0;\r\n  min-height: 500px;\r\n}\r\n.ayaq {\r\n  background: url(\"/images/ayaq001.gif\");\r\n  background-size: cover;\r\n}\r\n.nahrim {\r\n  color: lightgrey;\r\n  font-weight: bolder;\r\n  background-color: black;\r\n}\r\n.para {\r\n  padding: 0 150px;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 20px;\r\n}\r\n.para01 {\r\n  padding: 0 50px;\r\n  color: azure;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 24px;\r\n  font-weight: bold;\r\n}\r\n.para1 {\r\n  position: absolute;\r\n  bottom: 0;\r\n  font-size: 20px;\r\n}\r\n.jata {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.tangki {\r\n  cursor: pointer;\r\n  position: relative;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -71752,12 +71753,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     CarouselComponent: __WEBPACK_IMPORTED_MODULE_0__CarouselComponent___default.a
   },
+  mounted: function mounted() {
+    $(document).ready(function () {
+      $(".box02").on("mouseover", function () {
+        $(".box02").addClass("sliding");
+      });
+      $(".box02").on("mouseout", function () {
+        $(".box02").removeClass("sliding");
+      });
+      $(".box03").on("mouseover", function () {
+        $(".box03").addClass("sliding");
+      });
+      $(".box03").on("mouseout", function () {
+        $(".box03").removeClass("sliding");
+      });
+    });
+  },
+
   methods: {
     module1: function module1() {
       this.$router.push({
@@ -71853,7 +71880,7 @@ var content = __webpack_require__(204);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("bf60364e", content, false, {});
+var update = __webpack_require__(4)("590e9ecc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71877,7 +71904,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\n  font-size: 30px;\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\n  width: 300px;\n  text-align: center;\n  height: 220px;\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\r\n  font-size: 30px;\r\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\r\n  width: 300px;\r\n  text-align: center;\r\n  height: 220px;\r\n  cursor: pointer;\n}\r\n", ""]);
 
 // exports
 
@@ -72102,168 +72129,46 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-5 a ayaq" }),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "col-md-4 a tangki d-flex flex-column justify-content-center align-items-center",
-            on: { click: _vm.module1 }
-          },
-          [
-            _c("h3", [_vm._v("Tangki NAHRIM Simulation")]),
-            _vm._v(" "),
-            _c("p", { staticClass: "para text-center" }, [
-              _vm._v(
-                "The main purpose of this software is for predicting the size of the rainwater tank to be used for a rainwater harvesting system."
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "para1 text-center" }, [
-              _vm._v("Revised version of previous Tangki NAHRIM")
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _vm._m(1)
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _vm._m(2),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "n col-md-4 a p-5 d-flex flex-column justify-content-center align-items-center"
-          },
-          [
-            _c("span", { staticClass: "para01 text-center mb-3" }, [
-              _vm._v("Rain Water Harvesting System")
-            ]),
-            _vm._v(" "),
-            _c("carousel-component")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(3)
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "bar" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "col-md-6 logo-container d-flex justify-content-center align-items-center"
-            },
-            [
-              _c("img", {
-                attrs: { src: "/images/nahrimlogo.png", height: "50", alt: "" }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "logo text-center pl-3" }, [
-                _vm._v("NAHRIM RAINWATER HARVESTING SYSTEM APPLICATION")
-              ])
-            ]
-          )
-        ])
+    return _c("div", [
+      _c("div", { staticClass: "wrapper" }, [
+        _c(
+          "div",
+          {
+            staticClass: "container d-flex flex-column justify-content-center"
+          },
+          [
+            _c("div", { staticClass: "title animated zoomIn delay-1s" }, [
+              _c("span", { staticClass: "tag" }, [_vm._v("N")]),
+              _vm._v("ahrim "),
+              _c("span", { staticClass: "tag" }, [_vm._v("R")]),
+              _vm._v("ainwater "),
+              _c("span", { staticClass: "tag" }, [_vm._v("H")]),
+              _vm._v("arvesting "),
+              _c("span", { staticClass: "tag" }, [_vm._v("S")]),
+              _vm._v("ystem "),
+              _c("span", { staticClass: "tag" }, [_vm._v("A")]),
+              _vm._v("pplication\n      ")
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "slide-box p-1 animated zoomIn delay-2s" },
+              [
+                _c("div", { staticClass: "box box02" }),
+                _vm._v(" "),
+                _c("div", { staticClass: "box box03" })
+              ]
+            )
+          ]
+        )
       ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "m col-md-3 a d-flex flex-column justify-content-center align-items-center"
-      },
-      [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: { src: "/images/jata01.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("span", { staticClass: "jata text-center pl-3 pr-3" }, [
-          _vm._v("National Hydraulic Research Institute of Malaysia")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "col-md-4 a tangki d-flex flex-column justify-content-center align-items-center"
-      },
-      [
-        _c("h3", [_vm._v("Rainwater Harvesting System Design")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "para text-center" }, [
-          _vm._v("Based on NAHRIM Technical Guide No 2:")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "para text-center" }, [
-          _vm._v("The Design Guide for Rainwater Harvesting Systems")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-4 a d-flex align-items-center" }, [
-      _c(
-        "div",
-        {
-          staticClass: "carousel slide",
-          attrs: {
-            id: "carouselExampleSlidesOnly",
-            "data-ride": "carousel",
-            "data-interval": "3000"
-          }
-        },
-        [
-          _c("div", { staticClass: "carousel-inner cor text-center" }, [
-            _c("div", { staticClass: "carousel-item active" }, [
-              _c("span", [
-                _vm._v("Rainwater Harvesting System in just one click?")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "carousel-item" }, [
-              _c("span", [_vm._v("How big rainwater harvesting tank?")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "carousel-item" }, [
-              _c("span", [_vm._v("Design your Rainwater Harvesting System")])
-            ])
-          ])
-        ]
-      )
     ])
   }
 ]
@@ -72287,7 +72192,7 @@ var content = __webpack_require__(209);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("b55fea84", content, false, {});
+var update = __webpack_require__(4)("37a8c66b", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72311,7 +72216,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\n  position: relative;\n  z-index: 1;\n}\n.leaflet-tooltip[data-v-b456a7d8] {\n  background: red !important;\n  color: white !important;\n}\n.dd-container[data-v-b456a7d8] {\n  background: rgba(87, 84, 84, 0.397);\n  z-index: 2;\n  top: 0;\n  right: 0;\n  position: fixed;\n  width: 400px;\n\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\n  z-index: 3;\n}\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\r\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\r\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\r\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\r\n  position: relative;\r\n  z-index: 1;\n}\n.leaflet-tooltip[data-v-b456a7d8] {\r\n  background: red !important;\r\n  color: white !important;\n}\n.dd-container[data-v-b456a7d8] {\r\n  background: rgba(87, 84, 84, 0.397);\r\n  z-index: 2;\r\n  top: 0;\r\n  right: 0;\r\n  position: fixed;\r\n  width: 400px;\r\n\r\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\r\n  z-index: 3;\n}\r\n", ""]);
 
 // exports
 
@@ -72485,7 +72390,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.b068
 /* 218 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?912ec66d7572ff821749319396470bde";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?acf3dcb7ff752b5296ca23ba2c7c2606";
 
 /***/ }),
 /* 219 */
@@ -72509,7 +72414,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-reg
 /* 222 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?89889688147bd7575d6327160d64e760";
+module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?f721466883998665b87923b92dea655b";
 
 /***/ }),
 /* 223 */
@@ -73157,7 +73062,7 @@ var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("9d62569a", content, false, {});
+var update = __webpack_require__(4)("24f2ffb4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73181,7 +73086,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\n  width: 130px;\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\n  width: 50px;\n  text-align: center;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  padding-left: 130px;\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\r\n  width: 130px;\r\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\r\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\r\n  width: 50px;\r\n  text-align: center;\n}\n.hr[data-v-346519ae] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\r\n  padding-left: 130px;\r\n  font-style: italic;\n}\n.co[data-v-346519ae] {\r\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\r\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -73868,7 +73773,7 @@ var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("75d01590", content, false, {});
+var update = __webpack_require__(4)("0c6fc27a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73892,7 +73797,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\n  margin-top: 20px;\n}\ninput[data-v-4c4c5db8] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n}\n.flush[data-v-4c4c5db8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\n  display: block;\n  padding-left: 10px;\n  margin-bottom: -20px;\n  font-size: small;\n}\n.pad[data-v-4c4c5db8] {\n  margin-right: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin-top: 20px;\n}\ninput[data-v-4c4c5db8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\n}\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -74324,7 +74229,7 @@ var content = __webpack_require__(235);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("11ccc021", content, false, {});
+var update = __webpack_require__(4)("70e5448e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74348,7 +74253,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.flush[data-v-ca205af8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  /* border: 2px solid white; */\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n  background-color: white;\n  height: 30px;\n  width: 300px;\n}\n.pad[data-v-ca205af8] {\n  margin-right: 20px;\n  margin-left: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -74960,7 +74865,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'https://nahrimapp.test',
+        url: 'http://localhost:8000',
         location: '',
         coefficient: '',
         area: '',
@@ -76266,7 +76171,7 @@ var content = __webpack_require__(244);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7ecb255f", content, false, {});
+var update = __webpack_require__(4)("02c32e92", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76900,7 +76805,7 @@ var content = __webpack_require__(249);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("147357c6", content, false, {});
+var update = __webpack_require__(4)("31fdff90", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77165,7 +77070,7 @@ var content = __webpack_require__(254);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("29f80f6f", content, false, {});
+var update = __webpack_require__(4)("3a926d3c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77396,7 +77301,7 @@ var content = __webpack_require__(259);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3ae347c1", content, false, {});
+var update = __webpack_require__(4)("cfcc64a4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77657,7 +77562,7 @@ var content = __webpack_require__(264);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("15cb5ddc", content, false, {});
+var update = __webpack_require__(4)("0214ebc5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77902,7 +77807,7 @@ var content = __webpack_require__(269);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("5c63a7ea", content, false, {});
+var update = __webpack_require__(4)("30e6b078", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78043,7 +77948,7 @@ var content = __webpack_require__(274);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("615d6578", content, false, {});
+var update = __webpack_require__(4)("355522aa", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78067,7 +77972,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\n  width: 80px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\r\n  width: 80px;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  margin-top: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -78324,7 +78229,7 @@ var content = __webpack_require__(279);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("34f84c0a", content, false, {});
+var update = __webpack_require__(4)("3ee611b0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78566,7 +78471,7 @@ var content = __webpack_require__(284);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("214f1c97", content, false, {});
+var update = __webpack_require__(4)("7e85a284", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78789,7 +78694,7 @@ var content = __webpack_require__(289);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("4731eb00", content, false, {});
+var update = __webpack_require__(4)("2724cd6d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79193,7 +79098,7 @@ var content = __webpack_require__(294);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("1b46c101", content, false, {});
+var update = __webpack_require__(4)("a4c106a4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79384,7 +79289,7 @@ var content = __webpack_require__(298);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("41b60d60", content, false, {});
+var update = __webpack_require__(4)("29e2bc3d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -90235,7 +90140,7 @@ var content = __webpack_require__(347);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("e38f8f0c", content, false, {});
+var update = __webpack_require__(4)("255e8632", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
