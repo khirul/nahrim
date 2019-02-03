@@ -71663,9 +71663,10 @@ exports = module.exports = __webpack_require__(3)(false);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Khand);", ""]);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Audiowide);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\nbody[data-v-3ee370e9] {\r\n  background: white !important;\n}\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(220, 20, 60, 0.596);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  border: 1px solid gray;\r\n  height: 300px;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  border: 1px solid red;\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  margin-left: 5px;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n/* .bar {\r\n  border: 2px solid black;\r\n  border-top: 4px solid black;\r\n  margin-top: 20px;\r\n}\r\n.cor span {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.carousel-item {\r\n  width: 600px;\r\n  height: 150px;\r\n}\r\n.logo-container {\r\n  background: rgb(110, 106, 106);\r\n  line-height: 80px;\r\n  border-right: 4px solid black;\r\n}\r\n.logo {\r\n  font-size: 32px;\r\n  color: azure;\r\n}\r\n.n {\r\n  background: rgb(172, 172, 172);\r\n}\r\n.m {\r\n  background: lightgrey;\r\n}\r\n.a {\r\n  border: 2px solid black;\r\n  padding: 0;\r\n  min-height: 500px;\r\n}\r\n.ayaq {\r\n  background: url(\"/images/ayaq001.gif\");\r\n  background-size: cover;\r\n}\r\n.nahrim {\r\n  color: lightgrey;\r\n  font-weight: bolder;\r\n  background-color: black;\r\n}\r\n.para {\r\n  padding: 0 150px;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 20px;\r\n}\r\n.para01 {\r\n  padding: 0 50px;\r\n  color: azure;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 24px;\r\n  font-weight: bold;\r\n}\r\n.para1 {\r\n  position: absolute;\r\n  bottom: 0;\r\n  font-size: 20px;\r\n}\r\n.jata {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.tangki {\r\n  cursor: pointer;\r\n  position: relative;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.25);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n/* .bar {\r\n  border: 2px solid black;\r\n  border-top: 4px solid black;\r\n  margin-top: 20px;\r\n}\r\n.cor span {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.carousel-item {\r\n  width: 600px;\r\n  height: 150px;\r\n}\r\n.logo-container {\r\n  background: rgb(110, 106, 106);\r\n  line-height: 80px;\r\n  border-right: 4px solid black;\r\n}\r\n.logo {\r\n  font-size: 32px;\r\n  color: azure;\r\n}\r\n.n {\r\n  background: rgb(172, 172, 172);\r\n}\r\n.m {\r\n  background: lightgrey;\r\n}\r\n.a {\r\n  border: 2px solid black;\r\n  padding: 0;\r\n  min-height: 500px;\r\n}\r\n.ayaq {\r\n  background: url(\"/images/ayaq001.gif\");\r\n  background-size: cover;\r\n}\r\n.nahrim {\r\n  color: lightgrey;\r\n  font-weight: bolder;\r\n  background-color: black;\r\n}\r\n.para {\r\n  padding: 0 150px;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 20px;\r\n}\r\n.para01 {\r\n  padding: 0 50px;\r\n  color: azure;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 24px;\r\n  font-weight: bold;\r\n}\r\n.para1 {\r\n  position: absolute;\r\n  bottom: 0;\r\n  font-size: 20px;\r\n}\r\n.jata {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.tangki {\r\n  cursor: pointer;\r\n  position: relative;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -71678,53 +71679,6 @@ exports.push([module.i, "\nbody[data-v-3ee370e9] {\r\n  background: white !impor
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CarouselComponent__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -72129,45 +72083,98 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "wrapper d-flex flex-column justify-content-center" },
+      [
+        _c("div", { staticClass: "bg-overlay " }, [
+          _c(
+            "div",
+            {
+              staticClass: "container d-flex flex-column justify-content-center"
+            },
+            [
+              _c("div", { staticClass: "slide-box animated zoomIn delay-1s" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2),
+                _vm._v(" "),
+                _c("div", { staticClass: "box box03" }, [
+                  _c("span", { staticClass: "menu d-flex align-items-start" }, [
+                    _vm._v("SECTION 01")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "content text-justify p-3" }, [
+                    _c("p", [
+                      _vm._v(
+                        "The main purpose of this software is for predicting the size of therainwater tank to be used for a rainwater harvesting system."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-primary btn-block",
+                          on: { click: _vm.module1 }
+                        },
+                        [_vm._v("Next")]
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "wrapper" }, [
-        _c(
-          "div",
-          {
-            staticClass: "container d-flex flex-column justify-content-center"
-          },
-          [
-            _c("div", { staticClass: "title animated zoomIn delay-1s" }, [
-              _c("span", { staticClass: "tag" }, [_vm._v("N")]),
-              _vm._v("ahrim "),
-              _c("span", { staticClass: "tag" }, [_vm._v("R")]),
-              _vm._v("ainwater "),
-              _c("span", { staticClass: "tag" }, [_vm._v("H")]),
-              _vm._v("arvesting "),
-              _c("span", { staticClass: "tag" }, [_vm._v("S")]),
-              _vm._v("ystem "),
-              _c("span", { staticClass: "tag" }, [_vm._v("A")]),
-              _vm._v("pplication\n      ")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "slide-box p-1 animated zoomIn delay-2s" },
-              [
-                _c("div", { staticClass: "box box02" }),
-                _vm._v(" "),
-                _c("div", { staticClass: "box box03" })
-              ]
-            )
-          ]
+    return _c("div", { staticClass: "title" }, [
+      _c("span", { staticClass: "tag" }, [_vm._v("N")]),
+      _vm._v("ahrim "),
+      _c("span", { staticClass: "tag" }, [_vm._v("R")]),
+      _vm._v("ainwater "),
+      _c("span", { staticClass: "tag" }, [_vm._v("H")]),
+      _vm._v("arvesting "),
+      _c("span", { staticClass: "tag" }, [_vm._v("S")]),
+      _vm._v("ystem "),
+      _c("span", { staticClass: "tag" }, [_vm._v("A")]),
+      _vm._v("pplication\n          ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "para pl-5 pr-5" }, [
+      _c("p", [
+        _vm._v(
+          "How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design your Rainwater Harvesting System"
         )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "small" }, [
+        _vm._v("( Revised version of previous Tangki NAHRIM )")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box box02" }, [
+      _c("span", { staticClass: "menu d-flex align-items-start" }, [
+        _vm._v("SECTION 02")
       ])
     ])
   }
@@ -73797,7 +73804,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin-top: 20px;\n}\ninput[data-v-4c4c5db8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\n}\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\n}\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -73808,6 +73815,59 @@ exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73944,6 +74004,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       } else {
         alert("Number of person must be greater than 1");
       }
+    },
+    totalCount: function totalCount(_ref) {
+      var type = _ref.type,
+          target = _ref.target;
+
+      this.person = [];
+      for (var index = 0; index < target.value; index++) {
+        this.person.push("a");
+      }
     }
   }
 });
@@ -73974,8 +74043,8 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "hr w-100" }),
         _vm._v(" "),
-        _c("div", { staticClass: "d-flex flex-row form" }, [
-          _c("div", [
+        _c("div", { staticClass: " d-flex flex-row form" }, [
+          _c("div", { staticClass: "nop" }, [
             _c(
               "label",
               {
@@ -73989,9 +74058,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              {
-                staticClass: "d-flex justify-content-center align-items-center"
-              },
+              { staticClass: "pimg" },
               [
                 _c("img", {
                   attrs: { src: "images/minus.png", height: "20", alt: "" },
@@ -74019,12 +74086,38 @@ var render = function() {
             ),
             _vm._v(" "),
             _c("small", { staticClass: "d-flex justify-content-center" }, [
-              _vm._v(
-                "\n          " +
-                  _vm._s(_vm.person.length) +
-                  " person\n          "
-              ),
-              _vm.person.length > 1 ? _c("span", [_vm._v("s")]) : _vm._e()
+              _c(
+                "div",
+                { staticClass: "input-group d-flex align-items-center" },
+                [
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: {
+                      id: "countValue",
+                      type: "text",
+                      "aria-describedby": "basic-addon2"
+                    },
+                    domProps: { value: _vm.person.length },
+                    on: { change: _vm.totalCount }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "input-group-append" }, [
+                    _c(
+                      "span",
+                      {
+                        staticClass: "input-group-text",
+                        attrs: { id: "basic-addon2" }
+                      },
+                      [
+                        _vm._v("person"),
+                        _vm.person.length > 1
+                          ? _c("span", [_vm._v("s")])
+                          : _vm._e()
+                      ]
+                    )
+                  ])
+                ]
+              )
             ])
           ])
         ]),
@@ -76024,6 +76117,12 @@ var index_esm = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue__ = __webpack_require__(292);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue__);
+
+
 
 
 
@@ -76065,6 +76164,14 @@ var routes = [{
     path: '/average',
     name: 'average',
     component: __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue___default.a
+}, {
+    path: '/landing/01',
+    name: 'landing01',
+    component: __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue___default.a
+}, {
+    path: '/landing/02',
+    name: 'landing02',
+    component: __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue___default.a
 }, {
     path: '/gravity-fed',
     name: 'gravity-fed',
@@ -90336,6 +90443,259 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 351 */,
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(353)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(355)
+/* template */
+var __vue_template__ = __webpack_require__(356)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-00c31021"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/LandingPage01Component.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-00c31021", Component.options)
+  } else {
+    hotAPI.reload("data-v-00c31021", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 353 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(354);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("0623c04c", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00c31021\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage01Component.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00c31021\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage01Component.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 355 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 356 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-00c31021", module.exports)
+  }
+}
+
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(358)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(360)
+/* template */
+var __vue_template__ = __webpack_require__(361)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-3abe4c80"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/LandingPage02Component.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3abe4c80", Component.options)
+  } else {
+    hotAPI.reload("data-v-3abe4c80", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(359);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("2ff0b790", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3abe4c80\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage02Component.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3abe4c80\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage02Component.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 359 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 360 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+/* 361 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div")
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3abe4c80", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

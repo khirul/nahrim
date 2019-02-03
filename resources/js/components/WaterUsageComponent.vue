@@ -1,30 +1,63 @@
 <template>
   <div class="container h-100 w-100">
-    <div
-      class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
-    >
-      <img src="images/waterdrop.png" height="100" alt>
+    <div class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper">
+      <img
+        src="images/waterdrop.png"
+        height="100"
+        alt
+      >
       <h1 class="text-center text-success">Daily Water Usage</h1>
       <div class="hr w-100"></div>
-      <div class="d-flex flex-row form">
-        <!-- <div>
-                    <label for="length">Length</label>
-                    <input type="text" v-model.number="length">m
-                </div>
-        <span class="equal">x</span>-->
-        <div>
-          <label for="person" class="d-flex justify-content-center">Number of Person</label>
+      <div class=" d-flex flex-row form">
+
+        <div class="nop">
+          <label
+            for="person"
+            class="d-flex justify-content-center"
+          >Number of Person</label>
           <br>
-          <div class="d-flex justify-content-center align-items-center">
-            <img src="images/minus.png" height="20" alt @click="minus">
-            <span v-for="x in person" :key="x.id">
-              <img src="images/user-green.png" height="40" alt>
+          <div class="pimg">
+            <img
+              src="images/minus.png"
+              height="20"
+              alt
+              @click="minus"
+            >
+            <span
+              v-for="x in person"
+              :key="x.id"
+            >
+              <img
+                src="images/user-green.png"
+                height="40"
+                alt
+              >
             </span>
-            <img src="images/plus.png" height="20" alt @click="add">
+            <img
+              src="images/plus.png"
+              height="20"
+              alt
+              @click="add"
+            >
           </div>
           <small class="d-flex justify-content-center">
-            {{person.length}} person
-            <span v-if="person.length > 1">s</span>
+            <div class="input-group d-flex align-items-center">
+              <input
+                id="countValue"
+                type="text"
+                class="form-control"
+                aria-describedby="basic-addon2"
+                :value="person.length"
+                @change="totalCount"
+              >
+              <div class="input-group-append">
+                <span
+                  class="input-group-text"
+                  id="basic-addon2"
+                >person<span v-if="person.length > 1">s</span></span>
+              </div>
+            </div>
+
           </small>
         </div>
         <!-- <span class="equal">=</span>
@@ -38,19 +71,28 @@
         <div class="pad">
           <label for="toilet">Toilet Flushing</label>
           <br>
-          <input type="text" v-model.number="toilet">liter(s)
+          <input
+            type="text"
+            v-model.number="toilet"
+          >liter(s)
         </div>
         <!-- <span class="equal">x</span> -->
         <div class="pad">
           <label for="clean">General Cleaning</label>
           <br>
-          <input type="text" v-model.number="clean">liter(s)
+          <input
+            type="text"
+            v-model.number="clean"
+          >liter(s)
         </div>
         <!-- <span class="equal">=</span> -->
         <div class="pad">
           <label for="garden">Gardening</label>
           <br>
-          <input type="text" v-model.number="garden">liter(s)
+          <input
+            type="text"
+            v-model.number="garden"
+          >liter(s)
         </div>
       </div>
 
@@ -62,7 +104,10 @@
         <div class="pad">
           <input type="text">
           <!-- <label for="bath">Bathing</label><br> -->
-          <input type="text" v-model.number="bath">liter(s)
+          <input
+            type="text"
+            v-model.number="bath"
+          >liter(s)
         </div>
 
         <!-- <div class="pad">
@@ -76,12 +121,20 @@
           <div class="pad">
             <label for="usagevol">Total Volume Per Day</label>
             <br>
-            <input type="text" disabled :value="usagevol">liter
+            <input
+              type="text"
+              disabled
+              :value="usagevol"
+            >liter
           </div>
           <div>
             <label for="aveperson">Average Per Person</label>
             <br>
-            <input type="text" disabled :value="aveperson">liter
+            <input
+              type="text"
+              disabled
+              :value="aveperson"
+            >liter
           </div>
         </div>
         <!-- <div>
@@ -148,6 +201,12 @@ export default {
       } else {
         alert("Number of person must be greater than 1");
       }
+    },
+    totalCount({ type, target }) {
+      this.person = [];
+      for (let index = 0; index < target.value; index++) {
+        this.person.push("a");
+      }
     }
   }
 };
@@ -158,15 +217,14 @@ export default {
 }
 
 .form {
-  margin-top: 20px;
+  margin: 20px auto;
 }
-
-input {
-  padding: 0 5px;
-  margin-right: 10px;
-  text-align: right;
-  border: none;
-  border-radius: 20px;
+.pimg {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nop {
+  max-width: 960px;
 }
 
 .flush {
