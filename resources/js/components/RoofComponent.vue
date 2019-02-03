@@ -2,7 +2,11 @@
   <div>
     <div class="container">
       <div class="d-flex justify-content-center">
-        <img src="/images/roof.png" height="100" alt>
+        <img
+          src="/images/roof.png"
+          height="100"
+          alt
+        >
       </div>
 
       <h1 class="text-center text-success">Roof Characteristics</h1>
@@ -22,7 +26,10 @@
                 aria-describedby="basic-addon2"
               >
               <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">m</span>
+                <span
+                  class="input-group-text"
+                  id="basic-addon2"
+                >m</span>
               </div>
             </div>
 
@@ -37,7 +44,10 @@
                 aria-describedby="basic-addon2"
               >
               <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">m</span>
+                <span
+                  class="input-group-text"
+                  id="basic-addon2"
+                >m</span>
               </div>
             </div>
 
@@ -53,7 +63,10 @@
                 aria-describedby="basic-addon2"
               >
               <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">
+                <span
+                  class="input-group-text"
+                  id="basic-addon2"
+                >
                   m
                   <sup>2</sup>
                 </span>
@@ -68,9 +81,17 @@
               1
               <sup>st</sup> Flush Depth
             </label>
-            <input type="text" class="form-control" v-model="depth" aria-describedby="basic-addon2">
+            <input
+              type="text"
+              class="form-control"
+              v-model="depth"
+              aria-describedby="basic-addon2"
+            >
             <div class="input-group-append">
-              <span class="input-group-text" id="basic-addon2">mm</span>
+              <span
+                class="input-group-text"
+                id="basic-addon2"
+              >mm</span>
             </div>
           </div>
           <div>
@@ -90,7 +111,10 @@
               aria-describedby="basic-addon2"
             >
             <div class="input-group-append">
-              <span class="input-group-text" id="basic-addon2">
+              <span
+                class="input-group-text"
+                id="basic-addon2"
+              >
                 mm
                 <sup>3</sup>
               </span>
@@ -101,13 +125,26 @@
             <h2 class="mt-5">Run-off Coefficient</h2>
           </div>
           <div class="d-flex flex-row">
-            <select v-model="coefficient" @change="change" class="form-control mr-1">
-              <option disabled value>Please select roof type</option>
+            <select
+              v-model="coefficient"
+              @change="change"
+              class="form-control mr-1"
+            >
+              <option
+                disabled
+                value
+              >Please select roof type</option>
               <option value="0.8">Concrete Tile</option>
               <option value="0.9">Zink / Metal</option>
               <option>Others</option>
             </select>
-            <input v-if="others" type="text" disabled :value="coefficient" class="form-control">
+            <input
+              v-if="others"
+              type="text"
+              disabled
+              :value="coefficient"
+              class="form-control"
+            >
             <input
               v-else
               type="number"
@@ -118,6 +155,18 @@
               class="form-control"
             >
           </div>
+          <button
+            @click="back"
+            class="btn btn-lg btn-success"
+            style="margin-top: 20px; font-weight:bold;"
+          >Back</button>
+
+          <button
+            @click="home"
+            class="btn btn-lg btn-outline-success"
+            style="margin-top: 20px; font-weight:bold;"
+          >Home</button>
+
           <button
             @click="next"
             class="btn btn-lg btn-success"
@@ -229,6 +278,16 @@ export default {
       this.$store.commit("SET_FLUSH", this.flush);
       this.$router.push({
         name: "usage"
+      });
+    },
+    back() {
+      this.$router.push({
+        name: "station"
+      });
+    },
+    home() {
+      this.$router.push({
+        name: "root"
       });
     },
     change() {

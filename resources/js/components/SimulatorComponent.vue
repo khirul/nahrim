@@ -2,9 +2,7 @@
   <div>
     <div class="container">
       <br>
-      <div
-        class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
-      >
+      <div class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper">
         <div class="info text-center">
           <h3>Location: {{ this.$store.state.location}}</h3>
           <h3>Data dari tahun {{yearsInfo[0]}} hingga {{yearsInfo[years-1]}}</h3>
@@ -12,7 +10,11 @@
         <div class="changeForm mt-4">
           <h4 style="text-align:center">Proposed Tank Size</h4>
           <div class="input-group mb-3">
-            <input type="text" class="form-control text-right" v-model="tanksize">
+            <input
+              type="text"
+              class="form-control text-right"
+              v-model="tanksize"
+            >
             <div class="input-group-append">
               <span class="input-group-text">
                 m
@@ -35,135 +37,214 @@
         <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
         v-if="!sButton">Start Over?</router-link>-->
       </div>
-      <div class="row d-flex justify-content-center">
-        <!-- <router-link :to="{name: 'root'}" class="btn btn-success" style="margin-top: 20px; font-weight:bold;"
-        v-if="!sButton">Start Over?</router-link>-->
-      </div>
-      <br>
-      <br>
-      <div class="flush">
-        <div style="text-align: center">
-          <h4>Simulation Results</h4>
-        </div>
-        <div class="d-flex flex-row justify-content-center align-items-center wrapper">
-          <div class="pad">
-            <div style="text-align:center">Rainwater Captured:</div>
-            <div class="input">
-              <h5>
-                {{results.total_captured}} m
-                <sup>3</sup>
-              </h5>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <h2 class="mt-5">Simulation Results</h2>
             </div>
-          </div>
-          <!-- <span class="equal">x</span> -->
-          <div class="pad">
-            <div style="text-align:center">Total Rain Volume Delivered:</div>
-            <div class="input">
-              <h5>
-                {{results.total_delivered}} m
-                <sup>3</sup>
-              </h5>
-            </div>
-          </div>
-          <!-- <span class="equal">=</span> -->
-          <div class="pad">
-            <div style="text-align:center">Average Rain Delivered Per Day:</div>
-            <div class="input">
-              <h5>
-                {{results.daily_average_delivered}} m
-                <sup>3</sup>
-              </h5>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="d-flex flex-row justify-content-center align-items-center wrapper">
-          <div class="pad">
-            <div style="text-align:center">No. of Days Usage Volume Not Meet:</div>
-            <div class="input">
-              <h5>{{results.volume_not_meet}} days</h5>
-            </div>
-          </div>
-          <!-- <span class="equal">x</span> -->
-          <div class="pad">
-            <div style="text-align:center">No. of Days With No Rain:</div>
-            <div class="input">
-              <h5>{{results.total_no_rain_day}} days</h5>
-            </div>
-          </div>
-          <!-- <span class="equal">=</span> -->
-          <div class="pad">
-            <div style="text-align:center">No. of Days With No Rain and Tank Empty:</div>
-            <div class="input">
-              <h5>{{results.norain_tankempty}} days</h5>
-            </div>
-          </div>
-        </div>
-        <div class="flush">
-          <div style="text-align: center">
-            <h4>Analysis Results</h4>
-          </div>
-          <div class="d-flex flex-row justify-content-center align-items-center wrapper">
-            <div class="pad">
-              <div style="text-align:center">Reliability Ration:</div>
-              <div class="input">
-                <h5>{{results.reliability}} %</h5>
+            <div class="d-flex flex-column align-items-around justify-content-center form">
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Rainwater Captured</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.total_captured"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
               </div>
-            </div>
-            <!-- <span class="equal">x</span> -->
-            <div class="pad">
-              <div style="text-align:center">Coefficient of Rainwater Utalization:</div>
-              <div class="input">
-                <h5>{{results.coefficient}} %</h5>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Total Rain Volume Delivered</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.total_delivered"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
               </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Average Rain Delivered Per Day</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.daily_average_delivered"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">No. of Days Usage Volume Not Meet</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.volume_not_meet"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >days</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">No. of Days With No Rain</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.total_no_rain_day"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >days</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">No. of Days With No Rain and Tank Empty</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.norain_tankempty"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >days</span>
+                </div>
+              </div>
+
             </div>
-            <!-- <span class="equal">=</span> -->
-            <!-- <div class="pad">
-                            <div style="text-align:center"> Average Rain Delivered Per Day:
-                            </div>
-                            <div class="input">
-                                <h5>{{results.daily_average_delivered}} m<sup>3</sup></h5>
-                            </div>
-            </div>-->
           </div>
-          <br>
-          <div class="d-flex flex-row justify-content-center align-items-center wrapper">
-            <div class="pad">
-              <div style="text-align:center">Storage Efficiency:</div>
-              <div class="input">
-                <h5>{{results.storage_efficient}} %</h5>
-              </div>
+          <div class="col-md-6">
+            <div>
+              <h2 class="mt-5">Analysis Results</h2>
             </div>
-            <!-- <span class="equal">x</span> -->
-            <div class="pad">
-              <div style="text-align:center">Percent(%) Time Tank Empty:</div>
-              <div class="input">
-                <h5>{{results.percent_tank_empty}} %</h5>
+            <div class="d-flex flex-column align-items-around justify-content-center form">
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Reliability Ration</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.reliability"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >%</span>
+                </div>
               </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Coefficient of Rainwater Utalization</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.coefficient"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >%</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Storage Efficiency</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.storage_efficient"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >%</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Percent(%) Time Tank Empty</label>
+                <input
+                  type="text"
+                  disabled
+                  class="form-control"
+                  :value="results.volume_not_meet"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >%</span>
+                </div>
+              </div>
+
             </div>
-            <!-- <span class="equal">=</span> -->
-            <!-- <div class="pad">
-                            <div style="text-align:center">No. of Days With No Rain and Tank Empty:</div>
-                            <div class="input">
-                                <h5>{{results.norain_tankempty}} m<sup>3</sup></h5>
-                            </div>
-            </div>-->
           </div>
         </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center">
-      <button
-        @click="next"
-        class="btn btn-success"
-        style="margin-top: 20px; font-weight:bold;"
-      >Continue</button>
-      <router-link
-        :to="{name: 'average'}"
-        class="btn btn-success mr-2 ml-3"
-        style="margin-top: 20px; font-weight:bold;"
-      >More Info</router-link>
+    <div class="text-center">
+      <div class=" btn-group">
+        <button
+          @click="back"
+          class="btn btn-lg btn-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Back</button>
+
+        <button
+          @click="home"
+          class="btn btn-lg btn-outline-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Home</button>
+        <button
+          @click="next"
+          class="btn btn-lg btn-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Continue to Module 2</button>
+        <router-link
+          :to="{name: 'average'}"
+          class="btn btn-lg btn-success "
+          style="margin-top: 20px; font-weight:bold;"
+        >More Info</router-link>
+      </div>
     </div>
+
   </div>
 </template>
 <script>
@@ -195,6 +276,16 @@ export default {
     }
   },
   methods: {
+    back() {
+      this.$router.push({
+        name: "usage"
+      });
+    },
+    home() {
+      this.$router.push({
+        name: "root"
+      });
+    },
     next() {
       this.$router.push({
         name: "root"
@@ -244,6 +335,19 @@ export default {
   background-color: white;
   height: 30px;
   width: 300px;
+}
+
+input {
+  text-align: right;
+}
+
+label {
+  width: 300px;
+  padding: 15px 0;
+}
+
+.input-group-text {
+  width: 80px;
 }
 
 .pad {

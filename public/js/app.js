@@ -71666,7 +71666,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.25);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n/* .bar {\r\n  border: 2px solid black;\r\n  border-top: 4px solid black;\r\n  margin-top: 20px;\r\n}\r\n.cor span {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.carousel-item {\r\n  width: 600px;\r\n  height: 150px;\r\n}\r\n.logo-container {\r\n  background: rgb(110, 106, 106);\r\n  line-height: 80px;\r\n  border-right: 4px solid black;\r\n}\r\n.logo {\r\n  font-size: 32px;\r\n  color: azure;\r\n}\r\n.n {\r\n  background: rgb(172, 172, 172);\r\n}\r\n.m {\r\n  background: lightgrey;\r\n}\r\n.a {\r\n  border: 2px solid black;\r\n  padding: 0;\r\n  min-height: 500px;\r\n}\r\n.ayaq {\r\n  background: url(\"/images/ayaq001.gif\");\r\n  background-size: cover;\r\n}\r\n.nahrim {\r\n  color: lightgrey;\r\n  font-weight: bolder;\r\n  background-color: black;\r\n}\r\n.para {\r\n  padding: 0 150px;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 20px;\r\n}\r\n.para01 {\r\n  padding: 0 50px;\r\n  color: azure;\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 24px;\r\n  font-weight: bold;\r\n}\r\n.para1 {\r\n  position: absolute;\r\n  bottom: 0;\r\n  font-size: 20px;\r\n}\r\n.jata {\r\n  font-family: \"Quicksand\", sans-serif;\r\n  font-size: 30px;\r\n}\r\n.tangki {\r\n  cursor: pointer;\r\n  position: relative;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.25);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
 
 // exports
 
@@ -72118,7 +72118,7 @@ var render = function() {
                       _c(
                         "button",
                         {
-                          staticClass: "btn btn-primary btn-block",
+                          staticClass: "btn btn-outline-info btn-block",
                           on: { click: _vm.module1 }
                         },
                         [_vm._v("Next")]
@@ -72274,6 +72274,46 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -72294,6 +72334,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     next: function next() {
       this.$store.commit("SET_LOCATION", this.loc);
       this.$router.push("/roof-characteristics");
+    },
+    back: function back() {
+      this.$router.push({ name: "root" });
     },
     clicked_location: function clicked_location(loc) {
       this.loc = loc;
@@ -73029,18 +73072,39 @@ var render = function() {
                 })
               ),
               _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-success",
-                  staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-                  on: { click: _vm.next }
-                },
-                [
-                  _vm._v("\n          Next\n          "),
-                  _c("i", { staticClass: "fas fa-chevron-circle-right" })
-                ]
-              )
+              _c("div", { staticClass: "d-flex" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success mr-1",
+                    staticStyle: {
+                      "margin-top": "20px",
+                      "font-weight": "bold"
+                    },
+                    on: { click: _vm.back }
+                  },
+                  [
+                    _c("i", { staticClass: "fas fa-chevron-circle-left" }),
+                    _vm._v("\n            Back\n          ")
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-success",
+                    staticStyle: {
+                      "margin-top": "20px",
+                      "font-weight": "bold"
+                    },
+                    on: { click: _vm.next }
+                  },
+                  [
+                    _vm._v("\n            Next\n            "),
+                    _c("i", { staticClass: "fas fa-chevron-circle-right" })
+                  ]
+                )
+              ])
             ]
           )
         ])
@@ -73317,6 +73381,55 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -73336,6 +73449,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$store.commit("SET_FLUSH", this.flush);
       this.$router.push({
         name: "usage"
+      });
+    },
+    back: function back() {
+      this.$router.push({
+        name: "station"
+      });
+    },
+    home: function home() {
+      this.$router.push({
+        name: "root"
       });
     },
     change: function change() {
@@ -73604,6 +73727,26 @@ var render = function() {
             {
               staticClass: "btn btn-lg btn-success",
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.back }
+            },
+            [_vm._v("Back")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-outline-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.home }
+            },
+            [_vm._v("Home")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               on: { click: _vm.next }
             },
             [_vm._v("Next")]
@@ -73804,7 +73947,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\n}\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  width: 180px;\r\n  padding: 15px 0;\n}\r\n/* label {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\r\n} */\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -73815,6 +73958,79 @@ exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73995,6 +74211,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$store.commit("SET_AVG", this.aveperson);
       this.$router.push("/simulator");
     },
+    back: function back() {
+      this.$router.push({
+        name: "roof"
+      });
+    },
+    home: function home() {
+      this.$router.push({
+        name: "root"
+      });
+    },
     add: function add() {
       this.person.push("a");
     },
@@ -74122,186 +74348,359 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "d-flex flex-row form" }, [
-          _c("div", { staticClass: "pad" }, [
-            _c("label", { attrs: { for: "toilet" } }, [
-              _vm._v("Toilet Flushing")
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-7" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "d-flex flex-column align-items-around justify-content-center form"
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", { attrs: { for: "toilet" } }, [
+                        _vm._v("Toilet Flushing")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.toilet,
+                            expression: "toilet",
+                            modifiers: { number: true }
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.toilet },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.toilet = _vm._n($event.target.value)
+                          },
+                          blur: function($event) {
+                            _vm.$forceUpdate()
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(1)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", { attrs: { for: "clean" } }, [
+                        _vm._v("General Cleaning")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.clean,
+                            expression: "clean",
+                            modifiers: { number: true }
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.clean },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.clean = _vm._n($event.target.value)
+                          },
+                          blur: function($event) {
+                            _vm.$forceUpdate()
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(2)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", { attrs: { for: "garden" } }, [
+                        _vm._v("Gardening")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.garden,
+                            expression: "garden",
+                            modifiers: { number: true }
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.garden },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.garden = _vm._n($event.target.value)
+                          },
+                          blur: function($event) {
+                            _vm.$forceUpdate()
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(3)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", [_vm._v("Other")]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          placeholder: "Other item",
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.number",
+                            value: _vm.bath,
+                            expression: "bath",
+                            modifiers: { number: true }
+                          }
+                        ],
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.bath },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.bath = _vm._n($event.target.value)
+                          },
+                          blur: function($event) {
+                            _vm.$forceUpdate()
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(4)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", { attrs: { for: "usagevol" } }, [
+                        _vm._v("Total Volume Per Day")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          disabled: "",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.usagevol }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(5)
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "input-group d-flex align-items-center" },
+                    [
+                      _c("label", { attrs: { for: "aveperson" } }, [
+                        _vm._v("Average Per Person")
+                      ]),
+                      _vm._v(" "),
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "text",
+                          disabled: "",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.aveperson }
+                      }),
+                      _vm._v(" "),
+                      _vm._m(6)
+                    ]
+                  )
+                ]
+              )
             ]),
             _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model.number",
-                  value: _vm.toilet,
-                  expression: "toilet",
-                  modifiers: { number: true }
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.toilet },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.toilet = _vm._n($event.target.value)
-                },
-                blur: function($event) {
-                  _vm.$forceUpdate()
-                }
-              }
-            }),
-            _vm._v("liter(s)\n      ")
-          ]),
+            _c("div", { staticClass: "col-md-5" })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "d-flex flex-row form" }),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.back }
+            },
+            [_vm._v("Back")]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "pad" }, [
-            _c("label", { attrs: { for: "clean" } }, [
-              _vm._v("General Cleaning")
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model.number",
-                  value: _vm.clean,
-                  expression: "clean",
-                  modifiers: { number: true }
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.clean },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.clean = _vm._n($event.target.value)
-                },
-                blur: function($event) {
-                  _vm.$forceUpdate()
-                }
-              }
-            }),
-            _vm._v("liter(s)\n      ")
-          ]),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-outline-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.home }
+            },
+            [_vm._v("Home")]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "pad" }, [
-            _c("label", { attrs: { for: "garden" } }, [_vm._v("Gardening")]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model.number",
-                  value: _vm.garden,
-                  expression: "garden",
-                  modifiers: { number: true }
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.garden },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.garden = _vm._n($event.target.value)
-                },
-                blur: function($event) {
-                  _vm.$forceUpdate()
-                }
-              }
-            }),
-            _vm._v("liter(s)\n      ")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "d-flex flex-row form" }, [
-          _c("div", { staticClass: "pad" }, [
-            _c("input", { attrs: { type: "text" } }),
-            _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model.number",
-                  value: _vm.bath,
-                  expression: "bath",
-                  modifiers: { number: true }
-                }
-              ],
-              attrs: { type: "text" },
-              domProps: { value: _vm.bath },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.bath = _vm._n($event.target.value)
-                },
-                blur: function($event) {
-                  _vm.$forceUpdate()
-                }
-              }
-            }),
-            _vm._v("liter(s)\n      ")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "flush d-flex flex-row" }, [
-          _c("div", { staticClass: "d-flex flex-row" }, [
-            _c("div", { staticClass: "pad" }, [
-              _c("label", { attrs: { for: "usagevol" } }, [
-                _vm._v("Total Volume Per Day")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", disabled: "" },
-                domProps: { value: _vm.usagevol }
-              }),
-              _vm._v("liter\n        ")
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c("label", { attrs: { for: "aveperson" } }, [
-                _vm._v("Average Per Person")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "text", disabled: "" },
-                domProps: { value: _vm.aveperson }
-              }),
-              _vm._v("liter\n        ")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-success",
-            staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-            on: { click: _vm.next }
-          },
-          [_vm._v("Run Simulation")]
-        )
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.next }
+            },
+            [_vm._v("Next")]
+          )
+        ])
       ]
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [_vm._v("Water Usage")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -74346,7 +74745,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\ninput[data-v-ca205af8] {\r\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\r\n  width: 300px;\r\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\r\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -74357,6 +74756,87 @@ exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -74555,6 +75035,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     }
   },
   methods: {
+    back: function back() {
+      this.$router.push({
+        name: "usage"
+      });
+    },
+    home: function home() {
+      this.$router.push({
+        name: "root"
+      });
+    },
     next: function next() {
       this.$router.push({
         name: "root"
@@ -74670,218 +75160,305 @@ var render = function() {
           : _vm._e()
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "row d-flex justify-content-center" }),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "flush" }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "d-flex flex-row justify-content-center align-items-center wrapper"
-          },
-          [
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Rainwater Captured:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(
-                    "\n              " +
-                      _vm._s(_vm.results.total_captured) +
-                      " m\n              "
-                  ),
-                  _c("sup", [_vm._v("3")])
-                ])
-              ])
-            ]),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-6" }, [
+            _vm._m(1),
             _vm._v(" "),
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Total Rain Volume Delivered:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(
-                    "\n              " +
-                      _vm._s(_vm.results.total_delivered) +
-                      " m\n              "
-                  ),
-                  _c("sup", [_vm._v("3")])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("Average Rain Delivered Per Day:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(
-                    "\n              " +
-                      _vm._s(_vm.results.daily_average_delivered) +
-                      " m\n              "
-                  ),
-                  _c("sup", [_vm._v("3")])
-                ])
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "d-flex flex-row justify-content-center align-items-center wrapper"
-          },
-          [
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("No. of Days Usage Volume Not Meet:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(_vm._s(_vm.results.volume_not_meet) + " days")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("No. of Days With No Rain:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(_vm._s(_vm.results.total_no_rain_day) + " days")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "pad" }, [
-              _c("div", { staticStyle: { "text-align": "center" } }, [
-                _vm._v("No. of Days With No Rain and Tank Empty:")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "input" }, [
-                _c("h5", [
-                  _vm._v(_vm._s(_vm.results.norain_tankempty) + " days")
-                ])
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "flush" }, [
-          _vm._m(2),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "d-flex flex-column align-items-around justify-content-center form"
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Rainwater Captured")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.total_captured }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(2)
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Total Rain Volume Delivered")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.total_delivered }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(3)
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Average Rain Delivered Per Day")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.daily_average_delivered }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(4)
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("No. of Days Usage Volume Not Meet")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.volume_not_meet }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(5)
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("No. of Days With No Rain")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.total_no_rain_day }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(6)
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("No. of Days With No Rain and Tank Empty")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.norain_tankempty }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(7)
+                  ]
+                )
+              ]
+            )
+          ]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "d-flex flex-row justify-content-center align-items-center wrapper"
-            },
-            [
-              _c("div", { staticClass: "pad" }, [
-                _c("div", { staticStyle: { "text-align": "center" } }, [
-                  _vm._v("Reliability Ration:")
-                ]),
+          _c("div", { staticClass: "col-md-6" }, [
+            _vm._m(8),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "d-flex flex-column align-items-around justify-content-center form"
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Reliability Ration")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.reliability }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(9)
+                  ]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "input" }, [
-                  _c("h5", [_vm._v(_vm._s(_vm.results.reliability) + " %")])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pad" }, [
-                _c("div", { staticStyle: { "text-align": "center" } }, [
-                  _vm._v("Coefficient of Rainwater Utalization:")
-                ]),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Coefficient of Rainwater Utalization")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.coefficient }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(10)
+                  ]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "input" }, [
-                  _c("h5", [_vm._v(_vm._s(_vm.results.coefficient) + " %")])
-                ])
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "d-flex flex-row justify-content-center align-items-center wrapper"
-            },
-            [
-              _c("div", { staticClass: "pad" }, [
-                _c("div", { staticStyle: { "text-align": "center" } }, [
-                  _vm._v("Storage Efficiency:")
-                ]),
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Storage Efficiency")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.storage_efficient }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(11)
+                  ]
+                ),
                 _vm._v(" "),
-                _c("div", { staticClass: "input" }, [
-                  _c("h5", [
-                    _vm._v(_vm._s(_vm.results.storage_efficient) + " %")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "pad" }, [
-                _c("div", { staticStyle: { "text-align": "center" } }, [
-                  _vm._v("Percent(%) Time Tank Empty:")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "input" }, [
-                  _c("h5", [
-                    _vm._v(_vm._s(_vm.results.percent_tank_empty) + " %")
-                  ])
-                ])
-              ])
-            ]
-          )
+                _c(
+                  "div",
+                  { staticClass: "input-group d-flex align-items-center" },
+                  [
+                    _c("label", { attrs: { for: "toilet" } }, [
+                      _vm._v("Percent(%) Time Tank Empty")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        disabled: "",
+                        "aria-describedby": "basic-addon2"
+                      },
+                      domProps: { value: _vm.results.volume_not_meet }
+                    }),
+                    _vm._v(" "),
+                    _vm._m(12)
+                  ]
+                )
+              ]
+            )
+          ])
         ])
       ])
     ]),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "d-flex justify-content-center" },
-      [
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-success",
-            staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-            on: { click: _vm.next }
-          },
-          [_vm._v("Continue")]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          {
-            staticClass: "btn btn-success mr-2 ml-3",
-            staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-            attrs: { to: { name: "average" } }
-          },
-          [_vm._v("More Info")]
-        )
-      ],
-      1
-    )
+    _c("div", { staticClass: "text-center" }, [
+      _c(
+        "div",
+        { staticClass: " btn-group" },
+        [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.back }
+            },
+            [_vm._v("Back")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-outline-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.home }
+            },
+            [_vm._v("Home")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-lg btn-success",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              on: { click: _vm.next }
+            },
+            [_vm._v("Continue to Module 2")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "btn btn-lg btn-success ",
+              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+              attrs: { to: { name: "average" } }
+            },
+            [_vm._v("More Info")]
+          )
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -74900,16 +75477,136 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticStyle: { "text-align": "center" } }, [
-      _c("h4", [_vm._v("Simulation Results")])
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [_vm._v("Simulation Results")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticStyle: { "text-align": "center" } }, [
-      _c("h4", [_vm._v("Analysis Results")])
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("liter(s)")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("days")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("days")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("days")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("h2", { staticClass: "mt-5" }, [_vm._v("Analysis Results")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("%")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("%")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("%")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c(
+        "span",
+        { staticClass: "input-group-text", attrs: { id: "basic-addon2" } },
+        [_vm._v("%")]
+      )
     ])
   }
 ]

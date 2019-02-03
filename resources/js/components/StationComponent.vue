@@ -2,15 +2,33 @@
   <div class="container h-100">
     <div class="row h-100 d-flex align-items-center justify-content-center">
       <div class="map">
-        <LMap ref="map" style="height:100vh; width: 100vw" :center="currentPosition" :zoom="zoom">
-          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
-          <LMarker :latlng="currentPosition" class="blink">
-            <LTooltip class="yah" :options="{interactive: true,permanent: true}">
+        <LMap
+          ref="map"
+          style="height:100vh; width: 100vw"
+          :center="currentPosition"
+          :zoom="zoom"
+        >
+          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+          <LMarker
+            :latlng="currentPosition"
+            class="blink"
+          >
+            <LTooltip
+              class="yah"
+              :options="{interactive: true,permanent: true}"
+            >
               <strong>You are HERE!</strong>
             </LTooltip>
           </LMarker>
-          <span v-for="c in this.$store.state.coords" :key="c.id">
-            <LMarker :latlng="[c.lat, c.lon]" class="blink" @click="clicked_location(c.stn_name)">
+          <span
+            v-for="c in this.$store.state.coords"
+            :key="c.id"
+          >
+            <LMarker
+              :latlng="[c.lat, c.lon]"
+              class="blink"
+              @click="clicked_location(c.stn_name)"
+            >
               <LTooltip :options="{interactive: true,permanent: true}">
                 <strong>{{ c.stn_name }}</strong>
               </LTooltip>
@@ -20,18 +38,40 @@
       </div>
       <div class="dd-container">
         <div class="dd d-flex flex-column align-items-center justify-content-center rain">
-          <img src="images/rain.png" height="100" alt>
+          <img
+            src="images/rain.png"
+            height="100"
+            alt
+          >
           <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
-          <div
-            class="alert alert-primary text-center"
-          >Please select the nearest rainfall station to your rainwater harvesting tank.</div>
-          <select class="form-control" v-model="loc">
-            <option v-for="(value, key) in locations" :key="key">{{ value.stn_name }}</option>
+          <div class="alert alert-primary text-center">Please select the nearest rainfall station to your rainwater harvesting tank.</div>
+          <select
+            class="form-control"
+            v-model="loc"
+          >
+            <option
+              v-for="(value, key) in locations"
+              :key="key"
+            >{{ value.stn_name }}</option>
           </select>
-          <button @click="next" class="btn btn-success" style="margin-top: 20px; font-weight:bold;">
-            Next
-            <i class="fas fa-chevron-circle-right"></i>
-          </button>
+          <div class="d-flex">
+            <button
+              @click="back"
+              class="btn btn-success mr-1"
+              style="margin-top: 20px; font-weight:bold;"
+            >
+              <i class="fas fa-chevron-circle-left"></i>
+              Back
+            </button>
+            <button
+              @click="next"
+              class="btn btn-success"
+              style="margin-top: 20px; font-weight:bold;"
+            >
+              Next
+              <i class="fas fa-chevron-circle-right"></i>
+            </button></div>
+
         </div>
       </div>
     </div>
@@ -56,6 +96,9 @@ export default {
     next() {
       this.$store.commit("SET_LOCATION", this.loc);
       this.$router.push("/roof-characteristics");
+    },
+    back() {
+      this.$router.push({ name: "root" });
     },
     clicked_location(loc) {
       this.loc = loc;

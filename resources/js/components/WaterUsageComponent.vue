@@ -66,33 +66,119 @@
                     <input type="text" :value="area" disabled>m<sup>2</sup>
         </div>-->
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div>
+              <h2 class="mt-5">Water Usage</h2>
+            </div>
+            <div class="d-flex flex-column align-items-around justify-content-center form">
+              <div class="input-group d-flex align-items-center">
+                <label for="toilet">Toilet Flushing</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model.number="toilet"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
 
-      <div class="d-flex flex-row form">
-        <div class="pad">
-          <label for="toilet">Toilet Flushing</label>
-          <br>
-          <input
-            type="text"
-            v-model.number="toilet"
-          >liter(s)
-        </div>
-        <!-- <span class="equal">x</span> -->
-        <div class="pad">
-          <label for="clean">General Cleaning</label>
-          <br>
-          <input
-            type="text"
-            v-model.number="clean"
-          >liter(s)
-        </div>
-        <!-- <span class="equal">=</span> -->
-        <div class="pad">
-          <label for="garden">Gardening</label>
-          <br>
-          <input
-            type="text"
-            v-model.number="garden"
-          >liter(s)
+              <div class="input-group d-flex align-items-center">
+                <label for="clean">General Cleaning</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model.number="clean"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+
+              <div class="input-group d-flex align-items-center">
+                <label for="garden">Gardening</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model.number="garden"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label>Other</label>
+                <input
+                  placeholder="Other item"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="basic-addon2"
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model.number="bath"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="usagevol">Total Volume Per Day</label>
+                <input
+                  type="text"
+                  disabled
+                  :value="usagevol"
+                  class="form-control"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+              <div class="input-group d-flex align-items-center">
+                <label for="aveperson">Average Per Person</label>
+                <input
+                  type="text"
+                  disabled
+                  :value="aveperson"
+                  class="form-control"
+                  aria-describedby="basic-addon2"
+                >
+                <div class="input-group-append">
+                  <span
+                    class="input-group-text"
+                    id="basic-addon2"
+                  >liter(s)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-5">
+
+          </div>
         </div>
       </div>
 
@@ -101,52 +187,39 @@
                     <label for="cook">Cooking/Drinking</label><br>
                     <input type="text" v-model.number="cook">liter(s)
         </div>-->
-        <div class="pad">
-          <input type="text">
-          <!-- <label for="bath">Bathing</label><br> -->
-          <input
+
+        <!-- <div class="pad">
+          <input type="text"> -->
+        <!-- <label for="bath">Bathing</label><br> -->
+        <!-- <input
             type="text"
             v-model.number="bath"
           >liter(s)
-        </div>
+        </div> -->
 
         <!-- <div class="pad">
                     <label for="wash">Washing</label><br>
                     <input type="text" v-model.number="wash">liter(s)
         </div>-->
       </div>
+      <div><button
+          @click="back"
+          class="btn btn-lg btn-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Back</button>
 
-      <div class="flush d-flex flex-row">
-        <div class="d-flex flex-row">
-          <div class="pad">
-            <label for="usagevol">Total Volume Per Day</label>
-            <br>
-            <input
-              type="text"
-              disabled
-              :value="usagevol"
-            >liter
-          </div>
-          <div>
-            <label for="aveperson">Average Per Person</label>
-            <br>
-            <input
-              type="text"
-              disabled
-              :value="aveperson"
-            >liter
-          </div>
-        </div>
-        <!-- <div>
-                    <label for="volume">1<sup>st</sup> flush volume</label>
-                    <input type="text" :value="volume" disabled>m<sup>3</sup>
-        </div>-->
-      </div>
-      <button
-        @click="next"
-        class="btn btn-success"
-        style="margin-top: 20px; font-weight:bold;"
-      >Run Simulation</button>
+        <button
+          @click="home"
+          class="btn btn-lg btn-outline-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Home</button>
+
+        <button
+          @click="next"
+          class="btn btn-lg btn-success"
+          style="margin-top: 20px; font-weight:bold;"
+        >Next</button></div>
+
     </div>
   </div>
 </template>
@@ -192,6 +265,16 @@ export default {
       this.$store.commit("SET_AVG", this.aveperson);
       this.$router.push("/simulator");
     },
+    back() {
+      this.$router.push({
+        name: "roof"
+      });
+    },
+    home() {
+      this.$router.push({
+        name: "root"
+      });
+    },
     add() {
       this.person.push("a");
     },
@@ -235,11 +318,15 @@ export default {
 }
 
 label {
+  width: 180px;
+  padding: 15px 0;
+}
+/* label {
   display: block;
   padding-left: 10px;
   margin-bottom: -20px;
   font-size: small;
-}
+} */
 
 .pad {
   margin-right: 20px;

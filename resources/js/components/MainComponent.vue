@@ -21,7 +21,7 @@
                 <p>The main purpose of this software is for predicting the size of therainwater tank to be used for a rainwater harvesting system.</p>
                 <p>
                   <button
-                    class="btn btn-primary btn-block"
+                    class="btn btn-outline-info btn-block"
                     @click="module1"
                   >Next</button>
                 </p>
@@ -206,71 +206,4 @@ export default {
   width: 450px;
   transition: 0.5s;
 }
-/* .bar {
-  border: 2px solid black;
-  border-top: 4px solid black;
-  margin-top: 20px;
-}
-.cor span {
-  font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-}
-.carousel-item {
-  width: 600px;
-  height: 150px;
-}
-.logo-container {
-  background: rgb(110, 106, 106);
-  line-height: 80px;
-  border-right: 4px solid black;
-}
-.logo {
-  font-size: 32px;
-  color: azure;
-}
-.n {
-  background: rgb(172, 172, 172);
-}
-.m {
-  background: lightgrey;
-}
-.a {
-  border: 2px solid black;
-  padding: 0;
-  min-height: 500px;
-}
-.ayaq {
-  background: url("/images/ayaq001.gif");
-  background-size: cover;
-}
-.nahrim {
-  color: lightgrey;
-  font-weight: bolder;
-  background-color: black;
-}
-.para {
-  padding: 0 150px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 20px;
-}
-.para01 {
-  padding: 0 50px;
-  color: azure;
-  font-family: "Quicksand", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-}
-.para1 {
-  position: absolute;
-  bottom: 0;
-  font-size: 20px;
-}
-.jata {
-  font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-}
-.tangki {
-  cursor: pointer;
-  position: relative;
-} */
 </style>
