@@ -1,25 +1,29 @@
 <template>
     <div>
         <div class="container">
-            <div class="row">
-                <div class="roof text-left">ROOF AREA:</div>
+            <!-- <div class="row">
+                <div class="roof text-left">Roof Area:</div>
                 <hr>
+            </div> -->
+            <div class="row roof">
+                <span>Roof Area:</span>
             </div>
 
-            <div class="row d-flex flex-column">
+            <div class="row d-flex flex-column roof-detail">
                 <label for="newArea">Roof Area</label>
                 <div class="changeForm d-flex align-items-center">
                     <div class="input-group mb-3">
 
                         <input type="text" class="form-control text-right" v-model="newArea">
-                        <div class="input-group-append">
-                            <span class="input-group-text">m<sup>2</sup></span>
+                        <div class="input-group-append ">
+                            <span class="input-group-text w-unit">m<sup>2</sup></span>
                         </div>
                     </div>
 
                 </div>
-                <button class="btn btn-success butang" @click="done">Done</button>
+
             </div>
+            <button class="btn btn-success butang" @click="done">Next</button>
         </div>
 
     </div>

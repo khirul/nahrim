@@ -4,38 +4,77 @@
             <div class="row roof">
                 Top-Up System
             </div>
-            <div class="row d-flex flex-column">
+            <div class="row d-flex flex-column roof-detail">
                 <label for="tanksize">Tank Size : </label>
-                <div class=" d-flex align-items-center">
-                    <input class="form-control" disabled v-model="tanksize" type="text" /> m<sup>2</sup>
+                <div class="changeForm d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control text-right" v-model="tanksize">
+                        <div class="input-group-append">
+                            <span class="input-group-text w-unit">m<sup>3</sup></span>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class=" d-flex align-items-center">
+                    <input class="form-control" disabled v-model="tanksize" type="text" /> m<sup>3</sup>
+                </div> -->
                 <!-- </div>
             <div> -->
                 <label for="tanktype">Select Tank Type :</label>
-                <select class="form-control mb-2" v-model="tankType" @change="type">
+                <select class="form-control mb-3" v-model="tankType" @change="type">
                     <option value="" disabled>Tank type...</option>
                     <option value="square">Square</option>
                     <option value="cylinder">Cylinder</option>
                 </select>
 
                 <div v-if="squareShow">
-                    <label for="width">Tank Width: </label>
-                    <input class="form-control " v-model="width" type="text" />
-                    <label for="depth">Tank Depth: </label>
-                    <input class="form-control " v-model="depth" type="text" />
+                    <label for="width">Tank Width:</label>
+                    <div class="changeForm d-flex align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-right" v-model="width">
+                            <div class="input-group-append">
+                                <span class="input-group-text w-unit">m</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <label for="width">Tank Width: </label>
+                    <input class="form-control " v-model="width" type="text" /> -->
+                    <label for="depth">Tank Depth:</label>
+                    <div class="changeForm d-flex align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-right" v-model="depth">
+                            <div class="input-group-append">
+                                <span class="input-group-text w-unit">m</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <label for="depth">Tank Depth: </label>
+                    <input class="form-control " v-model="depth" type="text" /> -->
                 </div>
                 <div v-if="cylinderShow">
-                    <label for="diameter">Tank Diameter: </label>
-                    <input class="form-control " v-model="diameter" type="text" />
+                    <label for="diameter">Tank Diameter:</label>
+                    <div class="changeForm d-flex align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-right" v-model="diameter">
+                            <div class="input-group-append">
+                                <span class="input-group-text w-unit">m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <label for="diameter">Tank Diameter: </label>
+                    <input class="form-control " v-model="diameter" type="text" /> -->
                 </div>
 
-
-                <button class="btn btn-success butang mb-2" @click="done" v-if="!this.$store.state.topupShow">Finish</button>
-
-                <button class="btn btn-warning butang mb-2" @click="start" v-if="this.$store.state.topupShow">Start
-                    Over?</button>
-
             </div>
+            <button class="btn btn-success butang mb-2" @click="done" v-if="!this.$store.state.topupShow">Finish</button>
+
+            <button class="btn btn-warning butang mb-2" @click="start" v-if="this.$store.state.topupShow">Start
+                Over?</button>
+
+
         </div>
     </div>
 </template>

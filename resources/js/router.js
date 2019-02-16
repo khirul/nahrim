@@ -59,49 +59,50 @@ export const routes = [{
 },
 {
     path: '/gravity-fed',
-    name: 'gravity-fed',
+    name: 'roof-area',
     component: GravityFedComponent,
 
-    children: [{
-        path: '/',
-        name: 'roof-area',
-        component: RoofAreaComponent,
-    },
-    {
-        path: '/gravity-fed/catchment',
-        name: 'catchment',
-        component: RoofCatchmentComponent,
-    },
-    {
-        path: '/gravity-fed/gutter',
-        name: 'gutter',
-        component: GutterComponent,
-    },
-    {
-        path: '/gravity-fed/leaf-guard',
-        name: 'leaf-guard',
-        component: LeafGuardComponent,
-    },
-    {
-        path: '/gravity-fed/first-flush',
-        name: 'first-flush',
-        component: FirstFlushComponent,
-    },
-    {
-        path: '/gravity-fed/water-demand',
-        name: 'water-demand',
-        component: WaterDemandComponent,
-    },
-    {
-        path: '/gravity-fed/pumping-system',
-        name: 'pump',
-        component: PumpingSystemComponent,
-    },
-    {
-        path: '/gravity-fed/top-up',
-        name: 'top-up',
-        component: TopUpComponent,
-    }
+    children: [
+        {
+            path: '/',
+            name: 'roof-area',
+            component: RoofAreaComponent,
+        },
+        {
+            path: '/gravity-fed/catchment',
+            name: 'catchment',
+            component: RoofCatchmentComponent,
+        },
+        {
+            path: '/gravity-fed/gutter',
+            name: 'gutter',
+            component: GutterComponent,
+        },
+        {
+            path: '/gravity-fed/leaf-guard',
+            name: 'leaf-guard',
+            component: LeafGuardComponent,
+        },
+        {
+            path: '/gravity-fed/first-flush',
+            name: 'first-flush',
+            component: FirstFlushComponent,
+        },
+        {
+            path: '/gravity-fed/water-demand',
+            name: 'water-demand',
+            component: WaterDemandComponent,
+        },
+        {
+            path: '/gravity-fed/pumping-system',
+            name: 'pump',
+            component: PumpingSystemComponent,
+        },
+        {
+            path: '/gravity-fed/top-up',
+            name: 'top-up',
+            component: TopUpComponent,
+        }
     ]
 },
 {

@@ -146,10 +146,7 @@ export default {
   position: relative;
   z-index: 1;
 }
-.leaflet-tooltip {
-  background: red !important;
-  color: white !important;
-}
+
 .dd-container {
   background: rgba(87, 84, 84, 0.397);
   z-index: 2;

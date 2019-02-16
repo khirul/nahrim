@@ -288,7 +288,7 @@ export default {
     },
     next() {
       this.$router.push({
-        name: "root"
+        name: "landing02"
       });
     },
     simulate() {

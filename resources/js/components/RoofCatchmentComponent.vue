@@ -1,23 +1,42 @@
 <template>
     <div>
         <div class="container">
+            <!-- <div class="row">
+                <div class="roof text-left">Roof Catchment Run-off:</div>
+                <hr>
+            </div> -->
             <div class="row roof">
                 <span>Roof Catchment Run-off:</span>
             </div>
 
-            <div class="row d-fle flex-column">
+
+
+            <div class="row d-flex flex-column roof-detail">
                 <label for="coeff">Run-off Coefficient :</label>
                 <input class="form-control mb-3" type="text" v-model="coeff">
-                <label for="intensity">Rainfall Intensity :</label>
+                <!-- <label for="intensity">Rainfall Intensity :</label>
                 <select class="form-control mb-2" v-model="intensity">
                     <option value="" disabled>Please select...</option>
                     <option value="50">50 mm/h</option>
                     <option value="100">100 mm/h</option>
                     <option value="150">150 mm/h</option>
-                </select>
+                </select> -->
+                <label for="intensity">Rainfall Intensity :</label>
+                <div class="input-group d-flex align-items-center">
 
-                <button class="btn btn-success butang" @click="done">Done</button>
+                    <select class="form-control " v-model="intensity">
+                        <option value="" disabled>Please select...</option>
+                        <option value="50">50 </option>
+                        <option value="100">100 </option>
+                        <option value="150">150 </option>
+                    </select>
+                    <div class="input-group-append">
+                        <span class="input-group-text w-unit" id="basic-addon2 ">mm/h</span>
+                    </div>
+                </div>
             </div>
+            <button class="btn btn-success butang" @click="done">Next</button>
+
         </div>
     </div>
 </template>

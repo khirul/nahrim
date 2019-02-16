@@ -2,17 +2,21 @@
     <div>
         <div class="container">
             <div class="row roof">
-                <label for="gutter">Gutter Type :</label>
+                <span>Gutter Type :</span>
             </div>
-            <div class="row">
 
-                <select class="form-control" v-model="gutter">
-                    <option value="" disabled>Please select...</option>
-                    <option value="round">Half Round</option>
-                    <option value="rec">Rectangular</option>
-                </select>
-                <button class="btn btn-success butang" @click="done">Done</button>
+            <div class="row d-flex flex-column roof-detail">
+                <label for="gutter">Gutter Type :</label>
+                <div class="input-group d-flex align-items-center">
+                    <select class="form-control " v-model="gutter">
+                        <option value="" disabled>Please select...</option>
+                        <option value="round">Half Round</option>
+                        <option value="rec">Rectangular</option>
+                    </select>
+                </div>
             </div>
+            <button class="btn btn-success butang" @click="done">Done</button>
+
         </div>
     </div>
 </template>

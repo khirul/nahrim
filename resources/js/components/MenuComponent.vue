@@ -1,137 +1,275 @@
 <template>
-    <div class="container d-flex flex-column">
-        <div class="modules ">
-            <div class="d-flex flex-column align-items-center pt-5" @click="module1">
-                <img src="/images/rain-icon.png" alt="" class="mr-3 ">
-                <span class="moduleOne">Tank Simulation</span>
-            </div>
+  <div>
+    <div class="wrapper d-flex flex-column justify-content-center">
+      <div class="bg-overlay ">
+        <div class="container d-flex flex-column justify-content-center">
 
+          <div class="slide-box animated zoomIn delay-1s">
+            <div class="title">
+              <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting
+              <span class="tag">S</span>ystem
+            </div>
+            <div class="para pl-5 pr-5">
+              <p>
+                The Design Guide for Rainwater Harvesting Systems</p>
+              <div class="small">( RBased on NAHRIM Technical Guide No 2 )</div>
+            </div>
+            <div class="box box01">
+              <span class="menu d-flex align-items-start">SECTION 03</span>
+              <div class="content text-justify p-3">
+                <h4>Direct Pumping System
+                </h4>
+                <p>The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.</p>
+                <p>
+                  <button
+                    class="btn btn-outline-info btn-block"
+                    @click="module1"
+                  >Next</button>
+                </p>
+              </div>
+            </div>
+            <div class="box box02">
+              <span class="menu d-flex align-items-start">SECTION 02</span>
+              <div class="content text-justify p-3">
+                <h5>Indirect Pumping System
+                </h5>
+                <p>Based on NAHRIM Technical Guide No 2: </p>
+                <p>The Design Guide for Rainwater Harvesting Systems</p>
+                <p>
+                  <button
+                    class="btn btn-outline-info btn-block"
+                    @click="module2"
+                  >Next</button>
+                </p>
+              </div>
+            </div>
+            <div class="box box03">
+              <span class="menu d-flex align-items-start">SECTION 01</span>
+              <div class="content text-justify p-3">
+                <h4>Gravity Fed System
+                </h4>
+                <p>The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.</p>
+                <p>
+                  <button
+                    class="btn btn-outline-info btn-block"
+                    @click="module1"
+                  >Next</button>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modules2  ">
-            <div class="d-flex flex-column align-items-center">
-                <img src="/images/tank.png" alt="" class="mr-3" @mouseover="module2">
-                <span class="moduleOne">Rainwater Harvesting System</span>
-            </div>
-            <div class="btn2 d-flex justify-content-center align-items-center" v-if="show">
-                <div class="sub mr-1 text-center" @click="gravity">Gravity Fed System
-                </div>
-                <div class="sub mr-1 text-center justify-item-center" @click="indirect">Indirect Pumping System</div>
-                <div class="sub text-center" @click="direct">Direct Pumping System</div>
-            </div>
-
-        </div>
-
-
-        <!-- <div class="mod2 d-flex flex-column justify-content-center align-items-center" @mouseover="module2" @mouseout="mouseout">
-            <div class="one" v-if="!show">Module 2</div>
-            <div class="name" v-if="!show">Rainwater Harvesting System</div>
-            <div class="btn2 d-flex justify-content-center align-items-center" v-if="show">
-                <div class="sub mr-1 text-center" @click="gravity">
-                    Gravity Fed
-                    System
-                </div>
-                <div class="sub mr-1 text-center" @click="indirect">Indirect Pumping System</div>
-                <div class="sub text-center" @click="direct">Direct Pumping System</div>
-            </div>
-        </div> -->
-
+      </div>
     </div>
+
+  </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                show: false
-            };
-        },
-        methods: {
-            module1() {
-                this.$router.push({
-                    name: "station"
-                });
-            },
-            module2() {
-                this.show = true;
-            },
-            mouseout() {
-                this.show = false;
-            },
-            gravity() {
-                this.$router.push({
-                    name: "gravity-fed"
-                });
-                this.$store.commit("MENU_TYPE", "gravity");
-            },
-            direct() {
-                this.$router.push({
-                    name: "gravity-fed"
-                });
-                this.$store.commit("MENU_TYPE", "direct");
-            },
-            indirect() {
-                this.$router.push({
-                    name: "gravity-fed"
-                });
-                this.$store.commit("MENU_TYPE", "indirect");
-            }
-        }
-    };
-
+import CarouselComponent from "./CarouselComponent";
+export default {
+  components: {
+    CarouselComponent
+  },
+  mounted() {
+    $(document).ready(function() {
+      $(".box01").on("mouseover", function() {
+        $(".box01").addClass("sliding");
+      });
+      $(".box01").on("mouseout", function() {
+        $(".box01").removeClass("sliding");
+      });
+      $(".box02").on("mouseover", function() {
+        $(".box02").addClass("sliding");
+      });
+      $(".box02").on("mouseout", function() {
+        $(".box02").removeClass("sliding");
+      });
+      $(".box03").on("mouseover", function() {
+        $(".box03").addClass("sliding");
+      });
+      $(".box03").on("mouseout", function() {
+        $(".box03").removeClass("sliding");
+      });
+    });
+  },
+  methods: {
+    module1() {
+      this.$router.push({
+        name: "roof-area"
+      });
+    },
+    module2() {
+      this.$router.push({
+        name: "landing02"
+      });
+    },
+    mouseout() {
+      this.show = false;
+    },
+    gravity() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "gravity");
+    },
+    direct() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "direct");
+    },
+    indirect() {
+      this.$router.push({
+        name: "gravity-fed"
+      });
+      this.$store.commit("MENU_TYPE", "indirect");
+    }
+  }
+};
 </script>
 
 <style scoped>
-    .mod1,
-    .mod2 {
-        height: 300px;
-        width: 300px;
-        border-radius: 15px;
-        cursor: pointer;
-    }
+@import url("https://fonts.googleapis.com/css?family=Khand");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
 
-    .mod1 {
-        background: lightblue;
-    }
+.wrapper {
+  height: 100vh;
+  /* background: url("/images/rainbg.jpg") !important;
+  background-size: cover;
+  background-position: center; */
+}
 
-    .mod2 {
-        background: lightcoral;
-    }
+.bg-overlay {
+  background: url("/images/rhs.jpg");
+  padding: 100px;
+  border-top: 5px solid rgba(128, 128, 128, 0.308);
+  border-bottom: 5px solid rgba(128, 128, 128, 0.308);
+}
 
-    .sub {
-        height: 80px;
-        width: 120px;
-        color: white;
-        background: #006df0;
-        border-radius: 20px;
-        line-height: 80px;
-        cursor: pointer;
-    }
+.title {
+  font-family: "Khand", sans-serif;
+  font-size: 32px;
+  color: black;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
 
-    .modules img {
-        height: 200px;
-        width: 200px;
-        color: aqua;
-        cursor: pointer;
-        border: 5px solid #006df0;
-        border-radius: 50%;
-    }
+.para {
+  position: absolute;
+  width: 650px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  font-size: 16px;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-    .modules2 img {
-        height: 200px;
-        width: 200px;
-        cursor: pointer;
-        /* border: 5px solid aqua;
-        border-radius: 50%; */
-    }
+.tag {
+  color: rgb(255, 94, 0);
+  font-size: 50px;
+  font-family: "Audiowide", cursive;
+}
 
-    .moduleOne {
-        font-size: 60px;
-        color: grey;
-    }
+.slide-box {
+  /* border: 1px solid rgba(172, 172, 172, 0.247); */
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background: url("/images/rhsi.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-    .moduleTwo {
-        font-size: 60px;
-        color: grey;
-    }
+.box {
+  width: 150px;
+  /* border: 1px solid rgba(128, 128, 128, 0.144); */
+  height: 100%;
+  float: right;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.box01 {
+  background: url("/images/rhsi.jpg");
+  background-size: cover;
+}
+.box02 {
+  background: url("/images/calculation.jpg");
+  background-size: cover;
+}
 
+.box03 {
+  background: url("/images/water.jpg");
+  background-size: cover;
+}
+.box01::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 247, 255, 0.25),
+    rgba(255, 0, 0, 0)
+  );
+  width: 150px;
+  height: 100%;
+}
+.box02::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 68, 255, 0.25),
+    rgba(255, 0, 0, 0)
+  );
+  width: 150px;
+  height: 100%;
+}
+
+.box03::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(68, 0, 255, 0.25),
+    rgba(255, 0, 0, 0)
+  );
+  width: 150px;
+  height: 100%;
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  font-family: "Khand", sans-serif;
+  color: black;
+}
+
+.sliding {
+  width: 450px;
+  transition: 0.5s;
+}
 </style>

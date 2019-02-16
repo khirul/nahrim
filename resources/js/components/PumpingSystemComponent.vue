@@ -4,7 +4,7 @@
             <div class="row roof">
                 Pumping System
             </div>
-            <div class="row d-flex flex-column">
+            <div class="row d-flex flex-column roof-detail">
                 <label for="house_type">House type :</label>
                 <select class="form-control mb-2" v-model="house_type">
                     <option value="" disabled>Please select...</option>
@@ -14,9 +14,9 @@
                 <div>
                     {{house_type}} Horse Power
                 </div>
-
-                <button class="btn btn-success butang" @click="done">Done</button>
             </div>
+            <button class="btn btn-success butang" @click="done">Done</button>
+
         </div>
     </div>
 </template>

@@ -4,17 +4,34 @@
             <div class="row roof">
                 Water Demand & Tank Size
             </div>
-            <div class="row d-flex flex-column">
+            <div class="row d-flex flex-column roof-detail">
                 <label for="waterDemand">Daily Total Rainwater Demand :</label>
-                <div class="changeForm d-flex align-items-center mb-3">
-                    <input type="text" class="form-control" v-model="waterDemand">liter<sup></sup>
+                <div class="changeForm d-flex align-items-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control text-right" v-model="waterDemand">
+                        <div class="input-group-append">
+                            <span class="input-group-text w-unit">liter</span>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class="changeForm d-flex align-items-center mb-3">
+                    <input type="text" class="form-control" v-model="waterDemand">liter<sup></sup>
+                </div> -->
                 <label for="waterDemand">Tank Size :</label>
                 <div class="changeForm d-flex align-items-center">
-                    <input type="text" class="form-control" v-model="tanksize">m<sup>3</sup>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control text-right" v-model="tanksize">
+                        <div class="input-group-append">
+                            <span class="input-group-text w-unit">m<sup>3</sup></span>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-success butang" @click="done">Done</button>
+                <!-- <div class="changeForm d-flex align-items-center">
+                    <input type="text" class="form-control" v-model="tanksize">m<sup>3</sup>
+                </div> -->
             </div>
+            <button class="btn btn-success butang" @click="done">Done</button>
+
         </div>
     </div>
 </template>

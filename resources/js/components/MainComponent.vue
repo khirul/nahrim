@@ -6,19 +6,36 @@
 
           <div class="slide-box animated zoomIn delay-1s">
             <div class="title">
-              <span class="tag">N</span>ahrim <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting <span class="tag">S</span>ystem <span class="tag">A</span>pplication
+              <span class="tag">N</span>ahrim <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting
+              <span class="tag">S</span>ystem <span class="tag">A</span>pplication
             </div>
             <div class="para pl-5 pr-5">
-              <p>How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design your Rainwater Harvesting System</p>
+              <p>How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design
+                your Rainwater Harvesting System</p>
               <div class="small">( Revised version of previous Tangki NAHRIM )</div>
             </div>
             <div class="box box02">
               <span class="menu d-flex align-items-start">SECTION 02</span>
+              <div class="content text-justify p-3">
+                <h5>Rainwater Harvesting System Design
+                </h5>
+                <p>Based on NAHRIM Technical Guide No 2: </p>
+                <p>The Design Guide for Rainwater Harvesting Systems</p>
+                <p>
+                  <button
+                    class="btn btn-outline-info btn-block"
+                    @click="module2"
+                  >Next</button>
+                </p>
+              </div>
             </div>
             <div class="box box03">
               <span class="menu d-flex align-items-start">SECTION 01</span>
               <div class="content text-justify p-3">
-                <p>The main purpose of this software is for predicting the size of therainwater tank to be used for a rainwater harvesting system.</p>
+                <h4>Tangki NAHRIM Simulation
+                </h4>
+                <p>The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.</p>
                 <p>
                   <button
                     class="btn btn-outline-info btn-block"
@@ -64,7 +81,9 @@ export default {
       });
     },
     module2() {
-      this.show = true;
+      this.$router.push({
+        name: "landing02"
+      });
     },
     mouseout() {
       this.show = false;
@@ -102,12 +121,14 @@ export default {
   background-size: cover;
   background-position: center; */
 }
+
 .bg-overlay {
   background: url("/images/mainbgc.jpg");
   padding: 100px;
   border-top: 5px solid rgba(128, 128, 128, 0.308);
   border-bottom: 5px solid rgba(128, 128, 128, 0.308);
 }
+
 .title {
   font-family: "Khand", sans-serif;
   font-size: 32px;
@@ -116,6 +137,7 @@ export default {
   top: 0;
   overflow: hidden;
 }
+
 .para {
   position: absolute;
   width: 650px;
@@ -128,11 +150,13 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .tag {
-  color: rgba(0, 110, 255, 0.25);
+  color: rgba(0, 110, 255, 0.74);
   font-size: 50px;
   font-family: "Audiowide", cursive;
 }
+
 .slide-box {
   /* border: 1px solid rgba(172, 172, 172, 0.247); */
   height: 300px;
@@ -142,6 +166,7 @@ export default {
   background-size: cover;
   background-position: center;
 }
+
 .box {
   width: 150px;
   /* border: 1px solid rgba(128, 128, 128, 0.144); */
@@ -156,10 +181,12 @@ export default {
   background: url("/images/calculation.jpg");
   background-size: cover;
 }
+
 .box03 {
   background: url("/images/water.jpg");
   background-size: cover;
 }
+
 .box02::before {
   content: "";
   display: block;
@@ -171,6 +198,7 @@ export default {
   width: 150px;
   height: 100%;
 }
+
 .box03::before {
   content: "";
   display: block;
@@ -182,6 +210,7 @@ export default {
   width: 150px;
   height: 100%;
 }
+
 .menu {
   position: absolute;
   top: 50%;
@@ -195,6 +224,7 @@ export default {
   color: rgb(255, 255, 255);
   width: 150px;
 }
+
 .content {
   position: absolute;
   top: 50%;
@@ -202,6 +232,7 @@ export default {
   left: 150px;
   font-family: "Khand", sans-serif;
 }
+
 .sliding {
   width: 450px;
   transition: 0.5s;
