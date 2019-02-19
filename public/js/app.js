@@ -71781,9 +71781,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -72107,7 +72104,7 @@ var render = function() {
       "div",
       { staticClass: "wrapper d-flex flex-column justify-content-center" },
       [
-        _c("div", { staticClass: "bg-overlay " }, [
+        _c("div", { staticClass: "bg-overlay" }, [
           _c(
             "div",
             {
@@ -72125,13 +72122,9 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "content text-justify p-3" }, [
-                    _c("h5", [
-                      _vm._v(
-                        "Rainwater Harvesting System Design\n              "
-                      )
-                    ]),
+                    _c("h5", [_vm._v("Rainwater Harvesting System Design")]),
                     _vm._v(" "),
-                    _c("p", [_vm._v("Based on NAHRIM Technical Guide No 2: ")]),
+                    _c("p", [_vm._v("Based on NAHRIM Technical Guide No 2:")]),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
@@ -72158,13 +72151,11 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "content text-justify p-3" }, [
-                    _c("h4", [
-                      _vm._v("Tangki NAHRIM Simulation\n              ")
-                    ]),
+                    _c("h4", [_vm._v("Tangki NAHRIM Simulation")]),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "The main purpose of this software is for predicting the size of therainwater tank to\n                be used for a rainwater harvesting system."
+                        "\n                The main purpose of this software is for predicting the size of therainwater tank to\n                be used for a rainwater harvesting system.\n              "
                       )
                     ]),
                     _vm._v(" "),
@@ -72195,13 +72186,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "title" }, [
       _c("span", { staticClass: "tag" }, [_vm._v("N")]),
-      _vm._v("ahrim "),
+      _vm._v("ahrim\n            "),
       _c("span", { staticClass: "tag" }, [_vm._v("R")]),
-      _vm._v("ainwater "),
+      _vm._v("ainwater\n            "),
       _c("span", { staticClass: "tag" }, [_vm._v("H")]),
       _vm._v("arvesting\n            "),
       _c("span", { staticClass: "tag" }, [_vm._v("S")]),
-      _vm._v("ystem "),
+      _vm._v("ystem\n            "),
       _c("span", { staticClass: "tag" }, [_vm._v("A")]),
       _vm._v("pplication\n          ")
     ])
@@ -72213,7 +72204,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "para pl-5 pr-5" }, [
       _c("p", [
         _vm._v(
-          "How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design\n              your Rainwater Harvesting System"
+          "\n              How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design\n              your Rainwater Harvesting System\n            "
         )
       ]),
       _vm._v(" "),
@@ -77273,59 +77264,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -77363,7 +77301,7 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       _c("h1", { staticClass: "text-center text-success" }, [
-        _vm._v("Rainwater Harvesting Systems ")
+        _vm._v("Rainwater Harvesting Systems")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "hr w-100" }),
@@ -77401,9 +77339,9 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            Roof"),
+                    _vm._v("Roof\n            "),
                     _c("br"),
-                    _vm._v(" Area\n          ")
+                    _vm._v("Area\n          ")
                   ]
                 ),
                 _vm._v(" "),
@@ -77421,7 +77359,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            Roof Catchment "),
+                    _vm._v("Roof Catchment\n            "),
                     _c("br"),
                     _vm._v("Runoff\n          ")
                   ]
@@ -77441,7 +77379,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            Gutter and "),
+                    _vm._v("Gutter and\n            "),
                     _c("br"),
                     _vm._v("Down Pipe Sizes\n          ")
                   ]
@@ -77461,9 +77399,9 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            First Flush "),
+                    _vm._v("First Flush\n            "),
                     _c("br"),
-                    _vm._v(" Diverter\n          ")
+                    _vm._v("Diverter\n          ")
                   ]
                 ),
                 _vm._v(" "),
@@ -77481,10 +77419,10 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            Water Demand "),
+                    _vm._v("\n            Water Demand\n            "),
                     _c("br"),
                     _vm._v(
-                      " and Rain Water\n            Tank\n            Size\n          "
+                      "and Rain Water\n            Tank\n            Size\n          "
                     )
                   ]
                 ),
@@ -77504,9 +77442,9 @@ var render = function() {
                         }
                       },
                       [
-                        _vm._v("\n            Pumping\n            "),
+                        _vm._v("Pumping\n            "),
                         _c("br"),
-                        _vm._v("\n            System\n          ")
+                        _vm._v("System\n          ")
                       ]
                     )
                   : _vm._e(),
@@ -77525,7 +77463,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n            Top-up "),
+                    _vm._v("Top-up\n            "),
                     _c("br"),
                     _vm._v("System\n          ")
                   ]
@@ -77538,10 +77476,10 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-7 calc" }, [_c("router-view")], 1),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-5 " }, [
+            _c("div", { staticClass: "col-md-5" }, [
               _c("div", { staticClass: "result" }, [_vm._v("RESULTS:")]),
               _vm._v(" "),
-              _c("table", { staticClass: "table  small" }, [
+              _c("table", { staticClass: "table small" }, [
                 this.$store.state.areaShow
                   ? _c("tr", [
                       _c("th", [_vm._v("Roof Area:")]),
@@ -77566,36 +77504,20 @@ var render = function() {
                       _c("td", { staticClass: "align" }, [
                         this.$store.state.gutterType == "round"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Gutter Diameter\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Gutter Diameter")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.hr_size) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.hr_size))
                               ])
                             ])
                           : _vm._e(),
                         _vm._v(" "),
                         this.$store.state.gutterType == "round"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Downpipe Diameter\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Downpipe Diameter")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.hr_downpipe) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.hr_downpipe))
                               ])
                             ])
                           : _vm._e()
@@ -77611,17 +77533,31 @@ var render = function() {
                       _c("td", { staticClass: "align" }, [
                         this.$store.state.gutterType == "rec"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Gutter Width\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Gutter Width")]),
+                              _vm._v(" "),
+                              _c("td", [
+                                _vm._v(_vm._s(this.$store.state.rt_width))
+                              ])
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        this.$store.state.gutterType == "rec"
+                          ? _c("tr", [
+                              _c("th", [_vm._v("Gutter Depth")]),
+                              _vm._v(" "),
+                              _c("td", [
+                                _vm._v(_vm._s(this.$store.state.rt_depth))
+                              ])
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        this.$store.state.gutterType == "rec"
+                          ? _c("tr", [
+                              _c("th", [_vm._v("Downpipe Width")]),
                               _vm._v(" "),
                               _c("td", [
                                 _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.rt_width) +
-                                    "\n              "
+                                  _vm._s(this.$store.state.rt_downpipe_width)
                                 )
                               ])
                             ])
@@ -77629,57 +77565,11 @@ var render = function() {
                         _vm._v(" "),
                         this.$store.state.gutterType == "rec"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Gutter Depth\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Downpipe Depth")]),
                               _vm._v(" "),
                               _c("td", [
                                 _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.rt_depth) +
-                                    "\n              "
-                                )
-                              ])
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Downpipe Width\n              "
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(
-                                      this.$store.state.rt_downpipe_width
-                                    ) +
-                                    "\n              "
-                                )
-                              ])
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Downpipe Depth\n              "
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(
-                                      this.$store.state.rt_downpipe_depth
-                                    ) +
-                                    "\n              "
+                                  _vm._s(this.$store.state.rt_downpipe_depth)
                                 )
                               ])
                             ])
@@ -77732,36 +77622,20 @@ var render = function() {
                       _c("td", { staticClass: "align" }, [
                         this.$store.state.tank_type == "square"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Tank Height\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Tank Height")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.height_sqr) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.height_sqr))
                               ])
                             ])
                           : _vm._e(),
                         _vm._v(" "),
                         this.$store.state.tank_type == "square"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Depth of Topping-up\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Depth of Topping-up")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.topping_sqr) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.topping_sqr))
                               ])
                             ])
                           : _vm._e()
@@ -77773,44 +77647,26 @@ var render = function() {
                 this.$store.state.tank_type == "cylinder"
                   ? _c("tr", [
                       _c("th", [
-                        _vm._v(
-                          "\n                Cylinder Tank Height and Depth of Topping-up\n              "
-                        )
+                        _vm._v("Cylinder Tank Height and Depth of Topping-up")
                       ]),
                       _vm._v(" "),
                       _c("td", { staticClass: "align" }, [
                         this.$store.state.tank_type == "cylinder"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Tank Height\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Tank Height")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.height_cyl) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.height_cyl))
                               ])
                             ])
                           : _vm._e(),
                         _vm._v(" "),
                         this.$store.state.tank_type == "cylinder"
                           ? _c("tr", [
-                              _c("th", [
-                                _vm._v(
-                                  "\n                Depth of Topping-up\n              "
-                                )
-                              ]),
+                              _c("th", [_vm._v("Depth of Topping-up")]),
                               _vm._v(" "),
                               _c("td", [
-                                _vm._v(
-                                  "\n                " +
-                                    _vm._s(this.$store.state.topping_cyl) +
-                                    "\n              "
-                                )
+                                _vm._v(_vm._s(this.$store.state.topping_cyl))
                               ])
                             ])
                           : _vm._e()

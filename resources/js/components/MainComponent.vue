@@ -1,46 +1,44 @@
 <template>
   <div>
     <div class="wrapper d-flex flex-column justify-content-center">
-      <div class="bg-overlay ">
+      <div class="bg-overlay">
         <div class="container d-flex flex-column justify-content-center">
-
           <div class="slide-box animated zoomIn delay-1s">
             <div class="title">
-              <span class="tag">N</span>ahrim <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting
-              <span class="tag">S</span>ystem <span class="tag">A</span>pplication
+              <span class="tag">N</span>ahrim
+              <span class="tag">R</span>ainwater
+              <span class="tag">H</span>arvesting
+              <span class="tag">S</span>ystem
+              <span class="tag">A</span>pplication
             </div>
             <div class="para pl-5 pr-5">
-              <p>How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design
-                your Rainwater Harvesting System</p>
+              <p>
+                How big rainwater harvesting tank? Rainwater Harvesting System in just one click? Design
+                your Rainwater Harvesting System
+              </p>
               <div class="small">( Revised version of previous Tangki NAHRIM )</div>
             </div>
             <div class="box box02">
               <span class="menu d-flex align-items-start">SECTION 02</span>
               <div class="content text-justify p-3">
-                <h5>Rainwater Harvesting System Design
-                </h5>
-                <p>Based on NAHRIM Technical Guide No 2: </p>
+                <h5>Rainwater Harvesting System Design</h5>
+                <p>Based on NAHRIM Technical Guide No 2:</p>
                 <p>The Design Guide for Rainwater Harvesting Systems</p>
                 <p>
-                  <button
-                    class="btn btn-outline-info btn-block"
-                    @click="module2"
-                  >Next</button>
+                  <button class="btn btn-outline-info btn-block" @click="module2">Next</button>
                 </p>
               </div>
             </div>
             <div class="box box03">
               <span class="menu d-flex align-items-start">SECTION 01</span>
               <div class="content text-justify p-3">
-                <h4>Tangki NAHRIM Simulation
-                </h4>
-                <p>The main purpose of this software is for predicting the size of therainwater tank to
-                  be used for a rainwater harvesting system.</p>
+                <h4>Tangki NAHRIM Simulation</h4>
                 <p>
-                  <button
-                    class="btn btn-outline-info btn-block"
-                    @click="module1"
-                  >Next</button>
+                  The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.
+                </p>
+                <p>
+                  <button class="btn btn-outline-info btn-block" @click="module1">Next</button>
                 </p>
               </div>
             </div>
@@ -48,7 +46,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

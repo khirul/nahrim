@@ -1,27 +1,18 @@
 <template>
   <div>
-
     <div class="container">
       <div class="d-flex justify-content-center pt-5">
-        <img
-          src="/images/tank1.png"
-          height="100"
-          alt
-        >
+        <img src="/images/tank1.png" height="100" alt>
       </div>
 
-      <h1 class="text-center text-success">Rainwater Harvesting Systems </h1>
+      <h1 class="text-center text-success">Rainwater Harvesting Systems</h1>
       <div class="hr w-100"></div>
 
       <div class="d-flex flex-column align-items-around justify-content-center form">
         <h2 class="mt-3 text-center">Gravity Fed Calculation Step</h2>
 
         <nav>
-          <div
-            class="nav nav-tabs navi nav-fill"
-            id="nav-tab"
-            role="tablist"
-          >
+          <div class="nav nav-tabs navi nav-fill" id="nav-tab" role="tablist">
             <router-link
               to="/gravity-fed"
               class="nav-item nav-link active"
@@ -30,8 +21,8 @@
               role="tab"
               aria-controls="nav-home"
               aria-selected="true"
-            >
-              Roof<br> Area
+            >Roof
+              <br>Area
             </router-link>
             <router-link
               to="/gravity-fed/catchment"
@@ -41,8 +32,8 @@
               role="tab"
               aria-controls="nav-profile"
               aria-selected="false"
-            >
-              Roof Catchment <br>Runoff
+            >Roof Catchment
+              <br>Runoff
             </router-link>
 
             <router-link
@@ -53,8 +44,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >
-              Gutter and <br>Down Pipe Sizes
+            >Gutter and
+              <br>Down Pipe Sizes
             </router-link>
             <router-link
               to="/gravity-fed/first-flush"
@@ -64,8 +55,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >
-              First Flush <br> Diverter
+            >First Flush
+              <br>Diverter
             </router-link>
             <router-link
               to="/gravity-fed/water-demand"
@@ -76,7 +67,8 @@
               aria-controls="nav-contact"
               aria-selected="false"
             >
-              Water Demand <br> and Rain Water
+              Water Demand
+              <br>and Rain Water
               Tank
               Size
             </router-link>
@@ -89,10 +81,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >
-              Pumping
-              <br>
-              System
+            >Pumping
+              <br>System
             </router-link>
             <router-link
               to="/gravity-fed/top-up"
@@ -102,14 +92,13 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >
-              Top-up <br>System
+            >Top-up
+              <br>System
             </router-link>
           </div>
         </nav>
 
         <div class="row">
-
           <!-- <div class="col-md-3 d-flex flex-column side-menu mt-4">
                         <span class="side-menu-title"></span>
                         <hr>
@@ -121,13 +110,13 @@
                         <router-link to="/gravity-fed/pumping-system" v-if="this.$store.state.menu_type != 'gravity'">Pumping
                             System</router-link>
                         <router-link to="/gravity-fed/top-up">Top-up System</router-link>
-                    </div> -->
+          </div>-->
           <div class="col-md-7 calc">
             <router-view></router-view>
           </div>
-          <div class="col-md-5 ">
+          <div class="col-md-5">
             <div class="result">RESULTS:</div>
-            <table class="table  small">
+            <table class="table small">
               <tr v-if="this.$store.state.areaShow">
                 <th>Roof Area:</th>
                 <td>{{ this.$store.state.area }}</td>
@@ -139,61 +128,37 @@
               <tr v-if="this.$store.state.gutterShow && this.$store.state.gutterType == 'round'">
                 <th>Half Round Gutter & Downpipe Size</th>
                 <td class="align">
-              <tr v-if="this.$store.state.gutterType == 'round'">
-                <th>
-                  Gutter Diameter
-                </th>
-                <td>
-                  {{this.$store.state.hr_size}}
+                  <tr v-if="this.$store.state.gutterType == 'round'">
+                    <th>Gutter Diameter</th>
+                    <td>{{this.$store.state.hr_size}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.gutterType == 'round'">
+                    <th>Downpipe Diameter</th>
+                    <td>{{this.$store.state.hr_downpipe}}</td>
+                  </tr>
                 </td>
-              </tr>
-              <tr v-if="this.$store.state.gutterType == 'round'">
-                <th>
-                  Downpipe Diameter
-                </th>
-                <td>
-                  {{this.$store.state.hr_downpipe}}
-                </td>
-              </tr>
-              </td>
               </tr>
 
               <tr v-if="this.$store.state.gutterShow && this.$store.state.gutterType == 'rec'">
                 <th>Rectangle Gutter & Downpipe Size</th>
                 <td class="align">
-              <tr v-if="this.$store.state.gutterType == 'rec'">
-                <th>
-                  Gutter Width
-                </th>
-                <td>
-                  {{this.$store.state.rt_width}}
+                  <tr v-if="this.$store.state.gutterType == 'rec'">
+                    <th>Gutter Width</th>
+                    <td>{{this.$store.state.rt_width}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.gutterType == 'rec'">
+                    <th>Gutter Depth</th>
+                    <td>{{this.$store.state.rt_depth}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.gutterType == 'rec'">
+                    <th>Downpipe Width</th>
+                    <td>{{this.$store.state.rt_downpipe_width}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.gutterType == 'rec'">
+                    <th>Downpipe Depth</th>
+                    <td>{{this.$store.state.rt_downpipe_depth}}</td>
+                  </tr>
                 </td>
-              </tr>
-              <tr v-if="this.$store.state.gutterType == 'rec'">
-                <th>
-                  Gutter Depth
-                </th>
-                <td>
-                  {{this.$store.state.rt_depth}}
-                </td>
-              </tr>
-              <tr v-if="this.$store.state.gutterType == 'rec'">
-                <th>
-                  Downpipe Width
-                </th>
-                <td>
-                  {{this.$store.state.rt_downpipe_width}}
-                </td>
-              </tr>
-              <tr v-if="this.$store.state.gutterType == 'rec'">
-                <th>
-                  Downpipe Depth
-                </th>
-                <td>
-                  {{this.$store.state.rt_downpipe_depth}}
-                </td>
-              </tr>
-              </td>
               </tr>
 
               <tr v-if="this.$store.state.ffShow">
@@ -211,7 +176,7 @@
               <!-- <tr v-if="this.$store.state.topupShow">
                             <td>Tank Height</td>
                             <td></td>
-                        </tr> -->
+              </tr>-->
               <tr v-if="this.$store.state.pumpShow">
                 <th>Pump Power:</th>
                 <td>{{ this.$store.state.pumppow }}</td>
@@ -220,47 +185,29 @@
               <tr v-if="this.$store.state.topupShow && this.$store.state.tank_type == 'square'">
                 <th>Square Tank Height and Depth of Topping-up</th>
                 <td class="align">
-              <tr v-if="this.$store.state.tank_type == 'square'">
-                <th>
-                  Tank Height
-                </th>
-                <td>
-                  {{this.$store.state.height_sqr}}
+                  <tr v-if="this.$store.state.tank_type == 'square'">
+                    <th>Tank Height</th>
+                    <td>{{this.$store.state.height_sqr}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.tank_type == 'square'">
+                    <th>Depth of Topping-up</th>
+                    <td>{{this.$store.state.topping_sqr}}</td>
+                  </tr>
                 </td>
-              </tr>
-              <tr v-if="this.$store.state.tank_type == 'square'">
-                <th>
-                  Depth of Topping-up
-                </th>
-                <td>
-                  {{this.$store.state.topping_sqr}}
-                </td>
-              </tr>
-              </td>
               </tr>
 
               <tr v-if="this.$store.state.topupShow && this.$store.state.tank_type == 'cylinder'">
-                <th>
-                  Cylinder Tank Height and Depth of Topping-up
-                </th>
+                <th>Cylinder Tank Height and Depth of Topping-up</th>
                 <td class="align">
-              <tr v-if="this.$store.state.tank_type == 'cylinder'">
-                <th>
-                  Tank Height
-                </th>
-                <td>
-                  {{this.$store.state.height_cyl}}
+                  <tr v-if="this.$store.state.tank_type == 'cylinder'">
+                    <th>Tank Height</th>
+                    <td>{{this.$store.state.height_cyl}}</td>
+                  </tr>
+                  <tr v-if="this.$store.state.tank_type == 'cylinder'">
+                    <th>Depth of Topping-up</th>
+                    <td>{{this.$store.state.topping_cyl}}</td>
+                  </tr>
                 </td>
-              </tr>
-              <tr v-if="this.$store.state.tank_type == 'cylinder'">
-                <th>
-                  Depth of Topping-up
-                </th>
-                <td>
-                  {{this.$store.state.topping_cyl}}
-                </td>
-              </tr>
-              </td>
               </tr>
             </table>
           </div>
