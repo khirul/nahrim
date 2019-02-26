@@ -141,7 +141,6 @@
                   >days</span>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="col-md-6">
@@ -213,14 +212,46 @@
                   >%</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- new calculation -->
+    <div class="nc d-flex flex-column align-items-center">
+      <h3>New Calculation</h3>
+      <br>
+      <div class="d-flex">
+        <input
+          type="number"
+          name="start"
+          v-model.number="start"
+        >
+        <input
+          type="number"
+          name="end"
+          v-model.number="end"
+        >
+        <input
+          type="text"
+          name="step"
+          v-model.number="step"
+        >
+        <button
+          @click="calculate"
+          v-if="uc"
+        >Calculate</button>
+      </div>
+      <!-- <div v-if="uc">
+        <h1>Please insert token before continue.. </h1>
+      </div>-->
+
+    </div>
+
+    <!-- /new calculation -->
     <div class="text-center">
-      <div class=" btn-group">
+      <div class="btn-group">
         <button
           @click="back"
           class="btn btn-lg btn-success"
@@ -236,15 +267,20 @@
           @click="next"
           class="btn btn-lg btn-success"
           style="margin-top: 20px; font-weight:bold;"
-        >Continue to Module 2</button>
+        >
+          Continue
+          to Module 2
+        </button>
         <router-link
           :to="{name: 'average'}"
-          class="btn btn-lg btn-success "
+          class="btn btn-lg btn-success"
           style="margin-top: 20px; font-weight:bold;"
-        >More Info</router-link>
+        >
+          More
+          Info
+        </router-link>
       </div>
     </div>
-
   </div>
 </template>
 <script>
@@ -254,7 +290,14 @@ export default {
       sButton: true,
       results: "",
       tanksize: this.$store.state.tankSize,
-      raincap: ""
+      raincap: "",
+      start: "",
+      end: "",
+      step: "",
+      range: [],
+      range_result: [],
+      t: 0,
+      uc: true
       //captured: results.total_captured
     };
   },
@@ -314,6 +357,44 @@ export default {
           //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
         })
         .catch(e => console.log(e));
+    },
+    async calculate() {
+      // this.uc = true;
+
+      this.range = [];
+      this.range_result = [];
+      this.t = 0;
+      for (let index = this.start; index <= this.end; index += this.step) {
+        this.range.push(index);
+        console.log(this.range);
+        //this.$store.dispatch("simulation", this.range);
+
+        var data = {
+          location: this.$store.state.location,
+          area: this.$store.state.area,
+          flush: this.$store.state.flush,
+          coefficient: this.$store.state.coefficient,
+          demand: this.$store.state.usagevol,
+          average: this.$store.state.aveperson,
+          tanksizes: this.range[this.t]
+        };
+
+        await axios
+          .post(this.$store.state.url + "/api/calc", data)
+          .then(response => {
+            //this.sButton = false;
+
+            this.range_result.push(response.data.coefficient);
+
+            // console.log(response.data);
+            //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
+          })
+          .catch(e => console.log(e));
+        //console.log(this.range);
+
+        console.log(this.range_result);
+        this.t = this.t + 1;
+      }
     }
   }
 };

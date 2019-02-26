@@ -25,7 +25,7 @@
             :key="c.id"
           >
             <LMarker
-              :latlng="[c.lat, c.lon]"
+              :latlng="[c.latitude, c.longitude]"
               class="blink"
               @click="clicked_location(c.stn_name)"
             >
@@ -46,9 +46,15 @@
           <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
           <div class="alert alert-primary text-center">Please select the nearest rainfall station to your rainwater harvesting tank.</div>
           <select
-            class="form-control"
+            class="form-control select2"
             v-model="loc"
           >
+            <!-- <optgroup
+              v-for="(value, key) in locations"
+              key="key"
+              :label="value.state"
+            >
+            </optgroup> -->
             <option
               v-for="(value, key) in locations"
               :key="key"
@@ -77,6 +83,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { LMap, LTileLayer, LMarker, LTooltip } from "vue-leaflet";
 export default {

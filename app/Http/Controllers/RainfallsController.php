@@ -171,6 +171,9 @@ class RainfallsController extends Controller
         $coefficient = number_format(($total_delivered / $total_rainfalls) * 100, 2);
         $storageefficiency = number_format((1 - ($total_overflow / $total_rainfalls)) * 100, 2);
         $percenttankempty = number_format(($total_day_volume_not_meet / $total_day) * 100, 2);
+
+
+
         $test = ['location' => $data->location,
                     'total_day' => $total_day,
                     'total_captured' => number_format($total_rainfalls, 2),
@@ -190,6 +193,11 @@ class RainfallsController extends Controller
         //return $test;
         return response()->json($test);
         // return request()->all();
+    }
+
+    public function simulation(){
+        
+        return request()->all();
     }
 
     public function average()

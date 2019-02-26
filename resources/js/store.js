@@ -182,6 +182,16 @@ export default new Vuex.Store({
                 .catch(e => {
                     console.log(e)
                 })
+        },
+        simulation({ state }, payload) {
+            axios
+                .post(state.url + '/api/simulation', payload)
+                .then(data => {
+                    console.log(data.data)
+                })
+                .catch(e => {
+                    console.log(e)
+                })
         }
     }
 });

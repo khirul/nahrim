@@ -1,61 +1,52 @@
 <template>
   <div>
     <div class="wrapper d-flex flex-column justify-content-center">
-      <div class="bg-overlay ">
+      <div class="bg-overlay">
         <div class="container d-flex flex-column justify-content-center">
-
           <div class="slide-box animated zoomIn delay-1s">
             <div class="title">
-              <span class="tag">R</span>ainwater <span class="tag">H</span>arvesting
+              <span class="tag">R</span>ainwater
+              <span class="tag">H</span>arvesting
               <span class="tag">S</span>ystem
             </div>
             <div class="para pl-5 pr-5">
-              <p>
-                The Design Guide for Rainwater Harvesting Systems</p>
+              <p>The Design Guide for Rainwater Harvesting Systems</p>
               <div class="small">( RBased on NAHRIM Technical Guide No 2 )</div>
             </div>
             <div class="box box01">
               <span class="menu d-flex align-items-start">SECTION 03</span>
               <div class="content text-justify p-3">
-                <h4>Direct Pumping System
-                </h4>
-                <p>The main purpose of this software is for predicting the size of therainwater tank to
-                  be used for a rainwater harvesting system.</p>
+                <h4>Direct Pumping System</h4>
                 <p>
-                  <button
-                    class="btn btn-outline-info btn-block"
-                    @click="module1"
-                  >Next</button>
+                  The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.
+                </p>
+                <p>
+                  <button class="btn btn-outline-info btn-block" @click="direct">Next</button>
                 </p>
               </div>
             </div>
             <div class="box box02">
               <span class="menu d-flex align-items-start">SECTION 02</span>
               <div class="content text-justify p-3">
-                <h5>Indirect Pumping System
-                </h5>
-                <p>Based on NAHRIM Technical Guide No 2: </p>
+                <h5>Indirect Pumping System</h5>
+                <p>Based on NAHRIM Technical Guide No 2:</p>
                 <p>The Design Guide for Rainwater Harvesting Systems</p>
                 <p>
-                  <button
-                    class="btn btn-outline-info btn-block"
-                    @click="module2"
-                  >Next</button>
+                  <button class="btn btn-outline-info btn-block" @click="indirect">Next</button>
                 </p>
               </div>
             </div>
             <div class="box box03">
               <span class="menu d-flex align-items-start">SECTION 01</span>
               <div class="content text-justify p-3">
-                <h4>Gravity Fed System
-                </h4>
-                <p>The main purpose of this software is for predicting the size of therainwater tank to
-                  be used for a rainwater harvesting system.</p>
+                <h4>Gravity Fed System</h4>
                 <p>
-                  <button
-                    class="btn btn-outline-info btn-block"
-                    @click="module1"
-                  >Next</button>
+                  The main purpose of this software is for predicting the size of therainwater tank to
+                  be used for a rainwater harvesting system.
+                </p>
+                <p>
+                  <button class="btn btn-outline-info btn-block" @click="gravity">Next</button>
                 </p>
               </div>
             </div>
@@ -63,7 +54,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -111,19 +101,19 @@ export default {
     },
     gravity() {
       this.$router.push({
-        name: "gravity-fed"
+        name: "roof-area"
       });
       this.$store.commit("MENU_TYPE", "gravity");
     },
     direct() {
       this.$router.push({
-        name: "gravity-fed"
+        name: "roof-area"
       });
       this.$store.commit("MENU_TYPE", "direct");
     },
     indirect() {
       this.$router.push({
-        name: "gravity-fed"
+        name: "roof-area"
       });
       this.$store.commit("MENU_TYPE", "indirect");
     }

@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/locations', 'RainfallsController@location');
 Route::get('/average', 'RainfallsController@average');
 Route::post('/calc', 'RainfallsController@calculation');
+Route::post('/simulation', 'RainfallsController@simulation');
 Route::get('/coords', 'CoordinatesController@index');
