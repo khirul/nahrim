@@ -2,7 +2,9 @@
   <div>
     <div class="container">
       <br>
-      <div class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper">
+      <div
+        class="row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
+      >
         <div class="info text-center">
           <h3>Location: {{ this.$store.state.location}}</h3>
           <h3>Data dari tahun {{yearsInfo[0]}} hingga {{yearsInfo[years-1]}}</h3>
@@ -10,11 +12,7 @@
         <div class="changeForm mt-4">
           <h4 style="text-align:center">Proposed Tank Size</h4>
           <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control text-right"
-              v-model="tanksize"
-            >
+            <input type="text" class="form-control text-right" v-model="tanksize">
             <div class="input-group-append">
               <span class="input-group-text">
                 m
@@ -55,10 +53,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >liter(s)</span>
+                  <span class="input-group-text" id="basic-addon2">liter(s)</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -71,10 +66,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >liter(s)</span>
+                  <span class="input-group-text" id="basic-addon2">liter(s)</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -87,10 +79,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >liter(s)</span>
+                  <span class="input-group-text" id="basic-addon2">liter(s)</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -103,10 +92,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >days</span>
+                  <span class="input-group-text" id="basic-addon2">days</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -119,10 +105,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >days</span>
+                  <span class="input-group-text" id="basic-addon2">days</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -135,10 +118,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >days</span>
+                  <span class="input-group-text" id="basic-addon2">days</span>
                 </div>
               </div>
             </div>
@@ -158,10 +138,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >%</span>
+                  <span class="input-group-text" id="basic-addon2">%</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -174,10 +151,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >%</span>
+                  <span class="input-group-text" id="basic-addon2">%</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -190,10 +164,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >%</span>
+                  <span class="input-group-text" id="basic-addon2">%</span>
                 </div>
               </div>
               <div class="input-group d-flex align-items-center">
@@ -206,10 +177,7 @@
                   aria-describedby="basic-addon2"
                 >
                 <div class="input-group-append">
-                  <span
-                    class="input-group-text"
-                    id="basic-addon2"
-                  >%</span>
+                  <span class="input-group-text" id="basic-addon2">%</span>
                 </div>
               </div>
             </div>
@@ -223,30 +191,11 @@
       <h3>New Calculation</h3>
       <br>
       <div class="d-flex">
-        <input
-          type="number"
-          name="start"
-          v-model.number="start"
-        >
-        <input
-          type="number"
-          name="end"
-          v-model.number="end"
-        >
-        <input
-          type="text"
-          name="step"
-          v-model.number="step"
-        >
-        <button
-          @click="calculate"
-          v-if="uc"
-        >Calculate</button>
+        <input type="number" name="start" v-model.number="start">
+        <input type="number" name="end" v-model.number="end">
+        <input type="text" name="step" v-model.number="step">
+        <button @click="calculate" v-if="uc">Calculate</button>
       </div>
-      <!-- <div v-if="uc">
-        <h1>Please insert token before continue.. </h1>
-      </div>-->
-
     </div>
 
     <!-- /new calculation -->
@@ -257,7 +206,7 @@
           class="btn btn-lg btn-success"
           style="margin-top: 20px; font-weight:bold;"
         >Back</button>
-
+        
         <button
           @click="home"
           class="btn btn-lg btn-outline-success"
@@ -295,12 +244,14 @@ export default {
       end: "",
       step: "",
       range: [],
-      range_result: [],
+      rr_coef: [],
+      rr_st: [],
       t: 0,
       uc: true
       //captured: results.total_captured
     };
   },
+
   mounted() {
     this.$store.dispatch("get_info");
   },
@@ -362,12 +313,12 @@ export default {
       // this.uc = true;
 
       this.range = [];
-      this.range_result = [];
+      this.rr_coef = [];
+      this.rr_st = [];
       this.t = 0;
       for (let index = this.start; index <= this.end; index += this.step) {
         this.range.push(index);
         console.log(this.range);
-        //this.$store.dispatch("simulation", this.range);
 
         var data = {
           location: this.$store.state.location,
@@ -384,15 +335,18 @@ export default {
           .then(response => {
             //this.sButton = false;
 
-            this.range_result.push(response.data.coefficient);
-
+            this.rr_coef.push(response.data.coefficient);
+            this.rr_st.push(response.data.storage_efficient);
+            this.$store.commit("SET_RANGE", this.range);
+            this.$store.commit("SET_RR_COEF", this.rr_coef);
+            this.$store.commit("SET_RR_ST", this.rr_st);
             // console.log(response.data);
             //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
           })
           .catch(e => console.log(e));
         //console.log(this.range);
 
-        console.log(this.range_result);
+        console.log(this.rr_coef);
         this.t = this.t + 1;
       }
     }

@@ -20,6 +20,7 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "ajv": "^6.9.2",
         "chart.js": "^2.7.3",
         "vue-chartjs": "^3.4.0",
         "vue-leaflet": "gitlab:vdcrea/vue-leaflet",

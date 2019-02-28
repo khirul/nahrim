@@ -54,6 +54,7 @@
 
             <chart-component :rain="rain" :years="years" class="mb-5"></chart-component>
             <chart-year-component :yearsInfo="yearsInfo" :yearsTotal="yearsTotal"></chart-year-component>
+            <co-chart-component :range="range" :rr_coef="rr_coef" :rr_st="rr_st"></co-chart-component>
             <div class="button d-flex justify-content-center mt-5">
               <router-link class="btn btn-success" :to="{name: 'simulator'}">back</router-link>
             </div>
@@ -66,8 +67,9 @@
 <script>
     import ChartComponent from "./ChartComponent";
     import ChartYearComponent from "./ChartYearComponent";
+    import CoChartComponent from "./CoChartComponent";
     export default {
-      components: { ChartComponent, ChartYearComponent },
+      components: { ChartComponent, ChartYearComponent, CoChartComponent },
       mounted() {
         this.$store.dispatch("get_info");
       },
@@ -83,6 +85,15 @@
         },
         yearsTotal(){
           return this.$store.state.info.byyear;
+        },
+        range(){
+          return this.$store.state.range;
+        },
+        rr_coef(){
+          return this.$store.state.rr_coef;
+        },
+        rr_st(){
+          return this.$store.state.rr_st;
         }
       }
     };

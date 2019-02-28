@@ -298,9 +298,6 @@ th {
   height: 510px;
 }
 
-.navi {
-}
-
 .navi a {
   text-transform: uppercase;
   font-weight: bold;

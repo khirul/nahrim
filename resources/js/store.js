@@ -38,7 +38,10 @@ export default new Vuex.Store({
         pumppow: '',
         pumpShow: false,
         info: '',
-        coords: []
+        coords: [],
+        range: [],
+        rr_coef: [],
+        rr_st: []
     },
     getters: {
         currentPos(state) {
@@ -148,6 +151,15 @@ export default new Vuex.Store({
         },
         SET_COORDS(state, payload) {
             state.coords = payload
+        },
+        SET_RANGE(state, payload) {
+            state.range = payload
+        },
+        SET_RR_COEF(state, payload) {
+            state.rr_coef = payload
+        },
+        SET_RR_ST(state, payload) {
+            state.rr_st = payload
         }
     },
     actions: {
