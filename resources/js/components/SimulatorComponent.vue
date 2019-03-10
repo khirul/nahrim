@@ -196,6 +196,23 @@
         <input type="text" name="step" v-model.number="step">
         <button @click="calculate" v-if="uc">Calculate</button>
       </div>
+
+      <div>
+        <table class="table table-bordered mt-5" v-if="show">
+          <tr>
+            <td>Proposed Tank</td>
+            <td v-for="r in range" :key="r.id">{{ r }}</td>
+          </tr>
+          <tr>
+            <td>Coefficient</td>
+            <td v-for="c in rr_coef" :key="c.id">{{ c }}</td>
+          </tr>
+          <tr>
+            <td>Storage Coefficient</td>
+            <td v-for="s in rr_st" :key="s.id">{{ s }}</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
     <!-- /new calculation -->
@@ -247,7 +264,8 @@ export default {
       rr_coef: [],
       rr_st: [],
       t: 0,
-      uc: true
+      uc: true,
+      show: false
       //captured: results.total_captured
     };
   },
@@ -316,9 +334,9 @@ export default {
       this.rr_coef = [];
       this.rr_st = [];
       this.t = 0;
+      this.show = true;
       for (let index = this.start; index <= this.end; index += this.step) {
         this.range.push(index);
-        console.log(this.range);
 
         var data = {
           location: this.$store.state.location,
@@ -334,14 +352,11 @@ export default {
           .post(this.$store.state.url + "/api/calc", data)
           .then(response => {
             //this.sButton = false;
-
             this.rr_coef.push(response.data.coefficient);
             this.rr_st.push(response.data.storage_efficient);
             this.$store.commit("SET_RANGE", this.range);
             this.$store.commit("SET_RR_COEF", this.rr_coef);
             this.$store.commit("SET_RR_ST", this.rr_st);
-            // console.log(response.data);
-            //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
           })
           .catch(e => console.log(e));
         //console.log(this.range);

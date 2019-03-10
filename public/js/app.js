@@ -75038,6 +75038,23 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -75053,7 +75070,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
       rr_coef: [],
       rr_st: [],
       t: 0,
-      uc: true
+      uc: true,
+      show: false
       //captured: results.total_captured
     };
   },
@@ -75131,16 +75149,16 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 this.rr_coef = [];
                 this.rr_st = [];
                 this.t = 0;
+                this.show = true;
                 index = this.start;
 
-              case 5:
+              case 6:
                 if (!(index <= this.end)) {
                   _context.next = 16;
                   break;
                 }
 
                 this.range.push(index);
-                console.log(this.range);
 
                 data = {
                   location: this.$store.state.location,
@@ -75154,14 +75172,11 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                 _context.next = 11;
                 return axios.post(this.$store.state.url + "/api/calc", data).then(function (response) {
                   //this.sButton = false;
-
                   _this2.rr_coef.push(response.data.coefficient);
                   _this2.rr_st.push(response.data.storage_efficient);
                   _this2.$store.commit("SET_RANGE", _this2.range);
                   _this2.$store.commit("SET_RR_COEF", _this2.rr_coef);
                   _this2.$store.commit("SET_RR_ST", _this2.rr_st);
-                  // console.log(response.data);
-                  //this.$store.commit('SET_TOTAL_RAINCAP', this.results.total_captured);
                 }).catch(function (e) {
                   return console.log(e);
                 });
@@ -75174,7 +75189,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
               case 13:
                 index += this.step;
-                _context.next = 5;
+                _context.next = 6;
                 break;
 
               case 16:
@@ -76392,6 +76407,48 @@ var render = function() {
         _vm.uc
           ? _c("button", { on: { click: _vm.calculate } }, [
               _vm._v("Calculate")
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _vm.show
+          ? _c("table", { staticClass: "table table-bordered mt-5" }, [
+              _c(
+                "tr",
+                [
+                  _c("td", [_vm._v("Proposed Tank")]),
+                  _vm._v(" "),
+                  _vm._l(_vm.range, function(r) {
+                    return _c("td", { key: r.id }, [_vm._v(_vm._s(r))])
+                  })
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "tr",
+                [
+                  _c("td", [_vm._v("Coefficient")]),
+                  _vm._v(" "),
+                  _vm._l(_vm.rr_coef, function(c) {
+                    return _c("td", { key: c.id }, [_vm._v(_vm._s(c))])
+                  })
+                ],
+                2
+              ),
+              _vm._v(" "),
+              _c(
+                "tr",
+                [
+                  _c("td", [_vm._v("Storage Coefficient")]),
+                  _vm._v(" "),
+                  _vm._l(_vm.rr_st, function(s) {
+                    return _c("td", { key: s.id }, [_vm._v(_vm._s(s))])
+                  })
+                ],
+                2
+              )
             ])
           : _vm._e()
       ])
