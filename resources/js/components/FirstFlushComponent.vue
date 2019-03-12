@@ -8,7 +8,8 @@
           <div class="input-group mb-3">
             <input type="text" class="form-control text-right" v-model="firstflush">
             <div class="input-group-append">
-              <span class="input-group-text w-unit">mm
+              <span class="input-group-text w-unit">
+                mm
                 <sup>3</sup>
               </span>
             </div>
