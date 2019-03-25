@@ -16,7 +16,6 @@
                 </div>
             </div>
             <button class="btn btn-success butang" @click="done">Done</button>
-
         </div>
     </div>
 </template>
