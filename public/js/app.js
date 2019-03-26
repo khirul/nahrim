@@ -71577,7 +71577,7 @@ var content = __webpack_require__(197);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("5819ef61", content, false, {});
+var update = __webpack_require__(4)("6bb8be94", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71602,7 +71602,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Kre
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
 
 // module
-exports.push([module.i, "\nhtml,\nbody,\n.container,\n.row {\n  height: 100%;\n}\nbody {\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\n  min-height: 100vh;\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Kreon\", serif;\n}\n.roof {\n  font-family: \"Kreon\", serif;\n  margin-top: 20px;\n  font-size: 30px;\n  /* color: orange; */\n  font-weight: bold;\n  border-bottom: 2px solid rgb(165, 182, 235);\n  margin-bottom: 30px;\n}\n.w-unit {\n  width: 80px;\n  text-align: center;\n}\n.roof-detail {\n  height: 340px;\n}\n", ""]);
+exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  font-family: \"Kreon\", serif;\r\n  margin-top: 20px;\r\n  font-size: 30px;\r\n  /* color: orange; */\r\n  font-weight: bold;\r\n  border-bottom: 2px solid rgb(165, 182, 235);\r\n  margin-bottom: 30px;\n}\n.w-unit {\r\n  width: 80px;\r\n  text-align: center;\n}\n.roof-detail {\r\n  height: 340px;\n}\r\n", ""]);
 
 // exports
 
@@ -71701,7 +71701,7 @@ var content = __webpack_require__(201);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("87077530", content, false, {});
+var update = __webpack_require__(4)("0e981e4a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71727,7 +71727,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\n  background: url(\"/images/mainbgc.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: gray;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 110, 255, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\n  color: rgba(0, 110, 255, 0.74);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/mainbg.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(51, 255, 0, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(51, 255, 0, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 110, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 110, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 32px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.74);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
 
 // exports
 
@@ -71860,7 +71860,7 @@ var content = __webpack_require__(204);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("bf60364e", content, false, {});
+var update = __webpack_require__(4)("590e9ecc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71884,7 +71884,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\n  font-size: 30px;\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\n  width: 300px;\n  text-align: center;\n  height: 220px;\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\r\n  font-size: 30px;\r\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\r\n  width: 300px;\r\n  text-align: center;\r\n  height: 220px;\r\n  cursor: pointer;\n}\r\n", ""]);
 
 // exports
 
@@ -72244,7 +72244,7 @@ var content = __webpack_require__(209);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("b55fea84", content, false, {});
+var update = __webpack_require__(4)("37a8c66b", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72268,7 +72268,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\n  position: relative;\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\n  background: rgba(87, 84, 84, 0.397);\n  z-index: 2;\n  top: 0;\n  right: 0;\n  position: fixed;\n  width: 400px;\n\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\n  z-index: 3;\n}\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\r\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\r\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\r\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\r\n  position: relative;\r\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\r\n  background: rgba(87, 84, 84, 0.397);\r\n  z-index: 2;\r\n  top: 0;\r\n  right: 0;\r\n  position: fixed;\r\n  width: 400px;\r\n\r\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\r\n  z-index: 3;\n}\r\n", ""]);
 
 // exports
 
@@ -72505,7 +72505,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.b068
 /* 218 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?912ec66d7572ff821749319396470bde";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?acf3dcb7ff752b5296ca23ba2c7c2606";
 
 /***/ }),
 /* 219 */
@@ -72529,7 +72529,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-reg
 /* 222 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?89889688147bd7575d6327160d64e760";
+module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?f721466883998665b87923b92dea655b";
 
 /***/ }),
 /* 223 */
@@ -73195,7 +73195,7 @@ var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("9d62569a", content, false, {});
+var update = __webpack_require__(4)("24f2ffb4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73219,7 +73219,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\n  width: 130px;\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\n  width: 50px;\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\n  width: 130px;\n  background: lightblue;\n  color: white;\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\r\n  width: 130px;\r\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\r\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\r\n  width: 50px;\r\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\r\n  width: 130px;\r\n  background: lightblue;\r\n  color: white;\r\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\r\n  font-style: italic;\n}\n.co[data-v-346519ae] {\r\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\r\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -73985,7 +73985,7 @@ var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("75d01590", content, false, {});
+var update = __webpack_require__(4)("0c6fc27a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74009,7 +74009,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\n  margin-bottom: 20px;\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\n  width: 180px;\n  padding: 15px 0;\n}\n/* label {\n  display: block;\n  padding-left: 10px;\n  margin-bottom: -20px;\n  font-size: small;\n} */\n.pad[data-v-4c4c5db8] {\n  margin-right: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  width: 180px;\r\n  padding: 15px 0;\n}\r\n/* label {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\r\n} */\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -74783,7 +74783,7 @@ var content = __webpack_require__(235);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("11ccc021", content, false, {});
+var update = __webpack_require__(4)("70e5448e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74807,7 +74807,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.flush[data-v-ca205af8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  /* border: 2px solid white; */\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n  background-color: white;\n  height: 30px;\n  width: 300px;\n}\ninput[data-v-ca205af8] {\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\n  width: 300px;\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\n  margin-right: 20px;\n  margin-left: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\ninput[data-v-ca205af8] {\r\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\r\n  width: 300px;\r\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\r\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -76744,7 +76744,7 @@ var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("9f353470", content, false, {});
+var update = __webpack_require__(4)("853fff0a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76768,7 +76768,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-abfbddf2] {\n  position: fixed;\n  bottom: 0;\n  height: 50px;\n  width: 100vw;\n  background: black;\n  margin-top: 30px;\n  color: gray;\n}\n", ""]);
+exports.push([module.i, "\n.footer[data-v-abfbddf2] {\r\n  position: fixed;\r\n  bottom: 0;\r\n  height: 50px;\r\n  width: 100vw;\r\n  background: black;\r\n  margin-top: 30px;\r\n  color: gray;\n}\r\n", ""]);
 
 // exports
 
@@ -76892,7 +76892,7 @@ var content = __webpack_require__(248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("cdd1f7be", content, false, {});
+var update = __webpack_require__(4)("b3dcc258", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77004,7 +77004,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'http://nahrim.test',
+        url: 'http://localhost:8000',
         location: '',
         coefficient: '',
         area: '',
@@ -78345,7 +78345,7 @@ var content = __webpack_require__(257);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7ecb255f", content, false, {});
+var update = __webpack_require__(4)("02c32e92", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78369,7 +78369,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\ntd[data-v-212a534b] {\n  text-align: right;\n}\n.align[data-v-212a534b] {\n  text-align: left;\n}\n.hr[data-v-212a534b] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\n  text-decoration: none;\n  text-transform: uppercase;\n  color: royalblue;\n  font-weight: bold;\n  padding: 10px 10px;\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\n  background: royalblue;\n  color: white;\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\n  text-transform: uppercase;\n  margin-top: 30px;\n  padding: 10px 0;\n  border: 1px solid royalblue;\n  text-align: center;\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\n  font-size: 30px;\n  font-weight: bold;\n  color: orange;\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\ntr[data-v-212a534b],\ntd[data-v-212a534b],\nth[data-v-212a534b] {\n  border: 1px solid orange;\n}\n.calc[data-v-212a534b] {\n  border: 1px solid rgb(165, 182, 235);\n  margin-top: 30px;\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\n  background-color: royalblue;\n  color: white;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.align[data-v-212a534b] {\r\n  text-align: left;\n}\n.hr[data-v-212a534b] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  color: royalblue;\r\n  font-weight: bold;\r\n  padding: 10px 10px;\r\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\r\n  background: royalblue;\r\n  color: white;\r\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  margin-top: 30px;\r\n  padding: 10px 0;\r\n  border: 1px solid royalblue;\r\n  text-align: center;\r\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\r\n  font-size: 30px;\r\n  font-weight: bold;\r\n  color: orange;\r\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\r\ntr[data-v-212a534b],\r\ntd[data-v-212a534b],\r\nth[data-v-212a534b] {\r\n  border: 1px solid orange;\n}\n.calc[data-v-212a534b] {\r\n  border: 1px solid rgb(165, 182, 235);\r\n  margin-top: 30px;\r\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\r\n  background-color: royalblue;\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\r\n", ""]);
 
 // exports
 
@@ -79097,7 +79097,7 @@ var content = __webpack_require__(262);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("147357c6", content, false, {});
+var update = __webpack_require__(4)("31fdff90", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79123,7 +79123,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\n  background: url(\"/images/rhs.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: black;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 0, 0, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\n  color: rgb(255, 94, 0);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-98f701fa] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 247, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 247, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 68, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 68, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(68, 0, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(68, 0, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 32px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n  color: black;\n}\n.sliding[data-v-98f701fa] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\r\n  background: url(\"/images/rhs.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: black;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 0, 0, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\r\n  color: rgb(255, 94, 0);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-98f701fa] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 247, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 247, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 68, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 68, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(68, 0, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(68, 0, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\r\n  color: black;\n}\n.sliding[data-v-98f701fa] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
 
 // exports
 
@@ -79472,7 +79472,7 @@ var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("29f80f6f", content, false, {});
+var update = __webpack_require__(4)("3a926d3c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79705,7 +79705,7 @@ var content = __webpack_require__(272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3ae347c1", content, false, {});
+var update = __webpack_require__(4)("cfcc64a4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80004,7 +80004,7 @@ var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("15cb5ddc", content, false, {});
+var update = __webpack_require__(4)("0214ebc5", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80259,7 +80259,7 @@ var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("5c63a7ea", content, false, {});
+var update = __webpack_require__(4)("30e6b078", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80400,7 +80400,7 @@ var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("615d6578", content, false, {});
+var update = __webpack_require__(4)("355522aa", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80424,7 +80424,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\n  width: 80px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 20px;\n}\n", ""]);
+exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\r\n  width: 80px;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  margin-top: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -80669,7 +80669,7 @@ var content = __webpack_require__(292);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("34f84c0a", content, false, {});
+var update = __webpack_require__(4)("3ee611b0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80948,7 +80948,7 @@ var content = __webpack_require__(297);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("214f1c97", content, false, {});
+var update = __webpack_require__(4)("7e85a284", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81170,7 +81170,7 @@ var content = __webpack_require__(302);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("4731eb00", content, false, {});
+var update = __webpack_require__(4)("2724cd6d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81677,7 +81677,7 @@ var content = __webpack_require__(307);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("1b46c101", content, false, {});
+var update = __webpack_require__(4)("a4c106a4", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81881,7 +81881,7 @@ var content = __webpack_require__(311);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("41b60d60", content, false, {});
+var update = __webpack_require__(4)("29e2bc3d", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -92732,7 +92732,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("e38f8f0c", content, false, {});
+var update = __webpack_require__(4)("255e8632", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -92859,7 +92859,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7bdf3bba", content, false, {});
+var update = __webpack_require__(4)("54691dd0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93118,7 +93118,7 @@ var content = __webpack_require__(369);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("c090cc26", content, false, {});
+var update = __webpack_require__(4)("0623c04c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93244,7 +93244,7 @@ var content = __webpack_require__(374);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("5a8b9cba", content, false, {});
+var update = __webpack_require__(4)("2ff0b790", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93268,7 +93268,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-3abe4c80] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\n  color: rgb(58, 58, 255);\n}\n", ""]);
+exports.push([module.i, "\n.hr[data-v-3abe4c80] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\r\n  color: rgb(58, 58, 255);\n}\r\n", ""]);
 
 // exports
 
