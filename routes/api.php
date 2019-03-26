@@ -22,3 +22,4 @@ Route::get('/average', 'RainfallsController@average');
 Route::post('/calc', 'RainfallsController@calculation');
 Route::post('/simulation', 'RainfallsController@simulation');
 Route::get('/coords', 'CoordinatesController@index');
+Route::post('/show/', 'CoordinatesController@show');

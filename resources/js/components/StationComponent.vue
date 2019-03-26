@@ -2,28 +2,14 @@
   <div class="container h-100">
     <div class="row h-100 d-flex align-items-center justify-content-center">
       <div class="map">
-        <LMap
-          ref="map"
-          style="height:100vh; width: 100vw"
-          :center="currentPosition"
-          :zoom="zoom"
-        >
-          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
-          <LMarker
-            :latlng="currentPosition"
-            class="blink"
-          >
-            <LTooltip
-              class="yah"
-              :options="{interactive: true,permanent: true}"
-            >
+        <LMap ref="map" style="height:100vh; width: 100vw" :center="currentPosition" :zoom="zoom">
+          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
+          <LMarker :latlng="currentPosition" class="blink">
+            <!-- <LTooltip class="yah" :options="{interactive: true,permanent: true}">
               <strong>You are HERE!</strong>
-            </LTooltip>
+            </LTooltip>-->
           </LMarker>
-          <span
-            v-for="c in this.$store.state.coords"
-            :key="c.id"
-          >
+          <span v-for="c in this.$store.state.coords" :key="c.id">
             <LMarker
               :latlng="[c.latitude, c.longitude]"
               class="blink"
@@ -38,27 +24,15 @@
       </div>
       <div class="dd-container">
         <div class="dd d-flex flex-column align-items-center justify-content-center rain">
-          <img
-            src="images/rain.png"
-            height="100"
-            alt
-          >
+          <img src="images/rain.png" height="100" alt>
           <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
-          <div class="alert alert-primary text-center">Please select the nearest rainfall station to your rainwater harvesting tank.</div>
-          <select
-            class="form-control select2"
-            v-model="loc"
-          >
-            <!-- <optgroup
-              v-for="(value, key) in locations"
-              key="key"
-              :label="value.state"
-            >
-            </optgroup> -->
-            <option
-              v-for="(value, key) in locations"
-              :key="key"
-            >{{ value.stn_name }}</option>
+          <div
+            class="alert alert-primary text-center"
+          >Please select the nearest rainfall station to your rainwater harvesting tank.</div>
+          <select class="form-control select2" v-model="loc" @change="setZoom(loc)">
+            <optgroup v-for="(state, key) in uniqueNames" :key="key" :label="state">
+              <option v-for="l in locations" :key="l.id" v-if="l.state == state">{{ l.stn_name }}</option>
+            </optgroup>
           </select>
           <div class="d-flex">
             <button
@@ -76,8 +50,8 @@
             >
               Next
               <i class="fas fa-chevron-circle-right"></i>
-            </button></div>
-
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -89,7 +63,7 @@ import { LMap, LTileLayer, LMarker, LTooltip } from "vue-leaflet";
 export default {
   data() {
     return {
-      loc: "",
+      loc: "WILAYAH PERSEKUTUAN",
       locations: []
     };
   },
@@ -99,6 +73,7 @@ export default {
     LMarker,
     LTooltip
   },
+  mounted() {},
   methods: {
     next() {
       this.$store.commit("SET_LOCATION", this.loc);
@@ -109,6 +84,26 @@ export default {
     },
     clicked_location(loc) {
       this.loc = loc;
+      axios
+        .post(this.$store.state.url + "/api/show/", { name: loc })
+        .then(response => {
+          this.$store.commit("SET_LAT", response.data.latitude);
+          this.$store.commit("SET_LONG", response.data.longitude);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    },
+    setZoom(name) {
+      axios
+        .post(this.$store.state.url + "/api/show/", { name: name })
+        .then(response => {
+          this.$store.commit("SET_LAT", response.data.latitude);
+          this.$store.commit("SET_LONG", response.data.longitude);
+        })
+        .catch(e => {
+          console.log(e);
+        });
     }
   },
   computed: {
@@ -117,6 +112,16 @@ export default {
     },
     zoom() {
       return 12;
+    },
+    uniqueNames() {
+      var filtered_array = [];
+
+      for (var i = 0; i < this.locations.length; i++) {
+        if (filtered_array.indexOf(this.locations[i].state) === -1) {
+          filtered_array.push(this.locations[i].state);
+        }
+      }
+      return filtered_array;
     }
   },
   mounted() {
@@ -129,11 +134,22 @@ export default {
         console.log(e);
       });
 
-    navigator.geolocation.getCurrentPosition(position => {
-      this.$store.commit("SET_LAT", position.coords.latitude);
-      this.$store.commit("SET_LONG", position.coords.longitude);
-      console.log(position);
-    });
+    // navigator.geolocation.getCurrentPosition(position => {
+    //   this.$store.commit("SET_LAT", position.coords.latitude);
+    //   this.$store.commit("SET_LONG", position.coords.longitude);
+    //   console.log(position);
+    // });
+    axios
+      .post(this.$store.state.url + "/api/show/", {
+        name: "WILAYAH PERSEKUTUAN"
+      })
+      .then(response => {
+        this.$store.commit("SET_LAT", response.data.latitude);
+        this.$store.commit("SET_LONG", response.data.longitude);
+      })
+      .catch(e => {
+        console.log(e);
+      });
 
     this.$store.dispatch("get_all_latlong");
   }
