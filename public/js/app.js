@@ -71577,7 +71577,7 @@ var content = __webpack_require__(197);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("6bb8be94", content, false, {});
+var update = __webpack_require__(4)("5819ef61", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71602,7 +71602,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Kre
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
 
 // module
-exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  font-family: \"Kreon\", serif;\r\n  margin-top: 20px;\r\n  font-size: 30px;\r\n  /* color: orange; */\r\n  font-weight: bold;\r\n  border-bottom: 2px solid rgb(165, 182, 235);\r\n  margin-bottom: 30px;\n}\n.w-unit {\r\n  width: 80px;\r\n  text-align: center;\n}\n.roof-detail {\r\n  height: 340px;\n}\r\n", ""]);
+exports.push([module.i, "\nhtml,\nbody,\n.container,\n.row {\n  height: 100%;\n}\nbody {\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\n  min-height: 100vh;\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Kreon\", serif;\n}\n.roof {\n  font-family: \"Kreon\", serif;\n  margin-top: 20px;\n  font-size: 30px;\n  /* color: orange; */\n  font-weight: bold;\n  border-bottom: 2px solid rgb(165, 182, 235);\n  margin-bottom: 30px;\n}\n.w-unit {\n  width: 80px;\n  text-align: center;\n}\n.roof-detail {\n  height: 340px;\n}\n", ""]);
 
 // exports
 
@@ -71668,6 +71668,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -71701,7 +71703,7 @@ var content = __webpack_require__(201);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0e981e4a", content, false, {});
+var update = __webpack_require__(4)("87077530", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71727,7 +71729,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.74);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\n  background: url(\"/images/mainbgc.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: gray;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 110, 255, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\n  color: rgba(0, 110, 255, 0.74);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/mainbg.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(51, 255, 0, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(51, 255, 0, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 110, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 110, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 32px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
 
 // exports
 
@@ -71860,7 +71862,7 @@ var content = __webpack_require__(204);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("590e9ecc", content, false, {});
+var update = __webpack_require__(4)("bf60364e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71884,7 +71886,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\r\n  font-size: 30px;\r\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\r\n  width: 300px;\r\n  text-align: center;\r\n  height: 220px;\r\n  cursor: pointer;\n}\r\n", ""]);
+exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\n  font-size: 30px;\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\n  width: 300px;\n  text-align: center;\n  height: 220px;\n  cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -72244,7 +72246,7 @@ var content = __webpack_require__(209);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("37a8c66b", content, false, {});
+var update = __webpack_require__(4)("b55fea84", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72268,7 +72270,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\r\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\r\n  background: rgba(255, 0, 0, 0);\n}\n.rain img[data-v-b456a7d8] {\r\n  margin-bottom: 20px;\n}\n.map[data-v-b456a7d8] {\r\n  position: relative;\r\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\r\n  background: rgba(87, 84, 84, 0.397);\r\n  z-index: 2;\r\n  top: 0;\r\n  right: 0;\r\n  position: fixed;\r\n  width: 400px;\r\n\r\n  padding: 50px 50px;\n}\n.dd[data-v-b456a7d8] {\r\n  z-index: 3;\n}\r\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.map[data-v-b456a7d8] {\n  position: relative;\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\n  background: rgba(0, 0, 0, 0.808);\n  z-index: 2;\n  bottom: 0;\n  left: 0;\n  position: fixed;\n  width: 100vw;\n}\n.dd[data-v-b456a7d8] {\n  z-index: 3;\n}\n", ""]);
 
 // exports
 
@@ -72282,6 +72284,47 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__ = __webpack_require__(31);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -72505,7 +72548,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.b068
 /* 218 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?acf3dcb7ff752b5296ca23ba2c7c2606";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?912ec66d7572ff821749319396470bde";
 
 /***/ }),
 /* 219 */
@@ -72529,7 +72572,7 @@ module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-reg
 /* 222 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?f721466883998665b87923b92dea655b";
+module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?89889688147bd7575d6327160d64e760";
 
 /***/ }),
 /* 223 */
@@ -73062,30 +73105,20 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "dd-container" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "dd d-flex flex-column align-items-center justify-content-center rain"
-            },
-            [
-              _c("img", {
-                attrs: { src: "images/rain.png", height: "100", alt: "" }
-              }),
-              _vm._v(" "),
-              _c(
-                "h1",
-                { staticStyle: { color: "rgba(11, 179, 101, 0.815)" } },
-                [_vm._v("Rainfall Station")]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "alert alert-primary text-center" }, [
-                _vm._v(
-                  "Please select the nearest rainfall station to your rainwater harvesting tank."
-                )
-              ]),
-              _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "dd-container d-flex flex-column justify-content-center align-items-center p-3"
+          },
+          [
+            _c("p", { staticClass: "text-light" }, [
+              _vm._v(
+                "\n        Please select the nearest rainfall station to your rainwater\n        harvesting tank.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "selist mb-3" }, [
               _c(
                 "select",
                 {
@@ -73097,7 +73130,7 @@ var render = function() {
                       expression: "loc"
                     }
                   ],
-                  staticClass: "form-control select2",
+                  staticClass: "form-control input-sm select2",
                   on: {
                     change: [
                       function($event) {
@@ -73132,44 +73165,38 @@ var render = function() {
                     })
                   )
                 })
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary btn-sm mr-1",
+                  staticStyle: { "font-weight": "bold" },
+                  on: { click: _vm.back }
+                },
+                [
+                  _c("i", { staticClass: "fas fa-chevron-circle-left" }),
+                  _vm._v("\n          Back\n        ")
+                ]
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "d-flex" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-success mr-1",
-                    staticStyle: {
-                      "margin-top": "20px",
-                      "font-weight": "bold"
-                    },
-                    on: { click: _vm.back }
-                  },
-                  [
-                    _c("i", { staticClass: "fas fa-chevron-circle-left" }),
-                    _vm._v("\n            Back\n          ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-success",
-                    staticStyle: {
-                      "margin-top": "20px",
-                      "font-weight": "bold"
-                    },
-                    on: { click: _vm.next }
-                  },
-                  [
-                    _vm._v("\n            Next\n            "),
-                    _c("i", { staticClass: "fas fa-chevron-circle-right" })
-                  ]
-                )
-              ])
-            ]
-          )
-        ])
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary btn-sm",
+                  staticStyle: { "font-weight": "bold" },
+                  on: { click: _vm.next }
+                },
+                [
+                  _vm._v("\n          Next\n          "),
+                  _c("i", { staticClass: "fas fa-chevron-circle-right" })
+                ]
+              )
+            ])
+          ]
+        )
       ]
     )
   ])
@@ -73195,7 +73222,7 @@ var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("24f2ffb4", content, false, {});
+var update = __webpack_require__(4)("9d62569a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73219,7 +73246,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\r\n  width: 130px;\r\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\r\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\r\n  width: 50px;\r\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\r\n  width: 130px;\r\n  background: lightblue;\r\n  color: white;\r\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\r\n  font-style: italic;\n}\n.co[data-v-346519ae] {\r\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\r\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\r\n  margin-left: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.rc[data-v-346519ae] {\n  font-size: 18px;\n}\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\n  width: 130px;\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\n  width: 50px;\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\n  width: 130px;\n  background: lightblue;\n  color: white;\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n.roof[data-v-346519ae] {\n  border: 3px solid lightblue;\n  padding: 10px 10px;\n}\n.menu[data-v-346519ae] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-346519ae] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-346519ae] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.thirdstep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.fourthstep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.secondstep i[data-v-346519ae],\n.thirdstep i[data-v-346519ae],\n.fourthstep i[data-v-346519ae] {\n  display: none !important;\n}\n", ""]);
 
 // exports
 
@@ -73230,6 +73257,119 @@ exports.push([module.i, "\n.wrapper img[data-v-346519ae] {\r\n  margin-right: 20
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -73462,10 +73602,117 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("div", { staticClass: "menu mb-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "row d-flex align-items-center justify-content-between"
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "step d-flex align-items-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist firststep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 1:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Rainfall Station\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Location: ")]),
+                        _vm._v(_vm._s(this.$store.state.location))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist secondstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 2:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Roof Characteristics\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Coefficient: ")]),
+                        _vm._v(_vm._s(this.$store.state.coefficient))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist thirdstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 3:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v("\n                Water Usage\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Average/Person: ")]),
+                        _vm._v(_vm._s(this.$store.state.aveperson))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c("h1", { staticClass: "text-center text-success" }, [
+      _c("div", { staticClass: "text-center rc" }, [
         _vm._v("Roof Characteristics")
       ]),
       _vm._v(" "),
@@ -73481,13 +73728,13 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "col-md-6" }, [
-                _vm._m(1),
+                _vm._m(2),
                 _vm._v(" "),
                 _c(
                   "div",
                   { staticClass: "input-group d-flex align-items-center" },
                   [
-                    _vm._m(2),
+                    _vm._m(3),
                     _vm._v(" "),
                     _c("input", {
                       directives: [
@@ -73514,7 +73761,7 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _vm._m(3)
+                    _vm._m(4)
                   ]
                 ),
                 _vm._v(" "),
@@ -73522,7 +73769,7 @@ var render = function() {
                   "div",
                   { staticClass: "input-group d-flex align-items-center mt-1" },
                   [
-                    _vm._m(4),
+                    _vm._m(5),
                     _vm._v(" "),
                     _c("input", {
                       directives: [
@@ -73549,7 +73796,7 @@ var render = function() {
                       }
                     }),
                     _vm._v(" "),
-                    _vm._m(5)
+                    _vm._m(6)
                   ]
                 ),
                 _vm._v(" "),
@@ -73557,7 +73804,7 @@ var render = function() {
                   "div",
                   { staticClass: "input-group d-flex align-items-center mt-1" },
                   [
-                    _vm._m(6),
+                    _vm._m(7),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
@@ -73569,14 +73816,14 @@ var render = function() {
                       domProps: { value: _vm.area }
                     }),
                     _vm._v(" "),
-                    _vm._m(7)
+                    _vm._m(8)
                   ]
                 )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-md-6" }, [
                 _c("div", [
-                  _c("h5", { staticClass: "mt-5" }, [
+                  _c("div", { staticClass: "mt-5" }, [
                     _vm._v("First Flush Volume Calculation")
                   ]),
                   _vm._v(" "),
@@ -73584,7 +73831,7 @@ var render = function() {
                     "div",
                     { staticClass: "input-group d-flex align-items-center" },
                     [
-                      _vm._m(8),
+                      _vm._m(9),
                       _vm._v(" "),
                       _c("input", {
                         directives: [
@@ -73611,18 +73858,18 @@ var render = function() {
                         }
                       }),
                       _vm._v(" "),
-                      _vm._m(9)
+                      _vm._m(10)
                     ]
                   )
                 ]),
                 _vm._v(" "),
-                _vm._m(10),
+                _vm._m(11),
                 _vm._v(" "),
                 _c(
                   "div",
                   { staticClass: "input-group d-flex align-items-center" },
                   [
-                    _vm._m(11),
+                    _vm._m(12),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
@@ -73634,14 +73881,14 @@ var render = function() {
                       domProps: { value: _vm.flush }
                     }),
                     _vm._v(" "),
-                    _vm._m(12)
+                    _vm._m(13)
                   ]
                 )
               ])
             ]
           ),
           _vm._v(" "),
-          _vm._m(13),
+          _vm._m(14),
           _vm._v(" "),
           _c("div", { staticClass: "d-flex flex-row" }, [
             _c(
@@ -73722,7 +73969,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(14)
+        _vm._m(15)
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "hr w-100 mt-5" })
@@ -73732,31 +73979,31 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "btn btn-sm btn-success mr-1",
+          staticClass: "btn btn-sm btn-primary mr-1",
           staticStyle: { "margin-top": "20px", "font-weight": "bold" },
           on: { click: _vm.back }
         },
-        [_vm._v("Back")]
+        [_vm._v("\n      Back\n    ")]
       ),
       _vm._v(" "),
       _c(
         "button",
         {
-          staticClass: "btn btn-sm btn-outline-success mr-1",
+          staticClass: "btn btn-sm btn-outline-primary mr-1",
           staticStyle: { "margin-top": "20px", "font-weight": "bold" },
           on: { click: _vm.home }
         },
-        [_vm._v("Home")]
+        [_vm._v("\n      Home\n    ")]
       ),
       _vm._v(" "),
       _c(
         "button",
         {
-          staticClass: "btn btn-sm btn-success",
+          staticClass: "btn btn-sm btn-primary",
           staticStyle: { "margin-top": "20px", "font-weight": "bold" },
           on: { click: _vm.next }
         },
-        [_vm._v("Next")]
+        [_vm._v("\n      Next\n    ")]
       )
     ])
   ])
@@ -73766,16 +74013,51 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex justify-content-center" }, [
-      _c("img", { attrs: { src: "/images/roof.png", height: "100", alt: "" } })
+    return _c("div", { staticClass: "logo d-flex align-items-center" }, [
+      _c("img", {
+        attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
+      })
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "steplist fourthstep d-flex align-items-center justify-content-between"
+      },
+      [
+        _c("div", [
+          _c("div", { staticClass: "small" }, [_vm._v("Step 4:")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "step-name" }, [
+            _vm._v("\n                Calculation\n              ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "stationchosen" }, [
+            _c("small", [
+              _c("em", [_vm._v("Simulation: ")]),
+              _vm._v("Single / Range")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "far fa-check-circle",
+          staticStyle: { "font-size": "28px", color: "green" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h5", { staticClass: "mt-5" }, [_vm._v("Roof Area Calculation")])
+      _c("div", { staticClass: "mt-5" }, [_vm._v("Roof Area Calculation")])
     ])
   },
   function() {
@@ -73943,7 +74225,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h5", { staticClass: "mt-5" }, [_vm._v("Run-off Coefficient")])
+      _c("div", { staticClass: "mt-5" }, [_vm._v("Run-off Coefficient")])
     ])
   },
   function() {
@@ -73953,13 +74235,13 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "col-md-5 d-flex align-items-center justify-content-center"
+        staticClass:
+          "roof col-md-5 d-flex align-items-center justify-content-center"
       },
       [
         _c("img", {
-          staticClass:
-            "img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}",
-          attrs: { src: "/images/roof.jpg", alt: "" }
+          staticClass: "img-fluid",
+          attrs: { src: "/images/roof01.png", alt: "" }
         })
       ]
     )
@@ -73985,7 +74267,7 @@ var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0c6fc27a", content, false, {});
+var update = __webpack_require__(4)("75d01590", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74009,7 +74291,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  width: 180px;\r\n  padding: 15px 0;\n}\r\n/* label {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\r\n} */\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\n  margin: 20px auto;\n}\n.pimg[data-v-4c4c5db8] {\n  margin-bottom: 20px;\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\n  width: 180px;\n  padding: 15px 0;\n}\n/* label {\n  display: block;\n  padding-left: 10px;\n  margin-bottom: -20px;\n  font-size: small;\n} */\n.pad[data-v-4c4c5db8] {\n  margin-right: 20px;\n}\n.menu[data-v-4c4c5db8] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-4c4c5db8] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.thirdstep[data-v-4c4c5db8] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.fourthstep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.thirdstep i[data-v-4c4c5db8],\n.fourthstep i[data-v-4c4c5db8] {\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -74020,6 +74302,84 @@ exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -74313,372 +74673,496 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container h-100 w-100" }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
-      },
-      [
-        _c("img", {
-          attrs: { src: "images/waterdrop.png", height: "100", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("h1", { staticClass: "text-center text-success" }, [
-          _vm._v("Daily Water Usage")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "hr w-100" }),
-        _vm._v(" "),
-        _c("div", { staticClass: " d-flex flex-row form" }, [
-          _c("div", { staticClass: "nop" }, [
-            _c(
-              "label",
-              {
-                staticClass: "d-flex justify-content-center",
-                attrs: { for: "person" }
-              },
-              [_vm._v("Number of Person")]
-            ),
+  return _c("div", [
+    _c("div", { staticClass: "menu mb-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "row d-flex align-items-center justify-content-between"
+          },
+          [
+            _vm._m(0),
             _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "pimg" },
-              [
-                _c("img", {
-                  attrs: { src: "images/minus.png", height: "20", alt: "" },
-                  on: { click: _vm.minus }
-                }),
-                _vm._v(" "),
-                _vm._l(_vm.person, function(x) {
-                  return _c("span", { key: x.id }, [
-                    _c("img", {
-                      attrs: {
-                        src: "images/user-green.png",
-                        height: "40",
-                        alt: ""
-                      }
-                    })
-                  ])
-                }),
-                _vm._v(" "),
-                _c("img", {
-                  attrs: { src: "images/plus.png", height: "20", alt: "" },
-                  on: { click: _vm.add }
-                })
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c("small", { staticClass: "d-flex justify-content-center" }, [
+            _c("div", { staticClass: "step d-flex align-items-center" }, [
               _c(
                 "div",
-                { staticClass: "input-group d-flex align-items-center" },
+                {
+                  staticClass:
+                    "steplist firststep d-flex align-items-center justify-content-between"
+                },
                 [
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: {
-                      id: "countValue",
-                      type: "text",
-                      "aria-describedby": "basic-addon2"
-                    },
-                    domProps: { value: _vm.person.length },
-                    on: { change: _vm.totalCount }
-                  }),
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 1:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Rainfall Station\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Location: ")]),
+                        _vm._v(_vm._s(this.$store.state.location))
+                      ])
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "input-group-append" }, [
-                    _c(
-                      "span",
-                      {
-                        staticClass: "input-group-text",
-                        attrs: { id: "basic-addon2" }
-                      },
-                      [
-                        _vm._v("person"),
-                        _vm.person.length > 1
-                          ? _c("span", [_vm._v("s")])
-                          : _vm._e()
-                      ]
-                    )
-                  ])
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
                 ]
-              )
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-7" }, [
-              _vm._m(0),
+              ),
               _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass:
-                    "d-flex flex-column align-items-around justify-content-center form"
+                    "steplist secondstep d-flex align-items-center justify-content-between"
                 },
                 [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 2:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Roof Characteristics\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Coefficient: ")]),
+                        _vm._v(_vm._s(this.$store.state.coefficient))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist thirdstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 3:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v("\n                Water Usage\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Average/Person: ")]),
+                        _vm._v(_vm._s(this.$store.state.aveperson))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container h-100 w-100" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "row h-100 w-100 d-flex flex-column justify-content-center align-items-center wrapper"
+        },
+        [
+          _c("img", {
+            attrs: { src: "images/waterdrop.png", height: "50", alt: "" }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "text-center text-primary",
+              staticStyle: { "font-size": "18px" }
+            },
+            [_vm._v("\n        Daily Water Usage\n      ")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "hr w-100" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex flex-row form" }, [
+            _c(
+              "div",
+              { staticClass: "nop d-flex flex-column align-items-center" },
+              [
+                _c(
+                  "label",
+                  {
+                    staticClass: "d-flex justify-content-center",
+                    attrs: { for: "person" }
+                  },
+                  [_vm._v("Number of Person")]
+                ),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "pimg" },
+                  [
+                    _c("img", {
+                      attrs: { src: "images/minus.png", height: "20", alt: "" },
+                      on: { click: _vm.minus }
+                    }),
+                    _vm._v(" "),
+                    _vm._l(_vm.person, function(x) {
+                      return _c("span", { key: x.id }, [
+                        _c("img", {
+                          attrs: {
+                            src: "images/user-green.png",
+                            height: "40",
+                            alt: ""
+                          }
+                        })
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("img", {
+                      attrs: { src: "images/plus.png", height: "20", alt: "" },
+                      on: { click: _vm.add }
+                    })
+                  ],
+                  2
+                ),
+                _vm._v(" "),
+                _c("small", { staticClass: "d-flex justify-content-center" }, [
                   _c(
                     "div",
                     { staticClass: "input-group d-flex align-items-center" },
                     [
-                      _c("label", { attrs: { for: "toilet" } }, [
-                        _vm._v("Toilet Flushing")
-                      ]),
-                      _vm._v(" "),
                       _c("input", {
-                        directives: [
+                        staticClass: "form-control",
+                        attrs: {
+                          id: "countValue",
+                          type: "text",
+                          "aria-describedby": "basic-addon2"
+                        },
+                        domProps: { value: _vm.person.length },
+                        on: { change: _vm.totalCount }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "input-group-append" }, [
+                        _c(
+                          "span",
                           {
-                            name: "model",
-                            rawName: "v-model.number",
-                            value: _vm.toilet,
-                            expression: "toilet",
-                            modifiers: { number: true }
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.toilet },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.toilet = _vm._n($event.target.value)
+                            staticClass: "input-group-text",
+                            attrs: { id: "basic-addon2" }
                           },
-                          blur: function($event) {
-                            _vm.$forceUpdate()
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(1)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "input-group d-flex align-items-center" },
-                    [
-                      _c("label", { attrs: { for: "clean" } }, [
-                        _vm._v("General Cleaning")
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model.number",
-                            value: _vm.clean,
-                            expression: "clean",
-                            modifiers: { number: true }
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.clean },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.clean = _vm._n($event.target.value)
-                          },
-                          blur: function($event) {
-                            _vm.$forceUpdate()
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(2)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "input-group d-flex align-items-center" },
-                    [
-                      _c("label", { attrs: { for: "garden" } }, [
-                        _vm._v("Gardening")
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model.number",
-                            value: _vm.garden,
-                            expression: "garden",
-                            modifiers: { number: true }
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.garden },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.garden = _vm._n($event.target.value)
-                          },
-                          blur: function($event) {
-                            _vm.$forceUpdate()
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(3)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "input-group d-flex align-items-center" },
-                    [
-                      _c("label", [_vm._v("Other")]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          placeholder: "Other item",
-                          type: "text",
-                          "aria-describedby": "basic-addon2"
-                        }
-                      }),
-                      _vm._v(" "),
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model.number",
-                            value: _vm.bath,
-                            expression: "bath",
-                            modifiers: { number: true }
-                          }
-                        ],
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.bath },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.bath = _vm._n($event.target.value)
-                          },
-                          blur: function($event) {
-                            _vm.$forceUpdate()
-                          }
-                        }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(4)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "input-group d-flex align-items-center" },
-                    [
-                      _c("label", { attrs: { for: "usagevol" } }, [
-                        _vm._v("Total Volume Per Day")
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          disabled: "",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.usagevol }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(5)
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "input-group d-flex align-items-center" },
-                    [
-                      _c("label", { attrs: { for: "aveperson" } }, [
-                        _vm._v("Average Per Person")
-                      ]),
-                      _vm._v(" "),
-                      _c("input", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          disabled: "",
-                          "aria-describedby": "basic-addon2"
-                        },
-                        domProps: { value: _vm.aveperson }
-                      }),
-                      _vm._v(" "),
-                      _vm._m(6)
+                          [
+                            _vm._v(
+                              "\n                  person\n                  "
+                            ),
+                            _vm.person.length > 1
+                              ? _c("span", [_vm._v("s")])
+                              : _vm._e()
+                          ]
+                        )
+                      ])
                     ]
                   )
-                ]
-              )
-            ]),
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-7" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "d-flex flex-column align-items-around justify-content-center form"
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", { attrs: { for: "toilet" } }, [
+                          _vm._v("Toilet Flushing")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model.number",
+                              value: _vm.toilet,
+                              expression: "toilet",
+                              modifiers: { number: true }
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.toilet },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.toilet = _vm._n($event.target.value)
+                            },
+                            blur: function($event) {
+                              _vm.$forceUpdate()
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(3)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", { attrs: { for: "clean" } }, [
+                          _vm._v("General Cleaning")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model.number",
+                              value: _vm.clean,
+                              expression: "clean",
+                              modifiers: { number: true }
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.clean },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.clean = _vm._n($event.target.value)
+                            },
+                            blur: function($event) {
+                              _vm.$forceUpdate()
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(4)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", { attrs: { for: "garden" } }, [
+                          _vm._v("Gardening")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model.number",
+                              value: _vm.garden,
+                              expression: "garden",
+                              modifiers: { number: true }
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.garden },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.garden = _vm._n($event.target.value)
+                            },
+                            blur: function($event) {
+                              _vm.$forceUpdate()
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(5)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", [_vm._v("Other")]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            placeholder: "Other item",
+                            type: "text",
+                            "aria-describedby": "basic-addon2"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model.number",
+                              value: _vm.bath,
+                              expression: "bath",
+                              modifiers: { number: true }
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.bath },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.bath = _vm._n($event.target.value)
+                            },
+                            blur: function($event) {
+                              _vm.$forceUpdate()
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(6)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", { attrs: { for: "usagevol" } }, [
+                          _vm._v("Total Volume Per Day")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            disabled: "",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.usagevol }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(7)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "input-group d-flex align-items-center" },
+                      [
+                        _c("label", { attrs: { for: "aveperson" } }, [
+                          _vm._v("Average Per Person")
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            disabled: "",
+                            "aria-describedby": "basic-addon2"
+                          },
+                          domProps: { value: _vm.aveperson }
+                        }),
+                        _vm._v(" "),
+                        _vm._m(8)
+                      ]
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-5" })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex flex-row form" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "hr w-100" }),
+          _vm._v(" "),
+          _c("div", { staticStyle: { "margin-bottom": "70px" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-primary",
+                staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+                on: { click: _vm.back }
+              },
+              [_vm._v("\n          Back\n        ")]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-5" })
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-outline-primary",
+                staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+                on: { click: _vm.home }
+              },
+              [_vm._v("\n          Home\n        ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-sm btn-primary",
+                staticStyle: { "margin-top": "20px", "font-weight": "bold" },
+                on: { click: _vm.next }
+              },
+              [_vm._v("\n          Next\n        ")]
+            )
           ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "d-flex flex-row form" }),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-lg btn-success",
-              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-              on: { click: _vm.back }
-            },
-            [_vm._v("Back")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-lg btn-outline-success",
-              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-              on: { click: _vm.home }
-            },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-lg btn-success",
-              staticStyle: { "margin-top": "20px", "font-weight": "bold" },
-              on: { click: _vm.next }
-            },
-            [_vm._v("Next")]
-          )
-        ])
-      ]
-    )
+        ]
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -74686,8 +75170,51 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo d-flex align-items-center" }, [
+      _c("img", {
+        attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "steplist fourthstep d-flex align-items-center justify-content-between"
+      },
+      [
+        _c("div", [
+          _c("div", { staticClass: "small" }, [_vm._v("Step 4:")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "step-name" }, [
+            _vm._v("\n                Calculation\n              ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "stationchosen" }, [
+            _c("small", [
+              _c("em", [_vm._v("Simulation: ")]),
+              _vm._v("Single / Range")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "far fa-check-circle",
+          staticStyle: { "font-size": "28px", color: "green" }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", [
-      _c("h2", { staticClass: "mt-5" }, [_vm._v("Water Usage")])
+      _c("div", { staticClass: "mt-5" }, [_c("b", [_vm._v("Water Usage")])])
     ])
   },
   function() {
@@ -74783,7 +75310,7 @@ var content = __webpack_require__(235);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("70e5448e", content, false, {});
+var update = __webpack_require__(4)("11ccc021", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74807,7 +75334,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\ninput[data-v-ca205af8] {\r\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\r\n  width: 300px;\r\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\r\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.flush[data-v-ca205af8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  /* border: 2px solid white; */\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n  background-color: white;\n  height: 30px;\n  width: 300px;\n}\ninput[data-v-ca205af8] {\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\n  width: 300px;\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\n  margin-right: 20px;\n  margin-left: 20px;\n}\n.menu[data-v-ca205af8] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-ca205af8] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.thirdstep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.fourthstep[data-v-ca205af8] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.fourthstep i[data-v-ca205af8] {\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -74824,6 +75351,118 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -76019,6 +76658,115 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("div", { staticClass: "menu mb-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "row d-flex align-items-center justify-content-between"
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "step d-flex align-items-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist firststep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 1:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Rainfall Station\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Location: ")]),
+                        _vm._v(_vm._s(this.$store.state.location))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist secondstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 2:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Roof Characteristics\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Coefficient: ")]),
+                        _vm._v(_vm._s(this.$store.state.coefficient))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist thirdstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 3:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v("\n                Water Usage\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Average/Person: ")]),
+                        _vm._v(_vm._s(this.$store.state.aveperson))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("br"),
       _vm._v(" "),
@@ -76036,10 +76784,11 @@ var render = function() {
             _vm._v(" "),
             _c("h3", [
               _vm._v(
-                "Data dari tahun " +
+                "\n          Data dari tahun " +
                   _vm._s(_vm.yearsInfo[0]) +
                   " hingga " +
-                  _vm._s(_vm.yearsInfo[_vm.years - 1])
+                  _vm._s(_vm.yearsInfo[_vm.years - 1]) +
+                  "\n        "
               )
             ])
           ]),
@@ -76072,7 +76821,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _vm._m(0)
+              _vm._m(2)
             ])
           ])
         ]
@@ -76087,7 +76836,7 @@ var render = function() {
                 staticStyle: { "margin-top": "20px", "font-weight": "bold" },
                 on: { click: _vm.simulate }
               },
-              [_vm._v("\n        Run\n        Simulation\n      ")]
+              [_vm._v("\n        Run Simulation\n      ")]
             )
           : _vm._e()
       ]),
@@ -76095,7 +76844,7 @@ var render = function() {
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6" }, [
-            _vm._m(1),
+            _vm._m(3),
             _vm._v(" "),
             _c(
               "div",
@@ -76122,7 +76871,7 @@ var render = function() {
                       domProps: { value: _vm.results.total_captured }
                     }),
                     _vm._v(" "),
-                    _vm._m(2)
+                    _vm._m(4)
                   ]
                 ),
                 _vm._v(" "),
@@ -76144,7 +76893,7 @@ var render = function() {
                       domProps: { value: _vm.results.total_delivered }
                     }),
                     _vm._v(" "),
-                    _vm._m(3)
+                    _vm._m(5)
                   ]
                 ),
                 _vm._v(" "),
@@ -76166,7 +76915,7 @@ var render = function() {
                       domProps: { value: _vm.results.daily_average_delivered }
                     }),
                     _vm._v(" "),
-                    _vm._m(4)
+                    _vm._m(6)
                   ]
                 ),
                 _vm._v(" "),
@@ -76188,7 +76937,7 @@ var render = function() {
                       domProps: { value: _vm.results.volume_not_meet }
                     }),
                     _vm._v(" "),
-                    _vm._m(5)
+                    _vm._m(7)
                   ]
                 ),
                 _vm._v(" "),
@@ -76210,7 +76959,7 @@ var render = function() {
                       domProps: { value: _vm.results.total_no_rain_day }
                     }),
                     _vm._v(" "),
-                    _vm._m(6)
+                    _vm._m(8)
                   ]
                 ),
                 _vm._v(" "),
@@ -76232,7 +76981,7 @@ var render = function() {
                       domProps: { value: _vm.results.norain_tankempty }
                     }),
                     _vm._v(" "),
-                    _vm._m(7)
+                    _vm._m(9)
                   ]
                 )
               ]
@@ -76240,7 +76989,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-6" }, [
-            _vm._m(8),
+            _vm._m(10),
             _vm._v(" "),
             _c(
               "div",
@@ -76267,7 +77016,7 @@ var render = function() {
                       domProps: { value: _vm.results.reliability }
                     }),
                     _vm._v(" "),
-                    _vm._m(9)
+                    _vm._m(11)
                   ]
                 ),
                 _vm._v(" "),
@@ -76289,7 +77038,7 @@ var render = function() {
                       domProps: { value: _vm.results.coefficient }
                     }),
                     _vm._v(" "),
-                    _vm._m(10)
+                    _vm._m(12)
                   ]
                 ),
                 _vm._v(" "),
@@ -76311,7 +77060,7 @@ var render = function() {
                       domProps: { value: _vm.results.storage_efficient }
                     }),
                     _vm._v(" "),
-                    _vm._m(11)
+                    _vm._m(13)
                   ]
                 ),
                 _vm._v(" "),
@@ -76333,7 +77082,7 @@ var render = function() {
                       domProps: { value: _vm.results.volume_not_meet }
                     }),
                     _vm._v(" "),
-                    _vm._m(12)
+                    _vm._m(14)
                   ]
                 )
               ]
@@ -76486,7 +77235,7 @@ var render = function() {
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               on: { click: _vm.back }
             },
-            [_vm._v("Back")]
+            [_vm._v("\n        Back\n      ")]
           ),
           _vm._v(" "),
           _c(
@@ -76496,7 +77245,7 @@ var render = function() {
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               on: { click: _vm.home }
             },
-            [_vm._v("Home")]
+            [_vm._v("\n        Home\n      ")]
           ),
           _vm._v(" "),
           _c(
@@ -76506,7 +77255,7 @@ var render = function() {
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               on: { click: _vm.next }
             },
-            [_vm._v("\n        Continue\n        to Module 2\n      ")]
+            [_vm._v("\n        Continue to Module 2\n      ")]
           ),
           _vm._v(" "),
           _c(
@@ -76516,7 +77265,7 @@ var render = function() {
               staticStyle: { "margin-top": "20px", "font-weight": "bold" },
               attrs: { to: { name: "average" } }
             },
-            [_vm._v("\n        More\n        Info\n      ")]
+            [_vm._v("\n        More Info\n      ")]
           )
         ],
         1
@@ -76525,6 +77274,49 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo d-flex align-items-center" }, [
+      _c("img", {
+        attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "steplist fourthstep d-flex align-items-center justify-content-between"
+      },
+      [
+        _c("div", [
+          _c("div", { staticClass: "small" }, [_vm._v("Step 4:")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "step-name" }, [
+            _vm._v("\n                Calculation\n              ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "stationchosen" }, [
+            _c("small", [
+              _c("em", [_vm._v("Simulation: ")]),
+              _vm._v("Single / Range")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "far fa-check-circle",
+          staticStyle: { "font-size": "28px", color: "green" }
+        })
+      ]
+    )
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -76744,7 +77536,7 @@ var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("853fff0a", content, false, {});
+var update = __webpack_require__(4)("9f353470", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76768,7 +77560,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-abfbddf2] {\r\n  position: fixed;\r\n  bottom: 0;\r\n  height: 50px;\r\n  width: 100vw;\r\n  background: black;\r\n  margin-top: 30px;\r\n  color: gray;\n}\r\n", ""]);
+exports.push([module.i, "\n.footer[data-v-abfbddf2] {\n  position: fixed;\n  bottom: 0;\n  height: 50px;\n  width: 100vw;\n  background: lightblue;\n  margin-top: 30px;\n  color: white;\n}\n", ""]);
 
 // exports
 
@@ -76892,7 +77684,7 @@ var content = __webpack_require__(248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("b3dcc258", content, false, {});
+var update = __webpack_require__(4)("cdd1f7be", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -76916,7 +77708,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.menu[data-v-485090b2] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-485090b2] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-485090b2] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.secondstep[data-v-485090b2] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.thirdstep[data-v-485090b2] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.fourthstep[data-v-485090b2] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.secondstep i[data-v-485090b2],\n.thirdstep i[data-v-485090b2],\n.fourthstep i[data-v-485090b2] {\n  display: none;\n}\n", ""]);
 
 // exports
 
@@ -76927,6 +77719,100 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n", ""]);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -76942,9 +77828,162 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", [
+    _c("div", { staticClass: "menu mb-5" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "row d-flex align-items-center justify-content-between"
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "step d-flex align-items-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist firststep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 1:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Rainfall Station\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Location: ")]),
+                        _vm._v(_vm._s(this.$store.state.location))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist secondstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 2:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v(
+                        "\n                Roof Characteristics\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Coefficient: ")]),
+                        _vm._v(_vm._s(this.$store.state.coefficient))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "steplist thirdstep d-flex align-items-center justify-content-between"
+                },
+                [
+                  _c("div", [
+                    _c("div", { staticClass: "small" }, [_vm._v("Step 3:")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "step-name" }, [
+                      _vm._v("\n                Water Usage\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "stationchosen" }, [
+                      _c("small", [
+                        _c("em", [_vm._v("Average/Person: ")]),
+                        _vm._v(_vm._s(this.$store.state.aveperson))
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("i", {
+                    staticClass: "far fa-check-circle",
+                    staticStyle: { "font-size": "28px", color: "green" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
+          ]
+        )
+      ])
+    ])
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo d-flex align-items-center" }, [
+      _c("img", {
+        attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "steplist fourthstep d-flex align-items-center justify-content-between"
+      },
+      [
+        _c("div", [
+          _c("div", { staticClass: "small" }, [_vm._v("Step 4:")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "step-name" }, [
+            _vm._v("\n                Calculation\n              ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "stationchosen" }, [
+            _c("small", [
+              _c("em", [_vm._v("Simulation: ")]),
+              _vm._v("Single / Range")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("i", {
+          staticClass: "far fa-check-circle",
+          staticStyle: { "font-size": "28px", color: "green" }
+        })
+      ]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -76965,10 +78004,6 @@ var render = function() {
   return _c(
     "div",
     [
-      ["root", "station"].indexOf(_vm.$route.name) < 0
-        ? _c("navbar-component")
-        : _vm._e(),
-      _vm._v(" "),
       _c("router-view"),
       _vm._v(" "),
       ["root", "station"].indexOf(_vm.$route.name) < 0
@@ -77004,7 +78039,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'http://localhost:8000',
+        url: 'http://nahrim.test',
         location: '',
         coefficient: '',
         area: '',
@@ -78345,7 +79380,7 @@ var content = __webpack_require__(257);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("02c32e92", content, false, {});
+var update = __webpack_require__(4)("7ecb255f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -78369,7 +79404,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.align[data-v-212a534b] {\r\n  text-align: left;\n}\n.hr[data-v-212a534b] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  color: royalblue;\r\n  font-weight: bold;\r\n  padding: 10px 10px;\r\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\r\n  background: royalblue;\r\n  color: white;\r\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  margin-top: 30px;\r\n  padding: 10px 0;\r\n  border: 1px solid royalblue;\r\n  text-align: center;\r\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\r\n  font-size: 30px;\r\n  font-weight: bold;\r\n  color: orange;\r\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\r\ntr[data-v-212a534b],\r\ntd[data-v-212a534b],\r\nth[data-v-212a534b] {\r\n  border: 1px solid orange;\n}\n.calc[data-v-212a534b] {\r\n  border: 1px solid rgb(165, 182, 235);\r\n  margin-top: 30px;\r\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\r\n  background-color: royalblue;\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\r\n", ""]);
+exports.push([module.i, "\ntd[data-v-212a534b] {\n  text-align: right;\n}\n.align[data-v-212a534b] {\n  text-align: left;\n}\n.hr[data-v-212a534b] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\n  text-decoration: none;\n  text-transform: uppercase;\n  color: royalblue;\n  font-weight: bold;\n  padding: 10px 10px;\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\n  background: royalblue;\n  color: white;\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\n  text-transform: uppercase;\n  margin-top: 30px;\n  padding: 10px 0;\n  border: 1px solid royalblue;\n  text-align: center;\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\n  font-size: 30px;\n  font-weight: bold;\n  color: orange;\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\ntr[data-v-212a534b],\ntd[data-v-212a534b],\nth[data-v-212a534b] {\n  border: 1px solid orange;\n}\n.calc[data-v-212a534b] {\n  border: 1px solid rgb(165, 182, 235);\n  margin-top: 30px;\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\n  background-color: royalblue;\n  color: white;\n  text-transform: uppercase;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -79097,7 +80132,7 @@ var content = __webpack_require__(262);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("31fdff90", content, false, {});
+var update = __webpack_require__(4)("147357c6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79123,7 +80158,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\r\n  background: url(\"/images/rhs.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: black;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 0, 0, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\r\n  color: rgb(255, 94, 0);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-98f701fa] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 247, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 247, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 68, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 68, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(68, 0, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(68, 0, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\r\n  color: black;\n}\n.sliding[data-v-98f701fa] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\n  background: url(\"/images/rhs.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: black;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 0, 0, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\n  color: rgb(255, 94, 0);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-98f701fa] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 247, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 247, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 68, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 68, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(68, 0, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(68, 0, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 32px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n  color: black;\n}\n.sliding[data-v-98f701fa] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
 
 // exports
 
@@ -79472,7 +80507,7 @@ var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3a926d3c", content, false, {});
+var update = __webpack_require__(4)("29f80f6f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79705,7 +80740,7 @@ var content = __webpack_require__(272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("cfcc64a4", content, false, {});
+var update = __webpack_require__(4)("3ae347c1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80004,7 +81039,7 @@ var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0214ebc5", content, false, {});
+var update = __webpack_require__(4)("15cb5ddc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80259,7 +81294,7 @@ var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("30e6b078", content, false, {});
+var update = __webpack_require__(4)("5c63a7ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80400,7 +81435,7 @@ var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("355522aa", content, false, {});
+var update = __webpack_require__(4)("615d6578", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80424,7 +81459,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\r\n  width: 80px;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  margin-top: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\n  width: 80px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 20px;\n}\n", ""]);
 
 // exports
 
@@ -80669,7 +81704,7 @@ var content = __webpack_require__(292);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3ee611b0", content, false, {});
+var update = __webpack_require__(4)("34f84c0a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80948,7 +81983,7 @@ var content = __webpack_require__(297);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7e85a284", content, false, {});
+var update = __webpack_require__(4)("214f1c97", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81170,7 +82205,7 @@ var content = __webpack_require__(302);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2724cd6d", content, false, {});
+var update = __webpack_require__(4)("4731eb00", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81677,7 +82712,7 @@ var content = __webpack_require__(307);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("a4c106a4", content, false, {});
+var update = __webpack_require__(4)("1b46c101", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81881,7 +82916,7 @@ var content = __webpack_require__(311);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("29e2bc3d", content, false, {});
+var update = __webpack_require__(4)("41b60d60", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -92732,7 +93767,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("255e8632", content, false, {});
+var update = __webpack_require__(4)("e38f8f0c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -92859,7 +93894,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("54691dd0", content, false, {});
+var update = __webpack_require__(4)("7bdf3bba", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93118,7 +94153,7 @@ var content = __webpack_require__(369);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0623c04c", content, false, {});
+var update = __webpack_require__(4)("c090cc26", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93244,7 +94279,7 @@ var content = __webpack_require__(374);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2ff0b790", content, false, {});
+var update = __webpack_require__(4)("5a8b9cba", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93268,7 +94303,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-3abe4c80] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\r\n  color: rgb(58, 58, 255);\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-3abe4c80] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\n  color: rgb(58, 58, 255);\n}\n", ""]);
 
 // exports
 

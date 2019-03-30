@@ -2,8 +2,13 @@
   <div class="container h-100">
     <div class="row h-100 d-flex align-items-center justify-content-center">
       <div class="map">
-        <LMap ref="map" style="height:100vh; width: 100vw" :center="currentPosition" :zoom="zoom">
-          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"/>
+        <LMap
+          ref="map"
+          style="height:100vh; width: 100vw"
+          :center="currentPosition"
+          :zoom="zoom"
+        >
+          <LTileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
           <LMarker :latlng="currentPosition" class="blink">
             <!-- <LTooltip class="yah" :options="{interactive: true,permanent: true}">
               <strong>You are HERE!</strong>
@@ -15,19 +20,63 @@
               class="blink"
               @click="clicked_location(c.stn_name)"
             >
-              <LTooltip :options="{interactive: true,permanent: true}">
+              <LTooltip :options="{ interactive: true, permanent: true }">
                 <strong>{{ c.stn_name }}</strong>
               </LTooltip>
             </LMarker>
           </span>
         </LMap>
       </div>
-      <div class="dd-container">
-        <div class="dd d-flex flex-column align-items-center justify-content-center rain">
+      <div
+        class="dd-container d-flex flex-column justify-content-center align-items-center p-3"
+      >
+        <p class="text-light">
+          Please select the nearest rainfall station to your rainwater
+          harvesting tank.
+        </p>
+        <div class="selist mb-3">
+          <select
+            class="form-control input-sm select2"
+            v-model="loc"
+            @change="setZoom(loc)"
+          >
+            <optgroup
+              v-for="(state, key) in uniqueNames"
+              :key="key"
+              :label="state"
+            >
+              <option
+                v-for="l in locations"
+                :key="l.id"
+                v-if="l.state == state"
+                >{{ l.stn_name }}</option
+              >
+            </optgroup>
+          </select>
+        </div>
+        <div class="d-flex">
+          <button
+            @click="back"
+            class="btn btn-primary btn-sm mr-1"
+            style="font-weight:bold;"
+          >
+            <i class="fas fa-chevron-circle-left"></i>
+            Back
+          </button>
+          <button
+            @click="next"
+            class="btn btn-primary btn-sm"
+            style="font-weight:bold;"
+          >
+            Next
+            <i class="fas fa-chevron-circle-right"></i>
+          </button>
+        </div>
+        <!-- <div class="dd rain d-flex align-items-center justify-content-between">
           <img src="images/rain.png" height="100" alt>
           <h1 style="color: rgba(11, 179, 101, 0.815);">Rainfall Station</h1>
           <div
-            class="alert alert-primary text-center"
+            class="text-center"
           >Please select the nearest rainfall station to your rainwater harvesting tank.</div>
           <select class="form-control select2" v-model="loc" @change="setZoom(loc)">
             <optgroup v-for="(state, key) in uniqueNames" :key="key" :label="state">
@@ -35,24 +84,16 @@
             </optgroup>
           </select>
           <div class="d-flex">
-            <button
-              @click="back"
-              class="btn btn-success mr-1"
-              style="margin-top: 20px; font-weight:bold;"
-            >
+            <button @click="back" class="btn btn-primary btn-sm mr-1" style="font-weight:bold;">
               <i class="fas fa-chevron-circle-left"></i>
               Back
             </button>
-            <button
-              @click="next"
-              class="btn btn-success"
-              style="margin-top: 20px; font-weight:bold;"
-            >
+            <button @click="next" class="btn btn-primary btn-sm" style="font-weight:bold;">
               Next
               <i class="fas fa-chevron-circle-right"></i>
             </button>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -162,23 +203,18 @@ export default {
 .rain {
   background: rgba(255, 0, 0, 0);
 }
-.rain img {
-  margin-bottom: 20px;
-}
 .map {
   position: relative;
   z-index: 1;
 }
 
 .dd-container {
-  background: rgba(87, 84, 84, 0.397);
+  background: rgba(0, 0, 0, 0.808);
   z-index: 2;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   position: fixed;
-  width: 400px;
-
-  padding: 50px 50px;
+  width: 100vw;
 }
 .dd {
   z-index: 3;

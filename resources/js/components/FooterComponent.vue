@@ -22,8 +22,8 @@ export default {
   bottom: 0;
   height: 50px;
   width: 100vw;
-  background: black;
+  background: lightblue;
   margin-top: 30px;
-  color: gray;
+  color: white;
 }
 </style>

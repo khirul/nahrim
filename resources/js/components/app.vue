@@ -1,8 +1,10 @@
 <template>
   <div>
-    <navbar-component v-if="['root', 'station'].indexOf($route.name) < 0"></navbar-component>
+    <!-- <navbar-component v-if="['root', 'station'].indexOf($route.name) < 0"></navbar-component> -->
     <router-view></router-view>
-    <footer-component v-if="['root', 'station'].indexOf($route.name) < 0"></footer-component>
+    <footer-component
+      v-if="['root', 'station'].indexOf($route.name) < 0"
+    ></footer-component>
   </div>
 </template>
 
