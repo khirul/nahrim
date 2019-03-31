@@ -14,7 +14,7 @@
               <div class="small">( RBased on NAHRIM Technical Guide No 2 )</div>
             </div>
             <div class="box box01">
-              <span class="menu d-flex align-items-start">SECTION 03</span>
+              <span class="menu d-flex align-items-start">Direct Pumping System</span>
               <div class="content text-justify p-3">
                 <h4>Direct Pumping System</h4>
                 <p>
@@ -27,7 +27,7 @@
               </div>
             </div>
             <div class="box box02">
-              <span class="menu d-flex align-items-start">SECTION 02</span>
+              <span class="menu d-flex align-items-start">Indirect Pumping System</span>
               <div class="content text-justify p-3">
                 <h5>Indirect Pumping System</h5>
                 <p>Based on NAHRIM Technical Guide No 2:</p>
@@ -38,7 +38,7 @@
               </div>
             </div>
             <div class="box box03">
-              <span class="menu d-flex align-items-start">SECTION 01</span>
+              <span class="menu d-flex align-items-start">Gravity Fed System</span>
               <div class="content text-justify p-3">
                 <h4>Gravity Fed System</h4>
                 <p>
@@ -244,7 +244,7 @@ export default {
   text-orientation: upright;
   font-family: "Righteous", cursive;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 20px;
   color: rgb(255, 255, 255);
   width: 150px;
 }

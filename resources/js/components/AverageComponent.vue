@@ -55,8 +55,8 @@
             <chart-component :rain="rain" :years="years" class="mb-5"></chart-component>
             <chart-year-component :yearsInfo="yearsInfo" :yearsTotal="yearsTotal"></chart-year-component>
             <co-chart-component :range="range" :rr_coef="rr_coef" :rr_st="rr_st"></co-chart-component>
-            <div class="button d-flex justify-content-center mt-5">
-              <router-link class="btn btn-success" :to="{name: 'simulator'}">back</router-link>
+            <div class="button d-flex justify-content-center mt-5" style="margin-bottom:70px;">
+              <router-link class="btn btn-primary btn-sm" :to="{name: 'simulator'}">back</router-link>
             </div>
             <!-- /.button -->
         </div>
