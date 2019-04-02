@@ -2,15 +2,18 @@
   <div>
     <div class="container">
       <div class="d-flex justify-content-center pt-5">
-        <img src="/images/tank1.png" height="100" alt>
+        <img src="/images/tank1.png" height="50" alt>
       </div>
 
-      <h1 class="text-center text-success">Rainwater Harvesting Systems</h1>
-      <div class="hr w-100"></div>
+      <div
+        class="text-center text-primary mt-2"
+        style="font-size:18px;"
+      >Rainwater Harvesting Systems</div>
+      <div class="hr w-100 mt-3"></div>
 
       <div class="d-flex flex-column align-items-around justify-content-center form">
-        <h2 class="mt-3 text-center">Gravity Fed Calculation Step</h2>
-
+        <div class="mt-3 mb-3 text-center">Gravity Fed Calculation Step</div>
+        <div class="hr w-100 mb-3"></div>
         <nav>
           <div class="nav nav-tabs navi nav-fill" id="nav-tab" role="tablist">
             <router-link
@@ -21,7 +24,8 @@
               role="tab"
               aria-controls="nav-home"
               aria-selected="true"
-            >Roof
+            >
+              Roof
               <br>Area
             </router-link>
             <router-link
@@ -32,7 +36,8 @@
               role="tab"
               aria-controls="nav-profile"
               aria-selected="false"
-            >Roof Catchment
+            >
+              Roof Catchment
               <br>Runoff
             </router-link>
 
@@ -44,7 +49,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >Gutter and
+            >
+              Gutter and
               <br>Down Pipe Sizes
             </router-link>
             <router-link
@@ -55,7 +61,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >First Flush
+            >
+              First Flush
               <br>Diverter
             </router-link>
             <router-link
@@ -81,7 +88,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >Pumping
+            >
+              Pumping
               <br>System
             </router-link>
             <router-link
@@ -92,7 +100,8 @@
               role="tab"
               aria-controls="nav-contact"
               aria-selected="false"
-            >Top-up
+            >
+              Top-up
               <br>System
             </router-link>
           </div>
@@ -115,7 +124,7 @@
             <router-view></router-view>
           </div>
           <div class="col-md-5">
-            <div class="result">RESULTS:</div>
+            <div class="result">Results:</div>
             <table class="table small">
               <tr v-if="this.$store.state.areaShow">
                 <th>Roof Area:</th>
@@ -162,7 +171,7 @@
               </tr>
 
               <tr v-if="this.$store.state.ffShow">
-                <th>First Flush Pipe Lenght</th>
+                <th>First Flush Pipe Length</th>
                 <td>{{ this.$store.state.fflenght }} m</td>
               </tr>
               <tr v-if="this.$store.state.demandShow">
@@ -256,7 +265,7 @@ td {
 
 .side-menu a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: royalblue;
   font-weight: bold;
   padding: 10px 10px;
@@ -270,7 +279,7 @@ td {
 }
 
 .side-menu-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 30px;
   padding: 10px 0;
   border: 1px solid royalblue;
@@ -279,9 +288,9 @@ td {
 }
 
 .result {
-  font-size: 30px;
-  font-weight: bold;
-  color: orange;
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: royalblue;
   margin-top: 20px;
 }
 
@@ -289,7 +298,8 @@ table,
 tr,
 td,
 th {
-  border: 1px solid orange;
+  border: 1px solid royalblue;
+  color: gray;
 }
 
 .calc {
@@ -299,7 +309,8 @@ th {
 }
 
 .navi a {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  color: gray;
   font-weight: bold;
   font-size: 13px;
   text-align: center;
@@ -308,7 +319,7 @@ th {
 .navi a:hover {
   background-color: royalblue;
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   font-size: 13px;
   text-align: center;

@@ -68,12 +68,16 @@
         </div>
       </div>
       <button
-        class="btn btn-success butang mb-2"
+        class="btn btn-primary btn-sm butang mb-2"
         @click="done"
         v-if="!this.$store.state.topupShow"
       >Finish</button>
 
-      <button class="btn btn-warning butang mb-2" @click="start" v-if="this.$store.state.topupShow">
+      <button
+        class="btn btn-warning btn-sm butang mb-2"
+        @click="start"
+        v-if="this.$store.state.topupShow"
+      >
         Start
         Over?
       </button>
@@ -149,9 +153,9 @@ export default {
 </script>
 
 <style scoped>
-.butang {
+/* .butang {
   width: 100px;
   align-items: center;
   margin-top: 20px;
-}
+} */
 </style>

@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-success butang" @click="done">Done</button>
+      <button class="btn btn-primary btn-sm" @click="done">Done</button>
     </div>
   </div>
 </template>
@@ -57,9 +57,9 @@ export default {
 </script>
 
 <style scoped>
-.butang {
+/* .butang {
   width: 80px;
   align-items: center;
   margin-top: 20px;
-}
+} */
 </style>

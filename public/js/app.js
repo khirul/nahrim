@@ -71602,7 +71602,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Kre
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
 
 // module
-exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  font-family: \"Kreon\", serif;\r\n  margin-top: 20px;\r\n  font-size: 30px;\r\n  /* color: orange; */\r\n  font-weight: bold;\r\n  border-bottom: 2px solid rgb(165, 182, 235);\r\n  margin-bottom: 30px;\n}\n.w-unit {\r\n  width: 80px;\r\n  text-align: center;\n}\n.roof-detail {\r\n  height: 340px;\n}\r\n", ""]);
+exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  font-family: \"Kreon\", serif;\r\n  margin-top: 20px;\r\n  /* font-size: 18px; */\r\n  /* color: orange; */\r\n  /* font-weight: bold; */\r\n  border-bottom: 1px solid rgb(165, 182, 235);\r\n  margin-bottom: 30px;\n}\n.w-unit {\r\n  width: 80px;\r\n  text-align: center;\n}\n.roof-detail {\r\n  height: 340px;\n}\r\n", ""]);
 
 // exports
 
@@ -71660,8 +71660,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__FooterComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__FooterComponent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__NavbarComponent__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__NavbarComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__NavbarComponent__);
-//
-//
 //
 //
 //
@@ -79472,7 +79470,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.align[data-v-212a534b] {\r\n  text-align: left;\n}\n.hr[data-v-212a534b] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\r\n  text-decoration: none;\r\n  text-transform: uppercase;\r\n  color: royalblue;\r\n  font-weight: bold;\r\n  padding: 10px 10px;\r\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\r\n  background: royalblue;\r\n  color: white;\r\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  margin-top: 30px;\r\n  padding: 10px 0;\r\n  border: 1px solid royalblue;\r\n  text-align: center;\r\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\r\n  font-size: 30px;\r\n  font-weight: bold;\r\n  color: orange;\r\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\r\ntr[data-v-212a534b],\r\ntd[data-v-212a534b],\r\nth[data-v-212a534b] {\r\n  border: 1px solid orange;\n}\n.calc[data-v-212a534b] {\r\n  border: 1px solid rgb(165, 182, 235);\r\n  margin-top: 30px;\r\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\r\n  background-color: royalblue;\r\n  color: white;\r\n  text-transform: uppercase;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\r\n", ""]);
+exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.align[data-v-212a534b] {\r\n  text-align: left;\n}\n.hr[data-v-212a534b] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: royalblue;\r\n  font-weight: bold;\r\n  padding: 10px 10px;\r\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\r\n  background: royalblue;\r\n  color: white;\r\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\r\n  text-transform: capitalize;\r\n  margin-top: 30px;\r\n  padding: 10px 0;\r\n  border: 1px solid royalblue;\r\n  text-align: center;\r\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\r\n  font-size: 18px;\r\n  /* font-weight: bold; */\r\n  color: royalblue;\r\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\r\ntr[data-v-212a534b],\r\ntd[data-v-212a534b],\r\nth[data-v-212a534b] {\r\n  border: 1px solid royalblue;\r\n  color: gray;\n}\n.calc[data-v-212a534b] {\r\n  border: 1px solid rgb(165, 182, 235);\r\n  margin-top: 30px;\r\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\r\n  text-transform: capitalize;\r\n  color: gray;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\r\n  background-color: royalblue;\r\n  color: white;\r\n  text-transform: capitalize;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\r\n", ""]);
 
 // exports
 
@@ -79483,6 +79481,15 @@ exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.al
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -79738,11 +79745,16 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _vm._m(0),
       _vm._v(" "),
-      _c("h1", { staticClass: "text-center text-success" }, [
-        _vm._v("Rainwater Harvesting Systems")
-      ]),
+      _c(
+        "div",
+        {
+          staticClass: "text-center text-primary mt-2",
+          staticStyle: { "font-size": "18px" }
+        },
+        [_vm._v("Rainwater Harvesting Systems")]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "hr w-100" }),
+      _c("div", { staticClass: "hr w-100 mt-3" }),
       _vm._v(" "),
       _c(
         "div",
@@ -79751,9 +79763,11 @@ var render = function() {
             "d-flex flex-column align-items-around justify-content-center form"
         },
         [
-          _c("h2", { staticClass: "mt-3 text-center" }, [
+          _c("div", { staticClass: "mt-3 mb-3 text-center" }, [
             _vm._v("Gravity Fed Calculation Step")
           ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "hr w-100 mb-3" }),
           _vm._v(" "),
           _c("nav", [
             _c(
@@ -79777,7 +79791,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("Roof\n            "),
+                    _vm._v("\n            Roof\n            "),
                     _c("br"),
                     _vm._v("Area\n          ")
                   ]
@@ -79797,7 +79811,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("Roof Catchment\n            "),
+                    _vm._v("\n            Roof Catchment\n            "),
                     _c("br"),
                     _vm._v("Runoff\n          ")
                   ]
@@ -79817,7 +79831,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("Gutter and\n            "),
+                    _vm._v("\n            Gutter and\n            "),
                     _c("br"),
                     _vm._v("Down Pipe Sizes\n          ")
                   ]
@@ -79837,7 +79851,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("First Flush\n            "),
+                    _vm._v("\n            First Flush\n            "),
                     _c("br"),
                     _vm._v("Diverter\n          ")
                   ]
@@ -79880,7 +79894,7 @@ var render = function() {
                         }
                       },
                       [
-                        _vm._v("Pumping\n            "),
+                        _vm._v("\n            Pumping\n            "),
                         _c("br"),
                         _vm._v("System\n          ")
                       ]
@@ -79901,7 +79915,7 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("Top-up\n            "),
+                    _vm._v("\n            Top-up\n            "),
                     _c("br"),
                     _vm._v("System\n          ")
                   ]
@@ -79915,7 +79929,7 @@ var render = function() {
             _c("div", { staticClass: "col-md-7 calc" }, [_c("router-view")], 1),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-5" }, [
-              _c("div", { staticClass: "result" }, [_vm._v("RESULTS:")]),
+              _c("div", { staticClass: "result" }, [_vm._v("Results:")]),
               _vm._v(" "),
               _c("table", { staticClass: "table small" }, [
                 this.$store.state.areaShow
@@ -80018,7 +80032,7 @@ var render = function() {
                 _vm._v(" "),
                 this.$store.state.ffShow
                   ? _c("tr", [
-                      _c("th", [_vm._v("First Flush Pipe Lenght")]),
+                      _c("th", [_vm._v("First Flush Pipe Length")]),
                       _vm._v(" "),
                       _c("td", [
                         _vm._v(_vm._s(this.$store.state.fflenght) + " m")
@@ -80125,7 +80139,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "d-flex justify-content-center pt-5" }, [
-      _c("img", { attrs: { src: "/images/tank1.png", height: "100", alt: "" } })
+      _c("img", { attrs: { src: "/images/tank1.png", height: "50", alt: "" } })
     ])
   }
 ]
@@ -80599,7 +80613,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bform[data-v-0c56dcbe] {\n    cursor: pointer;\n}\n.butang[data-v-0c56dcbe] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n.bform[data-v-0c56dcbe] {\r\n  cursor: pointer;\n}\r\n\r\n/* .butang {\r\n  width: 80px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -80640,28 +80654,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            cform: false,
-            newArea: this.$store.state.area
-        };
-    },
+  data: function data() {
+    return {
+      cform: false,
+      newArea: this.$store.state.area
+    };
+  },
 
-    methods: {
-        done: function done() {
-            if (this.newArea != '') {
-                this.$store.commit('SET_AREA', this.newArea);
-            }
+  methods: {
+    done: function done() {
+      if (this.newArea != "") {
+        this.$store.commit("SET_AREA", this.newArea);
+      }
 
-            this.$store.commit('SET_AREA_SHOW', true);
-            this.$router.push({
-                name: 'catchment'
-            });
-        }
+      this.$store.commit("SET_AREA_SHOW", true);
+      this.$router.push({
+        name: "catchment"
+      });
     }
+  }
 });
 
 /***/ }),
@@ -80710,7 +80723,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        {
+          staticClass: "btn btn-primary btn-sm butang",
+          on: { click: _vm.done }
+        },
         [_vm._v("Next")]
       )
     ])
@@ -80729,9 +80745,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "input-group-append " }, [
+    return _c("div", { staticClass: "input-group-append" }, [
       _c("span", { staticClass: "input-group-text w-unit" }, [
-        _vm._v("m"),
+        _vm._v("\n              m\n              "),
         _c("sup", [_vm._v("2")])
       ])
     ])
@@ -80832,7 +80848,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-664ad683] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
 
 // exports
 
@@ -80882,36 +80898,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            intensity: '',
-            coeff: this.$store.state.coefficient
-        };
-    },
+  data: function data() {
+    return {
+      intensity: "",
+      coeff: this.$store.state.coefficient
+    };
+  },
 
-    computed: {
-        catchment: function catchment() {
-            var value = this.$store.state.coefficient * this.$store.state.area * (this.intensity * 0.000277778);
-            return value.toFixed(2);
-        }
-    },
-    methods: {
-        done: function done() {
-            this.$store.commit('SET_COEF', this.coeff);
-
-            this.$store.commit('SET_CATCHMENT', this.catchment);
-            this.$store.commit('SET_CATCHMENT_SHOW', true);
-            this.$router.push({
-                name: 'gutter'
-            });
-        }
+  computed: {
+    catchment: function catchment() {
+      var value = this.$store.state.coefficient * this.$store.state.area * (this.intensity * 0.000277778);
+      return value.toFixed(2);
     }
+  },
+  methods: {
+    done: function done() {
+      this.$store.commit("SET_COEF", this.coeff);
+
+      this.$store.commit("SET_CATCHMENT", this.catchment);
+      this.$store.commit("SET_CATCHMENT_SHOW", true);
+      this.$router.push({
+        name: "gutter"
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -80969,7 +80981,7 @@ var render = function() {
                   expression: "intensity"
                 }
               ],
-              staticClass: "form-control ",
+              staticClass: "form-control",
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -80991,11 +81003,11 @@ var render = function() {
                 _vm._v("Please select...")
               ]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "50" } }, [_vm._v("50 ")]),
+              _c("option", { attrs: { value: "50" } }, [_vm._v("50")]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "100" } }, [_vm._v("100 ")]),
+              _c("option", { attrs: { value: "100" } }, [_vm._v("100")]),
               _vm._v(" "),
-              _c("option", { attrs: { value: "150" } }, [_vm._v("150 ")])
+              _c("option", { attrs: { value: "150" } }, [_vm._v("150")])
             ]
           ),
           _vm._v(" "),
@@ -81005,7 +81017,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        {
+          staticClass: "btn btn-primary btn-sm butang",
+          on: { click: _vm.done }
+        },
         [_vm._v("Next")]
       )
     ])
@@ -81131,7 +81146,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-b32dd4f2] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
 
 // exports
 
@@ -81164,54 +81179,53 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            intensity: '',
-            gutter: ''
-        };
-    },
+  data: function data() {
+    return {
+      intensity: "",
+      gutter: ""
+    };
+  },
 
-    computed: {
-        gutterSizeHR: function gutterSizeHR() {
-            var value = Math.pow(this.$store.state.catchment / (1.4 * this.$store.state.coefficient * 2.67 * Math.pow(10, -5)), 1 / 1.25);
-            return Math.sqrt(value * 8 / (22 / 7)).toFixed(2);
-        },
-        downpipeHR: function downpipeHR() {
-            return (66 / 100 * this.gutterSizeHR).toFixed(2);
-        },
-        gutterSizeRTW: function gutterSizeRTW() {
-            var value = Math.pow(64 * Math.pow(this.$store.state.catchment / (1.4 * this.$store.state.coefficient * (9.67 / Math.pow(10, 5))), 2), 1 / 5);
-
-            return value.toFixed(2);
-        },
-        gutterSizeRTD: function gutterSizeRTD() {
-            return (this.gutterSizeRTW / 2).toFixed(2);
-        },
-        downpipeRTW: function downpipeRTW() {
-            return (66 / 100 * this.gutterSizeRTW).toFixed(2);
-        },
-        downpipeRTD: function downpipeRTD() {
-            return (66 / 100 * this.gutterSizeRTW / 2).toFixed(2);
-        }
+  computed: {
+    gutterSizeHR: function gutterSizeHR() {
+      var value = Math.pow(this.$store.state.catchment / (1.4 * this.$store.state.coefficient * 2.67 * Math.pow(10, -5)), 1 / 1.25);
+      return Math.sqrt(value * 8 / (22 / 7)).toFixed(2);
     },
-    methods: {
-        done: function done() {
-            this.$store.commit('SET_GUTTER_HR', this.gutterSizeHR);
-            this.$store.commit('SET_GUTTER_DOWNPIPE_HR', this.downpipeHR);
-            this.$store.commit('SET_GUTTER_RTW', this.gutterSizeRTW);
-            this.$store.commit('SET_GUTTER_RTD', this.gutterSizeRTD);
-            this.$store.commit('SET_GUTTER_DOWNPIPE_RTW', this.downpipeRTW);
-            this.$store.commit('SET_GUTTER_DOWNPIPE_RTD', this.downpipeRTD);
-            this.$store.commit('SET_GUTTER_TYPE', this.gutter);
-            this.$store.commit('SET_GUTTER_SHOW', true);
-            this.$router.push({
-                name: 'first-flush'
-            });
-        }
+    downpipeHR: function downpipeHR() {
+      return (66 / 100 * this.gutterSizeHR).toFixed(2);
+    },
+    gutterSizeRTW: function gutterSizeRTW() {
+      var value = Math.pow(64 * Math.pow(this.$store.state.catchment / (1.4 * this.$store.state.coefficient * (9.67 / Math.pow(10, 5))), 2), 1 / 5);
+
+      return value.toFixed(2);
+    },
+    gutterSizeRTD: function gutterSizeRTD() {
+      return (this.gutterSizeRTW / 2).toFixed(2);
+    },
+    downpipeRTW: function downpipeRTW() {
+      return (66 / 100 * this.gutterSizeRTW).toFixed(2);
+    },
+    downpipeRTD: function downpipeRTD() {
+      return (66 / 100 * this.gutterSizeRTW / 2).toFixed(2);
     }
+  },
+  methods: {
+    done: function done() {
+      this.$store.commit("SET_GUTTER_HR", this.gutterSizeHR);
+      this.$store.commit("SET_GUTTER_DOWNPIPE_HR", this.downpipeHR);
+      this.$store.commit("SET_GUTTER_RTW", this.gutterSizeRTW);
+      this.$store.commit("SET_GUTTER_RTD", this.gutterSizeRTD);
+      this.$store.commit("SET_GUTTER_DOWNPIPE_RTW", this.downpipeRTW);
+      this.$store.commit("SET_GUTTER_DOWNPIPE_RTD", this.downpipeRTD);
+      this.$store.commit("SET_GUTTER_TYPE", this.gutter);
+      this.$store.commit("SET_GUTTER_SHOW", true);
+      this.$router.push({
+        name: "first-flush"
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -81241,7 +81255,7 @@ var render = function() {
                   expression: "gutter"
                 }
               ],
-              staticClass: "form-control ",
+              staticClass: "form-control",
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -81275,7 +81289,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        { staticClass: "btn btn-primary btn-sm", on: { click: _vm.done } },
         [_vm._v("Done")]
       )
     ])
@@ -81527,7 +81541,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-fb7c1ae4] {\r\n  width: 80px;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  margin-top: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n  width: 80px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -81674,7 +81688,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        { staticClass: "btn btn-primary btn-sm", on: { click: _vm.done } },
         [_vm._v("Done")]
       )
     ])
@@ -81796,7 +81810,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-38da8446] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
 
 // exports
 
@@ -81847,30 +81861,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            cform: false,
-            waterDemand: this.$store.state.usagevol,
-            tanksize: this.$store.state.tankSize
-        };
-    },
+  data: function data() {
+    return {
+      cform: false,
+      waterDemand: this.$store.state.usagevol,
+      tanksize: this.$store.state.tankSize
+    };
+  },
 
-    methods: {
-        done: function done() {
-            this.$store.commit('SET_TANKSIZE', this.tanksize);
-            this.$store.commit('SET_DEMAND', this.waterDemand);
-            this.$store.commit('SET_DEMAND_SHOW', true);
-            if (this.$store.state.menu_type == 'gravity') {
-                this.$router.push({
-                    name: 'top-up'
-                });
-            } else {
-                this.$router.push({
-                    name: 'pump'
-                });
-            }
-        }
+  methods: {
+    done: function done() {
+      this.$store.commit("SET_TANKSIZE", this.tanksize);
+      this.$store.commit("SET_DEMAND", this.waterDemand);
+      this.$store.commit("SET_DEMAND_SHOW", true);
+      if (this.$store.state.menu_type == "gravity") {
+        this.$router.push({
+          name: "top-up"
+        });
+      } else {
+        this.$router.push({
+          name: "pump"
+        });
+      }
     }
+  }
 });
 
 /***/ }),
@@ -81884,7 +81898,7 @@ var render = function() {
   return _c("div", [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row roof" }, [
-        _vm._v("\n            Water Demand & Tank Size\n        ")
+        _vm._v("Water Demand & Tank Size")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row d-flex flex-column roof-detail" }, [
@@ -81953,7 +81967,10 @@ var render = function() {
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        {
+          staticClass: "btn btn-primary btn-sm butang",
+          on: { click: _vm.done }
+        },
         [_vm._v("Done")]
       )
     ])
@@ -81974,7 +81991,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "input-group-append" }, [
       _c("span", { staticClass: "input-group-text w-unit" }, [
-        _vm._v("m"),
+        _vm._v("\n              m\n              "),
         _c("sup", [_vm._v("3")])
       ])
     ])
@@ -82075,7 +82092,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-3ad701df] {\n    width: 80px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    margin-top: 20px\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
 
 // exports
 
@@ -82104,28 +82121,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            house_type: ''
-        };
-    },
+  data: function data() {
+    return {
+      house_type: ""
+    };
+  },
 
-    methods: {
-        done: function done() {
-            this.$store.commit('SET_PUMP_POWER', this.house_type);
-            this.$store.commit('SET_PUMP_SHOW', true);
-            this.$router.push({
-                name: 'top-up'
-            });
-        }
+  methods: {
+    done: function done() {
+      this.$store.commit("SET_PUMP_POWER", this.house_type);
+      this.$store.commit("SET_PUMP_SHOW", true);
+      this.$router.push({
+        name: "top-up"
+      });
     }
-
+  }
 });
 
 /***/ }),
@@ -82138,9 +82150,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row roof" }, [
-        _vm._v("\n            Pumping System\n        ")
-      ]),
+      _c("div", { staticClass: "row roof" }, [_vm._v("Pumping System")]),
       _vm._v(" "),
       _c("div", { staticClass: "row d-flex flex-column roof-detail" }, [
         _c("label", { attrs: { for: "house_type" } }, [_vm._v("House type :")]),
@@ -82184,18 +82194,15 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("div", [
-          _vm._v(
-            "\n                " +
-              _vm._s(_vm.house_type) +
-              " Horse Power\n            "
-          )
-        ])
+        _c("div", [_vm._v(_vm._s(_vm.house_type) + " Horse Power")])
       ]),
       _vm._v(" "),
       _c(
         "button",
-        { staticClass: "btn btn-success butang", on: { click: _vm.done } },
+        {
+          staticClass: "btn btn-primary btn-sm butang",
+          on: { click: _vm.done }
+        },
         [_vm._v("Done")]
       )
     ])
@@ -82297,7 +82304,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.butang[data-v-1e6b38b8] {\r\n  width: 100px;\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  margin-top: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n  width: 100px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
 
 // exports
 
@@ -82308,6 +82315,10 @@ exports.push([module.i, "\n.butang[data-v-1e6b38b8] {\r\n  width: 100px;\r\n  -w
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
 //
 //
 //
@@ -82659,7 +82670,7 @@ var render = function() {
           ? _c(
               "button",
               {
-                staticClass: "btn btn-success butang mb-2",
+                staticClass: "btn btn-primary btn-sm butang mb-2",
                 on: { click: _vm.done }
               },
               [_vm._v("Finish")]
@@ -82670,7 +82681,7 @@ var render = function() {
           ? _c(
               "button",
               {
-                staticClass: "btn btn-warning butang mb-2",
+                staticClass: "btn btn-warning btn-sm butang mb-2",
                 on: { click: _vm.start }
               },
               [_vm._v("\n      Start\n      Over?\n    ")]

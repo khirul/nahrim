@@ -2,9 +2,7 @@
   <div>
     <!-- <navbar-component v-if="['root', 'station'].indexOf($route.name) < 0"></navbar-component> -->
     <router-view></router-view>
-    <footer-component
-      v-if="['root', 'station'].indexOf($route.name) < 0"
-    ></footer-component>
+    <footer-component v-if="['root', 'station'].indexOf($route.name) < 0"></footer-component>
   </div>
 </template>
 
@@ -64,10 +62,10 @@ h6 {
 .roof {
   font-family: "Kreon", serif;
   margin-top: 20px;
-  font-size: 30px;
+  /* font-size: 18px; */
   /* color: orange; */
-  font-weight: bold;
-  border-bottom: 2px solid rgb(165, 182, 235);
+  /* font-weight: bold; */
+  border-bottom: 1px solid rgb(165, 182, 235);
   margin-bottom: 30px;
 }
 
