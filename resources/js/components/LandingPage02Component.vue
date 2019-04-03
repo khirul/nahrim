@@ -1,25 +1,26 @@
 <template>
   <div>
+    <navbar-component></navbar-component>
     <div class="container">
-      <div class="d-flex justify-content-center pt-5">
+      <!-- <div class="d-flex justify-content-center pt-5">
         <img src="/images/tank1.png" height="100" alt>
       </div>
 
-      <h1 class="text-center text-success">Rainwater Harvesting Systems</h1>
-      <div class="hr w-100"></div>
+      <h1 class="text-center text-primary">Rainwater Harvesting Systems</h1>-->
 
       <div class="row">
         <div class="d-flex flex-column align-items-around justify-content-center form">
           <div>
-            <h2 class="mt-3">
+            <h4 class="mt-3">
               NAHRIM Technical Guide No. 2: The Design Guide for Rainwater Harvesting
               Systems (2014)
-            </h2>
+            </h4>
+            <div class="hr w-100"></div>
             <div class="d-flex justify-content-center pt-5">
               <img src="/images/main_page1.jpg" height="350" alt>
             </div>
             <div class="border border-info pl-3 pr-3 mt-3">
-              <h3 class="pt-3">OBJECTIVES:</h3>
+              <h5 class="pt-3">OBJECTIVES:</h5>
               <p>
                 To provide an easy-to-follow guide to the public/users in designing and installing a
                 <span>RWHS for residential use.</span>
@@ -39,9 +40,9 @@
             </div>
 
             <div class="border border-info pl-3 pr-3 mt-3">
-              <h3
+              <h4
                 class="pt-3"
-              >This application is divided into 3 types of rainwater harvesting design:</h3>
+              >This application is divided into 3 types of rainwater harvesting design:</h4>
               <div>
                 <h4 class="mt-5">1. Gravity Fed System</h4>
 
@@ -115,7 +116,11 @@
 </template>
 
 <script>
+import NavbarComponent from "./NavbarComponent";
 export default {
+  components: {
+    NavbarComponent
+  },
   methods: {
     next() {
       this.$router.push({

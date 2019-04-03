@@ -5,17 +5,19 @@ import WaterUsageComponent from './components/WaterUsageComponent'
 import SimulatorComponent from './components/SimulatorComponent'
 import GravityFedComponent from './components/GravityFedComponent'
 import MenuComponent from './components/MenuComponent'
-import RoofAreaComponent from './components/RoofAreaComponent.vue'
-import RoofCatchmentComponent from './components/RoofCatchmentComponent.vue'
+import RoofAreaComponent from './components/RoofAreaComponent'
+import RoofCatchmentComponent from './components/RoofCatchmentComponent'
 import GutterComponent from './components/GutterComponent'
-import LeafGuardComponent from './components/LeafGuardComponent.vue'
-import FirstFlushComponent from './components/FirstFlushComponent.vue'
-import WaterDemandComponent from './components/WaterDemandComponent.vue'
-import PumpingSystemComponent from './components/PumpingSystemComponent.vue'
-import TopUpComponent from './components/TopUpComponent.vue'
-import AverageComponent from './components/AverageComponent.vue'
-import LandingPage01Component from './components/LandingPage01Component.vue'
-import LandingPage02Component from './components/LandingPage02Component.vue'
+import LeafGuardComponent from './components/LeafGuardComponent'
+import FirstFlushComponent from './components/FirstFlushComponent'
+import WaterDemandComponent from './components/WaterDemandComponent'
+import PumpingSystemComponent from './components/PumpingSystemComponent'
+import TopUpComponent from './components/TopUpComponent'
+import AverageComponent from './components/AverageComponent'
+import LandingPage01Component from './components/LandingPage01Component'
+import LandingPage02Component from './components/LandingPage02Component'
+import AdminComponent from './components/AdminComponent'
+import LoginComponent from './components/LoginComponent'
 
 export const routes = [{
     path: '/',
@@ -59,7 +61,6 @@ export const routes = [{
 },
 {
     path: '/gravity-fed',
-    name: 'roof-area',
     component: GravityFedComponent,
 
     children: [
@@ -109,5 +110,21 @@ export const routes = [{
     path: '/menu',
     name: 'menu',
     component: MenuComponent
+},
+{
+    path: '/admin',
+    name: 'admin',
+    component: AdminComponent,
+    meta: {
+        requiresAuth: true
+    }
+},
+{
+    path: '/login',
+    name: 'login',
+    component: LoginComponent,
+    meta: {
+        requiresVisitor: true
+    }
 }
 ]

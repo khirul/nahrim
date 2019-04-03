@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div style="margin-bottom: 100px;">
+    <navbar-component></navbar-component>
     <div class="container">
-      <div class="d-flex justify-content-center pt-5">
+      <div class="d-flex justify-content-center">
         <img src="/images/tank1.png" height="50" alt>
       </div>
 
@@ -227,6 +228,7 @@
 </template>
 
 <script>
+import NavbarComponent from "./NavbarComponent";
 export default {
   data() {
     return {
@@ -237,6 +239,9 @@ export default {
       houseType: false,
       r: 0.15
     };
+  },
+  components: {
+    NavbarComponent
   },
   methods: {
     trigger() {

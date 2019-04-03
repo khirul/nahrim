@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 169);
+/******/ 	return __webpack_require__(__webpack_require__.s = 170);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -4574,7 +4574,7 @@
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18)(module)))
 
 /***/ }),
 /* 1 */
@@ -4710,7 +4710,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(198)
+var listToStyles = __webpack_require__(199)
 
 /*
 type StyleObject = {
@@ -5034,8 +5034,8 @@ module.exports = function normalizeComponent (
 "use strict";
 
 
-var bind = __webpack_require__(21);
-var isBuffer = __webpack_require__(175);
+var bind = __webpack_require__(22);
+var isBuffer = __webpack_require__(176);
 
 /*global toString:true*/
 
@@ -5344,7 +5344,7 @@ module.exports = {
 "use strict";
 
 
-var color = __webpack_require__(39);
+var color = __webpack_require__(40);
 var helpers = __webpack_require__(1);
 
 function interpolate(start, view, model, ease) {
@@ -7354,7 +7354,7 @@ helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(6);
-var normalizeHeaderName = __webpack_require__(177);
+var normalizeHeaderName = __webpack_require__(178);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -7370,10 +7370,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(23);
+    adapter = __webpack_require__(24);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(23);
+    adapter = __webpack_require__(24);
   }
   return adapter;
 }
@@ -7448,10 +7448,61 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(22)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(247)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(249)
+/* template */
+var __vue_template__ = __webpack_require__(250)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-485090b2"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/NavbarComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-485090b2", Component.options)
+  } else {
+    hotAPI.reload("data-v-485090b2", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7491,7 +7542,7 @@ var VueCharts = {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -7519,7 +7570,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10062,7 +10113,7 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(10)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -20433,13 +20484,13 @@ return jQuery;
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(174);
+module.exports = __webpack_require__(175);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20457,7 +20508,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -20647,19 +20698,19 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var settle = __webpack_require__(178);
-var buildURL = __webpack_require__(180);
-var parseHeaders = __webpack_require__(181);
-var isURLSameOrigin = __webpack_require__(182);
-var createError = __webpack_require__(24);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(183);
+var settle = __webpack_require__(179);
+var buildURL = __webpack_require__(181);
+var parseHeaders = __webpack_require__(182);
+var isURLSameOrigin = __webpack_require__(183);
+var createError = __webpack_require__(25);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(184);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -20756,7 +20807,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(184);
+      var cookies = __webpack_require__(185);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -20834,13 +20885,13 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var enhanceError = __webpack_require__(179);
+var enhanceError = __webpack_require__(180);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -20859,7 +20910,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20871,7 +20922,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20897,7 +20948,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31860,22 +31911,22 @@ Vue.compile = compileToFunctions;
 
 module.exports = Vue;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(192).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(193).setImmediate))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(200)
+  __webpack_require__(201)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(202)
+var __vue_script__ = __webpack_require__(203)
 /* template */
-var __vue_template__ = __webpack_require__(207)
+var __vue_template__ = __webpack_require__(208)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -31914,19 +31965,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(203)
+  __webpack_require__(204)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(205)
+var __vue_script__ = __webpack_require__(206)
 /* template */
-var __vue_template__ = __webpack_require__(206)
+var __vue_template__ = __webpack_require__(207)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -31965,19 +32016,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(208)
+  __webpack_require__(209)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(210)
+var __vue_script__ = __webpack_require__(211)
 /* template */
-var __vue_template__ = __webpack_require__(225)
+var __vue_template__ = __webpack_require__(226)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -32016,18 +32067,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__);
 /* harmony reexport (default from non-hamory) */ __webpack_require__.d(__webpack_exports__, "default", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common___default.a; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__, "LMap")) __webpack_require__.d(__webpack_exports__, "LMap", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__["LMap"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__, "LMarker")) __webpack_require__.d(__webpack_exports__, "LMarker", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__["LMarker"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__, "LTileLayer")) __webpack_require__.d(__webpack_exports__, "LTileLayer", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__["LTileLayer"]; });
 /* harmony namespace reexport (by used) */ if(__webpack_require__.o(__WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__, "LTooltip")) __webpack_require__.d(__webpack_exports__, "LTooltip", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_vue_leaflet_common__["LTooltip"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_leaflet_css__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_leaflet_css__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_vue_leaflet_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__dist_vue_leaflet_css__);
 
 
@@ -32035,7 +32086,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {module.exports=function(modules){function __webpack_require__(moduleId){if(installedModules[moduleId])return installedModules[moduleId].exports;var module=installedModules[moduleId]={i:moduleId,l:!1,exports:{}};return modules[moduleId].call(module.exports,module,module.exports,__webpack_require__),module.l=!0,module.exports}var installedModules={};return __webpack_require__.m=modules,__webpack_require__.c=installedModules,__webpack_require__.i=function(value){return value},__webpack_require__.d=function(exports,name,getter){__webpack_require__.o(exports,name)||Object.defineProperty(exports,name,{configurable:!1,enumerable:!0,get:getter})},__webpack_require__.n=function(module){var getter=module&&module.__esModule?function(){return module.default}:function(){return module};return __webpack_require__.d(getter,"a",getter),getter},__webpack_require__.o=function(object,property){return Object.prototype.hasOwnProperty.call(object,property)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=28)}([function(module,exports){module.exports=function(rawScriptExports,compiledTemplate,scopeId,cssModules){var esModule,scriptExports=rawScriptExports=rawScriptExports||{},type=typeof rawScriptExports.default;"object"!==type&&"function"!==type||(esModule=rawScriptExports,scriptExports=rawScriptExports.default);var options="function"==typeof scriptExports?scriptExports.options:scriptExports;if(compiledTemplate&&(options.render=compiledTemplate.render,options.staticRenderFns=compiledTemplate.staticRenderFns),scopeId&&(options._scopeId=scopeId),cssModules){var computed=options.computed||(options.computed={});Object.keys(cssModules).forEach(function(key){var module=cssModules[key];computed[key]=function(){return module}})}return{esModule:esModule,exports:scriptExports,options:options}}},function(module,exports,__webpack_require__){var Component=__webpack_require__(0)(__webpack_require__(53),__webpack_require__(63),null,null);module.exports=Component.exports},function(module,__webpack_exports__,__webpack_require__){"use strict";__webpack_exports__.a={computed:{style:function(){var s={},sOpts=["stroke","color","weight","lineCap","lineJoin","dashArray","dashOffset","fill","fillColor","fillOpacity","fillRule","bubblingMouseEvents","renderer","className"],_iteratorNormalCompletion=!0,_didIteratorError=!1,_iteratorError=void 0;try{for(var _step,_iterator=sOpts[Symbol.iterator]();!(_iteratorNormalCompletion=(_step=_iterator.next()).done);_iteratorNormalCompletion=!0){var o=_step.value;this.options&&void 0!==this.options[o]&&(s[o]=this.options[o])}}catch(err){_didIteratorError=!0,_iteratorError=err}finally{try{!_iteratorNormalCompletion&&_iterator.return&&_iterator.return()}finally{if(_didIteratorError)throw _iteratorError}}return s}},watch:{style:function(val,old){old&&this.layer.setStyle(val)}}}},function(module,exports,__webpack_require__){var __WEBPACK_AMD_DEFINE_FACTORY__,__WEBPACK_AMD_DEFINE_ARRAY__,__WEBPACK_AMD_DEFINE_RESULT__,_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(obj){return typeof obj}:function(obj){return obj&&"function"==typeof Symbol&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj};/* @preserve
@@ -32046,13 +32097,13 @@ module.exports = Component.exports
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(211);
+var content = __webpack_require__(212);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -32060,7 +32111,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(223)(content, options);
+var update = __webpack_require__(224)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -32077,31 +32128,31 @@ if(false) {
 }
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.674f50d.eot?674f50d287a8c48dc19ba404d20fe713";
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.f4769f9.eot?f4769f9bdb7466be65088239c12046d1";
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(226)
+  __webpack_require__(227)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(228)
+var __vue_script__ = __webpack_require__(229)
 /* template */
-var __vue_template__ = __webpack_require__(229)
+var __vue_template__ = __webpack_require__(230)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -32140,19 +32191,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(230)
+  __webpack_require__(231)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(232)
+var __vue_script__ = __webpack_require__(233)
 /* template */
-var __vue_template__ = __webpack_require__(233)
+var __vue_template__ = __webpack_require__(234)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -32191,19 +32242,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(234)
+  __webpack_require__(235)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(236)
+var __vue_script__ = __webpack_require__(237)
 /* template */
-var __vue_template__ = __webpack_require__(240)
+var __vue_template__ = __webpack_require__(241)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -32242,7 +32293,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
@@ -32733,7 +32784,7 @@ module.exports = Color;
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32783,7 +32834,7 @@ Object.defineProperty(exports.prototype, 'chartInstance', {
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32919,7 +32970,7 @@ module.exports = {
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33256,7 +33307,7 @@ module.exports = {
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33337,7 +33388,7 @@ module.exports = helpers.extend({
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33726,7 +33777,7 @@ module.exports = {
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34706,7 +34757,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34783,7 +34834,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34922,7 +34973,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -34985,7 +35036,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35048,7 +35099,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35174,7 +35225,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35237,7 +35288,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35345,7 +35396,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35408,7 +35459,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35517,7 +35568,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35653,7 +35704,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35747,7 +35798,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35809,7 +35860,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -35932,7 +35983,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36055,7 +36106,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36167,7 +36218,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36322,7 +36373,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36414,7 +36465,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36597,7 +36648,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36664,7 +36715,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36748,7 +36799,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36812,7 +36863,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36892,7 +36943,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -36972,7 +37023,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37052,7 +37103,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37155,7 +37206,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37259,7 +37310,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37330,7 +37381,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37397,7 +37448,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37468,7 +37519,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37539,7 +37590,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37605,7 +37656,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37676,7 +37727,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37751,7 +37802,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37847,7 +37898,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -37943,7 +37994,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38030,7 +38081,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38114,7 +38165,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38184,7 +38235,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38294,7 +38345,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38407,7 +38458,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38471,7 +38522,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38558,7 +38609,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38636,7 +38687,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38718,7 +38769,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38797,7 +38848,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38877,7 +38928,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -38958,7 +39009,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39085,7 +39136,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39213,7 +39264,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39314,7 +39365,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39442,7 +39493,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39600,7 +39651,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39714,7 +39765,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39813,7 +39864,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -39899,7 +39950,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40035,7 +40086,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40108,7 +40159,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40204,7 +40255,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40290,7 +40341,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40383,7 +40434,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40474,7 +40525,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40588,7 +40639,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40718,7 +40769,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40803,7 +40854,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -40894,7 +40945,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41034,7 +41085,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41108,7 +41159,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41230,7 +41281,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41331,7 +41382,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41447,7 +41498,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41515,7 +41566,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41609,7 +41660,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41694,7 +41745,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41802,7 +41853,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -41966,7 +42017,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42052,7 +42103,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42138,7 +42189,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42202,7 +42253,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42299,7 +42350,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42365,7 +42416,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42492,7 +42543,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42583,7 +42634,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42674,7 +42725,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42738,7 +42789,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42866,7 +42917,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -42996,7 +43047,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43065,7 +43116,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43130,7 +43181,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43209,7 +43260,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43395,7 +43446,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43497,7 +43548,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43561,7 +43612,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43636,7 +43687,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43796,7 +43847,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -43973,7 +44024,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44045,7 +44096,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44160,7 +44211,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44275,7 +44326,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44367,7 +44418,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44440,7 +44491,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44503,7 +44554,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44636,7 +44687,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44729,7 +44780,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44800,7 +44851,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44920,7 +44971,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -44991,7 +45042,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45057,7 +45108,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45183,7 +45234,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -45281,7 +45332,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45376,7 +45427,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45438,7 +45489,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45500,7 +45551,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js language configuration
@@ -45623,7 +45674,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45778,7 +45829,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45880,7 +45931,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -45942,7 +45993,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46004,7 +46055,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46087,7 +46138,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46159,7 +46210,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46223,7 +46274,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46337,7 +46388,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46444,7 +46495,7 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -46551,27 +46602,27 @@ exports.positioners = positioners;
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(170);
+__webpack_require__(171);
 module.exports = __webpack_require__(377);
 
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_app__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_app__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_leaflet__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_leaflet_dist_vue_leaflet_css__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_leaflet__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_leaflet_dist_vue_leaflet_css__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_leaflet_dist_vue_leaflet_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vue_leaflet_dist_vue_leaflet_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(254);
 /**
@@ -46580,7 +46631,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(171);
+__webpack_require__(172);
 
 
 
@@ -46605,6 +46656,54 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 
 });
 
+router.beforeEach(function (to, from, next) {
+    if (to.matched.some(function (record) {
+        return record.meta.requiresAuth;
+    })) {
+        // this route requires auth, check if logged in
+        // if not, redirect to login page.
+        if (!__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].getters.isLoggedIn) {
+            next({
+                name: 'login',
+                query: {
+                    redirect: to.fullPath
+                }
+            });
+        } else {
+            next();
+        }
+    } else if (to.matched.some(function (record) {
+        return record.meta.requiresVisitor;
+    })) {
+        // this route requires auth, check if logged in
+        // if not, redirect to login page.
+        if (__WEBPACK_IMPORTED_MODULE_3__store__["a" /* default */].getters.isLoggedIn) {
+            next({
+                name: 'admin',
+                query: {
+                    redirect: to.fullPath
+                }
+            });
+        } else {
+            next();
+        }
+    } else {
+        next(); // make sure to always call next()!
+    }
+});
+
+axios.interceptors.request.use(function (config) {
+    var token = localStorage.getItem('access_token');
+
+    if (token) {
+        config.headers['Authorization'] = 'Bearer ' + token;
+    }
+
+    return config;
+}, function (error) {
+    return Promise.reject(error);
+});
+
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
     render: function render(h) {
@@ -46615,12 +46714,12 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 });
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-window._ = __webpack_require__(172);
-window.Popper = __webpack_require__(18).default;
+window._ = __webpack_require__(173);
+window.Popper = __webpack_require__(19).default;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -46629,9 +46728,9 @@ window.Popper = __webpack_require__(18).default;
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(19);
+  window.$ = window.jQuery = __webpack_require__(20);
 
-  __webpack_require__(173);
+  __webpack_require__(174);
 } catch (e) {}
 
 /**
@@ -46640,7 +46739,7 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(20);
+window.axios = __webpack_require__(21);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -46676,7 +46775,7 @@ if (token) {
 // });
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -63788,10 +63887,10 @@ if (token) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(17)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(18)(module)))
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -63800,7 +63899,7 @@ if (token) {
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(19), __webpack_require__(18)) :
+   true ? factory(exports, __webpack_require__(20), __webpack_require__(19)) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (factory((global.bootstrap = {}),global.jQuery,global.Popper));
 }(this, (function (exports,$,Popper) { 'use strict';
@@ -67741,15 +67840,15 @@ if (token) {
 
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var bind = __webpack_require__(21);
-var Axios = __webpack_require__(176);
+var bind = __webpack_require__(22);
+var Axios = __webpack_require__(177);
 var defaults = __webpack_require__(15);
 
 /**
@@ -67783,15 +67882,15 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(26);
-axios.CancelToken = __webpack_require__(190);
-axios.isCancel = __webpack_require__(25);
+axios.Cancel = __webpack_require__(27);
+axios.CancelToken = __webpack_require__(191);
+axios.isCancel = __webpack_require__(26);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(191);
+axios.spread = __webpack_require__(192);
 
 module.exports = axios;
 
@@ -67800,7 +67899,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports) {
 
 /*!
@@ -67827,7 +67926,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67835,8 +67934,8 @@ function isSlowBuffer (obj) {
 
 var defaults = __webpack_require__(15);
 var utils = __webpack_require__(6);
-var InterceptorManager = __webpack_require__(185);
-var dispatchRequest = __webpack_require__(186);
+var InterceptorManager = __webpack_require__(186);
+var dispatchRequest = __webpack_require__(187);
 
 /**
  * Create a new instance of Axios
@@ -67913,7 +68012,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67932,13 +68031,13 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var createError = __webpack_require__(24);
+var createError = __webpack_require__(25);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -67965,7 +68064,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -67993,7 +68092,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68066,7 +68165,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68126,7 +68225,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68201,7 +68300,7 @@ module.exports = (
 
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68244,7 +68343,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68304,7 +68403,7 @@ module.exports = (
 
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68363,18 +68462,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var transformData = __webpack_require__(187);
-var isCancel = __webpack_require__(25);
+var transformData = __webpack_require__(188);
+var isCancel = __webpack_require__(26);
 var defaults = __webpack_require__(15);
-var isAbsoluteURL = __webpack_require__(188);
-var combineURLs = __webpack_require__(189);
+var isAbsoluteURL = __webpack_require__(189);
+var combineURLs = __webpack_require__(190);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -68456,7 +68555,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68483,7 +68582,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68504,7 +68603,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68525,13 +68624,13 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var Cancel = __webpack_require__(26);
+var Cancel = __webpack_require__(27);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -68589,7 +68688,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -68623,7 +68722,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -68679,7 +68778,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(193);
+__webpack_require__(194);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -68693,7 +68792,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -68883,10 +68982,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(22)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10), __webpack_require__(23)))
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71516,17 +71615,17 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(196)
+  __webpack_require__(197)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(199)
+var __vue_script__ = __webpack_require__(200)
 /* template */
 var __vue_template__ = __webpack_require__(251)
 /* template functional */
@@ -71567,17 +71666,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(197);
+var content = __webpack_require__(198);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("6bb8be94", content, false, {});
+var update = __webpack_require__(4)("5819ef61", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71593,7 +71692,7 @@ if(false) {
 }
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -71602,13 +71701,13 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Kre
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ubuntu);", ""]);
 
 // module
-exports.push([module.i, "\nhtml,\r\nbody,\r\n.container,\r\n.row {\r\n  height: 100%;\n}\nbody {\r\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\r\n  min-height: 100vh;\r\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\r\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n  font-family: \"Kreon\", serif;\n}\n.roof {\r\n  font-family: \"Kreon\", serif;\r\n  margin-top: 20px;\r\n  /* font-size: 18px; */\r\n  /* color: orange; */\r\n  /* font-weight: bold; */\r\n  border-bottom: 1px solid rgb(165, 182, 235);\r\n  margin-bottom: 30px;\n}\n.w-unit {\r\n  width: 80px;\r\n  text-align: center;\n}\n.roof-detail {\r\n  height: 340px;\n}\r\n", ""]);
+exports.push([module.i, "\nhtml,\nbody,\n.container,\n.row {\n  height: 100%;\n}\nbody {\n  font-family: \"Ubuntu\", sans-serif;\n}\n.bg {\n  min-height: 100vh;\n  background: -webkit-gradient(linear, left bottom, left top, from(rgb(148, 199, 233)), to(rgb(220, 232, 233)));\n  background: linear-gradient(0deg, rgb(148, 199, 233), rgb(220, 232, 233));\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Kreon\", serif;\n}\n.roof {\n  font-family: \"Kreon\", serif;\n  margin-top: 20px;\n  /* font-size: 18px; */\n  /* color: orange; */\n  /* font-weight: bold; */\n  border-bottom: 1px solid rgb(165, 182, 235);\n  margin-bottom: 30px;\n}\n.w-unit {\n  width: 80px;\n  text-align: center;\n}\n.roof-detail {\n  height: 340px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports) {
 
 /**
@@ -71641,24 +71740,24 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MainComponent__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MainComponent__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MainComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__MainComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__StationComponent__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__StationComponent__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__StationComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__StationComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RoofComponent__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RoofComponent__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__RoofComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__RoofComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WaterUsageComponent__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WaterUsageComponent__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__WaterUsageComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__WaterUsageComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__SimulatorComponent__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__SimulatorComponent__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__SimulatorComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__SimulatorComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__FooterComponent__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__FooterComponent__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__FooterComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__FooterComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__NavbarComponent__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__NavbarComponent__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__NavbarComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__NavbarComponent__);
 //
 //
@@ -71691,17 +71790,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   } });
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(201);
+var content = __webpack_require__(202);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0e981e4a", content, false, {});
+var update = __webpack_require__(4)("87077530", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71717,7 +71816,7 @@ if(false) {
 }
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -71727,18 +71826,18 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\r\n  background: url(\"/images/mainbgc.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: gray;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 110, 255, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\r\n  color: rgba(0, 110, 255, 0.74);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/mainbg.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(51, 255, 0, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(51, 255, 0, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 110, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 110, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 32px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-3ee370e9] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-3ee370e9] {\n  background: url(\"/images/mainbgc.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-3ee370e9] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: gray;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-3ee370e9] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 110, 255, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-3ee370e9] {\n  color: rgba(0, 110, 255, 0.74);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-3ee370e9] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/mainbg.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-3ee370e9] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box02[data-v-3ee370e9] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-3ee370e9] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box02[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(51, 255, 0, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(51, 255, 0, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-3ee370e9]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 110, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 110, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 32px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-3ee370e9] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n}\n.sliding[data-v-3ee370e9] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CarouselComponent__);
 //
 //
@@ -71850,17 +71949,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(204);
+var content = __webpack_require__(205);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("590e9ecc", content, false, {});
+var update = __webpack_require__(4)("bf60364e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -71876,7 +71975,7 @@ if(false) {
 }
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -71884,13 +71983,13 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\r\n  font-size: 30px;\r\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\r\n  width: 300px;\r\n  text-align: center;\r\n  height: 220px;\r\n  cursor: pointer;\n}\r\n", ""]);
+exports.push([module.i, "\n.gravity[data-v-4681a3bc] {\n  font-size: 30px;\n  color: azure;\n}\n.carousel-item[data-v-4681a3bc] {\n  width: 300px;\n  text-align: center;\n  height: 220px;\n  cursor: pointer;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71976,7 +72075,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -72102,7 +72201,7 @@ if (false) {
 }
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -72234,17 +72333,17 @@ if (false) {
 }
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(209);
+var content = __webpack_require__(210);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("37a8c66b", content, false, {});
+var update = __webpack_require__(4)("b55fea84", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72260,7 +72359,7 @@ if(false) {
 }
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -72268,18 +72367,18 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\r\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\r\n  background: rgba(255, 0, 0, 0);\n}\n.map[data-v-b456a7d8] {\r\n  position: relative;\r\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\r\n  background: rgba(0, 0, 0, 0.808);\r\n  z-index: 2;\r\n  bottom: 0;\r\n  left: 0;\r\n  position: fixed;\r\n  width: 100vw;\n}\n.dd[data-v-b456a7d8] {\r\n  z-index: 3;\n}\r\n", ""]);
+exports.push([module.i, "\n.btncls[data-v-b456a7d8] {\n  margin-top: 20px;\n}\n.rain[data-v-b456a7d8] {\n  background: rgba(255, 0, 0, 0);\n}\n.map[data-v-b456a7d8] {\n  position: relative;\n  z-index: 1;\n}\n.dd-container[data-v-b456a7d8] {\n  background: rgba(0, 0, 0, 0.808);\n  z-index: 2;\n  bottom: 0;\n  left: 0;\n  position: fixed;\n  width: 100vw;\n}\n.dd[data-v-b456a7d8] {\n  z-index: 3;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_leaflet__ = __webpack_require__(32);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 //
@@ -72476,22 +72575,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 }));
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(212);
+var escape = __webpack_require__(213);
 exports = module.exports = __webpack_require__(2)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/* required styles */\r\n\r\n.leaflet-pane,\r\n.leaflet-tile,\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow,\r\n.leaflet-tile-container,\r\n.leaflet-pane > svg,\r\n.leaflet-pane > canvas,\r\n.leaflet-zoom-box,\r\n.leaflet-image-layer,\r\n.leaflet-layer {\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\t}\r\n.leaflet-container {\r\n\toverflow: hidden;\r\n\t}\r\n.leaflet-tile,\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow {\r\n\t-webkit-user-select: none;\r\n\t   -moz-user-select: none;\r\n\t        user-select: none;\r\n\t  -webkit-user-drag: none;\r\n\t}\r\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\r\n.leaflet-safari .leaflet-tile {\r\n\timage-rendering: -webkit-optimize-contrast;\r\n\t}\r\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\r\n.leaflet-safari .leaflet-tile-container {\r\n\twidth: 1600px;\r\n\theight: 1600px;\r\n\t-webkit-transform-origin: 0 0;\r\n\t}\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow {\r\n\tdisplay: block;\r\n\t}\r\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\r\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\r\n.leaflet-container .leaflet-overlay-pane svg,\r\n.leaflet-container .leaflet-marker-pane img,\r\n.leaflet-container .leaflet-shadow-pane img,\r\n.leaflet-container .leaflet-tile-pane img,\r\n.leaflet-container img.leaflet-image-layer {\r\n\tmax-width: none !important;\r\n\tmax-height: none !important;\r\n\t}\r\n\r\n.leaflet-container.leaflet-touch-zoom {\r\n\t-ms-touch-action: pan-x pan-y;\r\n\ttouch-action: pan-x pan-y;\r\n\t}\r\n.leaflet-container.leaflet-touch-drag {\r\n\t-ms-touch-action: pinch-zoom;\r\n\t/* Fallback for FF which doesn't support pinch-zoom */\r\n\ttouch-action: none;\r\n\ttouch-action: pinch-zoom;\r\n}\r\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\r\n\t-ms-touch-action: none;\r\n\ttouch-action: none;\r\n}\r\n.leaflet-container {\r\n\t-webkit-tap-highlight-color: transparent;\r\n}\r\n.leaflet-container a {\r\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\r\n}\r\n.leaflet-tile {\r\n\tfilter: inherit;\r\n\tvisibility: hidden;\r\n\t}\r\n.leaflet-tile-loaded {\r\n\tvisibility: inherit;\r\n\t}\r\n.leaflet-zoom-box {\r\n\twidth: 0;\r\n\theight: 0;\r\n\t-moz-box-sizing: border-box;\r\n\t     box-sizing: border-box;\r\n\tz-index: 800;\r\n\t}\r\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\r\n.leaflet-overlay-pane svg {\r\n\t-moz-user-select: none;\r\n\t}\r\n\r\n.leaflet-pane         { z-index: 400; }\r\n\r\n.leaflet-tile-pane    { z-index: 200; }\r\n.leaflet-overlay-pane { z-index: 400; }\r\n.leaflet-shadow-pane  { z-index: 500; }\r\n.leaflet-marker-pane  { z-index: 600; }\r\n.leaflet-tooltip-pane   { z-index: 650; }\r\n.leaflet-popup-pane   { z-index: 700; }\r\n\r\n.leaflet-map-pane canvas { z-index: 100; }\r\n.leaflet-map-pane svg    { z-index: 200; }\r\n\r\n.leaflet-vml-shape {\r\n\twidth: 1px;\r\n\theight: 1px;\r\n\t}\r\n.lvml {\r\n\tbehavior: url(#default#VML);\r\n\tdisplay: inline-block;\r\n\tposition: absolute;\r\n\t}\r\n\r\n\r\n/* control positioning */\r\n\r\n.leaflet-control {\r\n\tposition: relative;\r\n\tz-index: 800;\r\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\r\n\tpointer-events: auto;\r\n\t}\r\n.leaflet-top,\r\n.leaflet-bottom {\r\n\tposition: absolute;\r\n\tz-index: 1000;\r\n\tpointer-events: none;\r\n\t}\r\n.leaflet-top {\r\n\ttop: 0;\r\n\t}\r\n.leaflet-right {\r\n\tright: 0;\r\n\t}\r\n.leaflet-bottom {\r\n\tbottom: 0;\r\n\t}\r\n.leaflet-left {\r\n\tleft: 0;\r\n\t}\r\n.leaflet-control {\r\n\tfloat: left;\r\n\tclear: both;\r\n\t}\r\n.leaflet-right .leaflet-control {\r\n\tfloat: right;\r\n\t}\r\n.leaflet-top .leaflet-control {\r\n\tmargin-top: 10px;\r\n\t}\r\n.leaflet-bottom .leaflet-control {\r\n\tmargin-bottom: 10px;\r\n\t}\r\n.leaflet-left .leaflet-control {\r\n\tmargin-left: 10px;\r\n\t}\r\n.leaflet-right .leaflet-control {\r\n\tmargin-right: 10px;\r\n\t}\r\n\r\n\r\n/* zoom and fade animations */\r\n\r\n.leaflet-fade-anim .leaflet-tile {\r\n\twill-change: opacity;\r\n\t}\r\n.leaflet-fade-anim .leaflet-popup {\r\n\topacity: 0;\r\n\t-webkit-transition: opacity 0.2s linear;\r\n\t   -moz-transition: opacity 0.2s linear;\r\n\t     -o-transition: opacity 0.2s linear;\r\n\t        transition: opacity 0.2s linear;\r\n\t}\r\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\r\n\topacity: 1;\r\n\t}\r\n.leaflet-zoom-animated {\r\n\t-webkit-transform-origin: 0 0;\r\n\t    -ms-transform-origin: 0 0;\r\n\t        transform-origin: 0 0;\r\n\t}\r\n.leaflet-zoom-anim .leaflet-zoom-animated {\r\n\twill-change: transform;\r\n\t}\r\n.leaflet-zoom-anim .leaflet-zoom-animated {\r\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t     -o-transition:      -o-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t}\r\n.leaflet-zoom-anim .leaflet-tile,\r\n.leaflet-pan-anim .leaflet-tile {\r\n\t-webkit-transition: none;\r\n\t   -moz-transition: none;\r\n\t     -o-transition: none;\r\n\t        transition: none;\r\n\t}\r\n\r\n.leaflet-zoom-anim .leaflet-zoom-hide {\r\n\tvisibility: hidden;\r\n\t}\r\n\r\n\r\n/* cursors */\r\n\r\n.leaflet-interactive {\r\n\tcursor: pointer;\r\n\t}\r\n.leaflet-grab {\r\n\tcursor: -webkit-grab;\r\n\tcursor:    -moz-grab;\r\n\t}\r\n.leaflet-crosshair,\r\n.leaflet-crosshair .leaflet-interactive {\r\n\tcursor: crosshair;\r\n\t}\r\n.leaflet-popup-pane,\r\n.leaflet-control {\r\n\tcursor: auto;\r\n\t}\r\n.leaflet-dragging .leaflet-grab,\r\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\r\n.leaflet-dragging .leaflet-marker-draggable {\r\n\tcursor: move;\r\n\tcursor: -webkit-grabbing;\r\n\tcursor:    -moz-grabbing;\r\n\t}\r\n\r\n/* marker & overlays interactivity */\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow,\r\n.leaflet-image-layer,\r\n.leaflet-pane > svg path,\r\n.leaflet-tile-container {\r\n\tpointer-events: none;\r\n\t}\r\n\r\n.leaflet-marker-icon.leaflet-interactive,\r\n.leaflet-image-layer.leaflet-interactive,\r\n.leaflet-pane > svg path.leaflet-interactive {\r\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\r\n\tpointer-events: auto;\r\n\t}\r\n\r\n/* visual tweaks */\r\n\r\n.leaflet-container {\r\n\tbackground: #ddd;\r\n\toutline: 0;\r\n\t}\r\n.leaflet-container a {\r\n\tcolor: #0078A8;\r\n\t}\r\n.leaflet-container a.leaflet-active {\r\n\toutline: 2px solid orange;\r\n\t}\r\n.leaflet-zoom-box {\r\n\tborder: 2px dotted #38f;\r\n\tbackground: rgba(255,255,255,0.5);\r\n\t}\r\n\r\n\r\n/* general typography */\r\n.leaflet-container {\r\n\tfont: 12px/1.5 \"Helvetica Neue\", Arial, Helvetica, sans-serif;\r\n\t}\r\n\r\n\r\n/* general toolbar styles */\r\n\r\n.leaflet-bar {\r\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\r\n\tborder-radius: 4px;\r\n\t}\r\n.leaflet-bar a,\r\n.leaflet-bar a:hover {\r\n\tbackground-color: #fff;\r\n\tborder-bottom: 1px solid #ccc;\r\n\twidth: 26px;\r\n\theight: 26px;\r\n\tline-height: 26px;\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n\ttext-decoration: none;\r\n\tcolor: black;\r\n\t}\r\n.leaflet-bar a,\r\n.leaflet-control-layers-toggle {\r\n\tbackground-position: 50% 50%;\r\n\tbackground-repeat: no-repeat;\r\n\tdisplay: block;\r\n\t}\r\n.leaflet-bar a:hover {\r\n\tbackground-color: #f4f4f4;\r\n\t}\r\n.leaflet-bar a:first-child {\r\n\tborder-top-left-radius: 4px;\r\n\tborder-top-right-radius: 4px;\r\n\t}\r\n.leaflet-bar a:last-child {\r\n\tborder-bottom-left-radius: 4px;\r\n\tborder-bottom-right-radius: 4px;\r\n\tborder-bottom: none;\r\n\t}\r\n.leaflet-bar a.leaflet-disabled {\r\n\tcursor: default;\r\n\tbackground-color: #f4f4f4;\r\n\tcolor: #bbb;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-bar a {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tline-height: 30px;\r\n\t}\r\n.leaflet-touch .leaflet-bar a:first-child {\r\n\tborder-top-left-radius: 2px;\r\n\tborder-top-right-radius: 2px;\r\n\t}\r\n.leaflet-touch .leaflet-bar a:last-child {\r\n\tborder-bottom-left-radius: 2px;\r\n\tborder-bottom-right-radius: 2px;\r\n\t}\r\n\r\n/* zoom control */\r\n\r\n.leaflet-control-zoom-in,\r\n.leaflet-control-zoom-out {\r\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\r\n\ttext-indent: 1px;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\r\n\tfont-size: 22px;\r\n\t}\r\n\r\n\r\n/* layers control */\r\n\r\n.leaflet-control-layers {\r\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\r\n\tbackground: #fff;\r\n\tborder-radius: 5px;\r\n\t}\r\n.leaflet-control-layers-toggle {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAQAAAADQ4RFAAACf0lEQVR4AY1UM3gkARTePdvdoTxXKc+qTl3aU5U6b2Kbkz3Gtq3Zw6ziLGNPzrYx7946Tr6/ee/XeCQ4D3ykPtL5tHno4n0d/h3+xfuWHGLX81cn7r0iTNzjr7LrlxCqPtkbTQEHeqOrTy4Yyt3VCi/IOB0v7rVC7q45Q3Gr5K6jt+3Gl5nCoDD4MtO+j96Wu8atmhGqcNGHObuf8OM/x3AMx38+4Z2sPqzCxRFK2aF2e5Jol56XTLyggAMTL56XOMoS1W4pOyjUcGGQdZxU6qRh7B9Zp+PfpOFlqt0zyDZckPi1ttmIp03jX8gyJ8a/PG2yutpS/Vol7peZIbZcKBAEEheEIAgFbDkz5H6Zrkm2hVWGiXKiF4Ycw0RWKdtC16Q7qe3X4iOMxruonzegJzWaXFrU9utOSsLUmrc0YjeWYjCW4PDMADElpJSSQ0vQvA1Tm6/JlKnqFs1EGyZiFCqnRZTEJJJiKRYzVYzJck2Rm6P4iH+cmSY0YzimYa8l0EtTODFWhcMIMVqdsI2uiTvKmTisIDHJ3od5GILVhBCarCfVRmo4uTjkhrhzkiBV7SsaqS+TzrzM1qpGGUFt28pIySQHR6h7F6KSwGWm97ay+Z+ZqMcEjEWebE7wxCSQwpkhJqoZA5ivCdZDjJepuJ9IQjGGUmuXJdBFUygxVqVsxFsLMbDe8ZbDYVCGKxs+W080max1hFCarCfV+C1KATwcnvE9gRRuMP2prdbWGowm1KB1y+zwMMENkM755cJ2yPDtqhTI6ED1M/82yIDtC/4j4BijjeObflpO9I9MwXTCsSX8jWAFeHr05WoLTJ5G8IQVS/7vwR6ohirYM7f6HzYpogfS3R2OAAAAAElFTkSuQmCC);\r\n\twidth: 36px;\r\n\theight: 36px;\r\n\t}\r\n.leaflet-retina .leaflet-control-layers-toggle {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAQAAABvcdNgAAAEsklEQVR4AWL4TydIhpZK1kpWOlg0w3ZXP6D2soBtG42jeI6ZmQTHzAxiTbSJsYLjO9HhP+WOmcuhciVnmHVQcJnp7DFvScowZorad/+V/fVzMdMT2g9Cv9guXGv/7pYOrXh2U+RRR3dSd9JRx6bIFc/ekqHI29JC6pJ5ZEh1yWkhkbcFeSjxgx3L2m1cb1C7bceyxA+CNjT/Ifff+/kDk2u/w/33/IeCMOSaWZ4glosqT3DNnNZQ7Cs58/3Ce5HL78iZH/vKVIaYlqzfdLu8Vi7dnvUbEza5Idt36tquZFldl6N5Z/POLof0XLK61mZCmJSWjVF9tEjUluu74IUXvgttuVIHE7YxSkaYhJZam7yiM9Pv82JYfl9nptxZaxMJE4YSPty+vF0+Y2up9d3wwijfjZbabqm/3bZ9ecKHsiGmRflnn1MW4pjHf9oLufyn2z3y1D6n8g8TZhxyzipLNPnAUpsOiuWimg52psrTZYnOWYNDTMuWBWa0tJb4rgq1UvmutpaYEbZlwU3CLJm/ayYjHW5/h7xWLn9Hh1vepDkyf7dE7MtT5LR4e7yYpHrkhOUpEfssBLq2pPhAqoSWKUkk7EDqkmK6RrCEzqDjhNDWNE+XSMvkJRDWlZTmCW0l0PHQGRZY5t1L83kT0Y3l2SItk5JAWHl2dCOBm+fPu3fo5/3v61RMCO9Jx2EEYYhb0rmNQMX/vm7gqOEJLcXTGw3CAuRNeyaPWwjR8PRqKQ1PDA/dpv+on9Shox52WFnx0KY8onHayrJzm87i5h9xGw/tfkev0jGsQizqezUKjk12hBMKJ4kbCqGPVNXudyyrShovGw5CgxsRICxF6aRmSjlBnHRzg7Gx8fKqEubI2rahQYdR1YgDIRQO7JvQyD52hoIQx0mxa0ODtW2Iozn1le2iIRdzwWewedyZzewidueOGqlsn1MvcnQpuVwLGG3/IR1hIKxCjelIDZ8ldqWz25jWAsnldEnK0Zxro19TGVb2ffIZEsIO89EIEDvKMPrzmBOQcKQ+rroye6NgRRxqR4U8EAkz0CL6uSGOm6KQCdWjvjRiSP1BPalCRS5iQYiEIvxuBMJEWgzSoHADcVMuN7IuqqTeyUPq22qFimFtxDyBBJEwNyt6TM88blFHao/6tWWhuuOM4SAK4EI4QmFHA+SEyWlp4EQoJ13cYGzMu7yszEIBOm2rVmHUNqwAIQabISNMRstmdhNWcFLsSm+0tjJH1MdRxO5Nx0WDMhCtgD6OKgZeljJqJKc9po8juskR9XN0Y1lZ3mWjLR9JCO1jRDMd0fpYC2VnvjBSEFg7wBENc0R9HFlb0xvF1+TBEpF68d+DHR6IOWVv2BECtxo46hOFUBd/APU57WIoEwJhIi2CdpyZX0m93BZicktMj1AS9dClteUFAUNUIEygRZCtik5zSxI9MubTBH1GOiHsiLJ3OCoSZkILa9PxiN0EbvhsAo8tdAf9Seepd36lGWHmtNANTv5Jd0z4QYyeo/UEJqxKRpg5LZx6btLPsOaEmdMyxYdlc8LMaJnikDlhclqmPiQnTEpLUIZEwkRagjYkEibQErwhkTAKCLQEbUgkzJQWc/0PstHHcfEdQ+UAAAAASUVORK5CYII=);\r\n\tbackground-size: 26px 26px;\r\n\t}\r\n.leaflet-touch .leaflet-control-layers-toggle {\r\n\twidth: 44px;\r\n\theight: 44px;\r\n\t}\r\n.leaflet-control-layers .leaflet-control-layers-list,\r\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\r\n\tdisplay: none;\r\n\t}\r\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\t}\r\n.leaflet-control-layers-expanded {\r\n\tpadding: 6px 10px 6px 6px;\r\n\tcolor: #333;\r\n\tbackground: #fff;\r\n\t}\r\n.leaflet-control-layers-scrollbar {\r\n\toverflow-y: scroll;\r\n\toverflow-x: hidden;\r\n\tpadding-right: 5px;\r\n\t}\r\n.leaflet-control-layers-selector {\r\n\tmargin-top: 2px;\r\n\tposition: relative;\r\n\ttop: 1px;\r\n\t}\r\n.leaflet-control-layers label {\r\n\tdisplay: block;\r\n\t}\r\n.leaflet-control-layers-separator {\r\n\theight: 0;\r\n\tborder-top: 1px solid #ddd;\r\n\tmargin: 5px -10px 5px -6px;\r\n\t}\r\n\r\n/* Default icon URLs */\r\n.leaflet-default-icon-path {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAFgUlEQVR4Aa1XA5BjWRTN2oW17d3YaZtr2962HUzbDNpjszW24mRt28p47v7zq/bXZtrp/lWnXr337j3nPCe85NcypgSFdugCpW5YoDAMRaIMqRi6aKq5E3YqDQO3qAwjVWrD8Ncq/RBpykd8oZUb/kaJutow8r1aP9II0WmLKLIsJyv1w/kqw9Ch2MYdB++12Onxee/QMwvf4/Dk/Lfp/i4nxTXtOoQ4pW5Aj7wpici1A9erdAN2OH64x8OSP9j3Ft3b7aWkTg/Fm91siTra0f9on5sQr9INejH6CUUUpavjFNq1B+Oadhxmnfa8RfEmN8VNAsQhPqF55xHkMzz3jSmChWU6f7/XZKNH+9+hBLOHYozuKQPxyMPUKkrX/K0uWnfFaJGS1QPRtZsOPtr3NsW0uyh6NNCOkU3Yz+bXbT3I8G3xE5EXLXtCXbbqwCO9zPQYPRTZ5vIDXD7U+w7rFDEoUUf7ibHIR4y6bLVPXrz8JVZEql13trxwue/uDivd3fkWRbS6/IA2bID4uk0UpF1N8qLlbBlXs4Ee7HLTfV1j54APvODnSfOWBqtKVvjgLKzF5YdEk5ewRkGlK0i33Eofffc7HT56jD7/6U+qH3Cx7SBLNntH5YIPvODnyfIXZYRVDPqgHtLs5ABHD3YzLuespb7t79FY34DjMwrVrcTuwlT55YMPvOBnRrJ4VXTdNnYug5ucHLBjEpt30701A3Ts+HEa73u6dT3FNWwflY86eMHPk+Yu+i6pzUpRrW7SNDg5JHR4KapmM5Wv2E8Tfcb1HoqqHMHU+uWDD7zg54mz5/2BSnizi9T1Dg4QQXLToGNCkb6tb1NU+QAlGr1++eADrzhn/u8Q2YZhQVlZ5+CAOtqfbhmaUCS1ezNFVm2imDbPmPng5wmz+gwh+oHDce0eUtQ6OGDIyR0uUhUsoO3vfDmmgOezH0mZN59x7MBi++WDL1g/eEiU3avlidO671bkLfwbw5XV2P8Pzo0ydy4t2/0eu33xYSOMOD8hTf4CrBtGMSoXfPLchX+J0ruSePw3LZeK0juPJbYzrhkH0io7B3k164hiGvawhOKMLkrQLyVpZg8rHFW7E2uHOL888IBPlNZ1FPzstSJM694fWr6RwpvcJK60+0HCILTBzZLFNdtAzJaohze60T8qBzyh5ZuOg5e7uwQppofEmf2++DYvmySqGBuKaicF1blQjhuHdvCIMvp8whTTfZzI7RldpwtSzL+F1+wkdZ2TBOW2gIF88PBTzD/gpeREAMEbxnJcaJHNHrpzji0gQCS6hdkEeYt9DF/2qPcEC8RM28Hwmr3sdNyht00byAut2k3gufWNtgtOEOFGUwcXWNDbdNbpgBGxEvKkOQsxivJx33iow0Vw5S6SVTrpVq11ysA2Rp7gTfPfktc6zhtXBBC+adRLshf6sG2RfHPZ5EAc4sVZ83yCN00Fk/4kggu40ZTvIEm5g24qtU4KjBrx/BTTH8ifVASAG7gKrnWxJDcU7x8X6Ecczhm3o6YicvsLXWfh3Ch1W0k8x0nXF+0fFxgt4phz8QvypiwCCFKMqXCnqXExjq10beH+UUA7+nG6mdG/Pu0f3LgFcGrl2s0kNNjpmoJ9o4B29CMO8dMT4Q5ox8uitF6fqsrJOr8qnwNbRzv6hSnG5wP+64C7h9lp30hKNtKdWjtdkbuPA19nJ7Tz3zR/ibgARbhb4AlhavcBebmTHcFl2fvYEnW0ox9xMxKBS8btJ+KiEbq9zA4RthQXDhPa0T9TEe69gWupwc6uBUphquXgf+/FrIjweHQS4/pduMe5ERUMHUd9xv8ZR98CxkS4F2n3EUrUZ10EYNw7BWm9x1GiPssi3GgiGRDKWRYZfXlON+dfNbM+GgIwYdwAAAAASUVORK5CYII=);\r\n\t}\r\n\r\n\r\n/* attribution and scale controls */\r\n\r\n.leaflet-container .leaflet-control-attribution {\r\n\tbackground: #fff;\r\n\tbackground: rgba(255, 255, 255, 0.7);\r\n\tmargin: 0;\r\n\t}\r\n.leaflet-control-attribution,\r\n.leaflet-control-scale-line {\r\n\tpadding: 0 5px;\r\n\tcolor: #333;\r\n\t}\r\n.leaflet-control-attribution a {\r\n\ttext-decoration: none;\r\n\t}\r\n.leaflet-control-attribution a:hover {\r\n\ttext-decoration: underline;\r\n\t}\r\n.leaflet-container .leaflet-control-attribution,\r\n.leaflet-container .leaflet-control-scale {\r\n\tfont-size: 11px;\r\n\t}\r\n.leaflet-left .leaflet-control-scale {\r\n\tmargin-left: 5px;\r\n\t}\r\n.leaflet-bottom .leaflet-control-scale {\r\n\tmargin-bottom: 5px;\r\n\t}\r\n.leaflet-control-scale-line {\r\n\tborder: 2px solid #777;\r\n\tborder-top: none;\r\n\tline-height: 1.1;\r\n\tpadding: 2px 5px 1px;\r\n\tfont-size: 11px;\r\n\twhite-space: nowrap;\r\n\toverflow: hidden;\r\n\t-moz-box-sizing: border-box;\r\n\t     box-sizing: border-box;\r\n\r\n\tbackground: #fff;\r\n\tbackground: rgba(255, 255, 255, 0.5);\r\n\t}\r\n.leaflet-control-scale-line:not(:first-child) {\r\n\tborder-top: 2px solid #777;\r\n\tborder-bottom: none;\r\n\tmargin-top: -2px;\r\n\t}\r\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\r\n\tborder-bottom: 2px solid #777;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-control-attribution,\r\n.leaflet-touch .leaflet-control-layers,\r\n.leaflet-touch .leaflet-bar {\r\n\tbox-shadow: none;\r\n\t}\r\n.leaflet-touch .leaflet-control-layers,\r\n.leaflet-touch .leaflet-bar {\r\n\tborder: 2px solid rgba(0,0,0,0.2);\r\n\tbackground-clip: padding-box;\r\n\t}\r\n\r\n\r\n/* popup */\r\n\r\n.leaflet-popup {\r\n\tposition: absolute;\r\n\ttext-align: center;\r\n\tmargin-bottom: 20px;\r\n\t}\r\n.leaflet-popup-content-wrapper {\r\n\tpadding: 1px;\r\n\ttext-align: left;\r\n\tborder-radius: 12px;\r\n\t}\r\n.leaflet-popup-content {\r\n\tmargin: 13px 19px;\r\n\tline-height: 1.4;\r\n\t}\r\n.leaflet-popup-content p {\r\n\tmargin: 18px 0;\r\n\t}\r\n.leaflet-popup-tip-container {\r\n\twidth: 40px;\r\n\theight: 20px;\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\tmargin-left: -20px;\r\n\toverflow: hidden;\r\n\tpointer-events: none;\r\n\t}\r\n.leaflet-popup-tip {\r\n\twidth: 17px;\r\n\theight: 17px;\r\n\tpadding: 1px;\r\n\r\n\tmargin: -10px auto 0;\r\n\r\n\t-webkit-transform: rotate(45deg);\r\n\t   -moz-transform: rotate(45deg);\r\n\t    -ms-transform: rotate(45deg);\r\n\t     -o-transform: rotate(45deg);\r\n\t        transform: rotate(45deg);\r\n\t}\r\n.leaflet-popup-content-wrapper,\r\n.leaflet-popup-tip {\r\n\tbackground: white;\r\n\tcolor: #333;\r\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\r\n\t}\r\n.leaflet-container a.leaflet-popup-close-button {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tpadding: 4px 4px 0 0;\r\n\tborder: none;\r\n\ttext-align: center;\r\n\twidth: 18px;\r\n\theight: 14px;\r\n\tfont: 16px/14px Tahoma, Verdana, sans-serif;\r\n\tcolor: #c3c3c3;\r\n\ttext-decoration: none;\r\n\tfont-weight: bold;\r\n\tbackground: transparent;\r\n\t}\r\n.leaflet-container a.leaflet-popup-close-button:hover {\r\n\tcolor: #999;\r\n\t}\r\n.leaflet-popup-scrolled {\r\n\toverflow: auto;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tborder-top: 1px solid #ddd;\r\n\t}\r\n\r\n.leaflet-oldie .leaflet-popup-content-wrapper {\r\n\tzoom: 1;\r\n\t}\r\n.leaflet-oldie .leaflet-popup-tip {\r\n\twidth: 24px;\r\n\tmargin: 0 auto;\r\n\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\r\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\r\n\t}\r\n.leaflet-oldie .leaflet-popup-tip-container {\r\n\tmargin-top: -1px;\r\n\t}\r\n\r\n.leaflet-oldie .leaflet-control-zoom,\r\n.leaflet-oldie .leaflet-control-layers,\r\n.leaflet-oldie .leaflet-popup-content-wrapper,\r\n.leaflet-oldie .leaflet-popup-tip {\r\n\tborder: 1px solid #999;\r\n\t}\r\n\r\n\r\n/* div icon */\r\n\r\n.leaflet-div-icon {\r\n\tbackground: #fff;\r\n\tborder: 1px solid #666;\r\n\t}\r\n\r\n\r\n/* Tooltip */\r\n/* Base styles for the element that has a tooltip */\r\n.leaflet-tooltip {\r\n\tposition: absolute;\r\n\tpadding: 6px;\r\n\tbackground-color: #fff;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 3px;\r\n\tcolor: #222;\r\n\twhite-space: nowrap;\r\n\t-webkit-user-select: none;\r\n\t-moz-user-select: none;\r\n\t-ms-user-select: none;\r\n\tuser-select: none;\r\n\tpointer-events: none;\r\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\r\n\t}\r\n.leaflet-tooltip.leaflet-clickable {\r\n\tcursor: pointer;\r\n\tpointer-events: auto;\r\n\t}\r\n.leaflet-tooltip-top:before,\r\n.leaflet-tooltip-bottom:before,\r\n.leaflet-tooltip-left:before,\r\n.leaflet-tooltip-right:before {\r\n\tposition: absolute;\r\n\tpointer-events: none;\r\n\tborder: 6px solid transparent;\r\n\tbackground: transparent;\r\n\tcontent: \"\";\r\n\t}\r\n\r\n/* Directions */\r\n\r\n.leaflet-tooltip-bottom {\r\n\tmargin-top: 6px;\r\n}\r\n.leaflet-tooltip-top {\r\n\tmargin-top: -6px;\r\n}\r\n.leaflet-tooltip-bottom:before,\r\n.leaflet-tooltip-top:before {\r\n\tleft: 50%;\r\n\tmargin-left: -6px;\r\n\t}\r\n.leaflet-tooltip-top:before {\r\n\tbottom: 0;\r\n\tmargin-bottom: -12px;\r\n\tborder-top-color: #fff;\r\n\t}\r\n.leaflet-tooltip-bottom:before {\r\n\ttop: 0;\r\n\tmargin-top: -12px;\r\n\tmargin-left: -6px;\r\n\tborder-bottom-color: #fff;\r\n\t}\r\n.leaflet-tooltip-left {\r\n\tmargin-left: -6px;\r\n}\r\n.leaflet-tooltip-right {\r\n\tmargin-left: 6px;\r\n}\r\n.leaflet-tooltip-left:before,\r\n.leaflet-tooltip-right:before {\r\n\ttop: 50%;\r\n\tmargin-top: -6px;\r\n\t}\r\n.leaflet-tooltip-left:before {\r\n\tright: 0;\r\n\tmargin-right: -12px;\r\n\tborder-left-color: #fff;\r\n\t}\r\n.leaflet-tooltip-right:before {\r\n\tleft: 0;\r\n\tmargin-left: -12px;\r\n\tborder-right-color: #fff;\r\n\t}\r\n\ndiv[id^=\"vue-leaflet-popup-\"],\ndiv[id^=\"vue-leaflet-tooltip-\"] {\n  display: none;\n}\n.leaflet-popup-content div[id^=\"vue-leaflet-popup-\"] {\n  display: block;\n}\n.leaflet-tooltip div[id^=\"vue-leaflet-tooltip-\"] {\n  display: block;\n}\n/*\nAuthor: L. Voogdt\nLicense: MIT\nVersion: 1.0\n*/\n\n/* Marker setup */\n.awesome-marker {\n  background: url(" + escape(__webpack_require__(213)) + ") no-repeat 0 0;\n  width: 35px;\n  height: 46px;\n  position:absolute;\n  left:0;\n  top:0;\n  display: block;\n  text-align: center;\n}\n\n.awesome-marker-shadow {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAYAAACcN8ZaAAAB3klEQVR42s3U4UdDURzG8czMXJnJ1Vwzc6VJZjaZJdlMlpQsKdmUFNOUspRSSqUolfQfr+fF98Vx5mwv9qbDx7LdznnO7/7Omej3+/+Ga0QMUYkhbvBgmhzCQxwxibIGrGEF8CQhU+LLtKQkQNqScUgjxRxTBIxbgfgD/BgnhM8kM5KTeclLQYqGkkMRBckzR8ic/mAgd5BAZplsUaqyIg2sDtHg2brUZJk5SmwopErJUWE8SpmTMhNvya60Zd/SNrR4bkeaskG4uiwRZk6yrJEYFibGAxn+scECHTmTnuVCzvmty3PHciB7bGKN6lQkzysPqIrHmpFhYbKUtckC1/Ioz4ZHuZdbuSLYiRxRpSZVWXZVxAzC0R4Ik5SQsu6w8yd5l2/5kg95I9SdXMoZQfYIUjeqEUrgOkXGPeN4TYRhxy8E+ZUf+eS7B7miIoeybVSjKDnm8u3+gH3pDTYwu1igATvs/pXqvBKiR4i2bNJfi1ZfUAnjgrOG8wY2quNzBKuU/ZS+uSFEl5O0xRGuUIlZCcw7xG5QPkeHYUSNV5WXGou2sC3rBC0LjenqCXGO0WEiTJa0Lr4KixdHBrDGuGGiRqCUpFk8pGIpQtCU7p4YPwxYxEMCk1aAMQZh8Ac8PfbIzYPJOwAAAABJRU5ErkJggg==) no-repeat 0 0;\n  width: 36px;\n  height: 16px;\n}\n\n/* Retina displays */\n@media (min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 3/2),\n(-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx) {\n .awesome-marker {\n  background-image: url(" + escape(__webpack_require__(214)) + ");\n  background-size: 720px 92px;\n }\n .awesome-marker-shadow {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAFhElEQVR42tWZ/0ubVxSHZZQxpJQRwoqEUkJQQhlBCcEiQRGJiKFEQqQ4lKFYLA5FsSjKioqipRutbLJ2f627g+dyDmfvqfetzlLh+aFpcr88+dxzb+7bdwt/33wG974g/rhu+pdzwt86fJdA/82w7Un/18m6kRBXgD+5+4YHDt/fEtImfRppVlJ+MY4QEWEmbyZZUBQVP2TwMJGBDMx7aFP6K4gwJBlBecVYISIDCSJAJm0mUIJH8NhQdqjkh8/SNv2VRB6SjCAtJ2dKMGuFIEIEMHGZ2CAMQdXwxPDjNdQ++f+0Q9tD9F1RkgYYLwlCDmIg19IhJQiRVJToFAlMViYxHBiBOjQyGP0ETzMw76Ed+qC/YSVrSAkqiRySo1IjAnwkKSKlQKMIQQYS4sQZ/Bg0A+MwYZg0TKViPjeh+mjS72iUhKCqyCE5pCZdDEmxUmjwURQSZSCiqSbXCkwHZmAW2g7PEmkbZml/mj6nlKgm42rE9DDushHzQGpNohjefB8pD2NK6GSEjscZ1AyD7QTmAt1AD+YVz/Mjn6e9LswB0pCEICVnhFQPIabEfAoiJj0xkhaWj5LSoNMW39ocA14I/BRYCvwMy58NbdDe4r9twwLCEIUcEoSYCbWkhqk1g0lLyTv92bTQUBkpdZWSDoNbZAKrgbXAy8B64JdE1jN4SVsvAquwokUhaJ70dNTyaiEmLqUaYiqUArZu0qLF+EdjOa/wwWKsK2r5tPiGFhjoGhPcCmwHdgKvEtlRbMNWYDOwQbtIEjlGDIlhKUmNqZOWKuOPW3bRSct1iUGMbM2PabxBp20GtMygt5jkfuAg8DpwaOF1y6+BA9iDXdpDEoKQQ79LLKv5mBZVX8ZZQiO66Nqt2jngISFNTJkoPqXjLoOKUvaY5HHgJHDmcAoncBw4UtIOkLtnxJAapEid6aqkTKliW2f5VOPysXUFjJQ0Mf1KTAXzTb6VeeK8wQQOmeibwNvA7xn8xv+95X3nyIqCDiU9iGFJUXPWkLKo6krbLJ2GpIQdiJoiy8dJyg3E1IjoDDvCCgPfZ3LnCHgf+MNwwevveE+UE1N0RGKilJ0MIUv021Vb86QIYefJJUSkXF1d4eS6rdoXM0uUV5nA6ygFCZeBDxpe+1MEkSBJzbESs6uWzwu+gEWzdFpIidtxzWzHck5h6fgpETHI8cWYGlOMW7VKzEKWGCb/V+Bj4G/4wGtRzDsSc07SjjKSsqaEPFdCpkWIpMQc9UmJCLEXVVaGFXPP4G/XUnybjpg3TPhSS4GPKjHvVVJOY10hJduxyKpa0gt01Nlk3JxkbXEt+j8OBREhpIgRORzw6LiqdqUexXeTb/qUFFzE1MAly4vaQkpYNrHAqh1nSS2Ztl0yJiFsvyYhbh0RHDH+UvJSw7cxqM4xc9SZdbUrnaniewEiRBJyoBKyniGk4y8ZOY+kLhn4z19+MYLcw8ghr0ZqppnEMpPbZUmcIOAMTA1hubDTILenziKT5nBmt92B9G1XhOQQk3iliRgGU+JbqzOBttqdNkUOp1451e5LUWXJSFHtaCHebxunqKZJ4d+3LEZ2JwZWYcCjLKlnTHCZFGwgIB7MYjFdUculJwczKaZquVT9c4gUVKeG9P3fYuS3VPaPyRrf7CQ7Ro/0yDWD+qHn7C5j5ug+aO9m7c2+FZLndv/2xPin4BLJqcZf2wiaMbdxs3KzJncjzlWjFFM5lJl0+A/I7lpMX+bdDHKIe1WlZ0zuddXVIjJMMsr21t6mI+8DsbsXQ2pEDqdhuf+tsHM8YfJgbujZZh0Z/W4xNX9fXoz/+8nKKdlnSYqKTYctplYIfC1i7KFPnhwwUXnMah+dioxCsgyEfD1iIPMxrVAQ0p8ZexLuWsw/8PFSG0HPbPgAAAAASUVORK5CYII=);\n  background-size: 35px 16px;\n }\n}\n\n.awesome-marker i {\n  color: #333;\n  margin-top: 10px;\n  display: inline-block;\n  font-size: 14px;\n}\n\n.awesome-marker .icon-white {\n  color: #fff;\n}\n\n/* Colors */\n.awesome-marker-icon-red {\n  background-position: 0 0;\n}\n\n.awesome-marker-icon-darkred {\n  background-position: -180px 0;\n}\n\n.awesome-marker-icon-lightred {\n  background-position: -360px 0;\n}\n\n.awesome-marker-icon-orange {\n  background-position: -36px 0;\n}\n\n.awesome-marker-icon-beige {\n  background-position: -396px 0;\n}\n\n.awesome-marker-icon-green {\n  background-position: -72px 0;\n}\n\n.awesome-marker-icon-darkgreen {\n  background-position: -252px 0;\n}\n\n.awesome-marker-icon-lightgreen {\n  background-position: -432px 0;\n}\n\n.awesome-marker-icon-blue {\n  background-position: -108px 0;\n}\n\n.awesome-marker-icon-darkblue {\n  background-position: -216px 0;\n}\n\n.awesome-marker-icon-lightblue {\n  background-position: -468px 0;\n}\n\n.awesome-marker-icon-purple {\n  background-position: -144px 0;\n}\n\n.awesome-marker-icon-darkpurple {\n  background-position: -288px 0;\n}\n\n.awesome-marker-icon-pink {\n  background-position: -504px 0;\n}\n\n.awesome-marker-icon-cadetblue {\n  background-position: -324px 0;\n}\n\n.awesome-marker-icon-white {\n  background-position: -574px 0;\n}\n\n.awesome-marker-icon-gray {\n  background-position: -648px 0;\n}\n\n.awesome-marker-icon-lightgray {\n  background-position: -612px 0;\n}\n\n.awesome-marker-icon-black {\n  background-position: -682px 0;\n}\n\n.awesome-marker-square {\n  background-position-y: -46px;\n}\n\n@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + escape(__webpack_require__(34)) + ");\n  src: url(" + escape(__webpack_require__(34)) + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(215)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(216)) + ") format(\"woff\"), url(" + escape(__webpack_require__(217)) + ") format(\"truetype\"), url(" + escape(__webpack_require__(218)) + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-fw {\n  width: 1.28571em;\n  text-align: center;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none;\n}\n.fa-ul > li {\n    position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n    left: -1.85714em;\n}\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n}\n}\n@keyframes fa-spin {\n0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n}\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #fff;\n}\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n.fa-handshake-o:before {\n  content: \"\\F2B5\";\n}\n.fa-envelope-open:before {\n  content: \"\\F2B6\";\n}\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\";\n}\n.fa-linode:before {\n  content: \"\\F2B8\";\n}\n.fa-address-book:before {\n  content: \"\\F2B9\";\n}\n.fa-address-book-o:before {\n  content: \"\\F2BA\";\n}\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\";\n}\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\";\n}\n.fa-user-circle:before {\n  content: \"\\F2BD\";\n}\n.fa-user-circle-o:before {\n  content: \"\\F2BE\";\n}\n.fa-user-o:before {\n  content: \"\\F2C0\";\n}\n.fa-id-badge:before {\n  content: \"\\F2C1\";\n}\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\";\n}\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\";\n}\n.fa-quora:before {\n  content: \"\\F2C4\";\n}\n.fa-free-code-camp:before {\n  content: \"\\F2C5\";\n}\n.fa-telegram:before {\n  content: \"\\F2C6\";\n}\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\";\n}\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\";\n}\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\";\n}\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\";\n}\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\";\n}\n.fa-shower:before {\n  content: \"\\F2CC\";\n}\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\";\n}\n.fa-podcast:before {\n  content: \"\\F2CE\";\n}\n.fa-window-maximize:before {\n  content: \"\\F2D0\";\n}\n.fa-window-minimize:before {\n  content: \"\\F2D1\";\n}\n.fa-window-restore:before {\n  content: \"\\F2D2\";\n}\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\";\n}\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\";\n}\n.fa-bandcamp:before {\n  content: \"\\F2D5\";\n}\n.fa-grav:before {\n  content: \"\\F2D6\";\n}\n.fa-etsy:before {\n  content: \"\\F2D7\";\n}\n.fa-imdb:before {\n  content: \"\\F2D8\";\n}\n.fa-ravelry:before {\n  content: \"\\F2D9\";\n}\n.fa-eercast:before {\n  content: \"\\F2DA\";\n}\n.fa-microchip:before {\n  content: \"\\F2DB\";\n}\n.fa-snowflake-o:before {\n  content: \"\\F2DC\";\n}\n.fa-superpowers:before {\n  content: \"\\F2DD\";\n}\n.fa-wpexplorer:before {\n  content: \"\\F2DE\";\n}\n.fa-meetup:before {\n  content: \"\\F2E0\";\n}\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n}\n@font-face {\n  font-family: 'Glyphicons Halflings';\n  src: url(" + escape(__webpack_require__(35)) + ");\n  src: url(" + escape(__webpack_require__(35)) + "?#iefix) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(219)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(220)) + ") format(\"woff\"), url(" + escape(__webpack_require__(221)) + ") format(\"truetype\"), url(" + escape(__webpack_require__(222)) + "#@{icon-font-svg-id}) format(\"svg\");\n}\n.glyphicon {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  font-family: 'Glyphicons Halflings';\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.glyphicon-asterisk:before {\n  content: \"*\";\n}\n.glyphicon-plus:before {\n  content: \"+\";\n}\n.glyphicon-euro:before,\n.glyphicon-eur:before {\n  content: \"\\20AC\";\n}\n.glyphicon-minus:before {\n  content: \"\\2212\";\n}\n.glyphicon-cloud:before {\n  content: \"\\2601\";\n}\n.glyphicon-envelope:before {\n  content: \"\\2709\";\n}\n.glyphicon-pencil:before {\n  content: \"\\270F\";\n}\n.glyphicon-glass:before {\n  content: \"\\E001\";\n}\n.glyphicon-music:before {\n  content: \"\\E002\";\n}\n.glyphicon-search:before {\n  content: \"\\E003\";\n}\n.glyphicon-heart:before {\n  content: \"\\E005\";\n}\n.glyphicon-star:before {\n  content: \"\\E006\";\n}\n.glyphicon-star-empty:before {\n  content: \"\\E007\";\n}\n.glyphicon-user:before {\n  content: \"\\E008\";\n}\n.glyphicon-film:before {\n  content: \"\\E009\";\n}\n.glyphicon-th-large:before {\n  content: \"\\E010\";\n}\n.glyphicon-th:before {\n  content: \"\\E011\";\n}\n.glyphicon-th-list:before {\n  content: \"\\E012\";\n}\n.glyphicon-ok:before {\n  content: \"\\E013\";\n}\n.glyphicon-remove:before {\n  content: \"\\E014\";\n}\n.glyphicon-zoom-in:before {\n  content: \"\\E015\";\n}\n.glyphicon-zoom-out:before {\n  content: \"\\E016\";\n}\n.glyphicon-off:before {\n  content: \"\\E017\";\n}\n.glyphicon-signal:before {\n  content: \"\\E018\";\n}\n.glyphicon-cog:before {\n  content: \"\\E019\";\n}\n.glyphicon-trash:before {\n  content: \"\\E020\";\n}\n.glyphicon-home:before {\n  content: \"\\E021\";\n}\n.glyphicon-file:before {\n  content: \"\\E022\";\n}\n.glyphicon-time:before {\n  content: \"\\E023\";\n}\n.glyphicon-road:before {\n  content: \"\\E024\";\n}\n.glyphicon-download-alt:before {\n  content: \"\\E025\";\n}\n.glyphicon-download:before {\n  content: \"\\E026\";\n}\n.glyphicon-upload:before {\n  content: \"\\E027\";\n}\n.glyphicon-inbox:before {\n  content: \"\\E028\";\n}\n.glyphicon-play-circle:before {\n  content: \"\\E029\";\n}\n.glyphicon-repeat:before {\n  content: \"\\E030\";\n}\n.glyphicon-refresh:before {\n  content: \"\\E031\";\n}\n.glyphicon-list-alt:before {\n  content: \"\\E032\";\n}\n.glyphicon-lock:before {\n  content: \"\\E033\";\n}\n.glyphicon-flag:before {\n  content: \"\\E034\";\n}\n.glyphicon-headphones:before {\n  content: \"\\E035\";\n}\n.glyphicon-volume-off:before {\n  content: \"\\E036\";\n}\n.glyphicon-volume-down:before {\n  content: \"\\E037\";\n}\n.glyphicon-volume-up:before {\n  content: \"\\E038\";\n}\n.glyphicon-qrcode:before {\n  content: \"\\E039\";\n}\n.glyphicon-barcode:before {\n  content: \"\\E040\";\n}\n.glyphicon-tag:before {\n  content: \"\\E041\";\n}\n.glyphicon-tags:before {\n  content: \"\\E042\";\n}\n.glyphicon-book:before {\n  content: \"\\E043\";\n}\n.glyphicon-bookmark:before {\n  content: \"\\E044\";\n}\n.glyphicon-print:before {\n  content: \"\\E045\";\n}\n.glyphicon-camera:before {\n  content: \"\\E046\";\n}\n.glyphicon-font:before {\n  content: \"\\E047\";\n}\n.glyphicon-bold:before {\n  content: \"\\E048\";\n}\n.glyphicon-italic:before {\n  content: \"\\E049\";\n}\n.glyphicon-text-height:before {\n  content: \"\\E050\";\n}\n.glyphicon-text-width:before {\n  content: \"\\E051\";\n}\n.glyphicon-align-left:before {\n  content: \"\\E052\";\n}\n.glyphicon-align-center:before {\n  content: \"\\E053\";\n}\n.glyphicon-align-right:before {\n  content: \"\\E054\";\n}\n.glyphicon-align-justify:before {\n  content: \"\\E055\";\n}\n.glyphicon-list:before {\n  content: \"\\E056\";\n}\n.glyphicon-indent-left:before {\n  content: \"\\E057\";\n}\n.glyphicon-indent-right:before {\n  content: \"\\E058\";\n}\n.glyphicon-facetime-video:before {\n  content: \"\\E059\";\n}\n.glyphicon-picture:before {\n  content: \"\\E060\";\n}\n.glyphicon-map-marker:before {\n  content: \"\\E062\";\n}\n.glyphicon-adjust:before {\n  content: \"\\E063\";\n}\n.glyphicon-tint:before {\n  content: \"\\E064\";\n}\n.glyphicon-edit:before {\n  content: \"\\E065\";\n}\n.glyphicon-share:before {\n  content: \"\\E066\";\n}\n.glyphicon-check:before {\n  content: \"\\E067\";\n}\n.glyphicon-move:before {\n  content: \"\\E068\";\n}\n.glyphicon-step-backward:before {\n  content: \"\\E069\";\n}\n.glyphicon-fast-backward:before {\n  content: \"\\E070\";\n}\n.glyphicon-backward:before {\n  content: \"\\E071\";\n}\n.glyphicon-play:before {\n  content: \"\\E072\";\n}\n.glyphicon-pause:before {\n  content: \"\\E073\";\n}\n.glyphicon-stop:before {\n  content: \"\\E074\";\n}\n.glyphicon-forward:before {\n  content: \"\\E075\";\n}\n.glyphicon-fast-forward:before {\n  content: \"\\E076\";\n}\n.glyphicon-step-forward:before {\n  content: \"\\E077\";\n}\n.glyphicon-eject:before {\n  content: \"\\E078\";\n}\n.glyphicon-chevron-left:before {\n  content: \"\\E079\";\n}\n.glyphicon-chevron-right:before {\n  content: \"\\E080\";\n}\n.glyphicon-plus-sign:before {\n  content: \"\\E081\";\n}\n.glyphicon-minus-sign:before {\n  content: \"\\E082\";\n}\n.glyphicon-remove-sign:before {\n  content: \"\\E083\";\n}\n.glyphicon-ok-sign:before {\n  content: \"\\E084\";\n}\n.glyphicon-question-sign:before {\n  content: \"\\E085\";\n}\n.glyphicon-info-sign:before {\n  content: \"\\E086\";\n}\n.glyphicon-screenshot:before {\n  content: \"\\E087\";\n}\n.glyphicon-remove-circle:before {\n  content: \"\\E088\";\n}\n.glyphicon-ok-circle:before {\n  content: \"\\E089\";\n}\n.glyphicon-ban-circle:before {\n  content: \"\\E090\";\n}\n.glyphicon-arrow-left:before {\n  content: \"\\E091\";\n}\n.glyphicon-arrow-right:before {\n  content: \"\\E092\";\n}\n.glyphicon-arrow-up:before {\n  content: \"\\E093\";\n}\n.glyphicon-arrow-down:before {\n  content: \"\\E094\";\n}\n.glyphicon-share-alt:before {\n  content: \"\\E095\";\n}\n.glyphicon-resize-full:before {\n  content: \"\\E096\";\n}\n.glyphicon-resize-small:before {\n  content: \"\\E097\";\n}\n.glyphicon-exclamation-sign:before {\n  content: \"\\E101\";\n}\n.glyphicon-gift:before {\n  content: \"\\E102\";\n}\n.glyphicon-leaf:before {\n  content: \"\\E103\";\n}\n.glyphicon-fire:before {\n  content: \"\\E104\";\n}\n.glyphicon-eye-open:before {\n  content: \"\\E105\";\n}\n.glyphicon-eye-close:before {\n  content: \"\\E106\";\n}\n.glyphicon-warning-sign:before {\n  content: \"\\E107\";\n}\n.glyphicon-plane:before {\n  content: \"\\E108\";\n}\n.glyphicon-calendar:before {\n  content: \"\\E109\";\n}\n.glyphicon-random:before {\n  content: \"\\E110\";\n}\n.glyphicon-comment:before {\n  content: \"\\E111\";\n}\n.glyphicon-magnet:before {\n  content: \"\\E112\";\n}\n.glyphicon-chevron-up:before {\n  content: \"\\E113\";\n}\n.glyphicon-chevron-down:before {\n  content: \"\\E114\";\n}\n.glyphicon-retweet:before {\n  content: \"\\E115\";\n}\n.glyphicon-shopping-cart:before {\n  content: \"\\E116\";\n}\n.glyphicon-folder-close:before {\n  content: \"\\E117\";\n}\n.glyphicon-folder-open:before {\n  content: \"\\E118\";\n}\n.glyphicon-resize-vertical:before {\n  content: \"\\E119\";\n}\n.glyphicon-resize-horizontal:before {\n  content: \"\\E120\";\n}\n.glyphicon-hdd:before {\n  content: \"\\E121\";\n}\n.glyphicon-bullhorn:before {\n  content: \"\\E122\";\n}\n.glyphicon-bell:before {\n  content: \"\\E123\";\n}\n.glyphicon-certificate:before {\n  content: \"\\E124\";\n}\n.glyphicon-thumbs-up:before {\n  content: \"\\E125\";\n}\n.glyphicon-thumbs-down:before {\n  content: \"\\E126\";\n}\n.glyphicon-hand-right:before {\n  content: \"\\E127\";\n}\n.glyphicon-hand-left:before {\n  content: \"\\E128\";\n}\n.glyphicon-hand-up:before {\n  content: \"\\E129\";\n}\n.glyphicon-hand-down:before {\n  content: \"\\E130\";\n}\n.glyphicon-circle-arrow-right:before {\n  content: \"\\E131\";\n}\n.glyphicon-circle-arrow-left:before {\n  content: \"\\E132\";\n}\n.glyphicon-circle-arrow-up:before {\n  content: \"\\E133\";\n}\n.glyphicon-circle-arrow-down:before {\n  content: \"\\E134\";\n}\n.glyphicon-globe:before {\n  content: \"\\E135\";\n}\n.glyphicon-wrench:before {\n  content: \"\\E136\";\n}\n.glyphicon-tasks:before {\n  content: \"\\E137\";\n}\n.glyphicon-filter:before {\n  content: \"\\E138\";\n}\n.glyphicon-briefcase:before {\n  content: \"\\E139\";\n}\n.glyphicon-fullscreen:before {\n  content: \"\\E140\";\n}\n.glyphicon-dashboard:before {\n  content: \"\\E141\";\n}\n.glyphicon-paperclip:before {\n  content: \"\\E142\";\n}\n.glyphicon-heart-empty:before {\n  content: \"\\E143\";\n}\n.glyphicon-link:before {\n  content: \"\\E144\";\n}\n.glyphicon-phone:before {\n  content: \"\\E145\";\n}\n.glyphicon-pushpin:before {\n  content: \"\\E146\";\n}\n.glyphicon-usd:before {\n  content: \"\\E148\";\n}\n.glyphicon-gbp:before {\n  content: \"\\E149\";\n}\n.glyphicon-sort:before {\n  content: \"\\E150\";\n}\n.glyphicon-sort-by-alphabet:before {\n  content: \"\\E151\";\n}\n.glyphicon-sort-by-alphabet-alt:before {\n  content: \"\\E152\";\n}\n.glyphicon-sort-by-order:before {\n  content: \"\\E153\";\n}\n.glyphicon-sort-by-order-alt:before {\n  content: \"\\E154\";\n}\n.glyphicon-sort-by-attributes:before {\n  content: \"\\E155\";\n}\n.glyphicon-sort-by-attributes-alt:before {\n  content: \"\\E156\";\n}\n.glyphicon-unchecked:before {\n  content: \"\\E157\";\n}\n.glyphicon-expand:before {\n  content: \"\\E158\";\n}\n.glyphicon-collapse-down:before {\n  content: \"\\E159\";\n}\n.glyphicon-collapse-up:before {\n  content: \"\\E160\";\n}\n.glyphicon-log-in:before {\n  content: \"\\E161\";\n}\n.glyphicon-flash:before {\n  content: \"\\E162\";\n}\n.glyphicon-log-out:before {\n  content: \"\\E163\";\n}\n.glyphicon-new-window:before {\n  content: \"\\E164\";\n}\n.glyphicon-record:before {\n  content: \"\\E165\";\n}\n.glyphicon-save:before {\n  content: \"\\E166\";\n}\n.glyphicon-open:before {\n  content: \"\\E167\";\n}\n.glyphicon-saved:before {\n  content: \"\\E168\";\n}\n.glyphicon-import:before {\n  content: \"\\E169\";\n}\n.glyphicon-export:before {\n  content: \"\\E170\";\n}\n.glyphicon-send:before {\n  content: \"\\E171\";\n}\n.glyphicon-floppy-disk:before {\n  content: \"\\E172\";\n}\n.glyphicon-floppy-saved:before {\n  content: \"\\E173\";\n}\n.glyphicon-floppy-remove:before {\n  content: \"\\E174\";\n}\n.glyphicon-floppy-save:before {\n  content: \"\\E175\";\n}\n.glyphicon-floppy-open:before {\n  content: \"\\E176\";\n}\n.glyphicon-credit-card:before {\n  content: \"\\E177\";\n}\n.glyphicon-transfer:before {\n  content: \"\\E178\";\n}\n.glyphicon-cutlery:before {\n  content: \"\\E179\";\n}\n.glyphicon-header:before {\n  content: \"\\E180\";\n}\n.glyphicon-compressed:before {\n  content: \"\\E181\";\n}\n.glyphicon-earphone:before {\n  content: \"\\E182\";\n}\n.glyphicon-phone-alt:before {\n  content: \"\\E183\";\n}\n.glyphicon-tower:before {\n  content: \"\\E184\";\n}\n.glyphicon-stats:before {\n  content: \"\\E185\";\n}\n.glyphicon-sd-video:before {\n  content: \"\\E186\";\n}\n.glyphicon-hd-video:before {\n  content: \"\\E187\";\n}\n.glyphicon-subtitles:before {\n  content: \"\\E188\";\n}\n.glyphicon-sound-stereo:before {\n  content: \"\\E189\";\n}\n.glyphicon-sound-dolby:before {\n  content: \"\\E190\";\n}\n.glyphicon-sound-5-1:before {\n  content: \"\\E191\";\n}\n.glyphicon-sound-6-1:before {\n  content: \"\\E192\";\n}\n.glyphicon-sound-7-1:before {\n  content: \"\\E193\";\n}\n.glyphicon-copyright-mark:before {\n  content: \"\\E194\";\n}\n.glyphicon-registration-mark:before {\n  content: \"\\E195\";\n}\n.glyphicon-cloud-download:before {\n  content: \"\\E197\";\n}\n.glyphicon-cloud-upload:before {\n  content: \"\\E198\";\n}\n.glyphicon-tree-conifer:before {\n  content: \"\\E199\";\n}\n.glyphicon-tree-deciduous:before {\n  content: \"\\E200\";\n}\n.glyphicon-cd:before {\n  content: \"\\E201\";\n}\n.glyphicon-save-file:before {\n  content: \"\\E202\";\n}\n.glyphicon-open-file:before {\n  content: \"\\E203\";\n}\n.glyphicon-level-up:before {\n  content: \"\\E204\";\n}\n.glyphicon-copy:before {\n  content: \"\\E205\";\n}\n.glyphicon-paste:before {\n  content: \"\\E206\";\n}\n.glyphicon-alert:before {\n  content: \"\\E209\";\n}\n.glyphicon-equalizer:before {\n  content: \"\\E210\";\n}\n.glyphicon-king:before {\n  content: \"\\E211\";\n}\n.glyphicon-queen:before {\n  content: \"\\E212\";\n}\n.glyphicon-pawn:before {\n  content: \"\\E213\";\n}\n.glyphicon-bishop:before {\n  content: \"\\E214\";\n}\n.glyphicon-knight:before {\n  content: \"\\E215\";\n}\n.glyphicon-baby-formula:before {\n  content: \"\\E216\";\n}\n.glyphicon-tent:before {\n  content: \"\\26FA\";\n}\n.glyphicon-blackboard:before {\n  content: \"\\E218\";\n}\n.glyphicon-bed:before {\n  content: \"\\E219\";\n}\n.glyphicon-apple:before {\n  content: \"\\F8FF\";\n}\n.glyphicon-erase:before {\n  content: \"\\E221\";\n}\n.glyphicon-hourglass:before {\n  content: \"\\231B\";\n}\n.glyphicon-lamp:before {\n  content: \"\\E223\";\n}\n.glyphicon-duplicate:before {\n  content: \"\\E224\";\n}\n.glyphicon-piggy-bank:before {\n  content: \"\\E225\";\n}\n.glyphicon-scissors:before {\n  content: \"\\E226\";\n}\n.glyphicon-bitcoin:before {\n  content: \"\\E227\";\n}\n.glyphicon-btc:before {\n  content: \"\\E227\";\n}\n.glyphicon-xbt:before {\n  content: \"\\E227\";\n}\n.glyphicon-yen:before {\n  content: \"\\A5\";\n}\n.glyphicon-jpy:before {\n  content: \"\\A5\";\n}\n.glyphicon-ruble:before {\n  content: \"\\20BD\";\n}\n.glyphicon-rub:before {\n  content: \"\\20BD\";\n}\n.glyphicon-scale:before {\n  content: \"\\E230\";\n}\n.glyphicon-ice-lolly:before {\n  content: \"\\E231\";\n}\n.glyphicon-ice-lolly-tasted:before {\n  content: \"\\E232\";\n}\n.glyphicon-education:before {\n  content: \"\\E233\";\n}\n.glyphicon-option-horizontal:before {\n  content: \"\\E234\";\n}\n.glyphicon-option-vertical:before {\n  content: \"\\E235\";\n}\n.glyphicon-menu-hamburger:before {\n  content: \"\\E236\";\n}\n.glyphicon-modal-window:before {\n  content: \"\\E237\";\n}\n.glyphicon-oil:before {\n  content: \"\\E238\";\n}\n.glyphicon-grain:before {\n  content: \"\\E239\";\n}\n.glyphicon-sunglasses:before {\n  content: \"\\E240\";\n}\n.glyphicon-text-size:before {\n  content: \"\\E241\";\n}\n.glyphicon-text-color:before {\n  content: \"\\E242\";\n}\n.glyphicon-text-background:before {\n  content: \"\\E243\";\n}\n.glyphicon-object-align-top:before {\n  content: \"\\E244\";\n}\n.glyphicon-object-align-bottom:before {\n  content: \"\\E245\";\n}\n.glyphicon-object-align-horizontal:before {\n  content: \"\\E246\";\n}\n.glyphicon-object-align-left:before {\n  content: \"\\E247\";\n}\n.glyphicon-object-align-vertical:before {\n  content: \"\\E248\";\n}\n.glyphicon-object-align-right:before {\n  content: \"\\E249\";\n}\n.glyphicon-triangle-right:before {\n  content: \"\\E250\";\n}\n.glyphicon-triangle-left:before {\n  content: \"\\E251\";\n}\n.glyphicon-triangle-bottom:before {\n  content: \"\\E252\";\n}\n.glyphicon-triangle-top:before {\n  content: \"\\E253\";\n}\n.glyphicon-console:before {\n  content: \"\\E254\";\n}\n.glyphicon-superscript:before {\n  content: \"\\E255\";\n}\n.glyphicon-subscript:before {\n  content: \"\\E256\";\n}\n.glyphicon-menu-left:before {\n  content: \"\\E257\";\n}\n.glyphicon-menu-right:before {\n  content: \"\\E258\";\n}\n.glyphicon-menu-down:before {\n  content: \"\\E259\";\n}\n.glyphicon-menu-up:before {\n  content: \"\\E260\";\n}\n.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {\r\n\t-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\t-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\t-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\ttransition: transform 0.3s ease-out, opacity 0.3s ease-in;\r\n}\r\n\r\n.leaflet-cluster-spider-leg {\r\n\t/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */\r\n\t-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;\r\n\t-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;\r\n\t-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;\r\n\ttransition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;\r\n}\r\n.marker-cluster-small {\r\n\tbackground-color: rgba(181, 226, 140, 0.6);\r\n\t}\r\n.marker-cluster-small div {\r\n\tbackground-color: rgba(110, 204, 57, 0.6);\r\n\t}\r\n\r\n.marker-cluster-medium {\r\n\tbackground-color: rgba(241, 211, 87, 0.6);\r\n\t}\r\n.marker-cluster-medium div {\r\n\tbackground-color: rgba(240, 194, 12, 0.6);\r\n\t}\r\n\r\n.marker-cluster-large {\r\n\tbackground-color: rgba(253, 156, 115, 0.6);\r\n\t}\r\n.marker-cluster-large div {\r\n\tbackground-color: rgba(241, 128, 23, 0.6);\r\n\t}\r\n\r\n\t/* IE 6-8 fallback colors */\r\n.leaflet-oldie .marker-cluster-small {\r\n\tbackground-color: rgb(181, 226, 140);\r\n\t}\r\n.leaflet-oldie .marker-cluster-small div {\r\n\tbackground-color: rgb(110, 204, 57);\r\n\t}\r\n\r\n.leaflet-oldie .marker-cluster-medium {\r\n\tbackground-color: rgb(241, 211, 87);\r\n\t}\r\n.leaflet-oldie .marker-cluster-medium div {\r\n\tbackground-color: rgb(240, 194, 12);\r\n\t}\r\n\r\n.leaflet-oldie .marker-cluster-large {\r\n\tbackground-color: rgb(253, 156, 115);\r\n\t}\r\n.leaflet-oldie .marker-cluster-large div {\r\n\tbackground-color: rgb(241, 128, 23);\r\n}\r\n\r\n.marker-cluster {\r\n\tbackground-clip: padding-box;\r\n\tborder-radius: 20px;\r\n\t}\r\n.marker-cluster div {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tmargin-left: 5px;\r\n\tmargin-top: 5px;\r\n\r\n\ttext-align: center;\r\n\tborder-radius: 15px;\r\n\tfont: 12px \"Helvetica Neue\", Arial, Helvetica, sans-serif;\r\n\t}\r\n.marker-cluster span {\r\n\tline-height: 30px;\r\n\t}\n", ""]);
+exports.push([module.i, "/* required styles */\r\n\r\n.leaflet-pane,\r\n.leaflet-tile,\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow,\r\n.leaflet-tile-container,\r\n.leaflet-pane > svg,\r\n.leaflet-pane > canvas,\r\n.leaflet-zoom-box,\r\n.leaflet-image-layer,\r\n.leaflet-layer {\r\n\tposition: absolute;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\t}\r\n.leaflet-container {\r\n\toverflow: hidden;\r\n\t}\r\n.leaflet-tile,\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow {\r\n\t-webkit-user-select: none;\r\n\t   -moz-user-select: none;\r\n\t        user-select: none;\r\n\t  -webkit-user-drag: none;\r\n\t}\r\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\r\n.leaflet-safari .leaflet-tile {\r\n\timage-rendering: -webkit-optimize-contrast;\r\n\t}\r\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\r\n.leaflet-safari .leaflet-tile-container {\r\n\twidth: 1600px;\r\n\theight: 1600px;\r\n\t-webkit-transform-origin: 0 0;\r\n\t}\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow {\r\n\tdisplay: block;\r\n\t}\r\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\r\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\r\n.leaflet-container .leaflet-overlay-pane svg,\r\n.leaflet-container .leaflet-marker-pane img,\r\n.leaflet-container .leaflet-shadow-pane img,\r\n.leaflet-container .leaflet-tile-pane img,\r\n.leaflet-container img.leaflet-image-layer {\r\n\tmax-width: none !important;\r\n\tmax-height: none !important;\r\n\t}\r\n\r\n.leaflet-container.leaflet-touch-zoom {\r\n\t-ms-touch-action: pan-x pan-y;\r\n\ttouch-action: pan-x pan-y;\r\n\t}\r\n.leaflet-container.leaflet-touch-drag {\r\n\t-ms-touch-action: pinch-zoom;\r\n\t/* Fallback for FF which doesn't support pinch-zoom */\r\n\ttouch-action: none;\r\n\ttouch-action: pinch-zoom;\r\n}\r\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\r\n\t-ms-touch-action: none;\r\n\ttouch-action: none;\r\n}\r\n.leaflet-container {\r\n\t-webkit-tap-highlight-color: transparent;\r\n}\r\n.leaflet-container a {\r\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\r\n}\r\n.leaflet-tile {\r\n\tfilter: inherit;\r\n\tvisibility: hidden;\r\n\t}\r\n.leaflet-tile-loaded {\r\n\tvisibility: inherit;\r\n\t}\r\n.leaflet-zoom-box {\r\n\twidth: 0;\r\n\theight: 0;\r\n\t-moz-box-sizing: border-box;\r\n\t     box-sizing: border-box;\r\n\tz-index: 800;\r\n\t}\r\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\r\n.leaflet-overlay-pane svg {\r\n\t-moz-user-select: none;\r\n\t}\r\n\r\n.leaflet-pane         { z-index: 400; }\r\n\r\n.leaflet-tile-pane    { z-index: 200; }\r\n.leaflet-overlay-pane { z-index: 400; }\r\n.leaflet-shadow-pane  { z-index: 500; }\r\n.leaflet-marker-pane  { z-index: 600; }\r\n.leaflet-tooltip-pane   { z-index: 650; }\r\n.leaflet-popup-pane   { z-index: 700; }\r\n\r\n.leaflet-map-pane canvas { z-index: 100; }\r\n.leaflet-map-pane svg    { z-index: 200; }\r\n\r\n.leaflet-vml-shape {\r\n\twidth: 1px;\r\n\theight: 1px;\r\n\t}\r\n.lvml {\r\n\tbehavior: url(#default#VML);\r\n\tdisplay: inline-block;\r\n\tposition: absolute;\r\n\t}\r\n\r\n\r\n/* control positioning */\r\n\r\n.leaflet-control {\r\n\tposition: relative;\r\n\tz-index: 800;\r\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\r\n\tpointer-events: auto;\r\n\t}\r\n.leaflet-top,\r\n.leaflet-bottom {\r\n\tposition: absolute;\r\n\tz-index: 1000;\r\n\tpointer-events: none;\r\n\t}\r\n.leaflet-top {\r\n\ttop: 0;\r\n\t}\r\n.leaflet-right {\r\n\tright: 0;\r\n\t}\r\n.leaflet-bottom {\r\n\tbottom: 0;\r\n\t}\r\n.leaflet-left {\r\n\tleft: 0;\r\n\t}\r\n.leaflet-control {\r\n\tfloat: left;\r\n\tclear: both;\r\n\t}\r\n.leaflet-right .leaflet-control {\r\n\tfloat: right;\r\n\t}\r\n.leaflet-top .leaflet-control {\r\n\tmargin-top: 10px;\r\n\t}\r\n.leaflet-bottom .leaflet-control {\r\n\tmargin-bottom: 10px;\r\n\t}\r\n.leaflet-left .leaflet-control {\r\n\tmargin-left: 10px;\r\n\t}\r\n.leaflet-right .leaflet-control {\r\n\tmargin-right: 10px;\r\n\t}\r\n\r\n\r\n/* zoom and fade animations */\r\n\r\n.leaflet-fade-anim .leaflet-tile {\r\n\twill-change: opacity;\r\n\t}\r\n.leaflet-fade-anim .leaflet-popup {\r\n\topacity: 0;\r\n\t-webkit-transition: opacity 0.2s linear;\r\n\t   -moz-transition: opacity 0.2s linear;\r\n\t     -o-transition: opacity 0.2s linear;\r\n\t        transition: opacity 0.2s linear;\r\n\t}\r\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\r\n\topacity: 1;\r\n\t}\r\n.leaflet-zoom-animated {\r\n\t-webkit-transform-origin: 0 0;\r\n\t    -ms-transform-origin: 0 0;\r\n\t        transform-origin: 0 0;\r\n\t}\r\n.leaflet-zoom-anim .leaflet-zoom-animated {\r\n\twill-change: transform;\r\n\t}\r\n.leaflet-zoom-anim .leaflet-zoom-animated {\r\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t     -o-transition:      -o-transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\r\n\t}\r\n.leaflet-zoom-anim .leaflet-tile,\r\n.leaflet-pan-anim .leaflet-tile {\r\n\t-webkit-transition: none;\r\n\t   -moz-transition: none;\r\n\t     -o-transition: none;\r\n\t        transition: none;\r\n\t}\r\n\r\n.leaflet-zoom-anim .leaflet-zoom-hide {\r\n\tvisibility: hidden;\r\n\t}\r\n\r\n\r\n/* cursors */\r\n\r\n.leaflet-interactive {\r\n\tcursor: pointer;\r\n\t}\r\n.leaflet-grab {\r\n\tcursor: -webkit-grab;\r\n\tcursor:    -moz-grab;\r\n\t}\r\n.leaflet-crosshair,\r\n.leaflet-crosshair .leaflet-interactive {\r\n\tcursor: crosshair;\r\n\t}\r\n.leaflet-popup-pane,\r\n.leaflet-control {\r\n\tcursor: auto;\r\n\t}\r\n.leaflet-dragging .leaflet-grab,\r\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\r\n.leaflet-dragging .leaflet-marker-draggable {\r\n\tcursor: move;\r\n\tcursor: -webkit-grabbing;\r\n\tcursor:    -moz-grabbing;\r\n\t}\r\n\r\n/* marker & overlays interactivity */\r\n.leaflet-marker-icon,\r\n.leaflet-marker-shadow,\r\n.leaflet-image-layer,\r\n.leaflet-pane > svg path,\r\n.leaflet-tile-container {\r\n\tpointer-events: none;\r\n\t}\r\n\r\n.leaflet-marker-icon.leaflet-interactive,\r\n.leaflet-image-layer.leaflet-interactive,\r\n.leaflet-pane > svg path.leaflet-interactive {\r\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\r\n\tpointer-events: auto;\r\n\t}\r\n\r\n/* visual tweaks */\r\n\r\n.leaflet-container {\r\n\tbackground: #ddd;\r\n\toutline: 0;\r\n\t}\r\n.leaflet-container a {\r\n\tcolor: #0078A8;\r\n\t}\r\n.leaflet-container a.leaflet-active {\r\n\toutline: 2px solid orange;\r\n\t}\r\n.leaflet-zoom-box {\r\n\tborder: 2px dotted #38f;\r\n\tbackground: rgba(255,255,255,0.5);\r\n\t}\r\n\r\n\r\n/* general typography */\r\n.leaflet-container {\r\n\tfont: 12px/1.5 \"Helvetica Neue\", Arial, Helvetica, sans-serif;\r\n\t}\r\n\r\n\r\n/* general toolbar styles */\r\n\r\n.leaflet-bar {\r\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\r\n\tborder-radius: 4px;\r\n\t}\r\n.leaflet-bar a,\r\n.leaflet-bar a:hover {\r\n\tbackground-color: #fff;\r\n\tborder-bottom: 1px solid #ccc;\r\n\twidth: 26px;\r\n\theight: 26px;\r\n\tline-height: 26px;\r\n\tdisplay: block;\r\n\ttext-align: center;\r\n\ttext-decoration: none;\r\n\tcolor: black;\r\n\t}\r\n.leaflet-bar a,\r\n.leaflet-control-layers-toggle {\r\n\tbackground-position: 50% 50%;\r\n\tbackground-repeat: no-repeat;\r\n\tdisplay: block;\r\n\t}\r\n.leaflet-bar a:hover {\r\n\tbackground-color: #f4f4f4;\r\n\t}\r\n.leaflet-bar a:first-child {\r\n\tborder-top-left-radius: 4px;\r\n\tborder-top-right-radius: 4px;\r\n\t}\r\n.leaflet-bar a:last-child {\r\n\tborder-bottom-left-radius: 4px;\r\n\tborder-bottom-right-radius: 4px;\r\n\tborder-bottom: none;\r\n\t}\r\n.leaflet-bar a.leaflet-disabled {\r\n\tcursor: default;\r\n\tbackground-color: #f4f4f4;\r\n\tcolor: #bbb;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-bar a {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tline-height: 30px;\r\n\t}\r\n.leaflet-touch .leaflet-bar a:first-child {\r\n\tborder-top-left-radius: 2px;\r\n\tborder-top-right-radius: 2px;\r\n\t}\r\n.leaflet-touch .leaflet-bar a:last-child {\r\n\tborder-bottom-left-radius: 2px;\r\n\tborder-bottom-right-radius: 2px;\r\n\t}\r\n\r\n/* zoom control */\r\n\r\n.leaflet-control-zoom-in,\r\n.leaflet-control-zoom-out {\r\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\r\n\ttext-indent: 1px;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\r\n\tfont-size: 22px;\r\n\t}\r\n\r\n\r\n/* layers control */\r\n\r\n.leaflet-control-layers {\r\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\r\n\tbackground: #fff;\r\n\tborder-radius: 5px;\r\n\t}\r\n.leaflet-control-layers-toggle {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAQAAAADQ4RFAAACf0lEQVR4AY1UM3gkARTePdvdoTxXKc+qTl3aU5U6b2Kbkz3Gtq3Zw6ziLGNPzrYx7946Tr6/ee/XeCQ4D3ykPtL5tHno4n0d/h3+xfuWHGLX81cn7r0iTNzjr7LrlxCqPtkbTQEHeqOrTy4Yyt3VCi/IOB0v7rVC7q45Q3Gr5K6jt+3Gl5nCoDD4MtO+j96Wu8atmhGqcNGHObuf8OM/x3AMx38+4Z2sPqzCxRFK2aF2e5Jol56XTLyggAMTL56XOMoS1W4pOyjUcGGQdZxU6qRh7B9Zp+PfpOFlqt0zyDZckPi1ttmIp03jX8gyJ8a/PG2yutpS/Vol7peZIbZcKBAEEheEIAgFbDkz5H6Zrkm2hVWGiXKiF4Ycw0RWKdtC16Q7qe3X4iOMxruonzegJzWaXFrU9utOSsLUmrc0YjeWYjCW4PDMADElpJSSQ0vQvA1Tm6/JlKnqFs1EGyZiFCqnRZTEJJJiKRYzVYzJck2Rm6P4iH+cmSY0YzimYa8l0EtTODFWhcMIMVqdsI2uiTvKmTisIDHJ3od5GILVhBCarCfVRmo4uTjkhrhzkiBV7SsaqS+TzrzM1qpGGUFt28pIySQHR6h7F6KSwGWm97ay+Z+ZqMcEjEWebE7wxCSQwpkhJqoZA5ivCdZDjJepuJ9IQjGGUmuXJdBFUygxVqVsxFsLMbDe8ZbDYVCGKxs+W080max1hFCarCfV+C1KATwcnvE9gRRuMP2prdbWGowm1KB1y+zwMMENkM755cJ2yPDtqhTI6ED1M/82yIDtC/4j4BijjeObflpO9I9MwXTCsSX8jWAFeHr05WoLTJ5G8IQVS/7vwR6ohirYM7f6HzYpogfS3R2OAAAAAElFTkSuQmCC);\r\n\twidth: 36px;\r\n\theight: 36px;\r\n\t}\r\n.leaflet-retina .leaflet-control-layers-toggle {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAQAAABvcdNgAAAEsklEQVR4AWL4TydIhpZK1kpWOlg0w3ZXP6D2soBtG42jeI6ZmQTHzAxiTbSJsYLjO9HhP+WOmcuhciVnmHVQcJnp7DFvScowZorad/+V/fVzMdMT2g9Cv9guXGv/7pYOrXh2U+RRR3dSd9JRx6bIFc/ekqHI29JC6pJ5ZEh1yWkhkbcFeSjxgx3L2m1cb1C7bceyxA+CNjT/Ifff+/kDk2u/w/33/IeCMOSaWZ4glosqT3DNnNZQ7Cs58/3Ce5HL78iZH/vKVIaYlqzfdLu8Vi7dnvUbEza5Idt36tquZFldl6N5Z/POLof0XLK61mZCmJSWjVF9tEjUluu74IUXvgttuVIHE7YxSkaYhJZam7yiM9Pv82JYfl9nptxZaxMJE4YSPty+vF0+Y2up9d3wwijfjZbabqm/3bZ9ecKHsiGmRflnn1MW4pjHf9oLufyn2z3y1D6n8g8TZhxyzipLNPnAUpsOiuWimg52psrTZYnOWYNDTMuWBWa0tJb4rgq1UvmutpaYEbZlwU3CLJm/ayYjHW5/h7xWLn9Hh1vepDkyf7dE7MtT5LR4e7yYpHrkhOUpEfssBLq2pPhAqoSWKUkk7EDqkmK6RrCEzqDjhNDWNE+XSMvkJRDWlZTmCW0l0PHQGRZY5t1L83kT0Y3l2SItk5JAWHl2dCOBm+fPu3fo5/3v61RMCO9Jx2EEYYhb0rmNQMX/vm7gqOEJLcXTGw3CAuRNeyaPWwjR8PRqKQ1PDA/dpv+on9Shox52WFnx0KY8onHayrJzm87i5h9xGw/tfkev0jGsQizqezUKjk12hBMKJ4kbCqGPVNXudyyrShovGw5CgxsRICxF6aRmSjlBnHRzg7Gx8fKqEubI2rahQYdR1YgDIRQO7JvQyD52hoIQx0mxa0ODtW2Iozn1le2iIRdzwWewedyZzewidueOGqlsn1MvcnQpuVwLGG3/IR1hIKxCjelIDZ8ldqWz25jWAsnldEnK0Zxro19TGVb2ffIZEsIO89EIEDvKMPrzmBOQcKQ+rroye6NgRRxqR4U8EAkz0CL6uSGOm6KQCdWjvjRiSP1BPalCRS5iQYiEIvxuBMJEWgzSoHADcVMuN7IuqqTeyUPq22qFimFtxDyBBJEwNyt6TM88blFHao/6tWWhuuOM4SAK4EI4QmFHA+SEyWlp4EQoJ13cYGzMu7yszEIBOm2rVmHUNqwAIQabISNMRstmdhNWcFLsSm+0tjJH1MdRxO5Nx0WDMhCtgD6OKgZeljJqJKc9po8juskR9XN0Y1lZ3mWjLR9JCO1jRDMd0fpYC2VnvjBSEFg7wBENc0R9HFlb0xvF1+TBEpF68d+DHR6IOWVv2BECtxo46hOFUBd/APU57WIoEwJhIi2CdpyZX0m93BZicktMj1AS9dClteUFAUNUIEygRZCtik5zSxI9MubTBH1GOiHsiLJ3OCoSZkILa9PxiN0EbvhsAo8tdAf9Seepd36lGWHmtNANTv5Jd0z4QYyeo/UEJqxKRpg5LZx6btLPsOaEmdMyxYdlc8LMaJnikDlhclqmPiQnTEpLUIZEwkRagjYkEibQErwhkTAKCLQEbUgkzJQWc/0PstHHcfEdQ+UAAAAASUVORK5CYII=);\r\n\tbackground-size: 26px 26px;\r\n\t}\r\n.leaflet-touch .leaflet-control-layers-toggle {\r\n\twidth: 44px;\r\n\theight: 44px;\r\n\t}\r\n.leaflet-control-layers .leaflet-control-layers-list,\r\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\r\n\tdisplay: none;\r\n\t}\r\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\r\n\tdisplay: block;\r\n\tposition: relative;\r\n\t}\r\n.leaflet-control-layers-expanded {\r\n\tpadding: 6px 10px 6px 6px;\r\n\tcolor: #333;\r\n\tbackground: #fff;\r\n\t}\r\n.leaflet-control-layers-scrollbar {\r\n\toverflow-y: scroll;\r\n\toverflow-x: hidden;\r\n\tpadding-right: 5px;\r\n\t}\r\n.leaflet-control-layers-selector {\r\n\tmargin-top: 2px;\r\n\tposition: relative;\r\n\ttop: 1px;\r\n\t}\r\n.leaflet-control-layers label {\r\n\tdisplay: block;\r\n\t}\r\n.leaflet-control-layers-separator {\r\n\theight: 0;\r\n\tborder-top: 1px solid #ddd;\r\n\tmargin: 5px -10px 5px -6px;\r\n\t}\r\n\r\n/* Default icon URLs */\r\n.leaflet-default-icon-path {\r\n\tbackground-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAApCAYAAADAk4LOAAAFgUlEQVR4Aa1XA5BjWRTN2oW17d3YaZtr2962HUzbDNpjszW24mRt28p47v7zq/bXZtrp/lWnXr337j3nPCe85NcypgSFdugCpW5YoDAMRaIMqRi6aKq5E3YqDQO3qAwjVWrD8Ncq/RBpykd8oZUb/kaJutow8r1aP9II0WmLKLIsJyv1w/kqw9Ch2MYdB++12Onxee/QMwvf4/Dk/Lfp/i4nxTXtOoQ4pW5Aj7wpici1A9erdAN2OH64x8OSP9j3Ft3b7aWkTg/Fm91siTra0f9on5sQr9INejH6CUUUpavjFNq1B+Oadhxmnfa8RfEmN8VNAsQhPqF55xHkMzz3jSmChWU6f7/XZKNH+9+hBLOHYozuKQPxyMPUKkrX/K0uWnfFaJGS1QPRtZsOPtr3NsW0uyh6NNCOkU3Yz+bXbT3I8G3xE5EXLXtCXbbqwCO9zPQYPRTZ5vIDXD7U+w7rFDEoUUf7ibHIR4y6bLVPXrz8JVZEql13trxwue/uDivd3fkWRbS6/IA2bID4uk0UpF1N8qLlbBlXs4Ee7HLTfV1j54APvODnSfOWBqtKVvjgLKzF5YdEk5ewRkGlK0i33Eofffc7HT56jD7/6U+qH3Cx7SBLNntH5YIPvODnyfIXZYRVDPqgHtLs5ABHD3YzLuespb7t79FY34DjMwrVrcTuwlT55YMPvOBnRrJ4VXTdNnYug5ucHLBjEpt30701A3Ts+HEa73u6dT3FNWwflY86eMHPk+Yu+i6pzUpRrW7SNDg5JHR4KapmM5Wv2E8Tfcb1HoqqHMHU+uWDD7zg54mz5/2BSnizi9T1Dg4QQXLToGNCkb6tb1NU+QAlGr1++eADrzhn/u8Q2YZhQVlZ5+CAOtqfbhmaUCS1ezNFVm2imDbPmPng5wmz+gwh+oHDce0eUtQ6OGDIyR0uUhUsoO3vfDmmgOezH0mZN59x7MBi++WDL1g/eEiU3avlidO671bkLfwbw5XV2P8Pzo0ydy4t2/0eu33xYSOMOD8hTf4CrBtGMSoXfPLchX+J0ruSePw3LZeK0juPJbYzrhkH0io7B3k164hiGvawhOKMLkrQLyVpZg8rHFW7E2uHOL888IBPlNZ1FPzstSJM694fWr6RwpvcJK60+0HCILTBzZLFNdtAzJaohze60T8qBzyh5ZuOg5e7uwQppofEmf2++DYvmySqGBuKaicF1blQjhuHdvCIMvp8whTTfZzI7RldpwtSzL+F1+wkdZ2TBOW2gIF88PBTzD/gpeREAMEbxnJcaJHNHrpzji0gQCS6hdkEeYt9DF/2qPcEC8RM28Hwmr3sdNyht00byAut2k3gufWNtgtOEOFGUwcXWNDbdNbpgBGxEvKkOQsxivJx33iow0Vw5S6SVTrpVq11ysA2Rp7gTfPfktc6zhtXBBC+adRLshf6sG2RfHPZ5EAc4sVZ83yCN00Fk/4kggu40ZTvIEm5g24qtU4KjBrx/BTTH8ifVASAG7gKrnWxJDcU7x8X6Ecczhm3o6YicvsLXWfh3Ch1W0k8x0nXF+0fFxgt4phz8QvypiwCCFKMqXCnqXExjq10beH+UUA7+nG6mdG/Pu0f3LgFcGrl2s0kNNjpmoJ9o4B29CMO8dMT4Q5ox8uitF6fqsrJOr8qnwNbRzv6hSnG5wP+64C7h9lp30hKNtKdWjtdkbuPA19nJ7Tz3zR/ibgARbhb4AlhavcBebmTHcFl2fvYEnW0ox9xMxKBS8btJ+KiEbq9zA4RthQXDhPa0T9TEe69gWupwc6uBUphquXgf+/FrIjweHQS4/pduMe5ERUMHUd9xv8ZR98CxkS4F2n3EUrUZ10EYNw7BWm9x1GiPssi3GgiGRDKWRYZfXlON+dfNbM+GgIwYdwAAAAASUVORK5CYII=);\r\n\t}\r\n\r\n\r\n/* attribution and scale controls */\r\n\r\n.leaflet-container .leaflet-control-attribution {\r\n\tbackground: #fff;\r\n\tbackground: rgba(255, 255, 255, 0.7);\r\n\tmargin: 0;\r\n\t}\r\n.leaflet-control-attribution,\r\n.leaflet-control-scale-line {\r\n\tpadding: 0 5px;\r\n\tcolor: #333;\r\n\t}\r\n.leaflet-control-attribution a {\r\n\ttext-decoration: none;\r\n\t}\r\n.leaflet-control-attribution a:hover {\r\n\ttext-decoration: underline;\r\n\t}\r\n.leaflet-container .leaflet-control-attribution,\r\n.leaflet-container .leaflet-control-scale {\r\n\tfont-size: 11px;\r\n\t}\r\n.leaflet-left .leaflet-control-scale {\r\n\tmargin-left: 5px;\r\n\t}\r\n.leaflet-bottom .leaflet-control-scale {\r\n\tmargin-bottom: 5px;\r\n\t}\r\n.leaflet-control-scale-line {\r\n\tborder: 2px solid #777;\r\n\tborder-top: none;\r\n\tline-height: 1.1;\r\n\tpadding: 2px 5px 1px;\r\n\tfont-size: 11px;\r\n\twhite-space: nowrap;\r\n\toverflow: hidden;\r\n\t-moz-box-sizing: border-box;\r\n\t     box-sizing: border-box;\r\n\r\n\tbackground: #fff;\r\n\tbackground: rgba(255, 255, 255, 0.5);\r\n\t}\r\n.leaflet-control-scale-line:not(:first-child) {\r\n\tborder-top: 2px solid #777;\r\n\tborder-bottom: none;\r\n\tmargin-top: -2px;\r\n\t}\r\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\r\n\tborder-bottom: 2px solid #777;\r\n\t}\r\n\r\n.leaflet-touch .leaflet-control-attribution,\r\n.leaflet-touch .leaflet-control-layers,\r\n.leaflet-touch .leaflet-bar {\r\n\tbox-shadow: none;\r\n\t}\r\n.leaflet-touch .leaflet-control-layers,\r\n.leaflet-touch .leaflet-bar {\r\n\tborder: 2px solid rgba(0,0,0,0.2);\r\n\tbackground-clip: padding-box;\r\n\t}\r\n\r\n\r\n/* popup */\r\n\r\n.leaflet-popup {\r\n\tposition: absolute;\r\n\ttext-align: center;\r\n\tmargin-bottom: 20px;\r\n\t}\r\n.leaflet-popup-content-wrapper {\r\n\tpadding: 1px;\r\n\ttext-align: left;\r\n\tborder-radius: 12px;\r\n\t}\r\n.leaflet-popup-content {\r\n\tmargin: 13px 19px;\r\n\tline-height: 1.4;\r\n\t}\r\n.leaflet-popup-content p {\r\n\tmargin: 18px 0;\r\n\t}\r\n.leaflet-popup-tip-container {\r\n\twidth: 40px;\r\n\theight: 20px;\r\n\tposition: absolute;\r\n\tleft: 50%;\r\n\tmargin-left: -20px;\r\n\toverflow: hidden;\r\n\tpointer-events: none;\r\n\t}\r\n.leaflet-popup-tip {\r\n\twidth: 17px;\r\n\theight: 17px;\r\n\tpadding: 1px;\r\n\r\n\tmargin: -10px auto 0;\r\n\r\n\t-webkit-transform: rotate(45deg);\r\n\t   -moz-transform: rotate(45deg);\r\n\t    -ms-transform: rotate(45deg);\r\n\t     -o-transform: rotate(45deg);\r\n\t        transform: rotate(45deg);\r\n\t}\r\n.leaflet-popup-content-wrapper,\r\n.leaflet-popup-tip {\r\n\tbackground: white;\r\n\tcolor: #333;\r\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\r\n\t}\r\n.leaflet-container a.leaflet-popup-close-button {\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tpadding: 4px 4px 0 0;\r\n\tborder: none;\r\n\ttext-align: center;\r\n\twidth: 18px;\r\n\theight: 14px;\r\n\tfont: 16px/14px Tahoma, Verdana, sans-serif;\r\n\tcolor: #c3c3c3;\r\n\ttext-decoration: none;\r\n\tfont-weight: bold;\r\n\tbackground: transparent;\r\n\t}\r\n.leaflet-container a.leaflet-popup-close-button:hover {\r\n\tcolor: #999;\r\n\t}\r\n.leaflet-popup-scrolled {\r\n\toverflow: auto;\r\n\tborder-bottom: 1px solid #ddd;\r\n\tborder-top: 1px solid #ddd;\r\n\t}\r\n\r\n.leaflet-oldie .leaflet-popup-content-wrapper {\r\n\tzoom: 1;\r\n\t}\r\n.leaflet-oldie .leaflet-popup-tip {\r\n\twidth: 24px;\r\n\tmargin: 0 auto;\r\n\r\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\r\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\r\n\t}\r\n.leaflet-oldie .leaflet-popup-tip-container {\r\n\tmargin-top: -1px;\r\n\t}\r\n\r\n.leaflet-oldie .leaflet-control-zoom,\r\n.leaflet-oldie .leaflet-control-layers,\r\n.leaflet-oldie .leaflet-popup-content-wrapper,\r\n.leaflet-oldie .leaflet-popup-tip {\r\n\tborder: 1px solid #999;\r\n\t}\r\n\r\n\r\n/* div icon */\r\n\r\n.leaflet-div-icon {\r\n\tbackground: #fff;\r\n\tborder: 1px solid #666;\r\n\t}\r\n\r\n\r\n/* Tooltip */\r\n/* Base styles for the element that has a tooltip */\r\n.leaflet-tooltip {\r\n\tposition: absolute;\r\n\tpadding: 6px;\r\n\tbackground-color: #fff;\r\n\tborder: 1px solid #fff;\r\n\tborder-radius: 3px;\r\n\tcolor: #222;\r\n\twhite-space: nowrap;\r\n\t-webkit-user-select: none;\r\n\t-moz-user-select: none;\r\n\t-ms-user-select: none;\r\n\tuser-select: none;\r\n\tpointer-events: none;\r\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\r\n\t}\r\n.leaflet-tooltip.leaflet-clickable {\r\n\tcursor: pointer;\r\n\tpointer-events: auto;\r\n\t}\r\n.leaflet-tooltip-top:before,\r\n.leaflet-tooltip-bottom:before,\r\n.leaflet-tooltip-left:before,\r\n.leaflet-tooltip-right:before {\r\n\tposition: absolute;\r\n\tpointer-events: none;\r\n\tborder: 6px solid transparent;\r\n\tbackground: transparent;\r\n\tcontent: \"\";\r\n\t}\r\n\r\n/* Directions */\r\n\r\n.leaflet-tooltip-bottom {\r\n\tmargin-top: 6px;\r\n}\r\n.leaflet-tooltip-top {\r\n\tmargin-top: -6px;\r\n}\r\n.leaflet-tooltip-bottom:before,\r\n.leaflet-tooltip-top:before {\r\n\tleft: 50%;\r\n\tmargin-left: -6px;\r\n\t}\r\n.leaflet-tooltip-top:before {\r\n\tbottom: 0;\r\n\tmargin-bottom: -12px;\r\n\tborder-top-color: #fff;\r\n\t}\r\n.leaflet-tooltip-bottom:before {\r\n\ttop: 0;\r\n\tmargin-top: -12px;\r\n\tmargin-left: -6px;\r\n\tborder-bottom-color: #fff;\r\n\t}\r\n.leaflet-tooltip-left {\r\n\tmargin-left: -6px;\r\n}\r\n.leaflet-tooltip-right {\r\n\tmargin-left: 6px;\r\n}\r\n.leaflet-tooltip-left:before,\r\n.leaflet-tooltip-right:before {\r\n\ttop: 50%;\r\n\tmargin-top: -6px;\r\n\t}\r\n.leaflet-tooltip-left:before {\r\n\tright: 0;\r\n\tmargin-right: -12px;\r\n\tborder-left-color: #fff;\r\n\t}\r\n.leaflet-tooltip-right:before {\r\n\tleft: 0;\r\n\tmargin-left: -12px;\r\n\tborder-right-color: #fff;\r\n\t}\r\n\ndiv[id^=\"vue-leaflet-popup-\"],\ndiv[id^=\"vue-leaflet-tooltip-\"] {\n  display: none;\n}\n.leaflet-popup-content div[id^=\"vue-leaflet-popup-\"] {\n  display: block;\n}\n.leaflet-tooltip div[id^=\"vue-leaflet-tooltip-\"] {\n  display: block;\n}\n/*\nAuthor: L. Voogdt\nLicense: MIT\nVersion: 1.0\n*/\n\n/* Marker setup */\n.awesome-marker {\n  background: url(" + escape(__webpack_require__(214)) + ") no-repeat 0 0;\n  width: 35px;\n  height: 46px;\n  position:absolute;\n  left:0;\n  top:0;\n  display: block;\n  text-align: center;\n}\n\n.awesome-marker-shadow {\n  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAYAAACcN8ZaAAAB3klEQVR42s3U4UdDURzG8czMXJnJ1Vwzc6VJZjaZJdlMlpQsKdmUFNOUspRSSqUolfQfr+fF98Vx5mwv9qbDx7LdznnO7/7Omej3+/+Ga0QMUYkhbvBgmhzCQxwxibIGrGEF8CQhU+LLtKQkQNqScUgjxRxTBIxbgfgD/BgnhM8kM5KTeclLQYqGkkMRBckzR8ic/mAgd5BAZplsUaqyIg2sDtHg2brUZJk5SmwopErJUWE8SpmTMhNvya60Zd/SNrR4bkeaskG4uiwRZk6yrJEYFibGAxn+scECHTmTnuVCzvmty3PHciB7bGKN6lQkzysPqIrHmpFhYbKUtckC1/Ioz4ZHuZdbuSLYiRxRpSZVWXZVxAzC0R4Ik5SQsu6w8yd5l2/5kg95I9SdXMoZQfYIUjeqEUrgOkXGPeN4TYRhxy8E+ZUf+eS7B7miIoeybVSjKDnm8u3+gH3pDTYwu1igATvs/pXqvBKiR4i2bNJfi1ZfUAnjgrOG8wY2quNzBKuU/ZS+uSFEl5O0xRGuUIlZCcw7xG5QPkeHYUSNV5WXGou2sC3rBC0LjenqCXGO0WEiTJa0Lr4KixdHBrDGuGGiRqCUpFk8pGIpQtCU7p4YPwxYxEMCk1aAMQZh8Ac8PfbIzYPJOwAAAABJRU5ErkJggg==) no-repeat 0 0;\n  width: 36px;\n  height: 16px;\n}\n\n/* Retina displays */\n@media (min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 3/2),\n(-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx) {\n .awesome-marker {\n  background-image: url(" + escape(__webpack_require__(215)) + ");\n  background-size: 720px 92px;\n }\n .awesome-marker-shadow {\n  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAgCAYAAACvgw7DAAAFhElEQVR42tWZ/0ubVxSHZZQxpJQRwoqEUkJQQhlBCcEiQRGJiKFEQqQ4lKFYLA5FsSjKioqipRutbLJ2f627g+dyDmfvqfetzlLh+aFpcr88+dxzb+7bdwt/33wG974g/rhu+pdzwt86fJdA/82w7Un/18m6kRBXgD+5+4YHDt/fEtImfRppVlJ+MY4QEWEmbyZZUBQVP2TwMJGBDMx7aFP6K4gwJBlBecVYISIDCSJAJm0mUIJH8NhQdqjkh8/SNv2VRB6SjCAtJ2dKMGuFIEIEMHGZ2CAMQdXwxPDjNdQ++f+0Q9tD9F1RkgYYLwlCDmIg19IhJQiRVJToFAlMViYxHBiBOjQyGP0ETzMw76Ed+qC/YSVrSAkqiRySo1IjAnwkKSKlQKMIQQYS4sQZ/Bg0A+MwYZg0TKViPjeh+mjS72iUhKCqyCE5pCZdDEmxUmjwURQSZSCiqSbXCkwHZmAW2g7PEmkbZml/mj6nlKgm42rE9DDushHzQGpNohjefB8pD2NK6GSEjscZ1AyD7QTmAt1AD+YVz/Mjn6e9LswB0pCEICVnhFQPIabEfAoiJj0xkhaWj5LSoNMW39ocA14I/BRYCvwMy58NbdDe4r9twwLCEIUcEoSYCbWkhqk1g0lLyTv92bTQUBkpdZWSDoNbZAKrgbXAy8B64JdE1jN4SVsvAquwokUhaJ70dNTyaiEmLqUaYiqUArZu0qLF+EdjOa/wwWKsK2r5tPiGFhjoGhPcCmwHdgKvEtlRbMNWYDOwQbtIEjlGDIlhKUmNqZOWKuOPW3bRSct1iUGMbM2PabxBp20GtMygt5jkfuAg8DpwaOF1y6+BA9iDXdpDEoKQQ79LLKv5mBZVX8ZZQiO66Nqt2jngISFNTJkoPqXjLoOKUvaY5HHgJHDmcAoncBw4UtIOkLtnxJAapEid6aqkTKliW2f5VOPysXUFjJQ0Mf1KTAXzTb6VeeK8wQQOmeibwNvA7xn8xv+95X3nyIqCDiU9iGFJUXPWkLKo6krbLJ2GpIQdiJoiy8dJyg3E1IjoDDvCCgPfZ3LnCHgf+MNwwevveE+UE1N0RGKilJ0MIUv021Vb86QIYefJJUSkXF1d4eS6rdoXM0uUV5nA6ygFCZeBDxpe+1MEkSBJzbESs6uWzwu+gEWzdFpIidtxzWzHck5h6fgpETHI8cWYGlOMW7VKzEKWGCb/V+Bj4G/4wGtRzDsSc07SjjKSsqaEPFdCpkWIpMQc9UmJCLEXVVaGFXPP4G/XUnybjpg3TPhSS4GPKjHvVVJOY10hJduxyKpa0gt01Nlk3JxkbXEt+j8OBREhpIgRORzw6LiqdqUexXeTb/qUFFzE1MAly4vaQkpYNrHAqh1nSS2Ztl0yJiFsvyYhbh0RHDH+UvJSw7cxqM4xc9SZdbUrnaniewEiRBJyoBKyniGk4y8ZOY+kLhn4z19+MYLcw8ghr0ZqppnEMpPbZUmcIOAMTA1hubDTILenziKT5nBmt92B9G1XhOQQk3iliRgGU+JbqzOBttqdNkUOp1451e5LUWXJSFHtaCHebxunqKZJ4d+3LEZ2JwZWYcCjLKlnTHCZFGwgIB7MYjFdUculJwczKaZquVT9c4gUVKeG9P3fYuS3VPaPyRrf7CQ7Ro/0yDWD+qHn7C5j5ug+aO9m7c2+FZLndv/2xPin4BLJqcZf2wiaMbdxs3KzJncjzlWjFFM5lJl0+A/I7lpMX+bdDHKIe1WlZ0zuddXVIjJMMsr21t6mI+8DsbsXQ2pEDqdhuf+tsHM8YfJgbujZZh0Z/W4xNX9fXoz/+8nKKdlnSYqKTYctplYIfC1i7KFPnhwwUXnMah+dioxCsgyEfD1iIPMxrVAQ0p8ZexLuWsw/8PFSG0HPbPgAAAAASUVORK5CYII=);\n  background-size: 35px 16px;\n }\n}\n\n.awesome-marker i {\n  color: #333;\n  margin-top: 10px;\n  display: inline-block;\n  font-size: 14px;\n}\n\n.awesome-marker .icon-white {\n  color: #fff;\n}\n\n/* Colors */\n.awesome-marker-icon-red {\n  background-position: 0 0;\n}\n\n.awesome-marker-icon-darkred {\n  background-position: -180px 0;\n}\n\n.awesome-marker-icon-lightred {\n  background-position: -360px 0;\n}\n\n.awesome-marker-icon-orange {\n  background-position: -36px 0;\n}\n\n.awesome-marker-icon-beige {\n  background-position: -396px 0;\n}\n\n.awesome-marker-icon-green {\n  background-position: -72px 0;\n}\n\n.awesome-marker-icon-darkgreen {\n  background-position: -252px 0;\n}\n\n.awesome-marker-icon-lightgreen {\n  background-position: -432px 0;\n}\n\n.awesome-marker-icon-blue {\n  background-position: -108px 0;\n}\n\n.awesome-marker-icon-darkblue {\n  background-position: -216px 0;\n}\n\n.awesome-marker-icon-lightblue {\n  background-position: -468px 0;\n}\n\n.awesome-marker-icon-purple {\n  background-position: -144px 0;\n}\n\n.awesome-marker-icon-darkpurple {\n  background-position: -288px 0;\n}\n\n.awesome-marker-icon-pink {\n  background-position: -504px 0;\n}\n\n.awesome-marker-icon-cadetblue {\n  background-position: -324px 0;\n}\n\n.awesome-marker-icon-white {\n  background-position: -574px 0;\n}\n\n.awesome-marker-icon-gray {\n  background-position: -648px 0;\n}\n\n.awesome-marker-icon-lightgray {\n  background-position: -612px 0;\n}\n\n.awesome-marker-icon-black {\n  background-position: -682px 0;\n}\n\n.awesome-marker-square {\n  background-position-y: -46px;\n}\n\n@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + escape(__webpack_require__(35)) + ");\n  src: url(" + escape(__webpack_require__(35)) + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(216)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(217)) + ") format(\"woff\"), url(" + escape(__webpack_require__(218)) + ") format(\"truetype\"), url(" + escape(__webpack_require__(219)) + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-fw {\n  width: 1.28571em;\n  text-align: center;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none;\n}\n.fa-ul > li {\n    position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n    left: -1.85714em;\n}\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n}\n}\n@keyframes fa-spin {\n0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n}\n100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n}\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #fff;\n}\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n.fa-handshake-o:before {\n  content: \"\\F2B5\";\n}\n.fa-envelope-open:before {\n  content: \"\\F2B6\";\n}\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\";\n}\n.fa-linode:before {\n  content: \"\\F2B8\";\n}\n.fa-address-book:before {\n  content: \"\\F2B9\";\n}\n.fa-address-book-o:before {\n  content: \"\\F2BA\";\n}\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\";\n}\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\";\n}\n.fa-user-circle:before {\n  content: \"\\F2BD\";\n}\n.fa-user-circle-o:before {\n  content: \"\\F2BE\";\n}\n.fa-user-o:before {\n  content: \"\\F2C0\";\n}\n.fa-id-badge:before {\n  content: \"\\F2C1\";\n}\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\";\n}\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\";\n}\n.fa-quora:before {\n  content: \"\\F2C4\";\n}\n.fa-free-code-camp:before {\n  content: \"\\F2C5\";\n}\n.fa-telegram:before {\n  content: \"\\F2C6\";\n}\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\";\n}\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\";\n}\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\";\n}\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\";\n}\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\";\n}\n.fa-shower:before {\n  content: \"\\F2CC\";\n}\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\";\n}\n.fa-podcast:before {\n  content: \"\\F2CE\";\n}\n.fa-window-maximize:before {\n  content: \"\\F2D0\";\n}\n.fa-window-minimize:before {\n  content: \"\\F2D1\";\n}\n.fa-window-restore:before {\n  content: \"\\F2D2\";\n}\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\";\n}\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\";\n}\n.fa-bandcamp:before {\n  content: \"\\F2D5\";\n}\n.fa-grav:before {\n  content: \"\\F2D6\";\n}\n.fa-etsy:before {\n  content: \"\\F2D7\";\n}\n.fa-imdb:before {\n  content: \"\\F2D8\";\n}\n.fa-ravelry:before {\n  content: \"\\F2D9\";\n}\n.fa-eercast:before {\n  content: \"\\F2DA\";\n}\n.fa-microchip:before {\n  content: \"\\F2DB\";\n}\n.fa-snowflake-o:before {\n  content: \"\\F2DC\";\n}\n.fa-superpowers:before {\n  content: \"\\F2DD\";\n}\n.fa-wpexplorer:before {\n  content: \"\\F2DE\";\n}\n.fa-meetup:before {\n  content: \"\\F2E0\";\n}\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto;\n}\n@font-face {\n  font-family: 'Glyphicons Halflings';\n  src: url(" + escape(__webpack_require__(36)) + ");\n  src: url(" + escape(__webpack_require__(36)) + "?#iefix) format(\"embedded-opentype\"), url(" + escape(__webpack_require__(220)) + ") format(\"woff2\"), url(" + escape(__webpack_require__(221)) + ") format(\"woff\"), url(" + escape(__webpack_require__(222)) + ") format(\"truetype\"), url(" + escape(__webpack_require__(223)) + "#@{icon-font-svg-id}) format(\"svg\");\n}\n.glyphicon {\n  position: relative;\n  top: 1px;\n  display: inline-block;\n  font-family: 'Glyphicons Halflings';\n  font-style: normal;\n  font-weight: normal;\n  line-height: 1;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.glyphicon-asterisk:before {\n  content: \"*\";\n}\n.glyphicon-plus:before {\n  content: \"+\";\n}\n.glyphicon-euro:before,\n.glyphicon-eur:before {\n  content: \"\\20AC\";\n}\n.glyphicon-minus:before {\n  content: \"\\2212\";\n}\n.glyphicon-cloud:before {\n  content: \"\\2601\";\n}\n.glyphicon-envelope:before {\n  content: \"\\2709\";\n}\n.glyphicon-pencil:before {\n  content: \"\\270F\";\n}\n.glyphicon-glass:before {\n  content: \"\\E001\";\n}\n.glyphicon-music:before {\n  content: \"\\E002\";\n}\n.glyphicon-search:before {\n  content: \"\\E003\";\n}\n.glyphicon-heart:before {\n  content: \"\\E005\";\n}\n.glyphicon-star:before {\n  content: \"\\E006\";\n}\n.glyphicon-star-empty:before {\n  content: \"\\E007\";\n}\n.glyphicon-user:before {\n  content: \"\\E008\";\n}\n.glyphicon-film:before {\n  content: \"\\E009\";\n}\n.glyphicon-th-large:before {\n  content: \"\\E010\";\n}\n.glyphicon-th:before {\n  content: \"\\E011\";\n}\n.glyphicon-th-list:before {\n  content: \"\\E012\";\n}\n.glyphicon-ok:before {\n  content: \"\\E013\";\n}\n.glyphicon-remove:before {\n  content: \"\\E014\";\n}\n.glyphicon-zoom-in:before {\n  content: \"\\E015\";\n}\n.glyphicon-zoom-out:before {\n  content: \"\\E016\";\n}\n.glyphicon-off:before {\n  content: \"\\E017\";\n}\n.glyphicon-signal:before {\n  content: \"\\E018\";\n}\n.glyphicon-cog:before {\n  content: \"\\E019\";\n}\n.glyphicon-trash:before {\n  content: \"\\E020\";\n}\n.glyphicon-home:before {\n  content: \"\\E021\";\n}\n.glyphicon-file:before {\n  content: \"\\E022\";\n}\n.glyphicon-time:before {\n  content: \"\\E023\";\n}\n.glyphicon-road:before {\n  content: \"\\E024\";\n}\n.glyphicon-download-alt:before {\n  content: \"\\E025\";\n}\n.glyphicon-download:before {\n  content: \"\\E026\";\n}\n.glyphicon-upload:before {\n  content: \"\\E027\";\n}\n.glyphicon-inbox:before {\n  content: \"\\E028\";\n}\n.glyphicon-play-circle:before {\n  content: \"\\E029\";\n}\n.glyphicon-repeat:before {\n  content: \"\\E030\";\n}\n.glyphicon-refresh:before {\n  content: \"\\E031\";\n}\n.glyphicon-list-alt:before {\n  content: \"\\E032\";\n}\n.glyphicon-lock:before {\n  content: \"\\E033\";\n}\n.glyphicon-flag:before {\n  content: \"\\E034\";\n}\n.glyphicon-headphones:before {\n  content: \"\\E035\";\n}\n.glyphicon-volume-off:before {\n  content: \"\\E036\";\n}\n.glyphicon-volume-down:before {\n  content: \"\\E037\";\n}\n.glyphicon-volume-up:before {\n  content: \"\\E038\";\n}\n.glyphicon-qrcode:before {\n  content: \"\\E039\";\n}\n.glyphicon-barcode:before {\n  content: \"\\E040\";\n}\n.glyphicon-tag:before {\n  content: \"\\E041\";\n}\n.glyphicon-tags:before {\n  content: \"\\E042\";\n}\n.glyphicon-book:before {\n  content: \"\\E043\";\n}\n.glyphicon-bookmark:before {\n  content: \"\\E044\";\n}\n.glyphicon-print:before {\n  content: \"\\E045\";\n}\n.glyphicon-camera:before {\n  content: \"\\E046\";\n}\n.glyphicon-font:before {\n  content: \"\\E047\";\n}\n.glyphicon-bold:before {\n  content: \"\\E048\";\n}\n.glyphicon-italic:before {\n  content: \"\\E049\";\n}\n.glyphicon-text-height:before {\n  content: \"\\E050\";\n}\n.glyphicon-text-width:before {\n  content: \"\\E051\";\n}\n.glyphicon-align-left:before {\n  content: \"\\E052\";\n}\n.glyphicon-align-center:before {\n  content: \"\\E053\";\n}\n.glyphicon-align-right:before {\n  content: \"\\E054\";\n}\n.glyphicon-align-justify:before {\n  content: \"\\E055\";\n}\n.glyphicon-list:before {\n  content: \"\\E056\";\n}\n.glyphicon-indent-left:before {\n  content: \"\\E057\";\n}\n.glyphicon-indent-right:before {\n  content: \"\\E058\";\n}\n.glyphicon-facetime-video:before {\n  content: \"\\E059\";\n}\n.glyphicon-picture:before {\n  content: \"\\E060\";\n}\n.glyphicon-map-marker:before {\n  content: \"\\E062\";\n}\n.glyphicon-adjust:before {\n  content: \"\\E063\";\n}\n.glyphicon-tint:before {\n  content: \"\\E064\";\n}\n.glyphicon-edit:before {\n  content: \"\\E065\";\n}\n.glyphicon-share:before {\n  content: \"\\E066\";\n}\n.glyphicon-check:before {\n  content: \"\\E067\";\n}\n.glyphicon-move:before {\n  content: \"\\E068\";\n}\n.glyphicon-step-backward:before {\n  content: \"\\E069\";\n}\n.glyphicon-fast-backward:before {\n  content: \"\\E070\";\n}\n.glyphicon-backward:before {\n  content: \"\\E071\";\n}\n.glyphicon-play:before {\n  content: \"\\E072\";\n}\n.glyphicon-pause:before {\n  content: \"\\E073\";\n}\n.glyphicon-stop:before {\n  content: \"\\E074\";\n}\n.glyphicon-forward:before {\n  content: \"\\E075\";\n}\n.glyphicon-fast-forward:before {\n  content: \"\\E076\";\n}\n.glyphicon-step-forward:before {\n  content: \"\\E077\";\n}\n.glyphicon-eject:before {\n  content: \"\\E078\";\n}\n.glyphicon-chevron-left:before {\n  content: \"\\E079\";\n}\n.glyphicon-chevron-right:before {\n  content: \"\\E080\";\n}\n.glyphicon-plus-sign:before {\n  content: \"\\E081\";\n}\n.glyphicon-minus-sign:before {\n  content: \"\\E082\";\n}\n.glyphicon-remove-sign:before {\n  content: \"\\E083\";\n}\n.glyphicon-ok-sign:before {\n  content: \"\\E084\";\n}\n.glyphicon-question-sign:before {\n  content: \"\\E085\";\n}\n.glyphicon-info-sign:before {\n  content: \"\\E086\";\n}\n.glyphicon-screenshot:before {\n  content: \"\\E087\";\n}\n.glyphicon-remove-circle:before {\n  content: \"\\E088\";\n}\n.glyphicon-ok-circle:before {\n  content: \"\\E089\";\n}\n.glyphicon-ban-circle:before {\n  content: \"\\E090\";\n}\n.glyphicon-arrow-left:before {\n  content: \"\\E091\";\n}\n.glyphicon-arrow-right:before {\n  content: \"\\E092\";\n}\n.glyphicon-arrow-up:before {\n  content: \"\\E093\";\n}\n.glyphicon-arrow-down:before {\n  content: \"\\E094\";\n}\n.glyphicon-share-alt:before {\n  content: \"\\E095\";\n}\n.glyphicon-resize-full:before {\n  content: \"\\E096\";\n}\n.glyphicon-resize-small:before {\n  content: \"\\E097\";\n}\n.glyphicon-exclamation-sign:before {\n  content: \"\\E101\";\n}\n.glyphicon-gift:before {\n  content: \"\\E102\";\n}\n.glyphicon-leaf:before {\n  content: \"\\E103\";\n}\n.glyphicon-fire:before {\n  content: \"\\E104\";\n}\n.glyphicon-eye-open:before {\n  content: \"\\E105\";\n}\n.glyphicon-eye-close:before {\n  content: \"\\E106\";\n}\n.glyphicon-warning-sign:before {\n  content: \"\\E107\";\n}\n.glyphicon-plane:before {\n  content: \"\\E108\";\n}\n.glyphicon-calendar:before {\n  content: \"\\E109\";\n}\n.glyphicon-random:before {\n  content: \"\\E110\";\n}\n.glyphicon-comment:before {\n  content: \"\\E111\";\n}\n.glyphicon-magnet:before {\n  content: \"\\E112\";\n}\n.glyphicon-chevron-up:before {\n  content: \"\\E113\";\n}\n.glyphicon-chevron-down:before {\n  content: \"\\E114\";\n}\n.glyphicon-retweet:before {\n  content: \"\\E115\";\n}\n.glyphicon-shopping-cart:before {\n  content: \"\\E116\";\n}\n.glyphicon-folder-close:before {\n  content: \"\\E117\";\n}\n.glyphicon-folder-open:before {\n  content: \"\\E118\";\n}\n.glyphicon-resize-vertical:before {\n  content: \"\\E119\";\n}\n.glyphicon-resize-horizontal:before {\n  content: \"\\E120\";\n}\n.glyphicon-hdd:before {\n  content: \"\\E121\";\n}\n.glyphicon-bullhorn:before {\n  content: \"\\E122\";\n}\n.glyphicon-bell:before {\n  content: \"\\E123\";\n}\n.glyphicon-certificate:before {\n  content: \"\\E124\";\n}\n.glyphicon-thumbs-up:before {\n  content: \"\\E125\";\n}\n.glyphicon-thumbs-down:before {\n  content: \"\\E126\";\n}\n.glyphicon-hand-right:before {\n  content: \"\\E127\";\n}\n.glyphicon-hand-left:before {\n  content: \"\\E128\";\n}\n.glyphicon-hand-up:before {\n  content: \"\\E129\";\n}\n.glyphicon-hand-down:before {\n  content: \"\\E130\";\n}\n.glyphicon-circle-arrow-right:before {\n  content: \"\\E131\";\n}\n.glyphicon-circle-arrow-left:before {\n  content: \"\\E132\";\n}\n.glyphicon-circle-arrow-up:before {\n  content: \"\\E133\";\n}\n.glyphicon-circle-arrow-down:before {\n  content: \"\\E134\";\n}\n.glyphicon-globe:before {\n  content: \"\\E135\";\n}\n.glyphicon-wrench:before {\n  content: \"\\E136\";\n}\n.glyphicon-tasks:before {\n  content: \"\\E137\";\n}\n.glyphicon-filter:before {\n  content: \"\\E138\";\n}\n.glyphicon-briefcase:before {\n  content: \"\\E139\";\n}\n.glyphicon-fullscreen:before {\n  content: \"\\E140\";\n}\n.glyphicon-dashboard:before {\n  content: \"\\E141\";\n}\n.glyphicon-paperclip:before {\n  content: \"\\E142\";\n}\n.glyphicon-heart-empty:before {\n  content: \"\\E143\";\n}\n.glyphicon-link:before {\n  content: \"\\E144\";\n}\n.glyphicon-phone:before {\n  content: \"\\E145\";\n}\n.glyphicon-pushpin:before {\n  content: \"\\E146\";\n}\n.glyphicon-usd:before {\n  content: \"\\E148\";\n}\n.glyphicon-gbp:before {\n  content: \"\\E149\";\n}\n.glyphicon-sort:before {\n  content: \"\\E150\";\n}\n.glyphicon-sort-by-alphabet:before {\n  content: \"\\E151\";\n}\n.glyphicon-sort-by-alphabet-alt:before {\n  content: \"\\E152\";\n}\n.glyphicon-sort-by-order:before {\n  content: \"\\E153\";\n}\n.glyphicon-sort-by-order-alt:before {\n  content: \"\\E154\";\n}\n.glyphicon-sort-by-attributes:before {\n  content: \"\\E155\";\n}\n.glyphicon-sort-by-attributes-alt:before {\n  content: \"\\E156\";\n}\n.glyphicon-unchecked:before {\n  content: \"\\E157\";\n}\n.glyphicon-expand:before {\n  content: \"\\E158\";\n}\n.glyphicon-collapse-down:before {\n  content: \"\\E159\";\n}\n.glyphicon-collapse-up:before {\n  content: \"\\E160\";\n}\n.glyphicon-log-in:before {\n  content: \"\\E161\";\n}\n.glyphicon-flash:before {\n  content: \"\\E162\";\n}\n.glyphicon-log-out:before {\n  content: \"\\E163\";\n}\n.glyphicon-new-window:before {\n  content: \"\\E164\";\n}\n.glyphicon-record:before {\n  content: \"\\E165\";\n}\n.glyphicon-save:before {\n  content: \"\\E166\";\n}\n.glyphicon-open:before {\n  content: \"\\E167\";\n}\n.glyphicon-saved:before {\n  content: \"\\E168\";\n}\n.glyphicon-import:before {\n  content: \"\\E169\";\n}\n.glyphicon-export:before {\n  content: \"\\E170\";\n}\n.glyphicon-send:before {\n  content: \"\\E171\";\n}\n.glyphicon-floppy-disk:before {\n  content: \"\\E172\";\n}\n.glyphicon-floppy-saved:before {\n  content: \"\\E173\";\n}\n.glyphicon-floppy-remove:before {\n  content: \"\\E174\";\n}\n.glyphicon-floppy-save:before {\n  content: \"\\E175\";\n}\n.glyphicon-floppy-open:before {\n  content: \"\\E176\";\n}\n.glyphicon-credit-card:before {\n  content: \"\\E177\";\n}\n.glyphicon-transfer:before {\n  content: \"\\E178\";\n}\n.glyphicon-cutlery:before {\n  content: \"\\E179\";\n}\n.glyphicon-header:before {\n  content: \"\\E180\";\n}\n.glyphicon-compressed:before {\n  content: \"\\E181\";\n}\n.glyphicon-earphone:before {\n  content: \"\\E182\";\n}\n.glyphicon-phone-alt:before {\n  content: \"\\E183\";\n}\n.glyphicon-tower:before {\n  content: \"\\E184\";\n}\n.glyphicon-stats:before {\n  content: \"\\E185\";\n}\n.glyphicon-sd-video:before {\n  content: \"\\E186\";\n}\n.glyphicon-hd-video:before {\n  content: \"\\E187\";\n}\n.glyphicon-subtitles:before {\n  content: \"\\E188\";\n}\n.glyphicon-sound-stereo:before {\n  content: \"\\E189\";\n}\n.glyphicon-sound-dolby:before {\n  content: \"\\E190\";\n}\n.glyphicon-sound-5-1:before {\n  content: \"\\E191\";\n}\n.glyphicon-sound-6-1:before {\n  content: \"\\E192\";\n}\n.glyphicon-sound-7-1:before {\n  content: \"\\E193\";\n}\n.glyphicon-copyright-mark:before {\n  content: \"\\E194\";\n}\n.glyphicon-registration-mark:before {\n  content: \"\\E195\";\n}\n.glyphicon-cloud-download:before {\n  content: \"\\E197\";\n}\n.glyphicon-cloud-upload:before {\n  content: \"\\E198\";\n}\n.glyphicon-tree-conifer:before {\n  content: \"\\E199\";\n}\n.glyphicon-tree-deciduous:before {\n  content: \"\\E200\";\n}\n.glyphicon-cd:before {\n  content: \"\\E201\";\n}\n.glyphicon-save-file:before {\n  content: \"\\E202\";\n}\n.glyphicon-open-file:before {\n  content: \"\\E203\";\n}\n.glyphicon-level-up:before {\n  content: \"\\E204\";\n}\n.glyphicon-copy:before {\n  content: \"\\E205\";\n}\n.glyphicon-paste:before {\n  content: \"\\E206\";\n}\n.glyphicon-alert:before {\n  content: \"\\E209\";\n}\n.glyphicon-equalizer:before {\n  content: \"\\E210\";\n}\n.glyphicon-king:before {\n  content: \"\\E211\";\n}\n.glyphicon-queen:before {\n  content: \"\\E212\";\n}\n.glyphicon-pawn:before {\n  content: \"\\E213\";\n}\n.glyphicon-bishop:before {\n  content: \"\\E214\";\n}\n.glyphicon-knight:before {\n  content: \"\\E215\";\n}\n.glyphicon-baby-formula:before {\n  content: \"\\E216\";\n}\n.glyphicon-tent:before {\n  content: \"\\26FA\";\n}\n.glyphicon-blackboard:before {\n  content: \"\\E218\";\n}\n.glyphicon-bed:before {\n  content: \"\\E219\";\n}\n.glyphicon-apple:before {\n  content: \"\\F8FF\";\n}\n.glyphicon-erase:before {\n  content: \"\\E221\";\n}\n.glyphicon-hourglass:before {\n  content: \"\\231B\";\n}\n.glyphicon-lamp:before {\n  content: \"\\E223\";\n}\n.glyphicon-duplicate:before {\n  content: \"\\E224\";\n}\n.glyphicon-piggy-bank:before {\n  content: \"\\E225\";\n}\n.glyphicon-scissors:before {\n  content: \"\\E226\";\n}\n.glyphicon-bitcoin:before {\n  content: \"\\E227\";\n}\n.glyphicon-btc:before {\n  content: \"\\E227\";\n}\n.glyphicon-xbt:before {\n  content: \"\\E227\";\n}\n.glyphicon-yen:before {\n  content: \"\\A5\";\n}\n.glyphicon-jpy:before {\n  content: \"\\A5\";\n}\n.glyphicon-ruble:before {\n  content: \"\\20BD\";\n}\n.glyphicon-rub:before {\n  content: \"\\20BD\";\n}\n.glyphicon-scale:before {\n  content: \"\\E230\";\n}\n.glyphicon-ice-lolly:before {\n  content: \"\\E231\";\n}\n.glyphicon-ice-lolly-tasted:before {\n  content: \"\\E232\";\n}\n.glyphicon-education:before {\n  content: \"\\E233\";\n}\n.glyphicon-option-horizontal:before {\n  content: \"\\E234\";\n}\n.glyphicon-option-vertical:before {\n  content: \"\\E235\";\n}\n.glyphicon-menu-hamburger:before {\n  content: \"\\E236\";\n}\n.glyphicon-modal-window:before {\n  content: \"\\E237\";\n}\n.glyphicon-oil:before {\n  content: \"\\E238\";\n}\n.glyphicon-grain:before {\n  content: \"\\E239\";\n}\n.glyphicon-sunglasses:before {\n  content: \"\\E240\";\n}\n.glyphicon-text-size:before {\n  content: \"\\E241\";\n}\n.glyphicon-text-color:before {\n  content: \"\\E242\";\n}\n.glyphicon-text-background:before {\n  content: \"\\E243\";\n}\n.glyphicon-object-align-top:before {\n  content: \"\\E244\";\n}\n.glyphicon-object-align-bottom:before {\n  content: \"\\E245\";\n}\n.glyphicon-object-align-horizontal:before {\n  content: \"\\E246\";\n}\n.glyphicon-object-align-left:before {\n  content: \"\\E247\";\n}\n.glyphicon-object-align-vertical:before {\n  content: \"\\E248\";\n}\n.glyphicon-object-align-right:before {\n  content: \"\\E249\";\n}\n.glyphicon-triangle-right:before {\n  content: \"\\E250\";\n}\n.glyphicon-triangle-left:before {\n  content: \"\\E251\";\n}\n.glyphicon-triangle-bottom:before {\n  content: \"\\E252\";\n}\n.glyphicon-triangle-top:before {\n  content: \"\\E253\";\n}\n.glyphicon-console:before {\n  content: \"\\E254\";\n}\n.glyphicon-superscript:before {\n  content: \"\\E255\";\n}\n.glyphicon-subscript:before {\n  content: \"\\E256\";\n}\n.glyphicon-menu-left:before {\n  content: \"\\E257\";\n}\n.glyphicon-menu-right:before {\n  content: \"\\E258\";\n}\n.glyphicon-menu-down:before {\n  content: \"\\E259\";\n}\n.glyphicon-menu-up:before {\n  content: \"\\E260\";\n}\n.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {\r\n\t-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\t-moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\t-o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;\r\n\ttransition: transform 0.3s ease-out, opacity 0.3s ease-in;\r\n}\r\n\r\n.leaflet-cluster-spider-leg {\r\n\t/* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */\r\n\t-webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;\r\n\t-moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;\r\n\t-o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;\r\n\ttransition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;\r\n}\r\n.marker-cluster-small {\r\n\tbackground-color: rgba(181, 226, 140, 0.6);\r\n\t}\r\n.marker-cluster-small div {\r\n\tbackground-color: rgba(110, 204, 57, 0.6);\r\n\t}\r\n\r\n.marker-cluster-medium {\r\n\tbackground-color: rgba(241, 211, 87, 0.6);\r\n\t}\r\n.marker-cluster-medium div {\r\n\tbackground-color: rgba(240, 194, 12, 0.6);\r\n\t}\r\n\r\n.marker-cluster-large {\r\n\tbackground-color: rgba(253, 156, 115, 0.6);\r\n\t}\r\n.marker-cluster-large div {\r\n\tbackground-color: rgba(241, 128, 23, 0.6);\r\n\t}\r\n\r\n\t/* IE 6-8 fallback colors */\r\n.leaflet-oldie .marker-cluster-small {\r\n\tbackground-color: rgb(181, 226, 140);\r\n\t}\r\n.leaflet-oldie .marker-cluster-small div {\r\n\tbackground-color: rgb(110, 204, 57);\r\n\t}\r\n\r\n.leaflet-oldie .marker-cluster-medium {\r\n\tbackground-color: rgb(241, 211, 87);\r\n\t}\r\n.leaflet-oldie .marker-cluster-medium div {\r\n\tbackground-color: rgb(240, 194, 12);\r\n\t}\r\n\r\n.leaflet-oldie .marker-cluster-large {\r\n\tbackground-color: rgb(253, 156, 115);\r\n\t}\r\n.leaflet-oldie .marker-cluster-large div {\r\n\tbackground-color: rgb(241, 128, 23);\r\n}\r\n\r\n.marker-cluster {\r\n\tbackground-clip: padding-box;\r\n\tborder-radius: 20px;\r\n\t}\r\n.marker-cluster div {\r\n\twidth: 30px;\r\n\theight: 30px;\r\n\tmargin-left: 5px;\r\n\tmargin-top: 5px;\r\n\r\n\ttext-align: center;\r\n\tborder-radius: 15px;\r\n\tfont: 12px \"Helvetica Neue\", Arial, Helvetica, sans-serif;\r\n\t}\r\n.marker-cluster span {\r\n\tline-height: 30px;\r\n\t}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports) {
 
 module.exports = function escape(url) {
@@ -72513,67 +72612,67 @@ module.exports = function escape(url) {
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/vendor/vue-leaflet/dist/static/markers-soft.79148a4.png?79148a43587cbe5c43d24fa894a78ba3";
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = "/images/vendor/vue-leaflet/dist/static/markers-soft@2x.0f2c102.png?0f2c10250081cf1bd9a4d2250b80dba6";
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.af7ae50.woff2?af7ae505a9eed503f8b8e6982036873e";
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.fee66e7.woff?fee66e712a8a08eef5805a46892932ad";
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports) {
 
 module.exports = "/fonts/vendor/vue-leaflet/dist/static/fontawesome-webfont.b06871f.ttf?b06871f281fee6b241d60582ae9369b9";
 
 /***/ }),
-/* 218 */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?acf3dcb7ff752b5296ca23ba2c7c2606";
-
-/***/ }),
 /* 219 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.448c34a.woff2?448c34a56d699c29117adc64c43affeb";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/img/fontawesome-webfont.912ec66.svg?912ec66d7572ff821749319396470bde";
 
 /***/ }),
 /* 220 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.fa27723.woff?fa2772327f55d8198301fdb8bcfc8158";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.448c34a.woff2?448c34a56d699c29117adc64c43affeb";
 
 /***/ }),
 /* 221 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.e18bbf6.ttf?e18bbf611f2a2e43afc071aa2f4e1512";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.fa27723.woff?fa2772327f55d8198301fdb8bcfc8158";
 
 /***/ }),
 /* 222 */
 /***/ (function(module, exports) {
 
-module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?f721466883998665b87923b92dea655b";
+module.exports = "/fonts/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.e18bbf6.ttf?e18bbf611f2a2e43afc071aa2f4e1512";
 
 /***/ }),
 /* 223 */
+/***/ (function(module, exports) {
+
+module.exports = "/images/vendor/vue-leaflet/dist/static/glyphicons-halflings-regular.8988968.svg?89889688147bd7575d6327160d64e760";
+
+/***/ }),
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -72619,7 +72718,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(224);
+var	fixUrls = __webpack_require__(225);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -72932,7 +73031,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports) {
 
 
@@ -73027,7 +73126,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -73210,17 +73309,17 @@ if (false) {
 }
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(227);
+var content = __webpack_require__(228);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("24f2ffb4", content, false, {});
+var update = __webpack_require__(4)("9d62569a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -73236,7 +73335,7 @@ if(false) {
 }
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -73244,13 +73343,13 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.rc[data-v-346519ae] {\r\n  font-size: 18px;\n}\n.wrapper img[data-v-346519ae] {\r\n  margin-right: 20px;\r\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\r\n  width: 130px;\r\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\r\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\r\n  width: 50px;\r\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\r\n  width: 130px;\r\n  background: lightblue;\r\n  color: white;\r\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\r\n  font-style: italic;\n}\n.co[data-v-346519ae] {\r\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\r\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\r\n  margin-left: 20px;\n}\n.roof[data-v-346519ae] {\r\n  border: 3px solid lightblue;\r\n  padding: 10px 10px;\n}\n.menu[data-v-346519ae] {\r\n  height: 100px;\r\n  background: lightblue;\n}\n.steplist[data-v-346519ae] {\r\n  padding: 5px 10px;\r\n  height: 80px;\r\n  width: 250px;\r\n  margin-right: 5px;\n}\n.firststep[data-v-346519ae] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.secondstep[data-v-346519ae] {\r\n  background: rgb(137, 179, 235);\r\n  color: white;\n}\n.thirdstep[data-v-346519ae] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.fourthstep[data-v-346519ae] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.secondstep i[data-v-346519ae],\r\n.thirdstep i[data-v-346519ae],\r\n.fourthstep i[data-v-346519ae] {\r\n  display: none !important;\n}\r\n", ""]);
+exports.push([module.i, "\n.rc[data-v-346519ae] {\n  font-size: 18px;\n}\n.wrapper img[data-v-346519ae] {\n  margin-right: 20px;\n  border-radius: 50%;\n}\nlabel[data-v-346519ae] {\n  width: 130px;\n  padding: 15px 0;\n}\ninput[data-v-346519ae] {\n  text-align: right;\n}\n#basic-addon2[data-v-346519ae] {\n  width: 50px;\n  text-align: center;\n}\n#basic-addon2-prepend[data-v-346519ae] {\n  width: 130px;\n  background: lightblue;\n  color: white;\n  border: 1px solid lightblue;\n}\n.hr[data-v-346519ae] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-346519ae] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\n.rec[data-v-346519ae] {\n  font-style: italic;\n}\n.co[data-v-346519ae] {\n  padding-right: 20px;\n}\n.type[data-v-346519ae] {\n  margin-top: 50px;\n}\n.type > .sel > input[data-v-346519ae] {\n  margin-left: 20px;\n}\n.roof[data-v-346519ae] {\n  border: 3px solid lightblue;\n  padding: 10px 10px;\n}\n.menu[data-v-346519ae] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-346519ae] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-346519ae] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.thirdstep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.fourthstep[data-v-346519ae] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.secondstep i[data-v-346519ae],\n.thirdstep i[data-v-346519ae],\n.fourthstep i[data-v-346519ae] {\n  display: none !important;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73592,7 +73691,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -74255,17 +74354,17 @@ if (false) {
 }
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(231);
+var content = __webpack_require__(232);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0c6fc27a", content, false, {});
+var update = __webpack_require__(4)("75d01590", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -74281,7 +74380,7 @@ if(false) {
 }
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -74289,13 +74388,13 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\r\n  margin: 20px auto;\n}\n#basic-addon2-prepend[data-v-4c4c5db8] {\r\n  width: 180px;\r\n  background: lightblue;\r\n  color: white;\r\n  border: 1px solid lightblue;\n}\ninput[data-v-4c4c5db8] {\r\n  text-align: right;\n}\n.pimg[data-v-4c4c5db8] {\r\n  margin-bottom: 20px;\r\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\r\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  border: 2px solid white;\r\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\r\n  width: 180px;\r\n  padding: 15px 0;\n}\r\n/* label {\r\n  display: block;\r\n  padding-left: 10px;\r\n  margin-bottom: -20px;\r\n  font-size: small;\r\n} */\n.pad[data-v-4c4c5db8] {\r\n  margin-right: 20px;\n}\n.menu[data-v-4c4c5db8] {\r\n  height: 100px;\r\n  background: lightblue;\n}\n.steplist[data-v-4c4c5db8] {\r\n  padding: 5px 10px;\r\n  height: 80px;\r\n  width: 250px;\r\n  margin-right: 5px;\n}\n.firststep[data-v-4c4c5db8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.secondstep[data-v-4c4c5db8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.thirdstep[data-v-4c4c5db8] {\r\n  background: rgb(137, 179, 235);\r\n  color: white;\n}\n.fourthstep[data-v-4c4c5db8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.thirdstep i[data-v-4c4c5db8],\r\n.fourthstep i[data-v-4c4c5db8] {\r\n  display: none;\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-4c4c5db8] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.form[data-v-4c4c5db8] {\n  margin: 20px auto;\n}\n#basic-addon2-prepend[data-v-4c4c5db8] {\n  width: 180px;\n  background: lightblue;\n  color: white;\n  border: 1px solid lightblue;\n}\ninput[data-v-4c4c5db8] {\n  text-align: right;\n}\n.pimg[data-v-4c4c5db8] {\n  margin-bottom: 20px;\n  text-align: center;\n}\n.nop[data-v-4c4c5db8] {\n  max-width: 960px;\n}\n.flush[data-v-4c4c5db8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  border: 2px solid white;\n  border-radius: 10px;\n}\nlabel[data-v-4c4c5db8] {\n  width: 180px;\n  padding: 15px 0;\n}\n/* label {\n  display: block;\n  padding-left: 10px;\n  margin-bottom: -20px;\n  font-size: small;\n} */\n.pad[data-v-4c4c5db8] {\n  margin-right: 20px;\n}\n.menu[data-v-4c4c5db8] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-4c4c5db8] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.thirdstep[data-v-4c4c5db8] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.fourthstep[data-v-4c4c5db8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: grey;\n}\n.thirdstep i[data-v-4c4c5db8],\n.fourthstep i[data-v-4c4c5db8] {\n  display: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -74648,7 +74747,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -75402,17 +75501,17 @@ if (false) {
 }
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(235);
+var content = __webpack_require__(236);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("70e5448e", content, false, {});
+var update = __webpack_require__(4)("11ccc021", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -75428,7 +75527,7 @@ if(false) {
 }
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -75436,18 +75535,18 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-ca205af8] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-ca205af8] {\r\n  padding: 20px 70px;\r\n  margin-top: 20px;\r\n  /* border: 2px solid white; */\r\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\r\n  padding: 0 5px;\r\n  margin-right: 10px;\r\n  text-align: right;\r\n  border: none;\r\n  border-radius: 20px;\r\n  background-color: white;\r\n  height: 30px;\r\n  width: 300px;\n}\ninput[data-v-ca205af8] {\r\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\r\n  width: 300px;\r\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\r\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\r\n  margin-right: 20px;\r\n  margin-left: 20px;\n}\n.menu[data-v-ca205af8] {\r\n  height: 100px;\r\n  background: lightblue;\n}\n.steplist[data-v-ca205af8] {\r\n  padding: 5px 10px;\r\n  height: 80px;\r\n  width: 250px;\r\n  margin-right: 5px;\n}\n.firststep[data-v-ca205af8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.secondstep[data-v-ca205af8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.thirdstep[data-v-ca205af8] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: white;\n}\n.fourthstep[data-v-ca205af8] {\r\n  background: rgb(137, 179, 235);\r\n  color: white;\n}\n.fourthstep i[data-v-ca205af8] {\r\n  display: none;\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-ca205af8] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.flush[data-v-ca205af8] {\n  padding: 20px 70px;\n  margin-top: 20px;\n  /* border: 2px solid white; */\n  border-radius: 10px;\n}\n.input[data-v-ca205af8] {\n  padding: 0 5px;\n  margin-right: 10px;\n  text-align: right;\n  border: none;\n  border-radius: 20px;\n  background-color: white;\n  height: 30px;\n  width: 300px;\n}\ninput[data-v-ca205af8] {\n  text-align: right;\n}\nlabel[data-v-ca205af8] {\n  width: 300px;\n  padding: 15px 0;\n}\n.input-group-text[data-v-ca205af8] {\n  width: 80px;\n}\n.pad[data-v-ca205af8] {\n  margin-right: 20px;\n  margin-left: 20px;\n}\n.menu[data-v-ca205af8] {\n  height: 100px;\n  background: lightblue;\n}\n.steplist[data-v-ca205af8] {\n  padding: 5px 10px;\n  height: 80px;\n  width: 250px;\n  margin-right: 5px;\n}\n.firststep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.secondstep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.thirdstep[data-v-ca205af8] {\n  background: rgba(128, 128, 128, 0.24);\n  color: white;\n}\n.fourthstep[data-v-ca205af8] {\n  background: rgb(137, 179, 235);\n  color: white;\n}\n.fourthstep i[data-v-ca205af8] {\n  display: none;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 
 
@@ -75921,14 +76020,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 });
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(238);
+module.exports = __webpack_require__(239);
 
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -75953,7 +76052,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(239);
+module.exports = __webpack_require__(240);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -75969,7 +76068,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports) {
 
 /**
@@ -76702,7 +76801,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -77541,19 +77640,19 @@ if (false) {
 }
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(242)
+  __webpack_require__(243)
 }
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(244)
+var __vue_script__ = __webpack_require__(245)
 /* template */
-var __vue_template__ = __webpack_require__(245)
+var __vue_template__ = __webpack_require__(246)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -77592,17 +77691,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(243);
+var content = __webpack_require__(244);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("853fff0a", content, false, {});
+var update = __webpack_require__(4)("9f353470", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77618,7 +77717,7 @@ if(false) {
 }
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -77626,13 +77725,13 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-abfbddf2] {\r\n  position: fixed;\r\n  bottom: 0;\r\n  height: 50px;\r\n  width: 100vw;\r\n  background: lightblue;\r\n  margin-top: 30px;\r\n  color: white;\n}\r\n", ""]);
+exports.push([module.i, "\n.footer[data-v-abfbddf2] {\n  position: fixed;\n  bottom: 0;\n  height: 50px;\n  width: 100vw;\n  background: lightblue;\n  margin-top: 30px;\n  color: white;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77655,7 +77754,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -77689,57 +77788,6 @@ if (false) {
 }
 
 /***/ }),
-/* 246 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(247)
-}
-var normalizeComponent = __webpack_require__(5)
-/* script */
-var __vue_script__ = __webpack_require__(249)
-/* template */
-var __vue_template__ = __webpack_require__(250)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-485090b2"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/NavbarComponent.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-485090b2", Component.options)
-  } else {
-    hotAPI.reload("data-v-485090b2", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
 /* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -77750,7 +77798,7 @@ var content = __webpack_require__(248);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("b3dcc258", content, false, {});
+var update = __webpack_require__(4)("cdd1f7be", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -77774,7 +77822,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.menu[data-v-485090b2] {\r\n  height: 100px;\r\n  background: lightblue;\n}\n.steplist[data-v-485090b2] {\r\n  padding: 5px 10px;\r\n  height: 80px;\r\n  width: 250px;\r\n  margin-right: 5px;\n}\n.firststep[data-v-485090b2] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.secondstep[data-v-485090b2] {\r\n  background: rgb(137, 179, 235);\r\n  color: white;\n}\n.thirdstep[data-v-485090b2] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.fourthstep[data-v-485090b2] {\r\n  background: rgba(128, 128, 128, 0.24);\r\n  color: grey;\n}\n.secondstep i[data-v-485090b2],\r\n.thirdstep i[data-v-485090b2],\r\n.fourthstep i[data-v-485090b2] {\r\n  display: none;\n}\r\n", ""]);
+exports.push([module.i, "\n.menu[data-v-485090b2] {\n  height: 100px;\n  background: lightblue;\n}\n.step[data-v-485090b2] {\n  color: white;\n  font-size: 18px;\n}\n", ""]);
 
 // exports
 
@@ -77785,87 +77833,6 @@ exports.push([module.i, "\n.menu[data-v-485090b2] {\r\n  height: 100px;\r\n  bac
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -77894,160 +77861,37 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "menu mb-5" }, [
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "div",
-          {
-            staticClass: "row d-flex align-items-center justify-content-between"
-          },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _c("div", { staticClass: "step d-flex align-items-center" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "steplist firststep d-flex align-items-center justify-content-between"
-                },
-                [
-                  _c("div", [
-                    _c("div", { staticClass: "small" }, [_vm._v("Step 1:")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "step-name" }, [
-                      _vm._v(
-                        "\n                Rainfall Station\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "stationchosen" }, [
-                      _c("small", [
-                        _c("em", [_vm._v("Location: ")]),
-                        _vm._v(_vm._s(this.$store.state.location))
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("i", {
-                    staticClass: "far fa-check-circle",
-                    staticStyle: { "font-size": "28px", color: "green" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "steplist secondstep d-flex align-items-center justify-content-between"
-                },
-                [
-                  _c("div", [
-                    _c("div", { staticClass: "small" }, [_vm._v("Step 2:")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "step-name" }, [
-                      _vm._v(
-                        "\n                Roof Characteristics\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "stationchosen" }, [
-                      _c("small", [
-                        _c("em", [_vm._v("Coefficient: ")]),
-                        _vm._v(_vm._s(this.$store.state.coefficient))
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("i", {
-                    staticClass: "far fa-check-circle",
-                    staticStyle: { "font-size": "28px", color: "green" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "steplist thirdstep d-flex align-items-center justify-content-between"
-                },
-                [
-                  _c("div", [
-                    _c("div", { staticClass: "small" }, [_vm._v("Step 3:")]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "step-name" }, [
-                      _vm._v("\n                Water Usage\n              ")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "stationchosen" }, [
-                      _c("small", [
-                        _c("em", [_vm._v("Average/Person: ")]),
-                        _vm._v(_vm._s(this.$store.state.aveperson))
-                      ])
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("i", {
-                    staticClass: "far fa-check-circle",
-                    staticStyle: { "font-size": "28px", color: "green" }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _vm._m(1)
-            ])
-          ]
-        )
-      ])
-    ])
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "logo d-flex align-items-center" }, [
-      _c("img", {
-        attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
-      })
+    return _c("div", [
+      _c("div", { staticClass: "menu mb-5" }, [
+        _c("div", { staticClass: "container" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "row d-flex align-items-center justify-content-between"
+            },
+            [
+              _c("div", { staticClass: "logo d-flex align-items-center" }, [
+                _c("img", {
+                  attrs: { src: "images/nahrimlogo.png", height: "70", alt: "" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "step d-flex align-items-center" }, [
+                _vm._v("Rainwater Harvesting Systems")
+              ])
+            ]
+          )
+        ])
+      ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "steplist fourthstep d-flex align-items-center justify-content-between"
-      },
-      [
-        _c("div", [
-          _c("div", { staticClass: "small" }, [_vm._v("Step 4:")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "step-name" }, [
-            _vm._v("\n                Calculation\n              ")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "stationchosen" }, [
-            _c("small", [
-              _c("em", [_vm._v("Simulation: ")]),
-              _vm._v("Single / Range")
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "far fa-check-circle",
-          staticStyle: { "font-size": "28px", color: "green" }
-        })
-      ]
-    )
   }
 ]
 render._withStripped = true
@@ -78072,7 +77916,7 @@ var render = function() {
     [
       _c("router-view"),
       _vm._v(" "),
-      ["root", "station"].indexOf(_vm.$route.name) < 0
+      ["root", "station", "admin"].indexOf(_vm.$route.name) < 0
         ? _c("footer-component")
         : _vm._e()
     ],
@@ -78094,10 +77938,10 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 
 
@@ -78105,7 +77949,7 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
     state: {
-        url: 'http://localhost:8000',
+        url: 'http://nahrim.test',
         location: '',
         coefficient: '',
         area: '',
@@ -78142,12 +77986,16 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         coords: [],
         range: [],
         rr_coef: [],
-        rr_st: []
+        rr_st: [],
+        token: localStorage.getItem('access_token') || null
     },
     getters: {
         currentPos: function currentPos(state) {
             var data = [state.lat, state.long];
             return data;
+        },
+        isLoggedIn: function isLoggedIn(state) {
+            return state.token != null;
         }
     },
     mutations: {
@@ -78261,6 +78109,12 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
         },
         SET_RR_ST: function SET_RR_ST(state, payload) {
             state.rr_st = payload;
+        },
+        SET_TOKEN: function SET_TOKEN(state, payload) {
+            state.token = payload;
+        },
+        REMOVE_TOKEN: function REMOVE_TOKEN(state, payload) {
+            state.token = null;
         }
     },
     actions: {
@@ -78298,7 +78152,47 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
             }).catch(function (e) {
                 console.log(e);
             });
+        },
+        login: function login(_ref4, payload) {
+            var state = _ref4.state,
+                commit = _ref4.commit;
+
+            return new Promise(function (resolve, reject) {
+                __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post(state.url + '/oauth/token', {
+                    grant_type: 'password',
+                    client_id: 2,
+                    client_secret: 'fPVuYp7QbO6xRPNRxVkek37KagrhrESGSpHOJT6v',
+                    // client_secret: process.env.MIX_CLIENT_SECRET,
+                    username: payload.username,
+                    password: payload.password
+                }).then(function (response) {
+                    localStorage.setItem('access_token', response.data.access_token);
+                    commit('SET_TOKEN', response.data.access_token);
+                    resolve(response);
+                }).catch(function (e) {
+                    console.log(e);
+                    reject(e);
+                });
+            });
+        },
+        logout: function logout(_ref5) {
+            var state = _ref5.state,
+                commit = _ref5.commit;
+
+            // axios.defaults.headers.common['Authorization'] = 'Bearer ' + state.token;
+            return new Promise(function (resolve, reject) {
+                __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post(state.url + '/api/logout').then(function (response) {
+                    localStorage.removeItem('access_token');
+                    commit('REMOVE_TOKEN');
+                    resolve(response);
+                }).catch(function (e) {
+                    console.log(e);
+                    reject(e);
+                });
+            });
         }
+        // fPVuYp7QbO6xRPNRxVkek37KagrhrESGSpHOJT6v
+
     }
 }));
 
@@ -79253,42 +79147,48 @@ var index_esm = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainComponent__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainComponent__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_MainComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_StationComponent__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_StationComponent__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_StationComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_StationComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_RoofComponent__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_RoofComponent__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_RoofComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_RoofComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_WaterUsageComponent__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_WaterUsageComponent__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_WaterUsageComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_WaterUsageComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_SimulatorComponent__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_SimulatorComponent__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_SimulatorComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_SimulatorComponent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GravityFedComponent__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_GravityFedComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_GravityFedComponent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_MenuComponent__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_MenuComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_MenuComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent_vue__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent_vue__ = __webpack_require__(270);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_GutterComponent__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_GutterComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__components_GutterComponent__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent_vue__ = __webpack_require__(280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent_vue__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent_vue__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent_vue__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue__ = __webpack_require__(305);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue__ = __webpack_require__(367);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue__ = __webpack_require__(372);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent__ = __webpack_require__(300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__components_AverageComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_AdminComponent__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_AdminComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18__components_AdminComponent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_LoginComponent__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_LoginComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19__components_LoginComponent__);
+
+
 
 
 
@@ -79331,28 +79231,27 @@ var routes = [{
 }, {
     path: '/average',
     name: 'average',
-    component: __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_15__components_AverageComponent___default.a
 }, {
     path: '/landing/01',
     name: 'landing01',
-    component: __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_16__components_LandingPage01Component___default.a
 }, {
     path: '/landing/02',
     name: 'landing02',
-    component: __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component_vue___default.a
+    component: __WEBPACK_IMPORTED_MODULE_17__components_LandingPage02Component___default.a
 }, {
     path: '/gravity-fed',
-    name: 'roof-area',
     component: __WEBPACK_IMPORTED_MODULE_5__components_GravityFedComponent___default.a,
 
     children: [{
         path: '/',
         name: 'roof-area',
-        component: __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_7__components_RoofAreaComponent___default.a
     }, {
         path: '/gravity-fed/catchment',
         name: 'catchment',
-        component: __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_8__components_RoofCatchmentComponent___default.a
     }, {
         path: '/gravity-fed/gutter',
         name: 'gutter',
@@ -79360,28 +79259,42 @@ var routes = [{
     }, {
         path: '/gravity-fed/leaf-guard',
         name: 'leaf-guard',
-        component: __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_10__components_LeafGuardComponent___default.a
     }, {
         path: '/gravity-fed/first-flush',
         name: 'first-flush',
-        component: __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_11__components_FirstFlushComponent___default.a
     }, {
         path: '/gravity-fed/water-demand',
         name: 'water-demand',
-        component: __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_12__components_WaterDemandComponent___default.a
     }, {
         path: '/gravity-fed/pumping-system',
         name: 'pump',
-        component: __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_13__components_PumpingSystemComponent___default.a
     }, {
         path: '/gravity-fed/top-up',
         name: 'top-up',
-        component: __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent_vue___default.a
+        component: __WEBPACK_IMPORTED_MODULE_14__components_TopUpComponent___default.a
     }]
 }, {
     path: '/menu',
     name: 'menu',
     component: __WEBPACK_IMPORTED_MODULE_6__components_MenuComponent___default.a
+}, {
+    path: '/admin',
+    name: 'admin',
+    component: __WEBPACK_IMPORTED_MODULE_18__components_AdminComponent___default.a,
+    meta: {
+        requiresAuth: true
+    }
+}, {
+    path: '/login',
+    name: 'login',
+    component: __WEBPACK_IMPORTED_MODULE_19__components_LoginComponent___default.a,
+    meta: {
+        requiresVisitor: true
+    }
 }];
 
 /***/ }),
@@ -79446,7 +79359,7 @@ var content = __webpack_require__(257);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("02c32e92", content, false, {});
+var update = __webpack_require__(4)("7ecb255f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -79470,7 +79383,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.align[data-v-212a534b] {\r\n  text-align: left;\n}\n.hr[data-v-212a534b] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: royalblue;\r\n  font-weight: bold;\r\n  padding: 10px 10px;\r\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\r\n  background: royalblue;\r\n  color: white;\r\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\r\n  text-transform: capitalize;\r\n  margin-top: 30px;\r\n  padding: 10px 0;\r\n  border: 1px solid royalblue;\r\n  text-align: center;\r\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\r\n  font-size: 18px;\r\n  /* font-weight: bold; */\r\n  color: royalblue;\r\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\r\ntr[data-v-212a534b],\r\ntd[data-v-212a534b],\r\nth[data-v-212a534b] {\r\n  border: 1px solid royalblue;\r\n  color: gray;\n}\n.calc[data-v-212a534b] {\r\n  border: 1px solid rgb(165, 182, 235);\r\n  margin-top: 30px;\r\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\r\n  text-transform: capitalize;\r\n  color: gray;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\r\n  background-color: royalblue;\r\n  color: white;\r\n  text-transform: capitalize;\r\n  font-weight: bold;\r\n  font-size: 13px;\r\n  text-align: center;\n}\r\n", ""]);
+exports.push([module.i, "\ntd[data-v-212a534b] {\n  text-align: right;\n}\n.align[data-v-212a534b] {\n  text-align: left;\n}\n.hr[data-v-212a534b] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\n.side-menu a[data-v-212a534b] {\n  text-decoration: none;\n  text-transform: capitalize;\n  color: royalblue;\n  font-weight: bold;\n  padding: 10px 10px;\n  width: 250px;\n}\n.side-menu a[data-v-212a534b]:hover {\n  background: royalblue;\n  color: white;\n  width: 250px;\n}\n.side-menu-title[data-v-212a534b] {\n  text-transform: capitalize;\n  margin-top: 30px;\n  padding: 10px 0;\n  border: 1px solid royalblue;\n  text-align: center;\n  font-weight: bold;\n}\n.result[data-v-212a534b] {\n  font-size: 18px;\n  /* font-weight: bold; */\n  color: royalblue;\n  margin-top: 20px;\n}\ntable[data-v-212a534b],\ntr[data-v-212a534b],\ntd[data-v-212a534b],\nth[data-v-212a534b] {\n  border: 1px solid royalblue;\n  color: gray;\n}\n.calc[data-v-212a534b] {\n  border: 1px solid rgb(165, 182, 235);\n  margin-top: 30px;\n  height: 510px;\n}\n.navi a[data-v-212a534b] {\n  text-transform: capitalize;\n  color: gray;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n.navi a[data-v-212a534b]:hover {\n  background-color: royalblue;\n  color: white;\n  text-transform: capitalize;\n  font-weight: bold;\n  font-size: 13px;\n  text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -79481,6 +79394,8 @@ exports.push([module.i, "\ntd[data-v-212a534b] {\r\n  text-align: right;\n}\n.al
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__NavbarComponent__);
 //
 //
 //
@@ -79709,6 +79624,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -79722,6 +79639,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
 
+  components: {
+    NavbarComponent: __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default.a
+  },
   methods: {
     trigger: function trigger() {
       if (this.type == "indoor" || this.type == "outdoor") {
@@ -79741,404 +79661,416 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _vm._m(0),
+  return _c(
+    "div",
+    { staticStyle: { "margin-bottom": "100px" } },
+    [
+      _c("navbar-component"),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "text-center text-primary mt-2",
-          staticStyle: { "font-size": "18px" }
-        },
-        [_vm._v("Rainwater Harvesting Systems")]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "hr w-100 mt-3" }),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "d-flex flex-column align-items-around justify-content-center form"
-        },
-        [
-          _c("div", { staticClass: "mt-3 mb-3 text-center" }, [
-            _vm._v("Gravity Fed Calculation Step")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "hr w-100 mb-3" }),
-          _vm._v(" "),
-          _c("nav", [
-            _c(
-              "div",
-              {
-                staticClass: "nav nav-tabs navi nav-fill",
-                attrs: { id: "nav-tab", role: "tablist" }
-              },
-              [
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link active",
-                    attrs: {
-                      to: "/gravity-fed",
-                      id: "nav-home-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-home",
-                      "aria-selected": "true"
-                    }
-                  },
-                  [
-                    _vm._v("\n            Roof\n            "),
-                    _c("br"),
-                    _vm._v("Area\n          ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: {
-                      to: "/gravity-fed/catchment",
-                      id: "nav-profile-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-profile",
-                      "aria-selected": "false"
-                    }
-                  },
-                  [
-                    _vm._v("\n            Roof Catchment\n            "),
-                    _c("br"),
-                    _vm._v("Runoff\n          ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: {
-                      to: "/gravity-fed/gutter",
-                      id: "nav-contact-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-contact",
-                      "aria-selected": "false"
-                    }
-                  },
-                  [
-                    _vm._v("\n            Gutter and\n            "),
-                    _c("br"),
-                    _vm._v("Down Pipe Sizes\n          ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: {
-                      to: "/gravity-fed/first-flush",
-                      id: "nav-contact-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-contact",
-                      "aria-selected": "false"
-                    }
-                  },
-                  [
-                    _vm._v("\n            First Flush\n            "),
-                    _c("br"),
-                    _vm._v("Diverter\n          ")
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: {
-                      to: "/gravity-fed/water-demand",
-                      id: "nav-contact-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-contact",
-                      "aria-selected": "false"
-                    }
-                  },
-                  [
-                    _vm._v("\n            Water Demand\n            "),
-                    _c("br"),
-                    _vm._v(
-                      "and Rain Water\n            Tank\n            Size\n          "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                this.$store.state.menu_type != "gravity"
-                  ? _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-item nav-link",
-                        attrs: {
-                          to: "/gravity-fed/pumping-system",
-                          id: "nav-contact-tab",
-                          "data-toggle": "tab",
-                          role: "tab",
-                          "aria-controls": "nav-contact",
-                          "aria-selected": "false"
-                        }
-                      },
-                      [
-                        _vm._v("\n            Pumping\n            "),
-                        _c("br"),
-                        _vm._v("System\n          ")
-                      ]
-                    )
-                  : _vm._e(),
-                _vm._v(" "),
-                _c(
-                  "router-link",
-                  {
-                    staticClass: "nav-item nav-link",
-                    attrs: {
-                      to: "/gravity-fed/top-up",
-                      id: "nav-contact-tab",
-                      "data-toggle": "tab",
-                      role: "tab",
-                      "aria-controls": "nav-contact",
-                      "aria-selected": "false"
-                    }
-                  },
-                  [
-                    _vm._v("\n            Top-up\n            "),
-                    _c("br"),
-                    _vm._v("System\n          ")
-                  ]
-                )
-              ],
-              1
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-7 calc" }, [_c("router-view")], 1),
+      _c("div", { staticClass: "container" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "text-center text-primary mt-2",
+            staticStyle: { "font-size": "18px" }
+          },
+          [_vm._v("Rainwater Harvesting Systems")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "hr w-100 mt-3" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "d-flex flex-column align-items-around justify-content-center form"
+          },
+          [
+            _c("div", { staticClass: "mt-3 mb-3 text-center" }, [
+              _vm._v("Gravity Fed Calculation Step")
+            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-5" }, [
-              _c("div", { staticClass: "result" }, [_vm._v("Results:")]),
+            _c("div", { staticClass: "hr w-100 mb-3" }),
+            _vm._v(" "),
+            _c("nav", [
+              _c(
+                "div",
+                {
+                  staticClass: "nav nav-tabs navi nav-fill",
+                  attrs: { id: "nav-tab", role: "tablist" }
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link active",
+                      attrs: {
+                        to: "/gravity-fed",
+                        id: "nav-home-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-home",
+                        "aria-selected": "true"
+                      }
+                    },
+                    [
+                      _vm._v("\n            Roof\n            "),
+                      _c("br"),
+                      _vm._v("Area\n          ")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link",
+                      attrs: {
+                        to: "/gravity-fed/catchment",
+                        id: "nav-profile-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-profile",
+                        "aria-selected": "false"
+                      }
+                    },
+                    [
+                      _vm._v("\n            Roof Catchment\n            "),
+                      _c("br"),
+                      _vm._v("Runoff\n          ")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link",
+                      attrs: {
+                        to: "/gravity-fed/gutter",
+                        id: "nav-contact-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-contact",
+                        "aria-selected": "false"
+                      }
+                    },
+                    [
+                      _vm._v("\n            Gutter and\n            "),
+                      _c("br"),
+                      _vm._v("Down Pipe Sizes\n          ")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link",
+                      attrs: {
+                        to: "/gravity-fed/first-flush",
+                        id: "nav-contact-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-contact",
+                        "aria-selected": "false"
+                      }
+                    },
+                    [
+                      _vm._v("\n            First Flush\n            "),
+                      _c("br"),
+                      _vm._v("Diverter\n          ")
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link",
+                      attrs: {
+                        to: "/gravity-fed/water-demand",
+                        id: "nav-contact-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-contact",
+                        "aria-selected": "false"
+                      }
+                    },
+                    [
+                      _vm._v("\n            Water Demand\n            "),
+                      _c("br"),
+                      _vm._v(
+                        "and Rain Water\n            Tank\n            Size\n          "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  this.$store.state.menu_type != "gravity"
+                    ? _c(
+                        "router-link",
+                        {
+                          staticClass: "nav-item nav-link",
+                          attrs: {
+                            to: "/gravity-fed/pumping-system",
+                            id: "nav-contact-tab",
+                            "data-toggle": "tab",
+                            role: "tab",
+                            "aria-controls": "nav-contact",
+                            "aria-selected": "false"
+                          }
+                        },
+                        [
+                          _vm._v("\n            Pumping\n            "),
+                          _c("br"),
+                          _vm._v("System\n          ")
+                        ]
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-item nav-link",
+                      attrs: {
+                        to: "/gravity-fed/top-up",
+                        id: "nav-contact-tab",
+                        "data-toggle": "tab",
+                        role: "tab",
+                        "aria-controls": "nav-contact",
+                        "aria-selected": "false"
+                      }
+                    },
+                    [
+                      _vm._v("\n            Top-up\n            "),
+                      _c("br"),
+                      _vm._v("System\n          ")
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-7 calc" },
+                [_c("router-view")],
+                1
+              ),
               _vm._v(" "),
-              _c("table", { staticClass: "table small" }, [
-                this.$store.state.areaShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Roof Area:")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(this.$store.state.area))])
-                    ])
-                  : _vm._e(),
+              _c("div", { staticClass: "col-md-5" }, [
+                _c("div", { staticClass: "result" }, [_vm._v("Results:")]),
                 _vm._v(" "),
-                this.$store.state.catchmentShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Roof Catchment Runoff")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(this.$store.state.catchment))])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.gutterShow &&
-                this.$store.state.gutterType == "round"
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Half Round Gutter & Downpipe Size")]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "align" }, [
-                        this.$store.state.gutterType == "round"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Gutter Diameter")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.hr_size))
-                              ])
-                            ])
-                          : _vm._e(),
+                _c("table", { staticClass: "table small" }, [
+                  this.$store.state.areaShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Roof Area:")]),
                         _vm._v(" "),
-                        this.$store.state.gutterType == "round"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Downpipe Diameter")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.hr_downpipe))
-                              ])
-                            ])
-                          : _vm._e()
+                        _c("td", [_vm._v(_vm._s(this.$store.state.area))])
                       ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.gutterShow &&
-                this.$store.state.gutterType == "rec"
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Rectangle Gutter & Downpipe Size")]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "align" }, [
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Gutter Width")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.rt_width))
-                              ])
-                            ])
-                          : _vm._e(),
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.catchmentShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Roof Catchment Runoff")]),
                         _vm._v(" "),
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Gutter Depth")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.rt_depth))
-                              ])
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Downpipe Width")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(
-                                  _vm._s(this.$store.state.rt_downpipe_width)
-                                )
-                              ])
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        this.$store.state.gutterType == "rec"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Downpipe Depth")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(
-                                  _vm._s(this.$store.state.rt_downpipe_depth)
-                                )
-                              ])
-                            ])
-                          : _vm._e()
+                        _c("td", [_vm._v(_vm._s(this.$store.state.catchment))])
                       ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.ffShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("First Flush Pipe Length")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(_vm._s(this.$store.state.fflenght) + " m")
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.demandShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Daily Total Rainwater Demand")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(this.$store.state.usagevol))])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.demandShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Tank Size")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(this.$store.state.tankSize))])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.pumpShow
-                  ? _c("tr", [
-                      _c("th", [_vm._v("Pump Power:")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(this.$store.state.pumppow))])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.topupShow &&
-                this.$store.state.tank_type == "square"
-                  ? _c("tr", [
-                      _c("th", [
-                        _vm._v("Square Tank Height and Depth of Topping-up")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "align" }, [
-                        this.$store.state.tank_type == "square"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Tank Height")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.height_sqr))
-                              ])
-                            ])
-                          : _vm._e(),
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.gutterShow &&
+                  this.$store.state.gutterType == "round"
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Half Round Gutter & Downpipe Size")]),
                         _vm._v(" "),
-                        this.$store.state.tank_type == "square"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Depth of Topping-up")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.topping_sqr))
+                        _c("td", { staticClass: "align" }, [
+                          this.$store.state.gutterType == "round"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Gutter Diameter")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.hr_size))
+                                ])
                               ])
-                            ])
-                          : _vm._e()
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.gutterType == "round"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Downpipe Diameter")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.hr_downpipe))
+                                ])
+                              ])
+                            : _vm._e()
+                        ])
                       ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                this.$store.state.topupShow &&
-                this.$store.state.tank_type == "cylinder"
-                  ? _c("tr", [
-                      _c("th", [
-                        _vm._v("Cylinder Tank Height and Depth of Topping-up")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", { staticClass: "align" }, [
-                        this.$store.state.tank_type == "cylinder"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Tank Height")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.height_cyl))
-                              ])
-                            ])
-                          : _vm._e(),
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.gutterShow &&
+                  this.$store.state.gutterType == "rec"
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Rectangle Gutter & Downpipe Size")]),
                         _vm._v(" "),
-                        this.$store.state.tank_type == "cylinder"
-                          ? _c("tr", [
-                              _c("th", [_vm._v("Depth of Topping-up")]),
-                              _vm._v(" "),
-                              _c("td", [
-                                _vm._v(_vm._s(this.$store.state.topping_cyl))
+                        _c("td", { staticClass: "align" }, [
+                          this.$store.state.gutterType == "rec"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Gutter Width")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.rt_width))
+                                ])
                               ])
-                            ])
-                          : _vm._e()
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.gutterType == "rec"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Gutter Depth")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.rt_depth))
+                                ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.gutterType == "rec"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Downpipe Width")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(
+                                    _vm._s(this.$store.state.rt_downpipe_width)
+                                  )
+                                ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.gutterType == "rec"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Downpipe Depth")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(
+                                    _vm._s(this.$store.state.rt_downpipe_depth)
+                                  )
+                                ])
+                              ])
+                            : _vm._e()
+                        ])
                       ])
-                    ])
-                  : _vm._e()
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.ffShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("First Flush Pipe Length")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(_vm._s(this.$store.state.fflenght) + " m")
+                        ])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.demandShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Daily Total Rainwater Demand")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(this.$store.state.usagevol))])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.demandShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Tank Size")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(this.$store.state.tankSize))])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.pumpShow
+                    ? _c("tr", [
+                        _c("th", [_vm._v("Pump Power:")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(this.$store.state.pumppow))])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.topupShow &&
+                  this.$store.state.tank_type == "square"
+                    ? _c("tr", [
+                        _c("th", [
+                          _vm._v("Square Tank Height and Depth of Topping-up")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "align" }, [
+                          this.$store.state.tank_type == "square"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Tank Height")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.height_sqr))
+                                ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.tank_type == "square"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Depth of Topping-up")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.topping_sqr))
+                                ])
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  this.$store.state.topupShow &&
+                  this.$store.state.tank_type == "cylinder"
+                    ? _c("tr", [
+                        _c("th", [
+                          _vm._v("Cylinder Tank Height and Depth of Topping-up")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "align" }, [
+                          this.$store.state.tank_type == "cylinder"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Tank Height")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.height_cyl))
+                                ])
+                              ])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          this.$store.state.tank_type == "cylinder"
+                            ? _c("tr", [
+                                _c("th", [_vm._v("Depth of Topping-up")]),
+                                _vm._v(" "),
+                                _c("td", [
+                                  _vm._v(_vm._s(this.$store.state.topping_cyl))
+                                ])
+                              ])
+                            : _vm._e()
+                        ])
+                      ])
+                    : _vm._e()
+                ])
               ])
             ])
-          ])
-        ]
-      )
-    ])
-  ])
+          ]
+        )
+      ])
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex justify-content-center pt-5" }, [
+    return _c("div", { staticClass: "d-flex justify-content-center" }, [
       _c("img", { attrs: { src: "/images/tank1.png", height: "50", alt: "" } })
     ])
   }
@@ -80214,7 +80146,7 @@ var content = __webpack_require__(262);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("31fdff90", content, false, {});
+var update = __webpack_require__(4)("147357c6", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80240,7 +80172,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Aud
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Righteous);", ""]);
 
 // module
-exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\r\n  height: 100vh;\r\n  /* background: url(\"/images/rainbg.jpg\") !important;\r\n  background-size: cover;\r\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\r\n  background: url(\"/images/rhs.jpg\");\r\n  padding: 100px;\r\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\r\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\r\n  font-family: \"Khand\", sans-serif;\r\n  font-size: 32px;\r\n  color: black;\r\n  position: absolute;\r\n  top: 0;\r\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\r\n  position: absolute;\r\n  width: 650px;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  overflow: hidden;\r\n  font-size: 16px;\r\n  color: white;\r\n  background: rgba(0, 0, 0, 0.25);\r\n  padding-top: 10px;\r\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\r\n  color: rgb(255, 94, 0);\r\n  font-size: 50px;\r\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\r\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\r\n  height: 300px;\r\n  position: relative;\r\n  overflow: hidden;\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\r\n  background-position: center;\n}\n.box[data-v-98f701fa] {\r\n  width: 150px;\r\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\r\n  height: 100%;\r\n  float: right;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\r\n  position: relative;\r\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\r\n  background: url(\"/images/rhsi.jpg\");\r\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\r\n  background: url(\"/images/calculation.jpg\");\r\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\r\n  background: url(\"/images/water.jpg\");\r\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 247, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 247, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(0, 68, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(0, 68, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\r\n  content: \"\";\r\n  display: block;\r\n  background: -webkit-gradient(\r\n    linear,\r\n    left top, right top,\r\n    from(rgba(68, 0, 255, 0.25)),\r\n    to(rgba(255, 0, 0, 0))\r\n  );\r\n  background: linear-gradient(\r\n    90deg,\r\n    rgba(68, 0, 255, 0.25),\r\n    rgba(255, 0, 0, 0)\r\n  );\r\n  width: 150px;\r\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 0;\r\n  -webkit-writing-mode: vertical-lr;\r\n      -ms-writing-mode: tb-lr;\r\n          writing-mode: vertical-lr;\r\n  text-orientation: upright;\r\n  font-family: \"Righteous\", cursive;\r\n  font-weight: bold;\r\n  font-size: 20px;\r\n  color: rgb(255, 255, 255);\r\n  width: 150px;\n}\n.content[data-v-98f701fa] {\r\n  position: absolute;\r\n  top: 50%;\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n  left: 150px;\r\n  font-family: \"Khand\", sans-serif;\r\n  color: black;\n}\n.sliding[data-v-98f701fa] {\r\n  width: 450px;\r\n  -webkit-transition: 0.5s;\r\n  transition: 0.5s;\n}\r\n", ""]);
+exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\n  height: 100vh;\n  /* background: url(\"/images/rainbg.jpg\") !important;\n  background-size: cover;\n  background-position: center; */\n}\n.bg-overlay[data-v-98f701fa] {\n  background: url(\"/images/rhs.jpg\");\n  padding: 100px;\n  border-top: 5px solid rgba(128, 128, 128, 0.308);\n  border-bottom: 5px solid rgba(128, 128, 128, 0.308);\n}\n.title[data-v-98f701fa] {\n  font-family: \"Khand\", sans-serif;\n  font-size: 32px;\n  color: black;\n  position: absolute;\n  top: 0;\n  overflow: hidden;\n}\n.para[data-v-98f701fa] {\n  position: absolute;\n  width: 650px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  overflow: hidden;\n  font-size: 16px;\n  color: white;\n  background: rgba(0, 0, 0, 0.25);\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.tag[data-v-98f701fa] {\n  color: rgb(255, 94, 0);\n  font-size: 50px;\n  font-family: \"Audiowide\", cursive;\n}\n.slide-box[data-v-98f701fa] {\n  /* border: 1px solid rgba(172, 172, 172, 0.247); */\n  height: 300px;\n  position: relative;\n  overflow: hidden;\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n  background-position: center;\n}\n.box[data-v-98f701fa] {\n  width: 150px;\n  /* border: 1px solid rgba(128, 128, 128, 0.144); */\n  height: 100%;\n  float: right;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  position: relative;\n  overflow: hidden;\n}\n.box01[data-v-98f701fa] {\n  background: url(\"/images/rhsi.jpg\");\n  background-size: cover;\n}\n.box02[data-v-98f701fa] {\n  background: url(\"/images/calculation.jpg\");\n  background-size: cover;\n}\n.box03[data-v-98f701fa] {\n  background: url(\"/images/water.jpg\");\n  background-size: cover;\n}\n.box01[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 247, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 247, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box02[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(0, 68, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(0, 68, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.box03[data-v-98f701fa]::before {\n  content: \"\";\n  display: block;\n  background: -webkit-gradient(\n    linear,\n    left top, right top,\n    from(rgba(68, 0, 255, 0.25)),\n    to(rgba(255, 0, 0, 0))\n  );\n  background: linear-gradient(\n    90deg,\n    rgba(68, 0, 255, 0.25),\n    rgba(255, 0, 0, 0)\n  );\n  width: 150px;\n  height: 100%;\n}\n.menu[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 0;\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr;\n  text-orientation: upright;\n  font-family: \"Righteous\", cursive;\n  font-weight: bold;\n  font-size: 20px;\n  color: rgb(255, 255, 255);\n  width: 150px;\n}\n.content[data-v-98f701fa] {\n  position: absolute;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n  left: 150px;\n  font-family: \"Khand\", sans-serif;\n  color: black;\n}\n.sliding[data-v-98f701fa] {\n  width: 450px;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n}\n", ""]);
 
 // exports
 
@@ -80251,7 +80183,7 @@ exports.push([module.i, "\n.wrapper[data-v-98f701fa] {\r\n  height: 100vh;\r\n  
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__CarouselComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__CarouselComponent__);
 //
 //
@@ -80589,7 +80521,7 @@ var content = __webpack_require__(267);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3a926d3c", content, false, {});
+var update = __webpack_require__(4)("29f80f6f", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80613,7 +80545,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bform[data-v-0c56dcbe] {\r\n  cursor: pointer;\n}\r\n\r\n/* .butang {\r\n  width: 80px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n.bform[data-v-0c56dcbe] {\n  cursor: pointer;\n}\n\n/* .butang {\n  width: 80px;\n  align-items: center;\n  margin-top: 20px;\n} */\n", ""]);
 
 // exports
 
@@ -80824,7 +80756,7 @@ var content = __webpack_require__(272);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("cfcc64a4", content, false, {});
+var update = __webpack_require__(4)("3ae347c1", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -80848,7 +80780,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n        width: 80px;\n        align-items: center;\n        margin-top: 20px\n    } */\n", ""]);
 
 // exports
 
@@ -81122,7 +81054,7 @@ var content = __webpack_require__(277);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0214ebc5", content, false, {});
+var update = __webpack_require__(4)("15cb5ddc", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81146,7 +81078,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n        width: 80px;\n        align-items: center;\n        margin-top: 20px\n    } */\n", ""]);
 
 // exports
 
@@ -81376,7 +81308,7 @@ var content = __webpack_require__(282);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("30e6b078", content, false, {});
+var update = __webpack_require__(4)("5c63a7ea", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81517,7 +81449,7 @@ var content = __webpack_require__(287);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("355522aa", content, false, {});
+var update = __webpack_require__(4)("615d6578", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81541,7 +81473,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n  width: 80px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n  width: 80px;\n  align-items: center;\n  margin-top: 20px;\n} */\n", ""]);
 
 // exports
 
@@ -81786,7 +81718,7 @@ var content = __webpack_require__(292);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3ee611b0", content, false, {});
+var update = __webpack_require__(4)("34f84c0a", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -81810,7 +81742,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n        width: 80px;\n        align-items: center;\n        margin-top: 20px\n    } */\n", ""]);
 
 // exports
 
@@ -82068,7 +82000,7 @@ var content = __webpack_require__(297);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("7e85a284", content, false, {});
+var update = __webpack_require__(4)("214f1c97", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -82092,7 +82024,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n        width: 80px;\r\n        align-items: center;\r\n        margin-top: 20px\r\n    } */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n        width: 80px;\n        align-items: center;\n        margin-top: 20px\n    } */\n", ""]);
 
 // exports
 
@@ -82280,7 +82212,7 @@ var content = __webpack_require__(302);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2724cd6d", content, false, {});
+var update = __webpack_require__(4)("4731eb00", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -82304,7 +82236,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .butang {\r\n  width: 100px;\r\n  align-items: center;\r\n  margin-top: 20px;\r\n} */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .butang {\n  width: 100px;\n  align-items: center;\n  margin-top: 20px;\n} */\n", ""]);
 
 // exports
 
@@ -82799,7 +82731,7 @@ var content = __webpack_require__(307);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("a4c106a4", content, false, {});
+var update = __webpack_require__(4)("1b46c101", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -83003,7 +82935,7 @@ var content = __webpack_require__(311);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("29e2bc3d", content, false, {});
+var update = __webpack_require__(4)("41b60d60", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -83038,7 +82970,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(17);
 //
 
 
@@ -83289,19 +83221,19 @@ Chart.helpers = __webpack_require__(1);
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
 __webpack_require__(320)(Chart);
 
-Chart.Animation = __webpack_require__(40);
-Chart.animationService = __webpack_require__(41);
+Chart.Animation = __webpack_require__(41);
+Chart.animationService = __webpack_require__(42);
 Chart.defaults = __webpack_require__(3);
 Chart.Element = __webpack_require__(7);
 Chart.elements = __webpack_require__(9);
-Chart.Interaction = __webpack_require__(42);
+Chart.Interaction = __webpack_require__(43);
 Chart.layouts = __webpack_require__(11);
-Chart.platform = __webpack_require__(43);
-Chart.plugins = __webpack_require__(44);
+Chart.platform = __webpack_require__(44);
+Chart.plugins = __webpack_require__(45);
 Chart.Scale = __webpack_require__(12);
 Chart.scaleService = __webpack_require__(8);
 Chart.Ticks = __webpack_require__(13);
-Chart.Tooltip = __webpack_require__(45);
+Chart.Tooltip = __webpack_require__(46);
 
 __webpack_require__(331)(Chart);
 __webpack_require__(332)(Chart);
@@ -84045,7 +83977,7 @@ module.exports = {
 /* global document: false */
 
 
-var color = __webpack_require__(39);
+var color = __webpack_require__(40);
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(1);
 var scaleService = __webpack_require__(8);
@@ -86888,16 +86820,16 @@ helpers.removeEvent = removeEventListener;
 "use strict";
 
 
-var Animation = __webpack_require__(40);
-var animations = __webpack_require__(41);
+var Animation = __webpack_require__(41);
+var animations = __webpack_require__(42);
 var defaults = __webpack_require__(3);
 var helpers = __webpack_require__(1);
-var Interaction = __webpack_require__(42);
+var Interaction = __webpack_require__(43);
 var layouts = __webpack_require__(11);
-var platform = __webpack_require__(43);
-var plugins = __webpack_require__(44);
+var platform = __webpack_require__(44);
+var plugins = __webpack_require__(45);
 var scaleService = __webpack_require__(8);
-var Tooltip = __webpack_require__(45);
+var Tooltip = __webpack_require__(46);
 
 module.exports = function(Chart) {
 
@@ -90419,252 +90351,252 @@ module.exports = function() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 46,
-	"./af.js": 46,
-	"./ar": 47,
-	"./ar-dz": 48,
-	"./ar-dz.js": 48,
-	"./ar-kw": 49,
-	"./ar-kw.js": 49,
-	"./ar-ly": 50,
-	"./ar-ly.js": 50,
-	"./ar-ma": 51,
-	"./ar-ma.js": 51,
-	"./ar-sa": 52,
-	"./ar-sa.js": 52,
-	"./ar-tn": 53,
-	"./ar-tn.js": 53,
-	"./ar.js": 47,
-	"./az": 54,
-	"./az.js": 54,
-	"./be": 55,
-	"./be.js": 55,
-	"./bg": 56,
-	"./bg.js": 56,
-	"./bm": 57,
-	"./bm.js": 57,
-	"./bn": 58,
-	"./bn.js": 58,
-	"./bo": 59,
-	"./bo.js": 59,
-	"./br": 60,
-	"./br.js": 60,
-	"./bs": 61,
-	"./bs.js": 61,
-	"./ca": 62,
-	"./ca.js": 62,
-	"./cs": 63,
-	"./cs.js": 63,
-	"./cv": 64,
-	"./cv.js": 64,
-	"./cy": 65,
-	"./cy.js": 65,
-	"./da": 66,
-	"./da.js": 66,
-	"./de": 67,
-	"./de-at": 68,
-	"./de-at.js": 68,
-	"./de-ch": 69,
-	"./de-ch.js": 69,
-	"./de.js": 67,
-	"./dv": 70,
-	"./dv.js": 70,
-	"./el": 71,
-	"./el.js": 71,
-	"./en-au": 72,
-	"./en-au.js": 72,
-	"./en-ca": 73,
-	"./en-ca.js": 73,
-	"./en-gb": 74,
-	"./en-gb.js": 74,
-	"./en-ie": 75,
-	"./en-ie.js": 75,
-	"./en-il": 76,
-	"./en-il.js": 76,
-	"./en-nz": 77,
-	"./en-nz.js": 77,
-	"./eo": 78,
-	"./eo.js": 78,
-	"./es": 79,
-	"./es-do": 80,
-	"./es-do.js": 80,
-	"./es-us": 81,
-	"./es-us.js": 81,
-	"./es.js": 79,
-	"./et": 82,
-	"./et.js": 82,
-	"./eu": 83,
-	"./eu.js": 83,
-	"./fa": 84,
-	"./fa.js": 84,
-	"./fi": 85,
-	"./fi.js": 85,
-	"./fo": 86,
-	"./fo.js": 86,
-	"./fr": 87,
-	"./fr-ca": 88,
-	"./fr-ca.js": 88,
-	"./fr-ch": 89,
-	"./fr-ch.js": 89,
-	"./fr.js": 87,
-	"./fy": 90,
-	"./fy.js": 90,
-	"./gd": 91,
-	"./gd.js": 91,
-	"./gl": 92,
-	"./gl.js": 92,
-	"./gom-latn": 93,
-	"./gom-latn.js": 93,
-	"./gu": 94,
-	"./gu.js": 94,
-	"./he": 95,
-	"./he.js": 95,
-	"./hi": 96,
-	"./hi.js": 96,
-	"./hr": 97,
-	"./hr.js": 97,
-	"./hu": 98,
-	"./hu.js": 98,
-	"./hy-am": 99,
-	"./hy-am.js": 99,
-	"./id": 100,
-	"./id.js": 100,
-	"./is": 101,
-	"./is.js": 101,
-	"./it": 102,
-	"./it.js": 102,
-	"./ja": 103,
-	"./ja.js": 103,
-	"./jv": 104,
-	"./jv.js": 104,
-	"./ka": 105,
-	"./ka.js": 105,
-	"./kk": 106,
-	"./kk.js": 106,
-	"./km": 107,
-	"./km.js": 107,
-	"./kn": 108,
-	"./kn.js": 108,
-	"./ko": 109,
-	"./ko.js": 109,
-	"./ky": 110,
-	"./ky.js": 110,
-	"./lb": 111,
-	"./lb.js": 111,
-	"./lo": 112,
-	"./lo.js": 112,
-	"./lt": 113,
-	"./lt.js": 113,
-	"./lv": 114,
-	"./lv.js": 114,
-	"./me": 115,
-	"./me.js": 115,
-	"./mi": 116,
-	"./mi.js": 116,
-	"./mk": 117,
-	"./mk.js": 117,
-	"./ml": 118,
-	"./ml.js": 118,
-	"./mn": 119,
-	"./mn.js": 119,
-	"./mr": 120,
-	"./mr.js": 120,
-	"./ms": 121,
-	"./ms-my": 122,
-	"./ms-my.js": 122,
-	"./ms.js": 121,
-	"./mt": 123,
-	"./mt.js": 123,
-	"./my": 124,
-	"./my.js": 124,
-	"./nb": 125,
-	"./nb.js": 125,
-	"./ne": 126,
-	"./ne.js": 126,
-	"./nl": 127,
-	"./nl-be": 128,
-	"./nl-be.js": 128,
-	"./nl.js": 127,
-	"./nn": 129,
-	"./nn.js": 129,
-	"./pa-in": 130,
-	"./pa-in.js": 130,
-	"./pl": 131,
-	"./pl.js": 131,
-	"./pt": 132,
-	"./pt-br": 133,
-	"./pt-br.js": 133,
-	"./pt.js": 132,
-	"./ro": 134,
-	"./ro.js": 134,
-	"./ru": 135,
-	"./ru.js": 135,
-	"./sd": 136,
-	"./sd.js": 136,
-	"./se": 137,
-	"./se.js": 137,
-	"./si": 138,
-	"./si.js": 138,
-	"./sk": 139,
-	"./sk.js": 139,
-	"./sl": 140,
-	"./sl.js": 140,
-	"./sq": 141,
-	"./sq.js": 141,
-	"./sr": 142,
-	"./sr-cyrl": 143,
-	"./sr-cyrl.js": 143,
-	"./sr.js": 142,
-	"./ss": 144,
-	"./ss.js": 144,
-	"./sv": 145,
-	"./sv.js": 145,
-	"./sw": 146,
-	"./sw.js": 146,
-	"./ta": 147,
-	"./ta.js": 147,
-	"./te": 148,
-	"./te.js": 148,
-	"./tet": 149,
-	"./tet.js": 149,
-	"./tg": 150,
-	"./tg.js": 150,
-	"./th": 151,
-	"./th.js": 151,
-	"./tl-ph": 152,
-	"./tl-ph.js": 152,
-	"./tlh": 153,
-	"./tlh.js": 153,
-	"./tr": 154,
-	"./tr.js": 154,
-	"./tzl": 155,
-	"./tzl.js": 155,
-	"./tzm": 156,
-	"./tzm-latn": 157,
-	"./tzm-latn.js": 157,
-	"./tzm.js": 156,
-	"./ug-cn": 158,
-	"./ug-cn.js": 158,
-	"./uk": 159,
-	"./uk.js": 159,
-	"./ur": 160,
-	"./ur.js": 160,
-	"./uz": 161,
-	"./uz-latn": 162,
-	"./uz-latn.js": 162,
-	"./uz.js": 161,
-	"./vi": 163,
-	"./vi.js": 163,
-	"./x-pseudo": 164,
-	"./x-pseudo.js": 164,
-	"./yo": 165,
-	"./yo.js": 165,
-	"./zh-cn": 166,
-	"./zh-cn.js": 166,
-	"./zh-hk": 167,
-	"./zh-hk.js": 167,
-	"./zh-tw": 168,
-	"./zh-tw.js": 168
+	"./af": 47,
+	"./af.js": 47,
+	"./ar": 48,
+	"./ar-dz": 49,
+	"./ar-dz.js": 49,
+	"./ar-kw": 50,
+	"./ar-kw.js": 50,
+	"./ar-ly": 51,
+	"./ar-ly.js": 51,
+	"./ar-ma": 52,
+	"./ar-ma.js": 52,
+	"./ar-sa": 53,
+	"./ar-sa.js": 53,
+	"./ar-tn": 54,
+	"./ar-tn.js": 54,
+	"./ar.js": 48,
+	"./az": 55,
+	"./az.js": 55,
+	"./be": 56,
+	"./be.js": 56,
+	"./bg": 57,
+	"./bg.js": 57,
+	"./bm": 58,
+	"./bm.js": 58,
+	"./bn": 59,
+	"./bn.js": 59,
+	"./bo": 60,
+	"./bo.js": 60,
+	"./br": 61,
+	"./br.js": 61,
+	"./bs": 62,
+	"./bs.js": 62,
+	"./ca": 63,
+	"./ca.js": 63,
+	"./cs": 64,
+	"./cs.js": 64,
+	"./cv": 65,
+	"./cv.js": 65,
+	"./cy": 66,
+	"./cy.js": 66,
+	"./da": 67,
+	"./da.js": 67,
+	"./de": 68,
+	"./de-at": 69,
+	"./de-at.js": 69,
+	"./de-ch": 70,
+	"./de-ch.js": 70,
+	"./de.js": 68,
+	"./dv": 71,
+	"./dv.js": 71,
+	"./el": 72,
+	"./el.js": 72,
+	"./en-au": 73,
+	"./en-au.js": 73,
+	"./en-ca": 74,
+	"./en-ca.js": 74,
+	"./en-gb": 75,
+	"./en-gb.js": 75,
+	"./en-ie": 76,
+	"./en-ie.js": 76,
+	"./en-il": 77,
+	"./en-il.js": 77,
+	"./en-nz": 78,
+	"./en-nz.js": 78,
+	"./eo": 79,
+	"./eo.js": 79,
+	"./es": 80,
+	"./es-do": 81,
+	"./es-do.js": 81,
+	"./es-us": 82,
+	"./es-us.js": 82,
+	"./es.js": 80,
+	"./et": 83,
+	"./et.js": 83,
+	"./eu": 84,
+	"./eu.js": 84,
+	"./fa": 85,
+	"./fa.js": 85,
+	"./fi": 86,
+	"./fi.js": 86,
+	"./fo": 87,
+	"./fo.js": 87,
+	"./fr": 88,
+	"./fr-ca": 89,
+	"./fr-ca.js": 89,
+	"./fr-ch": 90,
+	"./fr-ch.js": 90,
+	"./fr.js": 88,
+	"./fy": 91,
+	"./fy.js": 91,
+	"./gd": 92,
+	"./gd.js": 92,
+	"./gl": 93,
+	"./gl.js": 93,
+	"./gom-latn": 94,
+	"./gom-latn.js": 94,
+	"./gu": 95,
+	"./gu.js": 95,
+	"./he": 96,
+	"./he.js": 96,
+	"./hi": 97,
+	"./hi.js": 97,
+	"./hr": 98,
+	"./hr.js": 98,
+	"./hu": 99,
+	"./hu.js": 99,
+	"./hy-am": 100,
+	"./hy-am.js": 100,
+	"./id": 101,
+	"./id.js": 101,
+	"./is": 102,
+	"./is.js": 102,
+	"./it": 103,
+	"./it.js": 103,
+	"./ja": 104,
+	"./ja.js": 104,
+	"./jv": 105,
+	"./jv.js": 105,
+	"./ka": 106,
+	"./ka.js": 106,
+	"./kk": 107,
+	"./kk.js": 107,
+	"./km": 108,
+	"./km.js": 108,
+	"./kn": 109,
+	"./kn.js": 109,
+	"./ko": 110,
+	"./ko.js": 110,
+	"./ky": 111,
+	"./ky.js": 111,
+	"./lb": 112,
+	"./lb.js": 112,
+	"./lo": 113,
+	"./lo.js": 113,
+	"./lt": 114,
+	"./lt.js": 114,
+	"./lv": 115,
+	"./lv.js": 115,
+	"./me": 116,
+	"./me.js": 116,
+	"./mi": 117,
+	"./mi.js": 117,
+	"./mk": 118,
+	"./mk.js": 118,
+	"./ml": 119,
+	"./ml.js": 119,
+	"./mn": 120,
+	"./mn.js": 120,
+	"./mr": 121,
+	"./mr.js": 121,
+	"./ms": 122,
+	"./ms-my": 123,
+	"./ms-my.js": 123,
+	"./ms.js": 122,
+	"./mt": 124,
+	"./mt.js": 124,
+	"./my": 125,
+	"./my.js": 125,
+	"./nb": 126,
+	"./nb.js": 126,
+	"./ne": 127,
+	"./ne.js": 127,
+	"./nl": 128,
+	"./nl-be": 129,
+	"./nl-be.js": 129,
+	"./nl.js": 128,
+	"./nn": 130,
+	"./nn.js": 130,
+	"./pa-in": 131,
+	"./pa-in.js": 131,
+	"./pl": 132,
+	"./pl.js": 132,
+	"./pt": 133,
+	"./pt-br": 134,
+	"./pt-br.js": 134,
+	"./pt.js": 133,
+	"./ro": 135,
+	"./ro.js": 135,
+	"./ru": 136,
+	"./ru.js": 136,
+	"./sd": 137,
+	"./sd.js": 137,
+	"./se": 138,
+	"./se.js": 138,
+	"./si": 139,
+	"./si.js": 139,
+	"./sk": 140,
+	"./sk.js": 140,
+	"./sl": 141,
+	"./sl.js": 141,
+	"./sq": 142,
+	"./sq.js": 142,
+	"./sr": 143,
+	"./sr-cyrl": 144,
+	"./sr-cyrl.js": 144,
+	"./sr.js": 143,
+	"./ss": 145,
+	"./ss.js": 145,
+	"./sv": 146,
+	"./sv.js": 146,
+	"./sw": 147,
+	"./sw.js": 147,
+	"./ta": 148,
+	"./ta.js": 148,
+	"./te": 149,
+	"./te.js": 149,
+	"./tet": 150,
+	"./tet.js": 150,
+	"./tg": 151,
+	"./tg.js": 151,
+	"./th": 152,
+	"./th.js": 152,
+	"./tl-ph": 153,
+	"./tl-ph.js": 153,
+	"./tlh": 154,
+	"./tlh.js": 154,
+	"./tr": 155,
+	"./tr.js": 155,
+	"./tzl": 156,
+	"./tzl.js": 156,
+	"./tzm": 157,
+	"./tzm-latn": 158,
+	"./tzm-latn.js": 158,
+	"./tzm.js": 157,
+	"./ug-cn": 159,
+	"./ug-cn.js": 159,
+	"./uk": 160,
+	"./uk.js": 160,
+	"./ur": 161,
+	"./ur.js": 161,
+	"./uz": 162,
+	"./uz-latn": 163,
+	"./uz-latn.js": 163,
+	"./uz.js": 162,
+	"./vi": 164,
+	"./vi.js": 164,
+	"./x-pseudo": 165,
+	"./x-pseudo.js": 165,
+	"./yo": 166,
+	"./yo.js": 166,
+	"./zh-cn": 167,
+	"./zh-cn.js": 167,
+	"./zh-hk": 168,
+	"./zh-hk.js": 168,
+	"./zh-tw": 169,
+	"./zh-tw.js": 169
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -93854,7 +93786,7 @@ var content = __webpack_require__(360);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("255e8632", content, false, {});
+var update = __webpack_require__(4)("e38f8f0c", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -93889,7 +93821,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(17);
 //
 
 
@@ -93981,7 +93913,7 @@ var content = __webpack_require__(364);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("54691dd0", content, false, {});
+var update = __webpack_require__(4)("7bdf3bba", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -94016,7 +93948,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_chartjs__ = __webpack_require__(17);
 //
 
 
@@ -94243,7 +94175,7 @@ var content = __webpack_require__(369);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("0623c04c", content, false, {});
+var update = __webpack_require__(4)("c090cc26", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -94369,7 +94301,7 @@ var content = __webpack_require__(374);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("2ff0b790", content, false, {});
+var update = __webpack_require__(4)("5a8b9cba", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -94393,7 +94325,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.hr[data-v-3abe4c80] {\r\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\r\n  color: rgb(58, 58, 255);\n}\r\n", ""]);
+exports.push([module.i, "\n.hr[data-v-3abe4c80] {\n  border-top: 1px solid rgb(165, 182, 235);\n}\nspan[data-v-3abe4c80] {\n  color: rgb(58, 58, 255);\n}\n", ""]);
 
 // exports
 
@@ -94404,6 +94336,9 @@ exports.push([module.i, "\n.hr[data-v-3abe4c80] {\r\n  border-top: 1px solid rgb
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__NavbarComponent__);
+//
 //
 //
 //
@@ -94521,7 +94456,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    NavbarComponent: __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default.a
+  },
   methods: {
     next: function next() {
       this.$router.push({
@@ -94549,100 +94488,92 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _vm._m(0),
+  return _c(
+    "div",
+    [
+      _c("navbar-component"),
       _vm._v(" "),
-      _c("h1", { staticClass: "text-center text-success" }, [
-        _vm._v("Rainwater Harvesting Systems")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "hr w-100" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "d-flex flex-column align-items-around justify-content-center form"
-          },
-          [
-            _c("div", [
-              _c("h2", { staticClass: "mt-3" }, [
-                _vm._v(
-                  "\n            NAHRIM Technical Guide No. 2: The Design Guide for Rainwater Harvesting\n            Systems (2014)\n          "
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "d-flex justify-content-center",
-                  staticStyle: { "margin-bottom": "70px" }
-                },
-                [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-sm btn-primary mr-1",
-                      staticStyle: {
-                        "margin-top": "20px",
-                        "font-weight": "bold"
-                      },
-                      on: { click: _vm.back }
-                    },
-                    [_vm._v("Back")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-sm btn-outline-primary mr-1",
-                      staticStyle: {
-                        "margin-top": "20px",
-                        "font-weight": "bold"
-                      },
-                      on: { click: _vm.home }
-                    },
-                    [_vm._v("Home")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-sm btn-primary",
-                      staticStyle: {
-                        "margin-top": "20px",
-                        "font-weight": "bold"
-                      },
-                      on: { click: _vm.next }
-                    },
-                    [_vm._v("Next")]
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "d-flex flex-column align-items-around justify-content-center form"
+            },
+            [
+              _c("div", [
+                _c("h4", { staticClass: "mt-3" }, [
+                  _vm._v(
+                    "\n            NAHRIM Technical Guide No. 2: The Design Guide for Rainwater Harvesting\n            Systems (2014)\n          "
                   )
-                ]
-              )
-            ])
-          ]
-        )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "hr w-100" }),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "d-flex justify-content-center",
+                    staticStyle: { "margin-bottom": "70px" }
+                  },
+                  [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-primary mr-1",
+                        staticStyle: {
+                          "margin-top": "20px",
+                          "font-weight": "bold"
+                        },
+                        on: { click: _vm.back }
+                      },
+                      [_vm._v("Back")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-outline-primary mr-1",
+                        staticStyle: {
+                          "margin-top": "20px",
+                          "font-weight": "bold"
+                        },
+                        on: { click: _vm.home }
+                      },
+                      [_vm._v("Home")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-sm btn-primary",
+                        staticStyle: {
+                          "margin-top": "20px",
+                          "font-weight": "bold"
+                        },
+                        on: { click: _vm.next }
+                      },
+                      [_vm._v("Next")]
+                    )
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
       ])
-    ])
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex justify-content-center pt-5" }, [
-      _c("img", { attrs: { src: "/images/tank1.png", height: "100", alt: "" } })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -94658,7 +94589,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "border border-info pl-3 pr-3 mt-3" }, [
-      _c("h3", { staticClass: "pt-3" }, [_vm._v("OBJECTIVES:")]),
+      _c("h5", { staticClass: "pt-3" }, [_vm._v("OBJECTIVES:")]),
       _vm._v(" "),
       _c("p", [
         _vm._v(
@@ -94691,7 +94622,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "border border-info pl-3 pr-3 mt-3" }, [
-      _c("h3", { staticClass: "pt-3" }, [
+      _c("h4", { staticClass: "pt-3" }, [
         _vm._v(
           "This application is divided into 3 types of rainwater harvesting design:"
         )
@@ -94837,6 +94768,400 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 378 */,
+/* 379 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(380)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(382)
+/* template */
+var __vue_template__ = __webpack_require__(383)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-a603f2ce"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/AdminComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a603f2ce", Component.options)
+  } else {
+    hotAPI.reload("data-v-a603f2ce", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 380 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(381);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("021529d6", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a603f2ce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AdminComponent.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a603f2ce\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./AdminComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 381 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 382 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  methods: {
+    logout: function logout() {
+      var _this = this;
+
+      this.$store.dispatch("logout").then(function (response) {
+        _this.$router.push({ name: "root" });
+      }).catch(function (e) {
+        console.log(e);
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 383 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _c("button", { on: { click: _vm.logout } }, [_vm._v("logout")])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-a603f2ce", module.exports)
+  }
+}
+
+/***/ }),
+/* 384 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(385)
+}
+var normalizeComponent = __webpack_require__(5)
+/* script */
+var __vue_script__ = __webpack_require__(387)
+/* template */
+var __vue_template__ = __webpack_require__(388)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-4d2414bf"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/LoginComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4d2414bf", Component.options)
+  } else {
+    hotAPI.reload("data-v-4d2414bf", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 385 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(386);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(4)("75d7f382", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4d2414bf\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LoginComponent.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4d2414bf\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LoginComponent.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 386 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 387 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__NavbarComponent__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      username: "",
+      password: "",
+      error: ""
+    };
+  },
+
+  components: { NavbarComponent: __WEBPACK_IMPORTED_MODULE_0__NavbarComponent___default.a },
+  methods: {
+    login: function login() {
+      var _this = this;
+
+      this.$store.dispatch("login", {
+        username: this.username,
+        password: this.password
+      }).then(function (response) {
+        _this.$router.push({ name: "admin" });
+      }).catch(function (e) {
+        _this.error = "Wrong Credentials. Please try again";
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 388 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("navbar-component"),
+      _vm._v(" "),
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "login" }, [
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "username" } }, [
+                _vm._v("Username:")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.username,
+                    expression: "username"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text" },
+                domProps: { value: _vm.username },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.username = $event.target.value
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("label", { attrs: { for: "username" } }, [
+                _vm._v("Password:")
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.password,
+                    expression: "password"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "password" },
+                domProps: { value: _vm.password },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.password = $event.target.value
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c(
+                "button",
+                { staticClass: "btn btn-primary", on: { click: _vm.login } },
+                [_vm._v("Login")]
+              )
+            ])
+          ])
+        ])
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-4d2414bf", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

@@ -4,7 +4,7 @@ import axios from 'axios';
 Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
-        url: 'http://localhost:8000',
+        url: 'http://nahrim.test',
         location: '',
         coefficient: '',
         area: '',
@@ -41,12 +41,16 @@ export default new Vuex.Store({
         coords: [],
         range: [],
         rr_coef: [],
-        rr_st: []
+        rr_st: [],
+        token: localStorage.getItem('access_token') || null
     },
     getters: {
         currentPos(state) {
             var data = [state.lat, state.long]
             return data
+        },
+        isLoggedIn(state) {
+            return state.token != null
         }
     },
     mutations: {
@@ -160,6 +164,12 @@ export default new Vuex.Store({
         },
         SET_RR_ST(state, payload) {
             state.rr_st = payload
+        },
+        SET_TOKEN(state, payload) {
+            state.token = payload
+        },
+        REMOVE_TOKEN(state, payload) {
+            state.token = null
         }
     },
     actions: {
@@ -204,6 +214,51 @@ export default new Vuex.Store({
                 .catch(e => {
                     console.log(e)
                 })
+        },
+        login({
+            state,
+            commit
+        }, payload) {
+            return new Promise((resolve, reject) => {
+                axios
+                    .post(state.url + '/oauth/token', {
+                        grant_type: 'password',
+                        client_id: 2,
+                        client_secret: 'fPVuYp7QbO6xRPNRxVkek37KagrhrESGSpHOJT6v',
+                        // client_secret: process.env.MIX_CLIENT_SECRET,
+                        username: payload.username,
+                        password: payload.password
+                    })
+                    .then(response => {
+                        localStorage.setItem('access_token', response.data.access_token)
+                        commit('SET_TOKEN', response.data.access_token)
+                        resolve(response)
+                    })
+                    .catch(e => {
+                        console.log(e)
+                        reject(e)
+                    })
+            })
+        },
+        logout({
+            state,
+            commit
+        }) {
+            // axios.defaults.headers.common['Authorization'] = 'Bearer ' + state.token;
+            return new Promise((resolve, reject) => {
+                axios
+                    .post(state.url + '/api/logout')
+                    .then(response => {
+                        localStorage.removeItem('access_token')
+                        commit('REMOVE_TOKEN')
+                        resolve(response)
+                    })
+                    .catch(e => {
+                        console.log(e)
+                        reject(e)
+                    })
+            })
         }
+        // fPVuYp7QbO6xRPNRxVkek37KagrhrESGSpHOJT6v
     }
 });

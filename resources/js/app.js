@@ -31,6 +31,55 @@ const router = new VueRouter({
 
 });
 
+router.beforeEach((to, from, next) => {
+    if (to.matched.some(record => record.meta.requiresAuth)) {
+        // this route requires auth, check if logged in
+        // if not, redirect to login page.
+        if (!store.getters.isLoggedIn) {
+            next({
+                name: 'login',
+                query: {
+                    redirect: to.fullPath
+                }
+            })
+        } else {
+            next()
+        }
+    } else if (to.matched.some(record => record.meta.requiresVisitor)) {
+        // this route requires auth, check if logged in
+        // if not, redirect to login page.
+        if (store.getters.isLoggedIn) {
+            next({
+                name: 'admin',
+                query: {
+                    redirect: to.fullPath
+                }
+            })
+        } else {
+            next()
+        }
+    } else {
+        next() // make sure to always call next()!
+    }
+})
+
+
+axios.interceptors.request.use(
+    (config) => {
+        let token = localStorage.getItem('access_token');
+
+        if (token) {
+            config.headers['Authorization'] = `Bearer ${token}`;
+        }
+
+        return config;
+    },
+
+    (error) => {
+        return Promise.reject(error);
+    }
+);
+
 const app = new Vue({
     el: '#app',
     render: h => h(App),
