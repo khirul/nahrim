@@ -19,7 +19,7 @@
               <div class="small">( Revised version of previous Tangki NAHRIM )</div>
             </div>
             <div class="box box02">
-              <span class="menu d-flex align-items-start">SECTION 02</span>
+              <span class="menu d-flex align-items-start">Rainwater Harvesting System</span>
               <div class="content text-justify p-3">
                 <h5>Rainwater Harvesting System Design</h5>
                 <p>Based on NAHRIM Technical Guide No 2:</p>
@@ -30,7 +30,7 @@
               </div>
             </div>
             <div class="box box03">
-              <span class="menu d-flex align-items-start">SECTION 01</span>
+              <span class="menu d-flex align-items-start">Tangki NAHRIM Simulation</span>
               <div class="content text-justify p-3">
                 <h4>Tangki NAHRIM Simulation</h4>
                 <p>
@@ -217,7 +217,7 @@ export default {
   text-orientation: upright;
   font-family: "Righteous", cursive;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 18px;
   color: rgb(255, 255, 255);
   width: 150px;
 }

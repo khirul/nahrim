@@ -4,89 +4,64 @@
       <div class="container">
         <div class="row d-flex align-items-center justify-content-between">
           <div class="logo d-flex align-items-center">
-            <img src="images/nahrimlogo.png" height="70" alt="" />
+            <img src="images/nahrimlogo.png" height="70" alt>
           </div>
           <!-- /.logo -->
           <div class="step d-flex align-items-center">
-            <div
-              class="steplist firststep d-flex align-items-center justify-content-between"
-            >
+            <div class="steplist firststep d-flex align-items-center justify-content-between">
               <div>
                 <div class="small">Step 1:</div>
-                <div class="step-name">
-                  Rainfall Station
-                </div>
+                <div class="step-name">Rainfall Station</div>
                 <div class="stationchosen">
-                  <small
-                    ><em>Location: </em>{{ this.$store.state.location }}</small
-                  >
+                  <small>
+                    <em>Location:</em>
+                    {{ this.$store.state.location }}
+                  </small>
                 </div>
               </div>
 
-              <i
-                class="far fa-check-circle"
-                style="font-size: 28px; color: green"
-              ></i>
+              <i class="far fa-check-circle" style="font-size: 28px; color: green"></i>
             </div>
-            <div
-              class="steplist secondstep d-flex align-items-center justify-content-between"
-            >
+            <div class="steplist secondstep d-flex align-items-center justify-content-between">
               <div>
                 <div class="small">Step 2:</div>
-                <div class="step-name">
-                  Roof Characteristics
-                </div>
+                <div class="step-name">Roof Characteristics</div>
                 <div class="stationchosen">
-                  <small
-                    ><em>Coefficient: </em
-                    >{{ this.$store.state.coefficient }}</small
-                  >
+                  <small>
+                    <em>Coefficient:</em>
+                    {{ this.$store.state.coefficient }}
+                  </small>
                 </div>
               </div>
 
-              <i
-                class="far fa-check-circle"
-                style="font-size: 28px; color: green"
-              ></i>
+              <i class="far fa-check-circle" style="font-size: 28px; color: green"></i>
             </div>
-            <div
-              class="steplist thirdstep d-flex align-items-center justify-content-between"
-            >
+            <div class="steplist thirdstep d-flex align-items-center justify-content-between">
               <div>
                 <div class="small">Step 3:</div>
-                <div class="step-name">
-                  Water Usage
-                </div>
+                <div class="step-name">Water Usage</div>
                 <div class="stationchosen">
-                  <small
-                    ><em>Average/Person: </em
-                    >{{ this.$store.state.aveperson }}</small
-                  >
+                  <small>
+                    <em>Average/Person:</em>
+                    {{ this.$store.state.aveperson }}
+                  </small>
                 </div>
               </div>
 
-              <i
-                class="far fa-check-circle"
-                style="font-size: 28px; color: green"
-              ></i>
+              <i class="far fa-check-circle" style="font-size: 28px; color: green"></i>
             </div>
-            <div
-              class="steplist fourthstep d-flex align-items-center justify-content-between"
-            >
+            <div class="steplist fourthstep d-flex align-items-center justify-content-between">
               <div>
                 <div class="small">Step 4:</div>
-                <div class="step-name">
-                  Calculation
-                </div>
+                <div class="step-name">Calculation</div>
                 <div class="stationchosen">
-                  <small><em>Simulation: </em>Single / Range</small>
+                  <small>
+                    <em>Simulation:</em>Single / Range
+                  </small>
                 </div>
               </div>
 
-              <i
-                class="far fa-check-circle"
-                style="font-size: 28px; color: green"
-              ></i>
+              <i class="far fa-check-circle" style="font-size: 28px; color: green"></i>
             </div>
           </div>
           <!-- /.step -->
@@ -109,16 +84,14 @@
               </div>
               <div class="input-group d-flex align-items-center">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon2-prepend"
-                    >Length</span
-                  >
+                  <span class="input-group-text" id="basic-addon2-prepend">Length</span>
                 </div>
                 <input
                   type="text"
                   class="form-control"
                   v-model="length"
                   aria-describedby="basic-addon2"
-                />
+                >
                 <div class="input-group-append">
                   <span class="input-group-text" id="basic-addon2">m</span>
                 </div>
@@ -127,9 +100,7 @@
               <!-- <span class="equal pl-3">x</span> -->
               <div class="input-group d-flex align-items-center mt-1">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon2-prepend"
-                    >Width</span
-                  >
+                  <span class="input-group-text" id="basic-addon2-prepend">Width</span>
                 </div>
 
                 <input
@@ -137,7 +108,7 @@
                   class="form-control"
                   v-model="width"
                   aria-describedby="basic-addon2"
-                />
+                >
                 <div class="input-group-append">
                   <span class="input-group-text" id="basic-addon2">m</span>
                 </div>
@@ -146,9 +117,7 @@
               <!-- <span class="equal d-flex align-self-center">=</span> -->
               <div class="input-group d-flex align-items-center mt-1">
                 <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon2-prepend"
-                    >Area</span
-                  >
+                  <span class="input-group-text" id="basic-addon2-prepend">Area</span>
                 </div>
 
                 <input
@@ -157,7 +126,7 @@
                   :value="area"
                   disabled
                   aria-describedby="basic-addon2"
-                />
+                >
                 <div class="input-group-append">
                   <span class="input-group-text" id="basic-addon2">
                     m
@@ -182,7 +151,7 @@
                     class="form-control"
                     v-model="depth"
                     aria-describedby="basic-addon2"
-                  />
+                  >
                   <div class="input-group-append">
                     <span class="input-group-text" id="basic-addon2">mm</span>
                   </div>
@@ -206,7 +175,7 @@
                   :value="flush"
                   disabled
                   aria-describedby="basic-addon2"
-                />
+                >
                 <div class="input-group-append">
                   <span class="input-group-text adleft" id="basic-addon2">
                     mm
@@ -221,23 +190,13 @@
             <div class="mt-5">Run-off Coefficient</div>
           </div>
           <div class="d-flex flex-row">
-            <select
-              v-model="coefficient"
-              @change="change"
-              class="form-control mr-1"
-            >
+            <select v-model="coefficient" @change="change" class="form-control mr-1">
               <option disabled value>Please select roof type</option>
               <option value="0.8">Concrete Tile</option>
               <option value="0.9">Zink / Metal</option>
               <option>Others</option>
             </select>
-            <input
-              v-if="others"
-              type="text"
-              disabled
-              :value="coefficient"
-              class="form-control"
-            />
+            <input v-if="others" type="text" disabled :value="coefficient" class="form-control">
             <input
               v-else
               type="number"
@@ -246,13 +205,11 @@
               step=".1"
               v-model="coefficient"
               class="form-control"
-            />
+            >
           </div>
         </div>
-        <div
-          class="roof col-md-5 d-flex align-items-center justify-content-center"
-        >
-          <img src="/images/roof01.png" class="img-fluid" alt />
+        <div class="roof col-md-5 d-flex align-items-center justify-content-center">
+          <img src="/images/roof01.png" class="img-fluid" alt>
         </div>
       </div>
       <div class="hr w-100 mt-5"></div>
@@ -263,25 +220,19 @@
         @click="back"
         class="btn btn-sm btn-primary mr-1"
         style="margin-top: 20px; font-weight:bold;"
-      >
-        Back
-      </button>
+      >Back</button>
 
       <button
         @click="home"
         class="btn btn-sm btn-outline-primary mr-1"
         style="margin-top: 20px; font-weight:bold;"
-      >
-        Home
-      </button>
+      >Home</button>
 
       <button
         @click="next"
         class="btn btn-sm btn-primary"
         style="margin-top: 20px; font-weight:bold;"
-      >
-        Next
-      </button>
+      >Next</button>
     </div>
   </div>
 </template>
@@ -418,5 +369,8 @@ input {
 .thirdstep i,
 .fourthstep i {
   display: none !important;
+}
+.btnav {
+  margin-bottom: 100px;
 }
 </style>
