@@ -42,7 +42,8 @@ export default new Vuex.Store({
         range: [],
         rr_coef: [],
         rr_st: [],
-        token: localStorage.getItem('access_token') || null
+        token: localStorage.getItem('access_token') || null,
+        stations: []
     },
     getters: {
         currentPos(state) {
@@ -170,6 +171,9 @@ export default new Vuex.Store({
         },
         REMOVE_TOKEN(state, payload) {
             state.token = null
+        },
+        SET_STATIONS(state, payload) {
+            state.stations = payload
         }
     },
     actions: {
@@ -214,6 +218,44 @@ export default new Vuex.Store({
                 .catch(e => {
                     console.log(e)
                 })
+        },
+        get_all_locations({ state, commit }, payload) {
+            axios
+                .get(state.url + "/api/locations")
+                .then(response => {
+                    commit('SET_STATIONS', response.data);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+        },
+        station_upload({ state, commit }, payload) {
+            return new Promise((resolve, reject) => {
+                axios
+                    .post(state.url + '/api/station', payload)
+                    .then(response => {
+                        console.log(response.data)
+                        resolve(response)
+                    })
+                    .catch(e => {
+                        console.log(e)
+                        reject(e)
+                    })
+            })
+        },
+        rain_upload({ state, commit }, payload) {
+            return new Promise((resolve, reject) => {
+                axios
+                    .post(state.url + '/api/rain', payload)
+                    .then(response => {
+                        console.log(response.data)
+                        resolve(response)
+                    })
+                    .catch(e => {
+                        console.log(e)
+                        reject(e)
+                    })
+            })
         },
         login({
             state,

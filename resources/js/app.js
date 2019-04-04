@@ -14,6 +14,8 @@ import store from './store'
 
 import VueLeaflet from 'vue-leaflet'
 import 'vue-leaflet/dist/vue-leaflet.css'
+import VueGoodTablePlugin from 'vue-good-table';
+import 'vue-good-table/dist/vue-good-table.css'
 
 import {
     routes
@@ -24,6 +26,7 @@ import {
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 Vue.use(VueRouter, VueLeaflet)
+Vue.use(VueGoodTablePlugin);
 
 const router = new VueRouter({
     mode: 'history',
