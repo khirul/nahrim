@@ -328,4 +328,9 @@ class RainfallsController extends Controller
 
         //return response()->json($average);
     }
+    
+    public function newCalculation()
+    {
+        return response()->json('new calculation') ;
+    }
 }

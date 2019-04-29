@@ -24,7 +24,7 @@ Route::post('/simulation', 'RainfallsController@simulation');
 Route::get('/coords', 'CoordinatesController@index');
 Route::post('/show/', 'CoordinatesController@show');
 Route::post('/logout', 'AccountController@logout')->middleware('auth:api');
-
+Route::post('/new-calc', 'RainfallsController@newCalculation');
 
 Route::get('/exports', 'DataController@export');
 Route::post('/station', 'DataController@station_upload');
